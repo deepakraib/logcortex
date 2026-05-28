@@ -1,0 +1,2 @@
+# Copy to .npmrc locally if needed. Do not commit machine-specific paths.
+engine-strict=false

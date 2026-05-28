@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.env
+*.local
+
+# Log files — never commit real logs
+*.log
+*.log.gz
+*.logs
+*.jsonl
+
+# Local npm/machine config (never commit home paths)
+.npmrc.local
+
+# OS
+.DS_Store
+Thumbs.db

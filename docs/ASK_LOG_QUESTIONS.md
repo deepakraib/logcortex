@@ -1,0 +1,10040 @@
+# Ask Log — example questions
+
+LogCortex includes **generic example phrasings** you can ask about a loaded MongoDB log.
+Click any line in the **Ask Log** panel under **Example questions**, or type similar wording in the chat box.
+Answers are built from parsed log data in your browser (no cloud API).
+
+---
+
+## Overview
+
+- Summarize this log
+- Give me an overview
+- Overall health of the database?
+- Quick report on this log
+- Tell me about this log file
+- Executive summary
+- Why is it slow?
+- What's wrong with this cluster?
+- Performance problems?
+- What should I fix first?
+- What are your recommendations?
+- Action items from this log
+- What needs attention?
+- Summarize this log?
+- Why is it slow ?
+- Summarize this log from this log?
+- Why is it slow ? from this log?
+- What are your recommendations from this log?
+- Summarize this log in this log?
+- Why is it slow ? in this log?
+- What are your recommendations in this log?
+- Summarize this log in the uploaded file?
+- Why is it slow ? in the uploaded file?
+- What are your recommendations in the uploaded file?
+- Summarize this log according to the parsed log?
+- Why is it slow ? according to the parsed log?
+- What are your recommendations according to the parsed log?
+- Summarize this log for this mongod?
+- Why is it slow ? for this mongod?
+- What are your recommendations for this mongod?
+- Summarize this log for troubleshooting?
+- Why is it slow ? for troubleshooting?
+- What are your recommendations for troubleshooting?
+- Summarize this log for performance review?
+- Why is it slow ? for performance review?
+- What are your recommendations for performance review?
+- Summarize this log for the DBA review?
+- Why is it slow ? for the DBA review?
+- What are your recommendations for the DBA review?
+- Summarize this log please?
+- Why is it slow ? please?
+- What are your recommendations please?
+- Why is it slow in this log?
+- Summarize this log please from this log?
+- Why is it slow in this log from this log?
+- What are your recommendations from this log from this log?
+- Summarize this log please in this log?
+- Why is it slow in this log in this log?
+- What are your recommendations from this log in this log?
+- Summarize this log please in the uploaded file?
+- Why is it slow in this log in the uploaded file?
+- What are your recommendations from this log in the uploaded file?
+- Summarize this log please according to the parsed log?
+- Why is it slow in this log according to the parsed log?
+- What are your recommendations from this log according to the parsed log?
+- Summarize this log please for this mongod?
+- Why is it slow in this log for this mongod?
+- What are your recommendations from this log for this mongod?
+- Summarize this log please for troubleshooting?
+- Why is it slow in this log for troubleshooting?
+- What are your recommendations from this log for troubleshooting?
+- Summarize this log please for performance review?
+- Why is it slow in this log for performance review?
+- What are your recommendations from this log for performance review?
+- Summarize this log please for the DBA review?
+- Why is it slow in this log for the DBA review?
+- What are your recommendations from this log for the DBA review?
+- Summarize this log please please?
+- Why is it slow in this log please?
+- What are your recommendations from this log please?
+- Summarize this log for me?
+- Why is it slow according to this log?
+- What are your recommendations based on this log?
+- Summarize this log for me from this log?
+- Why is it slow according to this log from this log?
+- What are your recommendations based on this log from this log?
+- Summarize this log for me in this log?
+- Why is it slow according to this log in this log?
+- What are your recommendations based on this log in this log?
+- Summarize this log for me in the uploaded file?
+- Why is it slow according to this log in the uploaded file?
+- What are your recommendations based on this log in the uploaded file?
+- Summarize this log for me according to the parsed log?
+- Why is it slow according to this log according to the parsed log?
+- What are your recommendations based on this log according to the parsed log?
+- Summarize this log for me for this mongod?
+- Why is it slow according to this log for this mongod?
+- What are your recommendations based on this log for this mongod?
+- Summarize this log for me for troubleshooting?
+- Why is it slow according to this log for troubleshooting?
+- What are your recommendations based on this log for troubleshooting?
+- Summarize this log for me for performance review?
+- Why is it slow according to this log for performance review?
+- What are your recommendations based on this log for performance review?
+- Summarize this log for me for the DBA review?
+- Why is it slow according to this log for the DBA review?
+- What are your recommendations based on this log for the DBA review?
+- Summarize this log for me please?
+- Why is it slow according to this log please?
+- What are your recommendations based on this log please?
+- Summarize this log in plain language?
+- Why is the database slow ?
+- What are your action items?
+- Summarize this log in plain language from this log?
+- Why is the database slow ? from this log?
+- What are your action items from this log?
+- Summarize this log in plain language in this log?
+- Why is the database slow ? in this log?
+- What are your action items in this log?
+- Summarize this log in plain language in the uploaded file?
+- Why is the database slow ? in the uploaded file?
+- What are your action items in the uploaded file?
+- Summarize this log in plain language according to the parsed log?
+- Why is the database slow ? according to the parsed log?
+- What are your action items according to the parsed log?
+- Summarize this log in plain language for this mongod?
+- Why is the database slow ? for this mongod?
+- What are your action items for this mongod?
+- Summarize this log in plain language for troubleshooting?
+- Why is the database slow ? for troubleshooting?
+- What are your action items for troubleshooting?
+- Summarize this log in plain language for performance review?
+- Why is the database slow ? for performance review?
+- What are your action items for performance review?
+- Summarize this log in plain language for the DBA review?
+- Why is the database slow ? for the DBA review?
+- What are your action items for the DBA review?
+- Summarize this log in plain language please?
+- Why is the database slow ? please?
+- What are your action items please?
+- Summarize the log file?
+- Why is the database slow in this log?
+- Summarize the log file from this log?
+- Why is the database slow in this log from this log?
+- What are your action items from this log from this log?
+- Summarize the log file in this log?
+- Why is the database slow in this log in this log?
+- What are your action items from this log in this log?
+- Summarize the log file in the uploaded file?
+- Why is the database slow in this log in the uploaded file?
+- What are your action items from this log in the uploaded file?
+- Summarize the log file according to the parsed log?
+- Why is the database slow in this log according to the parsed log?
+- What are your action items from this log according to the parsed log?
+- Summarize the log file for this mongod?
+- Why is the database slow in this log for this mongod?
+- What are your action items from this log for this mongod?
+- Summarize the log file for troubleshooting?
+- Why is the database slow in this log for troubleshooting?
+- What are your action items from this log for troubleshooting?
+- Summarize the log file for performance review?
+- Why is the database slow in this log for performance review?
+- What are your action items from this log for performance review?
+- Summarize the log file for the DBA review?
+- Why is the database slow in this log for the DBA review?
+- What are your action items from this log for the DBA review?
+- Summarize the log file please?
+- Why is the database slow in this log please?
+- What are your action items from this log please?
+- Why is the database slow according to this log?
+- What are your action items based on this log?
+- Summarize the log file please from this log?
+- Why is the database slow according to this log from this log?
+- What are your action items based on this log from this log?
+- Summarize the log file please in this log?
+- Why is the database slow according to this log in this log?
+- What are your action items based on this log in this log?
+- Summarize the log file please in the uploaded file?
+- Why is the database slow according to this log in the uploaded file?
+- What are your action items based on this log in the uploaded file?
+- Summarize the log file please according to the parsed log?
+- Why is the database slow according to this log according to the parsed log?
+- What are your action items based on this log according to the parsed log?
+- Summarize the log file please for this mongod?
+- Why is the database slow according to this log for this mongod?
+- What are your action items based on this log for this mongod?
+- Summarize the log file please for troubleshooting?
+- Why is the database slow according to this log for troubleshooting?
+- What are your action items based on this log for troubleshooting?
+- Summarize the log file please for performance review?
+- Why is the database slow according to this log for performance review?
+- What are your action items based on this log for performance review?
+- Summarize the log file please for the DBA review?
+- Why is the database slow according to this log for the DBA review?
+- What are your action items based on this log for the DBA review?
+- Summarize the log file please please?
+- Why is the database slow according to this log please?
+- What are your action items based on this log please?
+- Summarize the log file for me?
+- Why is MongoDB slow ?
+- What are your next steps?
+- Summarize the log file for me from this log?
+- Why is MongoDB slow ? from this log?
+- What are your next steps from this log?
+- Summarize the log file for me in this log?
+- Why is MongoDB slow ? in this log?
+- What are your next steps in this log?
+- Summarize the log file for me in the uploaded file?
+- Why is MongoDB slow ? in the uploaded file?
+- What are your next steps in the uploaded file?
+- Summarize the log file for me according to the parsed log?
+- Why is MongoDB slow ? according to the parsed log?
+- What are your next steps according to the parsed log?
+- Summarize the log file for me for this mongod?
+- Why is MongoDB slow ? for this mongod?
+- What are your next steps for this mongod?
+- Summarize the log file for me for troubleshooting?
+- Why is MongoDB slow ? for troubleshooting?
+- What are your next steps for troubleshooting?
+- Summarize the log file for me for performance review?
+- Why is MongoDB slow ? for performance review?
+- What are your next steps for performance review?
+- Summarize the log file for me for the DBA review?
+- Why is MongoDB slow ? for the DBA review?
+- What are your next steps for the DBA review?
+- Summarize the log file for me please?
+- Why is MongoDB slow ? please?
+- What are your next steps please?
+- Summarize the log file in plain language?
+- Why is MongoDB slow in this log?
+- Summarize the log file in plain language from this log?
+- Why is MongoDB slow in this log from this log?
+- What are your next steps from this log from this log?
+- Summarize the log file in plain language in this log?
+- Why is MongoDB slow in this log in this log?
+- What are your next steps from this log in this log?
+- Summarize the log file in plain language in the uploaded file?
+- Why is MongoDB slow in this log in the uploaded file?
+- What are your next steps from this log in the uploaded file?
+- Summarize the log file in plain language according to the parsed log?
+- Why is MongoDB slow in this log according to the parsed log?
+- What are your next steps from this log according to the parsed log?
+- Summarize the log file in plain language for this mongod?
+- Why is MongoDB slow in this log for this mongod?
+- What are your next steps from this log for this mongod?
+- Summarize the log file in plain language for troubleshooting?
+- Why is MongoDB slow in this log for troubleshooting?
+- What are your next steps from this log for troubleshooting?
+- Summarize the log file in plain language for performance review?
+- Why is MongoDB slow in this log for performance review?
+- What are your next steps from this log for performance review?
+- Summarize the log file in plain language for the DBA review?
+- Why is MongoDB slow in this log for the DBA review?
+- What are your next steps from this log for the DBA review?
+- Summarize the log file in plain language please?
+- Why is MongoDB slow in this log please?
+- What are your next steps from this log please?
+- Summarize my MongoDB log?
+- Why is MongoDB slow according to this log?
+- What are your next steps based on this log?
+- Summarize my MongoDB log from this log?
+- Why is MongoDB slow according to this log from this log?
+- What are your next steps based on this log from this log?
+- Summarize my MongoDB log in this log?
+- Why is MongoDB slow according to this log in this log?
+- What are your next steps based on this log in this log?
+- Summarize my MongoDB log in the uploaded file?
+- Why is MongoDB slow according to this log in the uploaded file?
+- What are your next steps based on this log in the uploaded file?
+- Summarize my MongoDB log according to the parsed log?
+- Why is MongoDB slow according to this log according to the parsed log?
+- What are your next steps based on this log according to the parsed log?
+- Summarize my MongoDB log for this mongod?
+- Why is MongoDB slow according to this log for this mongod?
+- What are your next steps based on this log for this mongod?
+- Summarize my MongoDB log for troubleshooting?
+- Why is MongoDB slow according to this log for troubleshooting?
+- What are your next steps based on this log for troubleshooting?
+- Summarize my MongoDB log for performance review?
+- Why is MongoDB slow according to this log for performance review?
+- What are your next steps based on this log for performance review?
+- Summarize my MongoDB log for the DBA review?
+- Why is MongoDB slow according to this log for the DBA review?
+- What are your next steps based on this log for the DBA review?
+- Summarize my MongoDB log please?
+- Why is MongoDB slow according to this log please?
+- What are your next steps based on this log please?
+- Why is performance bad ?
+- What are your priorities?
+- Summarize my MongoDB log please from this log?
+- Why is performance bad ? from this log?
+- What are your priorities from this log?
+- Summarize my MongoDB log please in this log?
+- Why is performance bad ? in this log?
+- What are your priorities in this log?
+- Summarize my MongoDB log please in the uploaded file?
+- Why is performance bad ? in the uploaded file?
+- What are your priorities in the uploaded file?
+- Summarize my MongoDB log please according to the parsed log?
+- Why is performance bad ? according to the parsed log?
+- What are your priorities according to the parsed log?
+- Summarize my MongoDB log please for this mongod?
+- Why is performance bad ? for this mongod?
+- What are your priorities for this mongod?
+- Summarize my MongoDB log please for troubleshooting?
+- Why is performance bad ? for troubleshooting?
+- What are your priorities for troubleshooting?
+- Summarize my MongoDB log please for performance review?
+- Why is performance bad ? for performance review?
+- What are your priorities for performance review?
+- Summarize my MongoDB log please for the DBA review?
+- Why is performance bad ? for the DBA review?
+- What are your priorities for the DBA review?
+- Summarize my MongoDB log please please?
+- Why is performance bad ? please?
+- What are your priorities please?
+- Summarize my MongoDB log for me?
+- Why is performance bad in this log?
+- Summarize my MongoDB log for me from this log?
+- Why is performance bad in this log from this log?
+- What are your priorities from this log from this log?
+- Summarize my MongoDB log for me in this log?
+- Why is performance bad in this log in this log?
+- What are your priorities from this log in this log?
+- Summarize my MongoDB log for me in the uploaded file?
+- Why is performance bad in this log in the uploaded file?
+- What are your priorities from this log in the uploaded file?
+- Summarize my MongoDB log for me according to the parsed log?
+- Why is performance bad in this log according to the parsed log?
+- What are your priorities from this log according to the parsed log?
+- Summarize my MongoDB log for me for this mongod?
+- Why is performance bad in this log for this mongod?
+- What are your priorities from this log for this mongod?
+- Summarize my MongoDB log for me for troubleshooting?
+- Why is performance bad in this log for troubleshooting?
+- What are your priorities from this log for troubleshooting?
+- Summarize my MongoDB log for me for performance review?
+- Why is performance bad in this log for performance review?
+- What are your priorities from this log for performance review?
+- Summarize my MongoDB log for me for the DBA review?
+- Why is performance bad in this log for the DBA review?
+- What are your priorities from this log for the DBA review?
+- Summarize my MongoDB log for me please?
+- Why is performance bad in this log please?
+- What are your priorities from this log please?
+- Summarize my MongoDB log in plain language?
+- Why is performance bad according to this log?
+- What are your priorities based on this log?
+- Summarize my MongoDB log in plain language from this log?
+- Why is performance bad according to this log from this log?
+- What are your priorities based on this log from this log?
+- Summarize my MongoDB log in plain language in this log?
+- Why is performance bad according to this log in this log?
+- What are your priorities based on this log in this log?
+- Summarize my MongoDB log in plain language in the uploaded file?
+- Why is performance bad according to this log in the uploaded file?
+- What are your priorities based on this log in the uploaded file?
+- Summarize my MongoDB log in plain language according to the parsed log?
+- Why is performance bad according to this log according to the parsed log?
+- What are your priorities based on this log according to the parsed log?
+- Summarize my MongoDB log in plain language for this mongod?
+- Why is performance bad according to this log for this mongod?
+- What are your priorities based on this log for this mongod?
+- Summarize my MongoDB log in plain language for troubleshooting?
+- Why is performance bad according to this log for troubleshooting?
+- What are your priorities based on this log for troubleshooting?
+- Summarize my MongoDB log in plain language for performance review?
+- Why is performance bad according to this log for performance review?
+- What are your priorities based on this log for performance review?
+- Summarize my MongoDB log in plain language for the DBA review?
+- Why is performance bad according to this log for the DBA review?
+- What are your priorities based on this log for the DBA review?
+- Summarize my MongoDB log in plain language please?
+- Why is performance bad according to this log please?
+- What are your priorities based on this log please?
+- Summarize the uploaded log?
+- Why is latency high ?
+- What are your fixes?
+- Summarize the uploaded log from this log?
+- Why is latency high ? from this log?
+- What are your fixes from this log?
+- Summarize the uploaded log in this log?
+- Why is latency high ? in this log?
+- What are your fixes in this log?
+- Summarize the uploaded log in the uploaded file?
+- Why is latency high ? in the uploaded file?
+- What are your fixes in the uploaded file?
+- Summarize the uploaded log according to the parsed log?
+- Why is latency high ? according to the parsed log?
+- What are your fixes according to the parsed log?
+- Summarize the uploaded log for this mongod?
+- Why is latency high ? for this mongod?
+- What are your fixes for this mongod?
+- Summarize the uploaded log for troubleshooting?
+- Why is latency high ? for troubleshooting?
+- What are your fixes for troubleshooting?
+- Summarize the uploaded log for performance review?
+- Why is latency high ? for performance review?
+- What are your fixes for performance review?
+- Summarize the uploaded log for the DBA review?
+- Why is latency high ? for the DBA review?
+- What are your fixes for the DBA review?
+- Summarize the uploaded log please?
+- Why is latency high ? please?
+- What are your fixes please?
+- Why is latency high in this log?
+- Summarize the uploaded log please from this log?
+- Why is latency high in this log from this log?
+- What are your fixes from this log from this log?
+- Summarize the uploaded log please in this log?
+- Why is latency high in this log in this log?
+- What are your fixes from this log in this log?
+- Summarize the uploaded log please in the uploaded file?
+- Why is latency high in this log in the uploaded file?
+- What are your fixes from this log in the uploaded file?
+- Summarize the uploaded log please according to the parsed log?
+- Why is latency high in this log according to the parsed log?
+- What are your fixes from this log according to the parsed log?
+- Summarize the uploaded log please for this mongod?
+- Why is latency high in this log for this mongod?
+- What are your fixes from this log for this mongod?
+- Summarize the uploaded log please for troubleshooting?
+- Why is latency high in this log for troubleshooting?
+- What are your fixes from this log for troubleshooting?
+- Summarize the uploaded log please for performance review?
+- Why is latency high in this log for performance review?
+- What are your fixes from this log for performance review?
+- Summarize the uploaded log please for the DBA review?
+- Why is latency high in this log for the DBA review?
+- What are your fixes from this log for the DBA review?
+- Summarize the uploaded log please please?
+- Why is latency high in this log please?
+- What are your fixes from this log please?
+- Summarize the uploaded log for me?
+- Why is latency high according to this log?
+- What are your fixes based on this log?
+- Summarize the uploaded log for me from this log?
+- Why is latency high according to this log from this log?
+- What are your fixes based on this log from this log?
+- Summarize the uploaded log for me in this log?
+- Why is latency high according to this log in this log?
+- What are your fixes based on this log in this log?
+- Summarize the uploaded log for me in the uploaded file?
+- Why is latency high according to this log in the uploaded file?
+- What are your fixes based on this log in the uploaded file?
+- Summarize the uploaded log for me according to the parsed log?
+- Why is latency high according to this log according to the parsed log?
+- What are your fixes based on this log according to the parsed log?
+- Summarize the uploaded log for me for this mongod?
+- Why is latency high according to this log for this mongod?
+- What are your fixes based on this log for this mongod?
+- Summarize the uploaded log for me for troubleshooting?
+- Why is latency high according to this log for troubleshooting?
+- What are your fixes based on this log for troubleshooting?
+- Summarize the uploaded log for me for performance review?
+- Why is latency high according to this log for performance review?
+- What are your fixes based on this log for performance review?
+- Summarize the uploaded log for me for the DBA review?
+- Why is latency high according to this log for the DBA review?
+- What are your fixes based on this log for the DBA review?
+- Summarize the uploaded log for me please?
+- Why is latency high according to this log please?
+- What are your fixes based on this log please?
+- Summarize the uploaded log in plain language?
+- Why is response time poor ?
+- What are your things to fix?
+- Summarize the uploaded log in plain language from this log?
+- Why is response time poor ? from this log?
+- What are your things to fix from this log?
+- Summarize the uploaded log in plain language in this log?
+- Why is response time poor ? in this log?
+- What are your things to fix in this log?
+- Summarize the uploaded log in plain language in the uploaded file?
+- Why is response time poor ? in the uploaded file?
+- What are your things to fix in the uploaded file?
+- Summarize the uploaded log in plain language according to the parsed log?
+- Why is response time poor ? according to the parsed log?
+- What are your things to fix according to the parsed log?
+- Summarize the uploaded log in plain language for this mongod?
+- Why is response time poor ? for this mongod?
+- What are your things to fix for this mongod?
+- Summarize the uploaded log in plain language for troubleshooting?
+- Why is response time poor ? for troubleshooting?
+- What are your things to fix for troubleshooting?
+- Summarize the uploaded log in plain language for performance review?
+- Why is response time poor ? for performance review?
+- What are your things to fix for performance review?
+- Summarize the uploaded log in plain language for the DBA review?
+- Why is response time poor ? for the DBA review?
+- What are your things to fix for the DBA review?
+- Summarize the uploaded log in plain language please?
+- Why is response time poor ? please?
+- What are your things to fix please?
+- Summarize this mongod log?
+- Why is response time poor in this log?
+- Summarize this mongod log from this log?
+- Why is response time poor in this log from this log?
+- What are your things to fix from this log from this log?
+- Summarize this mongod log in this log?
+- Why is response time poor in this log in this log?
+- What are your things to fix from this log in this log?
+- Summarize this mongod log in the uploaded file?
+- Why is response time poor in this log in the uploaded file?
+- What are your things to fix from this log in the uploaded file?
+- Summarize this mongod log according to the parsed log?
+- Why is response time poor in this log according to the parsed log?
+- What are your things to fix from this log according to the parsed log?
+- Summarize this mongod log for this mongod?
+- Why is response time poor in this log for this mongod?
+- What are your things to fix from this log for this mongod?
+- Summarize this mongod log for troubleshooting?
+- Why is response time poor in this log for troubleshooting?
+- What are your things to fix from this log for troubleshooting?
+- Summarize this mongod log for performance review?
+- Why is response time poor in this log for performance review?
+- What are your things to fix from this log for performance review?
+- Summarize this mongod log for the DBA review?
+- Why is response time poor in this log for the DBA review?
+- What are your things to fix from this log for the DBA review?
+- Summarize this mongod log please?
+- Why is response time poor in this log please?
+- What are your things to fix from this log please?
+- Why is response time poor according to this log?
+- What are your things to fix based on this log?
+- Summarize this mongod log please from this log?
+- Why is response time poor according to this log from this log?
+- What are your things to fix based on this log from this log?
+- Summarize this mongod log please in this log?
+- Why is response time poor according to this log in this log?
+- What are your things to fix based on this log in this log?
+- Summarize this mongod log please in the uploaded file?
+- Why is response time poor according to this log in the uploaded file?
+- What are your things to fix based on this log in the uploaded file?
+- Summarize this mongod log please according to the parsed log?
+- Why is response time poor according to this log according to the parsed log?
+- What are your things to fix based on this log according to the parsed log?
+- Summarize this mongod log please for this mongod?
+- Why is response time poor according to this log for this mongod?
+- What are your things to fix based on this log for this mongod?
+- Summarize this mongod log please for troubleshooting?
+- Why is response time poor according to this log for troubleshooting?
+- What are your things to fix based on this log for troubleshooting?
+- Summarize this mongod log please for performance review?
+- Why is response time poor according to this log for performance review?
+- What are your things to fix based on this log for performance review?
+- Summarize this mongod log please for the DBA review?
+- Why is response time poor according to this log for the DBA review?
+- What are your things to fix based on this log for the DBA review?
+- Summarize this mongod log please please?
+- Why is response time poor according to this log please?
+- What are your things to fix based on this log please?
+- Summarize this mongod log for me?
+- Why is this cluster slow ?
+- What are your improvements?
+- Summarize this mongod log for me from this log?
+- Why is this cluster slow ? from this log?
+- What are your improvements from this log?
+- Summarize this mongod log for me in this log?
+- Why is this cluster slow ? in this log?
+- What are your improvements in this log?
+- Summarize this mongod log for me in the uploaded file?
+- Why is this cluster slow ? in the uploaded file?
+- What are your improvements in the uploaded file?
+- Summarize this mongod log for me according to the parsed log?
+- Why is this cluster slow ? according to the parsed log?
+- What are your improvements according to the parsed log?
+- Summarize this mongod log for me for this mongod?
+- Why is this cluster slow ? for this mongod?
+- What are your improvements for this mongod?
+- Summarize this mongod log for me for troubleshooting?
+- Why is this cluster slow ? for troubleshooting?
+- What are your improvements for troubleshooting?
+- Summarize this mongod log for me for performance review?
+- Why is this cluster slow ? for performance review?
+- What are your improvements for performance review?
+- Summarize this mongod log for me for the DBA review?
+- Why is this cluster slow ? for the DBA review?
+- What are your improvements for the DBA review?
+- Summarize this mongod log for me please?
+- Why is this cluster slow ? please?
+- What are your improvements please?
+- Summarize this mongod log in plain language?
+- Why is this cluster slow in this log?
+- Summarize this mongod log in plain language from this log?
+- Why is this cluster slow in this log from this log?
+- What are your improvements from this log from this log?
+- Summarize this mongod log in plain language in this log?
+- Why is this cluster slow in this log in this log?
+- What are your improvements from this log in this log?
+- Summarize this mongod log in plain language in the uploaded file?
+- Why is this cluster slow in this log in the uploaded file?
+- What are your improvements from this log in the uploaded file?
+- Summarize this mongod log in plain language according to the parsed log?
+- Why is this cluster slow in this log according to the parsed log?
+- What are your improvements from this log according to the parsed log?
+
+## Version & topology
+
+- What MongoDB version?
+- Which edition is this?
+- Is this enterprise or community?
+- MongoDB release and build
+- Git version and build info?
+- OpenSSL and allocator?
+- Is this a replica set?
+- Is this sharded?
+- Replica set name?
+- What topology is this?
+- Am I primary?
+- Current node role?
+- List replica set members
+- Who are the RS members?
+- Hostname and port?
+- Where is this server?
+- dbPath and bind IP?
+- Storage engine?
+- Is this WiredTiger?
+- WiredTiger cache stats?
+- Storage engine statistics
+- Is this Atlas?
+- Cloud provider and region?
+- What MongoDB version ?
+- What is the git version ?
+- Is this topology ?
+- Am I primary ?
+- List replica set members ?
+- What is the hostname ?
+- What storage engine ?
+- Show WiredTiger cache stats ?
+- Is this Atlas ?
+- What MongoDB version ? from this log?
+- What is the git version ? from this log?
+- Is this topology ? from this log?
+- Am I primary ? from this log?
+- List replica set members ? from this log?
+- What is the hostname ? from this log?
+- What storage engine ? from this log?
+- Show WiredTiger cache stats ? from this log?
+- Is this Atlas ? from this log?
+- What MongoDB version ? in this log?
+- What is the git version ? in this log?
+- Is this topology ? in this log?
+- Am I primary ? in this log?
+- List replica set members ? in this log?
+- What is the hostname ? in this log?
+- What storage engine ? in this log?
+- Show WiredTiger cache stats ? in this log?
+- Is this Atlas ? in this log?
+- What MongoDB version ? in the uploaded file?
+- What is the git version ? in the uploaded file?
+- Is this topology ? in the uploaded file?
+- Am I primary ? in the uploaded file?
+- List replica set members ? in the uploaded file?
+- What is the hostname ? in the uploaded file?
+- What storage engine ? in the uploaded file?
+- Show WiredTiger cache stats ? in the uploaded file?
+- Is this Atlas ? in the uploaded file?
+- What MongoDB version ? according to the parsed log?
+- What is the git version ? according to the parsed log?
+- Is this topology ? according to the parsed log?
+- Am I primary ? according to the parsed log?
+- List replica set members ? according to the parsed log?
+- What is the hostname ? according to the parsed log?
+- What storage engine ? according to the parsed log?
+- Show WiredTiger cache stats ? according to the parsed log?
+- Is this Atlas ? according to the parsed log?
+- What MongoDB version ? for this mongod?
+- What is the git version ? for this mongod?
+- Is this topology ? for this mongod?
+- Am I primary ? for this mongod?
+- List replica set members ? for this mongod?
+- What is the hostname ? for this mongod?
+- What storage engine ? for this mongod?
+- Show WiredTiger cache stats ? for this mongod?
+- Is this Atlas ? for this mongod?
+- What MongoDB version ? for troubleshooting?
+- What is the git version ? for troubleshooting?
+- Is this topology ? for troubleshooting?
+- Am I primary ? for troubleshooting?
+- List replica set members ? for troubleshooting?
+- What is the hostname ? for troubleshooting?
+- What storage engine ? for troubleshooting?
+- Show WiredTiger cache stats ? for troubleshooting?
+- Is this Atlas ? for troubleshooting?
+- What MongoDB version ? for performance review?
+- What is the git version ? for performance review?
+- Is this topology ? for performance review?
+- Am I primary ? for performance review?
+- List replica set members ? for performance review?
+- What is the hostname ? for performance review?
+- What storage engine ? for performance review?
+- Show WiredTiger cache stats ? for performance review?
+- Is this Atlas ? for performance review?
+- What MongoDB version ? for the DBA review?
+- What is the git version ? for the DBA review?
+- Is this topology ? for the DBA review?
+- Am I primary ? for the DBA review?
+- List replica set members ? for the DBA review?
+- What is the hostname ? for the DBA review?
+- What storage engine ? for the DBA review?
+- Show WiredTiger cache stats ? for the DBA review?
+- Is this Atlas ? for the DBA review?
+- What MongoDB version ? please?
+- What is the git version ? please?
+- Is this topology ? please?
+- Am I primary ? please?
+- List replica set members ? please?
+- What is the hostname ? please?
+- What storage engine ? please?
+- Show WiredTiger cache stats ? please?
+- Is this Atlas ? please?
+- What MongoDB version in this log?
+- What is the git version from startup?
+- Is this topology in this log?
+- Am I primary in the replica set?
+- List replica set members in this log?
+- What is the hostname from the log?
+- What storage engine for this server?
+- Show WiredTiger cache stats in the log?
+- Is this Atlas in this log?
+- What MongoDB version in this log from this log?
+- What is the git version from startup from this log?
+- Is this topology in this log from this log?
+- Am I primary in the replica set from this log?
+- List replica set members in this log from this log?
+- What is the hostname from the log from this log?
+- What storage engine for this server from this log?
+- Show WiredTiger cache stats in the log from this log?
+- Is this Atlas in this log from this log?
+- What MongoDB version in this log in this log?
+- What is the git version from startup in this log?
+- Is this topology in this log in this log?
+- Am I primary in the replica set in this log?
+- List replica set members in this log in this log?
+- What is the hostname from the log in this log?
+- What storage engine for this server in this log?
+- Show WiredTiger cache stats in the log in this log?
+- Is this Atlas in this log in this log?
+- What MongoDB version in this log in the uploaded file?
+- What is the git version from startup in the uploaded file?
+- Is this topology in this log in the uploaded file?
+- Am I primary in the replica set in the uploaded file?
+- List replica set members in this log in the uploaded file?
+- What is the hostname from the log in the uploaded file?
+- What storage engine for this server in the uploaded file?
+- Show WiredTiger cache stats in the log in the uploaded file?
+- Is this Atlas in this log in the uploaded file?
+- What MongoDB version in this log according to the parsed log?
+- What is the git version from startup according to the parsed log?
+- Is this topology in this log according to the parsed log?
+- Am I primary in the replica set according to the parsed log?
+- List replica set members in this log according to the parsed log?
+- What is the hostname from the log according to the parsed log?
+- What storage engine for this server according to the parsed log?
+- Show WiredTiger cache stats in the log according to the parsed log?
+- Is this Atlas in this log according to the parsed log?
+- What MongoDB version in this log for this mongod?
+- What is the git version from startup for this mongod?
+- Is this topology in this log for this mongod?
+- Am I primary in the replica set for this mongod?
+- List replica set members in this log for this mongod?
+- What is the hostname from the log for this mongod?
+- What storage engine for this server for this mongod?
+- Show WiredTiger cache stats in the log for this mongod?
+- Is this Atlas in this log for this mongod?
+- What MongoDB version in this log for troubleshooting?
+- What is the git version from startup for troubleshooting?
+- Is this topology in this log for troubleshooting?
+- Am I primary in the replica set for troubleshooting?
+- List replica set members in this log for troubleshooting?
+- What is the hostname from the log for troubleshooting?
+- What storage engine for this server for troubleshooting?
+- Show WiredTiger cache stats in the log for troubleshooting?
+- Is this Atlas in this log for troubleshooting?
+- What MongoDB version in this log for performance review?
+- What is the git version from startup for performance review?
+- Is this topology in this log for performance review?
+- Am I primary in the replica set for performance review?
+- List replica set members in this log for performance review?
+- What is the hostname from the log for performance review?
+- What storage engine for this server for performance review?
+- Show WiredTiger cache stats in the log for performance review?
+- Is this Atlas in this log for performance review?
+- What MongoDB version in this log for the DBA review?
+- What is the git version from startup for the DBA review?
+- Is this topology in this log for the DBA review?
+- Am I primary in the replica set for the DBA review?
+- List replica set members in this log for the DBA review?
+- What is the hostname from the log for the DBA review?
+- What storage engine for this server for the DBA review?
+- Show WiredTiger cache stats in the log for the DBA review?
+- Is this Atlas in this log for the DBA review?
+- What MongoDB version in this log please?
+- What is the git version from startup please?
+- Is this topology in this log please?
+- Am I primary in the replica set please?
+- List replica set members in this log please?
+- What is the hostname from the log please?
+- What storage engine for this server please?
+- Show WiredTiger cache stats in the log please?
+- Is this Atlas in this log please?
+- What MongoDB version is running?
+- What is the git version in the log?
+- Is this deployment type ?
+- Am I a secondary ?
+- List RS members ?
+- What is the host and port ?
+- What engine in use ?
+- Show storage statistics ?
+- Is this MongoDB Atlas ?
+- What MongoDB version is running from this log?
+- What is the git version in the log from this log?
+- Is this deployment type ? from this log?
+- Am I a secondary ? from this log?
+- List RS members ? from this log?
+- What is the host and port ? from this log?
+- What engine in use ? from this log?
+- Show storage statistics ? from this log?
+- Is this MongoDB Atlas ? from this log?
+- What MongoDB version is running in this log?
+- What is the git version in the log in this log?
+- Is this deployment type ? in this log?
+- Am I a secondary ? in this log?
+- List RS members ? in this log?
+- What is the host and port ? in this log?
+- What engine in use ? in this log?
+- Show storage statistics ? in this log?
+- Is this MongoDB Atlas ? in this log?
+- What MongoDB version is running in the uploaded file?
+- What is the git version in the log in the uploaded file?
+- Is this deployment type ? in the uploaded file?
+- Am I a secondary ? in the uploaded file?
+- List RS members ? in the uploaded file?
+- What is the host and port ? in the uploaded file?
+- What engine in use ? in the uploaded file?
+- Show storage statistics ? in the uploaded file?
+- Is this MongoDB Atlas ? in the uploaded file?
+- What MongoDB version is running according to the parsed log?
+- What is the git version in the log according to the parsed log?
+- Is this deployment type ? according to the parsed log?
+- Am I a secondary ? according to the parsed log?
+- List RS members ? according to the parsed log?
+- What is the host and port ? according to the parsed log?
+- What engine in use ? according to the parsed log?
+- Show storage statistics ? according to the parsed log?
+- Is this MongoDB Atlas ? according to the parsed log?
+- What MongoDB version is running for this mongod?
+- What is the git version in the log for this mongod?
+- Is this deployment type ? for this mongod?
+- Am I a secondary ? for this mongod?
+- List RS members ? for this mongod?
+- What is the host and port ? for this mongod?
+- What engine in use ? for this mongod?
+- Show storage statistics ? for this mongod?
+- Is this MongoDB Atlas ? for this mongod?
+- What MongoDB version is running for troubleshooting?
+- What is the git version in the log for troubleshooting?
+- Is this deployment type ? for troubleshooting?
+- Am I a secondary ? for troubleshooting?
+- List RS members ? for troubleshooting?
+- What is the host and port ? for troubleshooting?
+- What engine in use ? for troubleshooting?
+- Show storage statistics ? for troubleshooting?
+- Is this MongoDB Atlas ? for troubleshooting?
+- What MongoDB version is running for performance review?
+- What is the git version in the log for performance review?
+- Is this deployment type ? for performance review?
+- Am I a secondary ? for performance review?
+- List RS members ? for performance review?
+- What is the host and port ? for performance review?
+- What engine in use ? for performance review?
+- Show storage statistics ? for performance review?
+- Is this MongoDB Atlas ? for performance review?
+- What MongoDB version is running for the DBA review?
+- What is the git version in the log for the DBA review?
+- Is this deployment type ? for the DBA review?
+- Am I a secondary ? for the DBA review?
+- List RS members ? for the DBA review?
+- What is the host and port ? for the DBA review?
+- What engine in use ? for the DBA review?
+- Show storage statistics ? for the DBA review?
+- Is this MongoDB Atlas ? for the DBA review?
+- What MongoDB version is running please?
+- What is the git version in the log please?
+- Is this deployment type ? please?
+- Am I a secondary ? please?
+- List RS members ? please?
+- What is the host and port ? please?
+- What engine in use ? please?
+- Show storage statistics ? please?
+- Is this MongoDB Atlas ? please?
+- What database version ?
+- What is the OpenSSL version ?
+- Is this deployment type in this log?
+- Am I a secondary in the replica set?
+- List RS members in this log?
+- What is the host and port from the log?
+- What engine in use for this server?
+- Show storage statistics in the log?
+- Is this MongoDB Atlas in this log?
+- What database version ? from this log?
+- What is the OpenSSL version ? from this log?
+- Is this deployment type in this log from this log?
+- Am I a secondary in the replica set from this log?
+- List RS members in this log from this log?
+- What is the host and port from the log from this log?
+- What engine in use for this server from this log?
+- Show storage statistics in the log from this log?
+- Is this MongoDB Atlas in this log from this log?
+- What database version ? in this log?
+- What is the OpenSSL version ? in this log?
+- Is this deployment type in this log in this log?
+- Am I a secondary in the replica set in this log?
+- List RS members in this log in this log?
+- What is the host and port from the log in this log?
+- What engine in use for this server in this log?
+- Show storage statistics in the log in this log?
+- Is this MongoDB Atlas in this log in this log?
+- What database version ? in the uploaded file?
+- What is the OpenSSL version ? in the uploaded file?
+- Is this deployment type in this log in the uploaded file?
+- Am I a secondary in the replica set in the uploaded file?
+- List RS members in this log in the uploaded file?
+- What is the host and port from the log in the uploaded file?
+- What engine in use for this server in the uploaded file?
+- Show storage statistics in the log in the uploaded file?
+- Is this MongoDB Atlas in this log in the uploaded file?
+- What database version ? according to the parsed log?
+- What is the OpenSSL version ? according to the parsed log?
+- Is this deployment type in this log according to the parsed log?
+- Am I a secondary in the replica set according to the parsed log?
+- List RS members in this log according to the parsed log?
+- What is the host and port from the log according to the parsed log?
+- What engine in use for this server according to the parsed log?
+- Show storage statistics in the log according to the parsed log?
+- Is this MongoDB Atlas in this log according to the parsed log?
+- What database version ? for this mongod?
+- What is the OpenSSL version ? for this mongod?
+- Is this deployment type in this log for this mongod?
+- Am I a secondary in the replica set for this mongod?
+- List RS members in this log for this mongod?
+- What is the host and port from the log for this mongod?
+- What engine in use for this server for this mongod?
+- Show storage statistics in the log for this mongod?
+- Is this MongoDB Atlas in this log for this mongod?
+- What database version ? for troubleshooting?
+- What is the OpenSSL version ? for troubleshooting?
+- Is this deployment type in this log for troubleshooting?
+- Am I a secondary in the replica set for troubleshooting?
+- List RS members in this log for troubleshooting?
+- What is the host and port from the log for troubleshooting?
+- What engine in use for this server for troubleshooting?
+- Show storage statistics in the log for troubleshooting?
+- Is this MongoDB Atlas in this log for troubleshooting?
+- What database version ? for performance review?
+- What is the OpenSSL version ? for performance review?
+- Is this deployment type in this log for performance review?
+- Am I a secondary in the replica set for performance review?
+- List RS members in this log for performance review?
+- What is the host and port from the log for performance review?
+- What engine in use for this server for performance review?
+- Show storage statistics in the log for performance review?
+- Is this MongoDB Atlas in this log for performance review?
+- What database version ? for the DBA review?
+- What is the OpenSSL version ? for the DBA review?
+- Is this deployment type in this log for the DBA review?
+- Am I a secondary in the replica set for the DBA review?
+- List RS members in this log for the DBA review?
+- What is the host and port from the log for the DBA review?
+- What engine in use for this server for the DBA review?
+- Show storage statistics in the log for the DBA review?
+- Is this MongoDB Atlas in this log for the DBA review?
+- What database version ? please?
+- What is the OpenSSL version ? please?
+- Is this deployment type in this log please?
+- Am I a secondary in the replica set please?
+- List RS members in this log please?
+- What is the host and port from the log please?
+- What engine in use for this server please?
+- Show storage statistics in the log please?
+- Is this MongoDB Atlas in this log please?
+- What database version in this log?
+- What is the OpenSSL version from startup?
+- Is this replica set name ?
+- Am I the primary ?
+- List replica members ?
+- What is the server address ?
+- What WiredTiger status ?
+- Show cache size ?
+- Is this cloud provider ?
+- What database version in this log from this log?
+- What is the OpenSSL version from startup from this log?
+- Is this replica set name ? from this log?
+- Am I the primary ? from this log?
+- List replica members ? from this log?
+- What is the server address ? from this log?
+- What WiredTiger status ? from this log?
+- Show cache size ? from this log?
+- Is this cloud provider ? from this log?
+- What database version in this log in this log?
+- What is the OpenSSL version from startup in this log?
+- Is this replica set name ? in this log?
+- Am I the primary ? in this log?
+- List replica members ? in this log?
+- What is the server address ? in this log?
+- What WiredTiger status ? in this log?
+- Show cache size ? in this log?
+- Is this cloud provider ? in this log?
+- What database version in this log in the uploaded file?
+- What is the OpenSSL version from startup in the uploaded file?
+- Is this replica set name ? in the uploaded file?
+- Am I the primary ? in the uploaded file?
+- List replica members ? in the uploaded file?
+- What is the server address ? in the uploaded file?
+- What WiredTiger status ? in the uploaded file?
+- Show cache size ? in the uploaded file?
+- Is this cloud provider ? in the uploaded file?
+- What database version in this log according to the parsed log?
+- What is the OpenSSL version from startup according to the parsed log?
+- Is this replica set name ? according to the parsed log?
+- Am I the primary ? according to the parsed log?
+- List replica members ? according to the parsed log?
+- What is the server address ? according to the parsed log?
+- What WiredTiger status ? according to the parsed log?
+- Show cache size ? according to the parsed log?
+- Is this cloud provider ? according to the parsed log?
+- What database version in this log for this mongod?
+- What is the OpenSSL version from startup for this mongod?
+- Is this replica set name ? for this mongod?
+- Am I the primary ? for this mongod?
+- List replica members ? for this mongod?
+- What is the server address ? for this mongod?
+- What WiredTiger status ? for this mongod?
+- Show cache size ? for this mongod?
+- Is this cloud provider ? for this mongod?
+- What database version in this log for troubleshooting?
+- What is the OpenSSL version from startup for troubleshooting?
+- Is this replica set name ? for troubleshooting?
+- Am I the primary ? for troubleshooting?
+- List replica members ? for troubleshooting?
+- What is the server address ? for troubleshooting?
+- What WiredTiger status ? for troubleshooting?
+- Show cache size ? for troubleshooting?
+- Is this cloud provider ? for troubleshooting?
+- What database version in this log for performance review?
+- What is the OpenSSL version from startup for performance review?
+- Is this replica set name ? for performance review?
+- Am I the primary ? for performance review?
+- List replica members ? for performance review?
+- What is the server address ? for performance review?
+- What WiredTiger status ? for performance review?
+- Show cache size ? for performance review?
+- Is this cloud provider ? for performance review?
+- What database version in this log for the DBA review?
+- What is the OpenSSL version from startup for the DBA review?
+- Is this replica set name ? for the DBA review?
+- Am I the primary ? for the DBA review?
+- List replica members ? for the DBA review?
+- What is the server address ? for the DBA review?
+- What WiredTiger status ? for the DBA review?
+- Show cache size ? for the DBA review?
+- Is this cloud provider ? for the DBA review?
+- What database version in this log please?
+- What is the OpenSSL version from startup please?
+- Is this replica set name ? please?
+- Am I the primary ? please?
+- List replica members ? please?
+- What is the server address ? please?
+- What WiredTiger status ? please?
+- Show cache size ? please?
+- Is this cloud provider ? please?
+- What database version is running?
+- What is the OpenSSL version in the log?
+- Is this replica set name in this log?
+- Am I the primary in the replica set?
+- List replica members in this log?
+- What is the server address from the log?
+- What WiredTiger status for this server?
+- Show cache size in the log?
+- Is this cloud provider in this log?
+- What database version is running from this log?
+- What is the OpenSSL version in the log from this log?
+- Is this replica set name in this log from this log?
+- Am I the primary in the replica set from this log?
+- List replica members in this log from this log?
+- What is the server address from the log from this log?
+- What WiredTiger status for this server from this log?
+- Show cache size in the log from this log?
+- Is this cloud provider in this log from this log?
+- What database version is running in this log?
+- What is the OpenSSL version in the log in this log?
+- Is this replica set name in this log in this log?
+- Am I the primary in the replica set in this log?
+- List replica members in this log in this log?
+- What is the server address from the log in this log?
+- What WiredTiger status for this server in this log?
+- Show cache size in the log in this log?
+- Is this cloud provider in this log in this log?
+- What database version is running in the uploaded file?
+- What is the OpenSSL version in the log in the uploaded file?
+- Is this replica set name in this log in the uploaded file?
+- Am I the primary in the replica set in the uploaded file?
+- List replica members in this log in the uploaded file?
+- What is the server address from the log in the uploaded file?
+- What WiredTiger status for this server in the uploaded file?
+- Show cache size in the log in the uploaded file?
+- Is this cloud provider in this log in the uploaded file?
+- What database version is running according to the parsed log?
+- What is the OpenSSL version in the log according to the parsed log?
+- Is this replica set name in this log according to the parsed log?
+- Am I the primary in the replica set according to the parsed log?
+- List replica members in this log according to the parsed log?
+- What is the server address from the log according to the parsed log?
+- What WiredTiger status for this server according to the parsed log?
+- Show cache size in the log according to the parsed log?
+- Is this cloud provider in this log according to the parsed log?
+- What database version is running for this mongod?
+- What is the OpenSSL version in the log for this mongod?
+- Is this replica set name in this log for this mongod?
+- Am I the primary in the replica set for this mongod?
+- List replica members in this log for this mongod?
+- What is the server address from the log for this mongod?
+- What WiredTiger status for this server for this mongod?
+- Show cache size in the log for this mongod?
+- Is this cloud provider in this log for this mongod?
+- What database version is running for troubleshooting?
+- What is the OpenSSL version in the log for troubleshooting?
+- Is this replica set name in this log for troubleshooting?
+- Am I the primary in the replica set for troubleshooting?
+- List replica members in this log for troubleshooting?
+- What is the server address from the log for troubleshooting?
+- What WiredTiger status for this server for troubleshooting?
+- Show cache size in the log for troubleshooting?
+- Is this cloud provider in this log for troubleshooting?
+- What database version is running for performance review?
+- What is the OpenSSL version in the log for performance review?
+- Is this replica set name in this log for performance review?
+- Am I the primary in the replica set for performance review?
+- List replica members in this log for performance review?
+- What is the server address from the log for performance review?
+- What WiredTiger status for this server for performance review?
+- Show cache size in the log for performance review?
+- Is this cloud provider in this log for performance review?
+- What database version is running for the DBA review?
+- What is the OpenSSL version in the log for the DBA review?
+- Is this replica set name in this log for the DBA review?
+- Am I the primary in the replica set for the DBA review?
+- List replica members in this log for the DBA review?
+- What is the server address from the log for the DBA review?
+- What WiredTiger status for this server for the DBA review?
+- Show cache size in the log for the DBA review?
+- Is this cloud provider in this log for the DBA review?
+- What database version is running please?
+- What is the OpenSSL version in the log please?
+- Is this replica set name in this log please?
+- Am I the primary in the replica set please?
+- List replica members in this log please?
+- What is the server address from the log please?
+- What WiredTiger status for this server please?
+- Show cache size in the log please?
+- Is this cloud provider in this log please?
+- What server version ?
+- What is the allocator ?
+- Is this sharded cluster ?
+- Am I node role ?
+- List cluster members ?
+- What is the bind IP ?
+- What storage backend ?
+- Show cache pressure ?
+- Is this AWS region ?
+- What server version ? from this log?
+- What is the allocator ? from this log?
+- Is this sharded cluster ? from this log?
+- Am I node role ? from this log?
+- List cluster members ? from this log?
+- What is the bind IP ? from this log?
+- What storage backend ? from this log?
+- Show cache pressure ? from this log?
+- Is this AWS region ? from this log?
+- What server version ? in this log?
+- What is the allocator ? in this log?
+- Is this sharded cluster ? in this log?
+- Am I node role ? in this log?
+- List cluster members ? in this log?
+- What is the bind IP ? in this log?
+- What storage backend ? in this log?
+- Show cache pressure ? in this log?
+- Is this AWS region ? in this log?
+- What server version ? in the uploaded file?
+- What is the allocator ? in the uploaded file?
+- Is this sharded cluster ? in the uploaded file?
+- Am I node role ? in the uploaded file?
+- List cluster members ? in the uploaded file?
+- What is the bind IP ? in the uploaded file?
+- What storage backend ? in the uploaded file?
+- Show cache pressure ? in the uploaded file?
+- Is this AWS region ? in the uploaded file?
+- What server version ? according to the parsed log?
+- What is the allocator ? according to the parsed log?
+- Is this sharded cluster ? according to the parsed log?
+- Am I node role ? according to the parsed log?
+- List cluster members ? according to the parsed log?
+- What is the bind IP ? according to the parsed log?
+- What storage backend ? according to the parsed log?
+- Show cache pressure ? according to the parsed log?
+- Is this AWS region ? according to the parsed log?
+- What server version ? for this mongod?
+- What is the allocator ? for this mongod?
+- Is this sharded cluster ? for this mongod?
+- Am I node role ? for this mongod?
+- List cluster members ? for this mongod?
+- What is the bind IP ? for this mongod?
+- What storage backend ? for this mongod?
+- Show cache pressure ? for this mongod?
+- Is this AWS region ? for this mongod?
+- What server version ? for troubleshooting?
+- What is the allocator ? for troubleshooting?
+- Is this sharded cluster ? for troubleshooting?
+- Am I node role ? for troubleshooting?
+- List cluster members ? for troubleshooting?
+- What is the bind IP ? for troubleshooting?
+- What storage backend ? for troubleshooting?
+- Show cache pressure ? for troubleshooting?
+- Is this AWS region ? for troubleshooting?
+- What server version ? for performance review?
+- What is the allocator ? for performance review?
+- Is this sharded cluster ? for performance review?
+- Am I node role ? for performance review?
+- List cluster members ? for performance review?
+- What is the bind IP ? for performance review?
+- What storage backend ? for performance review?
+- Show cache pressure ? for performance review?
+- Is this AWS region ? for performance review?
+- What server version ? for the DBA review?
+- What is the allocator ? for the DBA review?
+- Is this sharded cluster ? for the DBA review?
+- Am I node role ? for the DBA review?
+- List cluster members ? for the DBA review?
+- What is the bind IP ? for the DBA review?
+- What storage backend ? for the DBA review?
+- Show cache pressure ? for the DBA review?
+- Is this AWS region ? for the DBA review?
+- What server version ? please?
+- What is the allocator ? please?
+- Is this sharded cluster ? please?
+- Am I node role ? please?
+- List cluster members ? please?
+- What is the bind IP ? please?
+- What storage backend ? please?
+- Show cache pressure ? please?
+- Is this AWS region ? please?
+- What server version in this log?
+- What is the allocator from startup?
+- Is this sharded cluster in this log?
+- Am I node role in the replica set?
+- List cluster members in this log?
+- What is the bind IP from the log?
+- What storage backend for this server?
+- Show cache pressure in the log?
+- Is this AWS region in this log?
+- What server version in this log from this log?
+- What is the allocator from startup from this log?
+- Is this sharded cluster in this log from this log?
+- Am I node role in the replica set from this log?
+- List cluster members in this log from this log?
+- What is the bind IP from the log from this log?
+- What storage backend for this server from this log?
+- Show cache pressure in the log from this log?
+- Is this AWS region in this log from this log?
+- What server version in this log in this log?
+- What is the allocator from startup in this log?
+- Is this sharded cluster in this log in this log?
+- Am I node role in the replica set in this log?
+- List cluster members in this log in this log?
+- What is the bind IP from the log in this log?
+- What storage backend for this server in this log?
+- Show cache pressure in the log in this log?
+- Is this AWS region in this log in this log?
+- What server version in this log in the uploaded file?
+- What is the allocator from startup in the uploaded file?
+- Is this sharded cluster in this log in the uploaded file?
+- Am I node role in the replica set in the uploaded file?
+- List cluster members in this log in the uploaded file?
+- What is the bind IP from the log in the uploaded file?
+- What storage backend for this server in the uploaded file?
+- Show cache pressure in the log in the uploaded file?
+- Is this AWS region in this log in the uploaded file?
+- What server version in this log according to the parsed log?
+- What is the allocator from startup according to the parsed log?
+- Is this sharded cluster in this log according to the parsed log?
+- Am I node role in the replica set according to the parsed log?
+- List cluster members in this log according to the parsed log?
+- What is the bind IP from the log according to the parsed log?
+- What storage backend for this server according to the parsed log?
+- Show cache pressure in the log according to the parsed log?
+- Is this AWS region in this log according to the parsed log?
+- What server version in this log for this mongod?
+- What is the allocator from startup for this mongod?
+- Is this sharded cluster in this log for this mongod?
+- Am I node role in the replica set for this mongod?
+- List cluster members in this log for this mongod?
+- What is the bind IP from the log for this mongod?
+- What storage backend for this server for this mongod?
+- Show cache pressure in the log for this mongod?
+- Is this AWS region in this log for this mongod?
+- What server version in this log for troubleshooting?
+- What is the allocator from startup for troubleshooting?
+- Is this sharded cluster in this log for troubleshooting?
+- Am I node role in the replica set for troubleshooting?
+- List cluster members in this log for troubleshooting?
+- What is the bind IP from the log for troubleshooting?
+- What storage backend for this server for troubleshooting?
+- Show cache pressure in the log for troubleshooting?
+- Is this AWS region in this log for troubleshooting?
+- What server version in this log for performance review?
+- What is the allocator from startup for performance review?
+- Is this sharded cluster in this log for performance review?
+- Am I node role in the replica set for performance review?
+- List cluster members in this log for performance review?
+- What is the bind IP from the log for performance review?
+- What storage backend for this server for performance review?
+- Show cache pressure in the log for performance review?
+- Is this AWS region in this log for performance review?
+- What server version in this log for the DBA review?
+- What is the allocator from startup for the DBA review?
+- Is this sharded cluster in this log for the DBA review?
+- Am I node role in the replica set for the DBA review?
+- List cluster members in this log for the DBA review?
+- What is the bind IP from the log for the DBA review?
+- What storage backend for this server for the DBA review?
+- Show cache pressure in the log for the DBA review?
+- Is this AWS region in this log for the DBA review?
+- What server version in this log please?
+- What is the allocator from startup please?
+- Is this sharded cluster in this log please?
+- Am I node role in the replica set please?
+- List cluster members in this log please?
+- What is the bind IP from the log please?
+- What storage backend for this server please?
+- Show cache pressure in the log please?
+- Is this AWS region in this log please?
+- What server version is running?
+- What is the allocator in the log?
+- Is this shard topology ?
+- Am I member role ?
+- List replSet members ?
+- What is the dbPath ?
+- What data storage engine ?
+- Show storage engine metrics ?
+- Is this Azure region ?
+- What server version is running from this log?
+- What is the allocator in the log from this log?
+- Is this shard topology ? from this log?
+- Am I member role ? from this log?
+- List replSet members ? from this log?
+- What is the dbPath ? from this log?
+- What data storage engine ? from this log?
+- Show storage engine metrics ? from this log?
+- Is this Azure region ? from this log?
+- What server version is running in this log?
+- What is the allocator in the log in this log?
+- Is this shard topology ? in this log?
+- Am I member role ? in this log?
+- List replSet members ? in this log?
+- What is the dbPath ? in this log?
+- What data storage engine ? in this log?
+- Show storage engine metrics ? in this log?
+- Is this Azure region ? in this log?
+- What server version is running in the uploaded file?
+- What is the allocator in the log in the uploaded file?
+- Is this shard topology ? in the uploaded file?
+- Am I member role ? in the uploaded file?
+- List replSet members ? in the uploaded file?
+- What is the dbPath ? in the uploaded file?
+- What data storage engine ? in the uploaded file?
+- Show storage engine metrics ? in the uploaded file?
+- Is this Azure region ? in the uploaded file?
+- What server version is running according to the parsed log?
+- What is the allocator in the log according to the parsed log?
+- Is this shard topology ? according to the parsed log?
+- Am I member role ? according to the parsed log?
+- List replSet members ? according to the parsed log?
+- What is the dbPath ? according to the parsed log?
+- What data storage engine ? according to the parsed log?
+- Show storage engine metrics ? according to the parsed log?
+- Is this Azure region ? according to the parsed log?
+- What server version is running for this mongod?
+- What is the allocator in the log for this mongod?
+- Is this shard topology ? for this mongod?
+- Am I member role ? for this mongod?
+- List replSet members ? for this mongod?
+- What is the dbPath ? for this mongod?
+- What data storage engine ? for this mongod?
+- Show storage engine metrics ? for this mongod?
+- Is this Azure region ? for this mongod?
+- What server version is running for troubleshooting?
+- What is the allocator in the log for troubleshooting?
+- Is this shard topology ? for troubleshooting?
+- Am I member role ? for troubleshooting?
+- List replSet members ? for troubleshooting?
+- What is the dbPath ? for troubleshooting?
+- What data storage engine ? for troubleshooting?
+- Show storage engine metrics ? for troubleshooting?
+- Is this Azure region ? for troubleshooting?
+- What server version is running for performance review?
+- What is the allocator in the log for performance review?
+- Is this shard topology ? for performance review?
+- Am I member role ? for performance review?
+- List replSet members ? for performance review?
+- What is the dbPath ? for performance review?
+- What data storage engine ? for performance review?
+- Show storage engine metrics ? for performance review?
+- Is this Azure region ? for performance review?
+- What server version is running for the DBA review?
+- What is the allocator in the log for the DBA review?
+- Is this shard topology ? for the DBA review?
+- Am I member role ? for the DBA review?
+- List replSet members ? for the DBA review?
+- What is the dbPath ? for the DBA review?
+- What data storage engine ? for the DBA review?
+- Show storage engine metrics ? for the DBA review?
+- Is this Azure region ? for the DBA review?
+- What server version is running please?
+- What is the allocator in the log please?
+- Is this shard topology ? please?
+- Am I member role ? please?
+- List replSet members ? please?
+- What is the dbPath ? please?
+- What data storage engine ? please?
+- Show storage engine metrics ? please?
+- Is this Azure region ? please?
+- What release version ?
+- What is the build info ?
+- Is this shard topology in this log?
+- Am I member role in the replica set?
+- List replSet members in this log?
+- What is the dbPath from the log?
+- What data storage engine for this server?
+- Show storage engine metrics in the log?
+- Is this Azure region in this log?
+- What release version ? from this log?
+- What is the build info ? from this log?
+- Is this shard topology in this log from this log?
+- Am I member role in the replica set from this log?
+- List replSet members in this log from this log?
+- What is the dbPath from the log from this log?
+- What data storage engine for this server from this log?
+- Show storage engine metrics in the log from this log?
+- Is this Azure region in this log from this log?
+- What release version ? in this log?
+- What is the build info ? in this log?
+- Is this shard topology in this log in this log?
+- Am I member role in the replica set in this log?
+- List replSet members in this log in this log?
+- What is the dbPath from the log in this log?
+- What data storage engine for this server in this log?
+- Show storage engine metrics in the log in this log?
+- Is this Azure region in this log in this log?
+- What release version ? in the uploaded file?
+- What is the build info ? in the uploaded file?
+- Is this shard topology in this log in the uploaded file?
+- Am I member role in the replica set in the uploaded file?
+- List replSet members in this log in the uploaded file?
+- What is the dbPath from the log in the uploaded file?
+- What data storage engine for this server in the uploaded file?
+- Show storage engine metrics in the log in the uploaded file?
+- Is this Azure region in this log in the uploaded file?
+- What release version ? according to the parsed log?
+- What is the build info ? according to the parsed log?
+- Is this shard topology in this log according to the parsed log?
+- Am I member role in the replica set according to the parsed log?
+- List replSet members in this log according to the parsed log?
+- What is the dbPath from the log according to the parsed log?
+- What data storage engine for this server according to the parsed log?
+- Show storage engine metrics in the log according to the parsed log?
+- Is this Azure region in this log according to the parsed log?
+- What release version ? for this mongod?
+- What is the build info ? for this mongod?
+- Is this shard topology in this log for this mongod?
+- Am I member role in the replica set for this mongod?
+- List replSet members in this log for this mongod?
+- What is the dbPath from the log for this mongod?
+- What data storage engine for this server for this mongod?
+- Show storage engine metrics in the log for this mongod?
+- Is this Azure region in this log for this mongod?
+- What release version ? for troubleshooting?
+- What is the build info ? for troubleshooting?
+- Is this shard topology in this log for troubleshooting?
+- Am I member role in the replica set for troubleshooting?
+- List replSet members in this log for troubleshooting?
+- What is the dbPath from the log for troubleshooting?
+- What data storage engine for this server for troubleshooting?
+- Show storage engine metrics in the log for troubleshooting?
+- Is this Azure region in this log for troubleshooting?
+- What release version ? for performance review?
+- What is the build info ? for performance review?
+- Is this shard topology in this log for performance review?
+- Am I member role in the replica set for performance review?
+- List replSet members in this log for performance review?
+- What is the dbPath from the log for performance review?
+- What data storage engine for this server for performance review?
+- Show storage engine metrics in the log for performance review?
+- Is this Azure region in this log for performance review?
+- What release version ? for the DBA review?
+- What is the build info ? for the DBA review?
+- Is this shard topology in this log for the DBA review?
+- Am I member role in the replica set for the DBA review?
+- List replSet members in this log for the DBA review?
+- What is the dbPath from the log for the DBA review?
+- What data storage engine for this server for the DBA review?
+- Show storage engine metrics in the log for the DBA review?
+- Is this Azure region in this log for the DBA review?
+- What release version ? please?
+- What is the build info ? please?
+- Is this shard topology in this log please?
+- Am I member role in the replica set please?
+- List replSet members in this log please?
+- What is the dbPath from the log please?
+- What data storage engine for this server please?
+- Show storage engine metrics in the log please?
+- Is this Azure region in this log please?
+- What release version in this log?
+- What is the build info from startup?
+- Is this replSet name ?
+- Am I replica role ?
+- List all members ?
+- What is the listening port ?
+- Which storage engine ?
+- Show ticket availability ?
+- Is this GCP region ?
+- What release version in this log from this log?
+- What is the build info from startup from this log?
+- Is this replSet name ? from this log?
+- Am I replica role ? from this log?
+- List all members ? from this log?
+- What is the listening port ? from this log?
+- Which storage engine ? from this log?
+- Show ticket availability ? from this log?
+- Is this GCP region ? from this log?
+- What release version in this log in this log?
+- What is the build info from startup in this log?
+- Is this replSet name ? in this log?
+- Am I replica role ? in this log?
+- List all members ? in this log?
+- What is the listening port ? in this log?
+- Which storage engine ? in this log?
+- Show ticket availability ? in this log?
+- Is this GCP region ? in this log?
+- What release version in this log in the uploaded file?
+- What is the build info from startup in the uploaded file?
+- Is this replSet name ? in the uploaded file?
+- Am I replica role ? in the uploaded file?
+- List all members ? in the uploaded file?
+- What is the listening port ? in the uploaded file?
+- Which storage engine ? in the uploaded file?
+- Show ticket availability ? in the uploaded file?
+- Is this GCP region ? in the uploaded file?
+- What release version in this log according to the parsed log?
+- What is the build info from startup according to the parsed log?
+- Is this replSet name ? according to the parsed log?
+- Am I replica role ? according to the parsed log?
+- List all members ? according to the parsed log?
+- What is the listening port ? according to the parsed log?
+- Which storage engine ? according to the parsed log?
+- Show ticket availability ? according to the parsed log?
+- Is this GCP region ? according to the parsed log?
+- What release version in this log for this mongod?
+- What is the build info from startup for this mongod?
+- Is this replSet name ? for this mongod?
+- Am I replica role ? for this mongod?
+- List all members ? for this mongod?
+- What is the listening port ? for this mongod?
+- Which storage engine ? for this mongod?
+- Show ticket availability ? for this mongod?
+- Is this GCP region ? for this mongod?
+- What release version in this log for troubleshooting?
+- What is the build info from startup for troubleshooting?
+- Is this replSet name ? for troubleshooting?
+- Am I replica role ? for troubleshooting?
+- List all members ? for troubleshooting?
+- What is the listening port ? for troubleshooting?
+- Which storage engine ? for troubleshooting?
+- Show ticket availability ? for troubleshooting?
+- Is this GCP region ? for troubleshooting?
+- What release version in this log for performance review?
+- What is the build info from startup for performance review?
+- Is this replSet name ? for performance review?
+- Am I replica role ? for performance review?
+- List all members ? for performance review?
+- What is the listening port ? for performance review?
+- Which storage engine ? for performance review?
+- Show ticket availability ? for performance review?
+- Is this GCP region ? for performance review?
+- What release version in this log for the DBA review?
+- What is the build info from startup for the DBA review?
+- Is this replSet name ? for the DBA review?
+- Am I replica role ? for the DBA review?
+- List all members ? for the DBA review?
+- What is the listening port ? for the DBA review?
+- Which storage engine ? for the DBA review?
+- Show ticket availability ? for the DBA review?
+- Is this GCP region ? for the DBA review?
+- What release version in this log please?
+- What is the build info from startup please?
+- Is this replSet name ? please?
+- Am I replica role ? please?
+- List all members ? please?
+- What is the listening port ? please?
+- Which storage engine ? please?
+- Show ticket availability ? please?
+- Is this GCP region ? please?
+- What release version is running?
+- What is the build info in the log?
+- Is this replSet name in this log?
+- Am I replica role in the replica set?
+- List all members in this log?
+- What is the listening port from the log?
+- Which storage engine for this server?
+- Show ticket availability in the log?
+- Is this GCP region in this log?
+- What release version is running from this log?
+- What is the build info in the log from this log?
+- Is this replSet name in this log from this log?
+- Am I replica role in the replica set from this log?
+- List all members in this log from this log?
+- What is the listening port from the log from this log?
+- Which storage engine for this server from this log?
+- Show ticket availability in the log from this log?
+- Is this GCP region in this log from this log?
+- What release version is running in this log?
+- What is the build info in the log in this log?
+- Is this replSet name in this log in this log?
+- Am I replica role in the replica set in this log?
+- List all members in this log in this log?
+- What is the listening port from the log in this log?
+- Which storage engine for this server in this log?
+- Show ticket availability in the log in this log?
+- Is this GCP region in this log in this log?
+- What release version is running in the uploaded file?
+- What is the build info in the log in the uploaded file?
+- Is this replSet name in this log in the uploaded file?
+- Am I replica role in the replica set in the uploaded file?
+- List all members in this log in the uploaded file?
+- What is the listening port from the log in the uploaded file?
+- Which storage engine for this server in the uploaded file?
+- Show ticket availability in the log in the uploaded file?
+- Is this GCP region in this log in the uploaded file?
+- What release version is running according to the parsed log?
+- What is the build info in the log according to the parsed log?
+- Is this replSet name in this log according to the parsed log?
+- Am I replica role in the replica set according to the parsed log?
+- List all members in this log according to the parsed log?
+- What is the listening port from the log according to the parsed log?
+- Which storage engine for this server according to the parsed log?
+- Show ticket availability in the log according to the parsed log?
+- Is this GCP region in this log according to the parsed log?
+- What release version is running for this mongod?
+- What is the build info in the log for this mongod?
+- Is this replSet name in this log for this mongod?
+- Am I replica role in the replica set for this mongod?
+- List all members in this log for this mongod?
+- What is the listening port from the log for this mongod?
+- Which storage engine for this server for this mongod?
+- Show ticket availability in the log for this mongod?
+- Is this GCP region in this log for this mongod?
+- What release version is running for troubleshooting?
+- What is the build info in the log for troubleshooting?
+- Is this replSet name in this log for troubleshooting?
+- Am I replica role in the replica set for troubleshooting?
+- List all members in this log for troubleshooting?
+- What is the listening port from the log for troubleshooting?
+- Which storage engine for this server for troubleshooting?
+- Show ticket availability in the log for troubleshooting?
+- Is this GCP region in this log for troubleshooting?
+- What release version is running for performance review?
+- What is the build info in the log for performance review?
+- Is this replSet name in this log for performance review?
+- Am I replica role in the replica set for performance review?
+- List all members in this log for performance review?
+- What is the listening port from the log for performance review?
+- Which storage engine for this server for performance review?
+- Show ticket availability in the log for performance review?
+- Is this GCP region in this log for performance review?
+- What release version is running for the DBA review?
+- What is the build info in the log for the DBA review?
+- Is this replSet name in this log for the DBA review?
+- Am I replica role in the replica set for the DBA review?
+- List all members in this log for the DBA review?
+- What is the listening port from the log for the DBA review?
+- Which storage engine for this server for the DBA review?
+- Show ticket availability in the log for the DBA review?
+- Is this GCP region in this log for the DBA review?
+- What release version is running please?
+- What is the build info in the log please?
+- Is this replSet name in this log please?
+- Am I replica role in the replica set please?
+- List all members in this log please?
+- What is the listening port from the log please?
+- Which storage engine for this server please?
+- Show ticket availability in the log please?
+- Is this GCP region in this log please?
+- What MongoDB edition ?
+- What is the compiler used ?
+- Is this cluster layout ?
+- List member hosts ?
+- What is the server identity ?
+- Which engine in use ?
+- Report WiredTiger cache stats ?
+- Is this cloud deployment ?
+- What MongoDB edition ? from this log?
+- What is the compiler used ? from this log?
+- Is this cluster layout ? from this log?
+- List member hosts ? from this log?
+- What is the server identity ? from this log?
+- Which engine in use ? from this log?
+- Report WiredTiger cache stats ? from this log?
+- Is this cloud deployment ? from this log?
+- What MongoDB edition ? in this log?
+- What is the compiler used ? in this log?
+- Is this cluster layout ? in this log?
+- List member hosts ? in this log?
+- What is the server identity ? in this log?
+- Which engine in use ? in this log?
+- Report WiredTiger cache stats ? in this log?
+- Is this cloud deployment ? in this log?
+- What MongoDB edition ? in the uploaded file?
+- What is the compiler used ? in the uploaded file?
+- Is this cluster layout ? in the uploaded file?
+- List member hosts ? in the uploaded file?
+- What is the server identity ? in the uploaded file?
+- Which engine in use ? in the uploaded file?
+- Report WiredTiger cache stats ? in the uploaded file?
+- Is this cloud deployment ? in the uploaded file?
+- What MongoDB edition ? according to the parsed log?
+- What is the compiler used ? according to the parsed log?
+- Is this cluster layout ? according to the parsed log?
+- List member hosts ? according to the parsed log?
+- What is the server identity ? according to the parsed log?
+- Which engine in use ? according to the parsed log?
+- Report WiredTiger cache stats ? according to the parsed log?
+- Is this cloud deployment ? according to the parsed log?
+- What MongoDB edition ? for this mongod?
+- What is the compiler used ? for this mongod?
+- Is this cluster layout ? for this mongod?
+- List member hosts ? for this mongod?
+- What is the server identity ? for this mongod?
+- Which engine in use ? for this mongod?
+- Report WiredTiger cache stats ? for this mongod?
+- Is this cloud deployment ? for this mongod?
+- What MongoDB edition ? for troubleshooting?
+- What is the compiler used ? for troubleshooting?
+- Is this cluster layout ? for troubleshooting?
+- List member hosts ? for troubleshooting?
+- What is the server identity ? for troubleshooting?
+- Which engine in use ? for troubleshooting?
+- Report WiredTiger cache stats ? for troubleshooting?
+- Is this cloud deployment ? for troubleshooting?
+- What MongoDB edition ? for performance review?
+- What is the compiler used ? for performance review?
+- Is this cluster layout ? for performance review?
+- List member hosts ? for performance review?
+- What is the server identity ? for performance review?
+- Which engine in use ? for performance review?
+- Report WiredTiger cache stats ? for performance review?
+- Is this cloud deployment ? for performance review?
+- What MongoDB edition ? for the DBA review?
+- What is the compiler used ? for the DBA review?
+- Is this cluster layout ? for the DBA review?
+- List member hosts ? for the DBA review?
+- What is the server identity ? for the DBA review?
+- Which engine in use ? for the DBA review?
+- Report WiredTiger cache stats ? for the DBA review?
+- Is this cloud deployment ? for the DBA review?
+- What MongoDB edition ? please?
+- What is the compiler used ? please?
+- Is this cluster layout ? please?
+- List member hosts ? please?
+- What is the server identity ? please?
+- Which engine in use ? please?
+- Report WiredTiger cache stats ? please?
+- Is this cloud deployment ? please?
+- What MongoDB edition in this log?
+- What is the compiler used from startup?
+- Is this cluster layout in this log?
+- List member hosts in this log?
+- What is the server identity from the log?
+- Which engine in use for this server?
+- Report WiredTiger cache stats in the log?
+- Is this cloud deployment in this log?
+- What MongoDB edition in this log from this log?
+- What is the compiler used from startup from this log?
+- Is this cluster layout in this log from this log?
+- List member hosts in this log from this log?
+- What is the server identity from the log from this log?
+- Which engine in use for this server from this log?
+- Report WiredTiger cache stats in the log from this log?
+- Is this cloud deployment in this log from this log?
+- What MongoDB edition in this log in this log?
+- What is the compiler used from startup in this log?
+- Is this cluster layout in this log in this log?
+- List member hosts in this log in this log?
+- What is the server identity from the log in this log?
+- Which engine in use for this server in this log?
+- Report WiredTiger cache stats in the log in this log?
+- Is this cloud deployment in this log in this log?
+- What MongoDB edition in this log in the uploaded file?
+- What is the compiler used from startup in the uploaded file?
+- Is this cluster layout in this log in the uploaded file?
+- List member hosts in this log in the uploaded file?
+- What is the server identity from the log in the uploaded file?
+- Which engine in use for this server in the uploaded file?
+- Report WiredTiger cache stats in the log in the uploaded file?
+- Is this cloud deployment in this log in the uploaded file?
+- What MongoDB edition in this log according to the parsed log?
+- What is the compiler used from startup according to the parsed log?
+- Is this cluster layout in this log according to the parsed log?
+- List member hosts in this log according to the parsed log?
+- What is the server identity from the log according to the parsed log?
+- Which engine in use for this server according to the parsed log?
+- Report WiredTiger cache stats in the log according to the parsed log?
+- Is this cloud deployment in this log according to the parsed log?
+- What MongoDB edition in this log for this mongod?
+- What is the compiler used from startup for this mongod?
+- Is this cluster layout in this log for this mongod?
+- List member hosts in this log for this mongod?
+- What is the server identity from the log for this mongod?
+- Which engine in use for this server for this mongod?
+- Report WiredTiger cache stats in the log for this mongod?
+- Is this cloud deployment in this log for this mongod?
+- What MongoDB edition in this log for troubleshooting?
+- What is the compiler used from startup for troubleshooting?
+- Is this cluster layout in this log for troubleshooting?
+- List member hosts in this log for troubleshooting?
+- What is the server identity from the log for troubleshooting?
+- Which engine in use for this server for troubleshooting?
+- Report WiredTiger cache stats in the log for troubleshooting?
+- Is this cloud deployment in this log for troubleshooting?
+- What MongoDB edition in this log for performance review?
+- What is the compiler used from startup for performance review?
+- Is this cluster layout in this log for performance review?
+- List member hosts in this log for performance review?
+- What is the server identity from the log for performance review?
+- Which engine in use for this server for performance review?
+- Report WiredTiger cache stats in the log for performance review?
+- Is this cloud deployment in this log for performance review?
+- What MongoDB edition in this log for the DBA review?
+- What is the compiler used from startup for the DBA review?
+- Is this cluster layout in this log for the DBA review?
+- List member hosts in this log for the DBA review?
+- What is the server identity from the log for the DBA review?
+- Which engine in use for this server for the DBA review?
+- Report WiredTiger cache stats in the log for the DBA review?
+- Is this cloud deployment in this log for the DBA review?
+- What MongoDB edition in this log please?
+- What is the compiler used from startup please?
+- Is this cluster layout in this log please?
+- List member hosts in this log please?
+- What is the server identity from the log please?
+- Which engine in use for this server please?
+- Report WiredTiger cache stats in the log please?
+- Is this cloud deployment in this log please?
+- What MongoDB edition is running?
+- What is the compiler used in the log?
+- Is this deployment model ?
+- Am I read preference target ?
+- Show replica set members ?
+- What is the mongod host ?
+- Which WiredTiger status ?
+- Report storage statistics ?
+- Are we on Atlas ?
+- What MongoDB edition is running from this log?
+- What is the compiler used in the log from this log?
+- Is this deployment model ? from this log?
+- Am I read preference target ? from this log?
+- Show replica set members ? from this log?
+- What is the mongod host ? from this log?
+- Which WiredTiger status ? from this log?
+- Report storage statistics ? from this log?
+- Are we on Atlas ? from this log?
+- What MongoDB edition is running in this log?
+- What is the compiler used in the log in this log?
+- Is this deployment model ? in this log?
+- Am I read preference target ? in this log?
+- Show replica set members ? in this log?
+- What is the mongod host ? in this log?
+- Which WiredTiger status ? in this log?
+- Report storage statistics ? in this log?
+- Are we on Atlas ? in this log?
+- What MongoDB edition is running in the uploaded file?
+- What is the compiler used in the log in the uploaded file?
+- Is this deployment model ? in the uploaded file?
+- Am I read preference target ? in the uploaded file?
+- Show replica set members ? in the uploaded file?
+- What is the mongod host ? in the uploaded file?
+- Which WiredTiger status ? in the uploaded file?
+- Report storage statistics ? in the uploaded file?
+- Are we on Atlas ? in the uploaded file?
+- What MongoDB edition is running according to the parsed log?
+- What is the compiler used in the log according to the parsed log?
+- Is this deployment model ? according to the parsed log?
+- Am I read preference target ? according to the parsed log?
+- Show replica set members ? according to the parsed log?
+- What is the mongod host ? according to the parsed log?
+- Which WiredTiger status ? according to the parsed log?
+- Report storage statistics ? according to the parsed log?
+- Are we on Atlas ? according to the parsed log?
+- What MongoDB edition is running for this mongod?
+- What is the compiler used in the log for this mongod?
+- Is this deployment model ? for this mongod?
+- Am I read preference target ? for this mongod?
+- Show replica set members ? for this mongod?
+- What is the mongod host ? for this mongod?
+- Which WiredTiger status ? for this mongod?
+- Report storage statistics ? for this mongod?
+- Are we on Atlas ? for this mongod?
+- What MongoDB edition is running for troubleshooting?
+- What is the compiler used in the log for troubleshooting?
+- Is this deployment model ? for troubleshooting?
+- Am I read preference target ? for troubleshooting?
+- Show replica set members ? for troubleshooting?
+- What is the mongod host ? for troubleshooting?
+- Which WiredTiger status ? for troubleshooting?
+- Report storage statistics ? for troubleshooting?
+- Are we on Atlas ? for troubleshooting?
+- What MongoDB edition is running for performance review?
+- What is the compiler used in the log for performance review?
+- Is this deployment model ? for performance review?
+- Am I read preference target ? for performance review?
+- Show replica set members ? for performance review?
+- What is the mongod host ? for performance review?
+- Which WiredTiger status ? for performance review?
+- Report storage statistics ? for performance review?
+- Are we on Atlas ? for performance review?
+- What MongoDB edition is running for the DBA review?
+- What is the compiler used in the log for the DBA review?
+- Is this deployment model ? for the DBA review?
+- Am I read preference target ? for the DBA review?
+- Show replica set members ? for the DBA review?
+- What is the mongod host ? for the DBA review?
+- Which WiredTiger status ? for the DBA review?
+- Report storage statistics ? for the DBA review?
+- Are we on Atlas ? for the DBA review?
+- What MongoDB edition is running please?
+- What is the compiler used in the log please?
+- Is this deployment model ? please?
+- Am I read preference target ? please?
+- Show replica set members ? please?
+- What is the mongod host ? please?
+- Which WiredTiger status ? please?
+- Report storage statistics ? please?
+- Are we on Atlas ? please?
+- What build version ?
+- What is the process id ?
+- Is this deployment model in this log?
+- Am I read preference target in the replica set?
+- Show replica set members in this log?
+- What is the mongod host from the log?
+- Which WiredTiger status for this server?
+- Report storage statistics in the log?
+- Are we on Atlas in this log?
+- What build version ? from this log?
+- What is the process id ? from this log?
+- Is this deployment model in this log from this log?
+- Am I read preference target in the replica set from this log?
+- Show replica set members in this log from this log?
+- What is the mongod host from the log from this log?
+- Which WiredTiger status for this server from this log?
+- Report storage statistics in the log from this log?
+- Are we on Atlas in this log from this log?
+- What build version ? in this log?
+- What is the process id ? in this log?
+- Is this deployment model in this log in this log?
+- Am I read preference target in the replica set in this log?
+- Show replica set members in this log in this log?
+- What is the mongod host from the log in this log?
+- Which WiredTiger status for this server in this log?
+- Report storage statistics in the log in this log?
+- Are we on Atlas in this log in this log?
+- What build version ? in the uploaded file?
+- What is the process id ? in the uploaded file?
+- Is this deployment model in this log in the uploaded file?
+- Am I read preference target in the replica set in the uploaded file?
+- Show replica set members in this log in the uploaded file?
+- What is the mongod host from the log in the uploaded file?
+- Which WiredTiger status for this server in the uploaded file?
+- Report storage statistics in the log in the uploaded file?
+- Are we on Atlas in this log in the uploaded file?
+- What build version ? according to the parsed log?
+- What is the process id ? according to the parsed log?
+- Is this deployment model in this log according to the parsed log?
+- Am I read preference target in the replica set according to the parsed log?
+- Show replica set members in this log according to the parsed log?
+- What is the mongod host from the log according to the parsed log?
+- Which WiredTiger status for this server according to the parsed log?
+- Report storage statistics in the log according to the parsed log?
+- Are we on Atlas in this log according to the parsed log?
+- What build version ? for this mongod?
+- What is the process id ? for this mongod?
+- Is this deployment model in this log for this mongod?
+- Am I read preference target in the replica set for this mongod?
+- Show replica set members in this log for this mongod?
+- What is the mongod host from the log for this mongod?
+- Which WiredTiger status for this server for this mongod?
+- Report storage statistics in the log for this mongod?
+- Are we on Atlas in this log for this mongod?
+- What build version ? for troubleshooting?
+- What is the process id ? for troubleshooting?
+- Is this deployment model in this log for troubleshooting?
+- Am I read preference target in the replica set for troubleshooting?
+- Show replica set members in this log for troubleshooting?
+- What is the mongod host from the log for troubleshooting?
+- Which WiredTiger status for this server for troubleshooting?
+- Report storage statistics in the log for troubleshooting?
+- Are we on Atlas in this log for troubleshooting?
+- What build version ? for performance review?
+- What is the process id ? for performance review?
+- Is this deployment model in this log for performance review?
+- Am I read preference target in the replica set for performance review?
+- Show replica set members in this log for performance review?
+- What is the mongod host from the log for performance review?
+- Which WiredTiger status for this server for performance review?
+- Report storage statistics in the log for performance review?
+- Are we on Atlas in this log for performance review?
+- What build version ? for the DBA review?
+- What is the process id ? for the DBA review?
+- Is this deployment model in this log for the DBA review?
+- Am I read preference target in the replica set for the DBA review?
+- Show replica set members in this log for the DBA review?
+- What is the mongod host from the log for the DBA review?
+- Which WiredTiger status for this server for the DBA review?
+- Report storage statistics in the log for the DBA review?
+- Are we on Atlas in this log for the DBA review?
+- What build version ? please?
+- What is the process id ? please?
+- Is this deployment model in this log please?
+- Am I read preference target in the replica set please?
+- Show replica set members in this log please?
+- What is the mongod host from the log please?
+- Which WiredTiger status for this server please?
+- Report storage statistics in the log please?
+- Are we on Atlas in this log please?
+- What build version in this log?
+- What is the process id from startup?
+- What is the topology ?
+- Is this node primary ?
+- Show RS members ?
+- Show hostname ?
+- Which storage backend ?
+- Report cache size ?
+- Are we on MongoDB Atlas ?
+- What build version in this log from this log?
+- What is the process id from startup from this log?
+- What is the topology ? from this log?
+- Is this node primary ? from this log?
+- Show RS members ? from this log?
+- Show hostname ? from this log?
+- Which storage backend ? from this log?
+- Report cache size ? from this log?
+- Are we on MongoDB Atlas ? from this log?
+- What build version in this log in this log?
+- What is the process id from startup in this log?
+- What is the topology ? in this log?
+- Is this node primary ? in this log?
+- Show RS members ? in this log?
+- Show hostname ? in this log?
+- Which storage backend ? in this log?
+- Report cache size ? in this log?
+- Are we on MongoDB Atlas ? in this log?
+- What build version in this log in the uploaded file?
+- What is the process id from startup in the uploaded file?
+- What is the topology ? in the uploaded file?
+- Is this node primary ? in the uploaded file?
+- Show RS members ? in the uploaded file?
+- Show hostname ? in the uploaded file?
+- Which storage backend ? in the uploaded file?
+- Report cache size ? in the uploaded file?
+- Are we on MongoDB Atlas ? in the uploaded file?
+- What build version in this log according to the parsed log?
+- What is the process id from startup according to the parsed log?
+- What is the topology ? according to the parsed log?
+- Is this node primary ? according to the parsed log?
+- Show RS members ? according to the parsed log?
+- Show hostname ? according to the parsed log?
+- Which storage backend ? according to the parsed log?
+- Report cache size ? according to the parsed log?
+- Are we on MongoDB Atlas ? according to the parsed log?
+- What build version in this log for this mongod?
+- What is the process id from startup for this mongod?
+- What is the topology ? for this mongod?
+- Is this node primary ? for this mongod?
+- Show RS members ? for this mongod?
+- Show hostname ? for this mongod?
+- Which storage backend ? for this mongod?
+- Report cache size ? for this mongod?
+- Are we on MongoDB Atlas ? for this mongod?
+- What build version in this log for troubleshooting?
+- What is the process id from startup for troubleshooting?
+- What is the topology ? for troubleshooting?
+- Is this node primary ? for troubleshooting?
+- Show RS members ? for troubleshooting?
+- Show hostname ? for troubleshooting?
+- Which storage backend ? for troubleshooting?
+- Report cache size ? for troubleshooting?
+- Are we on MongoDB Atlas ? for troubleshooting?
+- What build version in this log for performance review?
+- What is the process id from startup for performance review?
+- What is the topology ? for performance review?
+- Is this node primary ? for performance review?
+- Show RS members ? for performance review?
+- Show hostname ? for performance review?
+- Which storage backend ? for performance review?
+- Report cache size ? for performance review?
+- Are we on MongoDB Atlas ? for performance review?
+- What build version in this log for the DBA review?
+- What is the process id from startup for the DBA review?
+- What is the topology ? for the DBA review?
+- Is this node primary ? for the DBA review?
+- Show RS members ? for the DBA review?
+- Show hostname ? for the DBA review?
+- Which storage backend ? for the DBA review?
+- Report cache size ? for the DBA review?
+- Are we on MongoDB Atlas ? for the DBA review?
+- What build version in this log please?
+- What is the process id from startup please?
+- What is the topology ? please?
+- Is this node primary ? please?
+- Show RS members ? please?
+- Show hostname ? please?
+- Which storage backend ? please?
+- Report cache size ? please?
+- Are we on MongoDB Atlas ? please?
+- What build version is running?
+- What is the process id in the log?
+- What is the topology in this log?
+- Is this node primary in the replica set?
+- Show RS members in this log?
+- Show hostname from the log?
+- Which storage backend for this server?
+- Report cache size in the log?
+- Are we on MongoDB Atlas in this log?
+- What build version is running from this log?
+- What is the process id in the log from this log?
+- What is the topology in this log from this log?
+- Is this node primary in the replica set from this log?
+- Show RS members in this log from this log?
+- Show hostname from the log from this log?
+- Which storage backend for this server from this log?
+- Report cache size in the log from this log?
+- Are we on MongoDB Atlas in this log from this log?
+- What build version is running in this log?
+- What is the process id in the log in this log?
+- What is the topology in this log in this log?
+- Is this node primary in the replica set in this log?
+- Show RS members in this log in this log?
+- Show hostname from the log in this log?
+- Which storage backend for this server in this log?
+- Report cache size in the log in this log?
+- Are we on MongoDB Atlas in this log in this log?
+- What build version is running in the uploaded file?
+- What is the process id in the log in the uploaded file?
+- What is the topology in this log in the uploaded file?
+- Is this node primary in the replica set in the uploaded file?
+- Show RS members in this log in the uploaded file?
+- Show hostname from the log in the uploaded file?
+- Which storage backend for this server in the uploaded file?
+- Report cache size in the log in the uploaded file?
+- Are we on MongoDB Atlas in this log in the uploaded file?
+- What build version is running according to the parsed log?
+- What is the process id in the log according to the parsed log?
+- What is the topology in this log according to the parsed log?
+- Is this node primary in the replica set according to the parsed log?
+- Show RS members in this log according to the parsed log?
+- Show hostname from the log according to the parsed log?
+- Which storage backend for this server according to the parsed log?
+- Report cache size in the log according to the parsed log?
+- Are we on MongoDB Atlas in this log according to the parsed log?
+- What build version is running for this mongod?
+- What is the process id in the log for this mongod?
+- What is the topology in this log for this mongod?
+- Is this node primary in the replica set for this mongod?
+- Show RS members in this log for this mongod?
+- Show hostname from the log for this mongod?
+- Which storage backend for this server for this mongod?
+- Report cache size in the log for this mongod?
+- Are we on MongoDB Atlas in this log for this mongod?
+- What build version is running for troubleshooting?
+- What is the process id in the log for troubleshooting?
+- What is the topology in this log for troubleshooting?
+- Is this node primary in the replica set for troubleshooting?
+- Show RS members in this log for troubleshooting?
+- Show hostname from the log for troubleshooting?
+- Which storage backend for this server for troubleshooting?
+- Report cache size in the log for troubleshooting?
+- Are we on MongoDB Atlas in this log for troubleshooting?
+- What build version is running for performance review?
+- What is the process id in the log for performance review?
+- What is the topology in this log for performance review?
+- Is this node primary in the replica set for performance review?
+- Show RS members in this log for performance review?
+- Show hostname from the log for performance review?
+- Which storage backend for this server for performance review?
+- Report cache size in the log for performance review?
+- Are we on MongoDB Atlas in this log for performance review?
+- What build version is running for the DBA review?
+- What is the process id in the log for the DBA review?
+- What is the topology in this log for the DBA review?
+- Is this node primary in the replica set for the DBA review?
+- Show RS members in this log for the DBA review?
+- Show hostname from the log for the DBA review?
+- Which storage backend for this server for the DBA review?
+- Report cache size in the log for the DBA review?
+- Are we on MongoDB Atlas in this log for the DBA review?
+- What build version is running please?
+- What is the process id in the log please?
+- What is the topology in this log please?
+- Is this node primary in the replica set please?
+- Show RS members in this log please?
+- Show hostname from the log please?
+- Which storage backend for this server please?
+- Report cache size in the log please?
+- Are we on MongoDB Atlas in this log please?
+- What mongod version ?
+- What is the architecture ?
+- What is the deployment type ?
+- Is this node a secondary ?
+- Show replica members ?
+- Show host and port ?
+- Which data storage engine ?
+- Report cache pressure ?
+- Are we on cloud provider ?
+- What mongod version ? from this log?
+- What is the architecture ? from this log?
+- What is the deployment type ? from this log?
+- Is this node a secondary ? from this log?
+- Show replica members ? from this log?
+- Show host and port ? from this log?
+- Which data storage engine ? from this log?
+- Report cache pressure ? from this log?
+- Are we on cloud provider ? from this log?
+- What mongod version ? in this log?
+- What is the architecture ? in this log?
+- What is the deployment type ? in this log?
+- Is this node a secondary ? in this log?
+- Show replica members ? in this log?
+- Show host and port ? in this log?
+- Which data storage engine ? in this log?
+- Report cache pressure ? in this log?
+- Are we on cloud provider ? in this log?
+- What mongod version ? in the uploaded file?
+- What is the architecture ? in the uploaded file?
+- What is the deployment type ? in the uploaded file?
+- Is this node a secondary ? in the uploaded file?
+- Show replica members ? in the uploaded file?
+- Show host and port ? in the uploaded file?
+- Which data storage engine ? in the uploaded file?
+- Report cache pressure ? in the uploaded file?
+- Are we on cloud provider ? in the uploaded file?
+- What mongod version ? according to the parsed log?
+- What is the architecture ? according to the parsed log?
+- What is the deployment type ? according to the parsed log?
+- Is this node a secondary ? according to the parsed log?
+- Show replica members ? according to the parsed log?
+- Show host and port ? according to the parsed log?
+- Which data storage engine ? according to the parsed log?
+- Report cache pressure ? according to the parsed log?
+- Are we on cloud provider ? according to the parsed log?
+- What mongod version ? for this mongod?
+- What is the architecture ? for this mongod?
+- What is the deployment type ? for this mongod?
+- Is this node a secondary ? for this mongod?
+- Show replica members ? for this mongod?
+- Show host and port ? for this mongod?
+- Which data storage engine ? for this mongod?
+- Report cache pressure ? for this mongod?
+- Are we on cloud provider ? for this mongod?
+- What mongod version ? for troubleshooting?
+- What is the architecture ? for troubleshooting?
+- What is the deployment type ? for troubleshooting?
+- Is this node a secondary ? for troubleshooting?
+- Show replica members ? for troubleshooting?
+- Show host and port ? for troubleshooting?
+- Which data storage engine ? for troubleshooting?
+- Report cache pressure ? for troubleshooting?
+- Are we on cloud provider ? for troubleshooting?
+- What mongod version ? for performance review?
+- What is the architecture ? for performance review?
+- What is the deployment type ? for performance review?
+- Is this node a secondary ? for performance review?
+- Show replica members ? for performance review?
+- Show host and port ? for performance review?
+- Which data storage engine ? for performance review?
+- Report cache pressure ? for performance review?
+- Are we on cloud provider ? for performance review?
+- What mongod version ? for the DBA review?
+- What is the architecture ? for the DBA review?
+- What is the deployment type ? for the DBA review?
+- Is this node a secondary ? for the DBA review?
+- Show replica members ? for the DBA review?
+- Show host and port ? for the DBA review?
+- Which data storage engine ? for the DBA review?
+- Report cache pressure ? for the DBA review?
+- Are we on cloud provider ? for the DBA review?
+- What mongod version ? please?
+- What is the architecture ? please?
+- What is the deployment type ? please?
+- Is this node a secondary ? please?
+- Show replica members ? please?
+- Show host and port ? please?
+- Which data storage engine ? please?
+- Report cache pressure ? please?
+- Are we on cloud provider ? please?
+- What mongod version in this log?
+- What is the architecture from startup?
+- What is the deployment type in this log?
+- Is this node a secondary in the replica set?
+- Show replica members in this log?
+- Show host and port from the log?
+- Which data storage engine for this server?
+- Report cache pressure in the log?
+- Are we on cloud provider in this log?
+- What mongod version in this log from this log?
+- What is the architecture from startup from this log?
+- What is the deployment type in this log from this log?
+- Is this node a secondary in the replica set from this log?
+- Show replica members in this log from this log?
+- Show host and port from the log from this log?
+- Which data storage engine for this server from this log?
+- Report cache pressure in the log from this log?
+- Are we on cloud provider in this log from this log?
+- What mongod version in this log in this log?
+- What is the architecture from startup in this log?
+- What is the deployment type in this log in this log?
+- Is this node a secondary in the replica set in this log?
+- Show replica members in this log in this log?
+- Show host and port from the log in this log?
+- Which data storage engine for this server in this log?
+- Report cache pressure in the log in this log?
+- Are we on cloud provider in this log in this log?
+- What mongod version in this log in the uploaded file?
+- What is the architecture from startup in the uploaded file?
+- What is the deployment type in this log in the uploaded file?
+- Is this node a secondary in the replica set in the uploaded file?
+- Show replica members in this log in the uploaded file?
+- Show host and port from the log in the uploaded file?
+- Which data storage engine for this server in the uploaded file?
+- Report cache pressure in the log in the uploaded file?
+- Are we on cloud provider in this log in the uploaded file?
+- What mongod version in this log according to the parsed log?
+- What is the architecture from startup according to the parsed log?
+- What is the deployment type in this log according to the parsed log?
+- Is this node a secondary in the replica set according to the parsed log?
+- Show replica members in this log according to the parsed log?
+- Show host and port from the log according to the parsed log?
+- Which data storage engine for this server according to the parsed log?
+- Report cache pressure in the log according to the parsed log?
+- Are we on cloud provider in this log according to the parsed log?
+
+## Performance
+
+- How many slow queries?
+- Count of slow operations
+- Slowest query?
+- Top 5 slow operations
+- Show slow queries
+- Worst performing query?
+- Total time in slow ops?
+- How much time wasted on slow queries?
+- Top query patterns?
+- Most common slow query shapes?
+- Busiest namespace?
+- Top collections by traffic
+- Slowest namespaces by avg duration?
+- Which collection is slowest on average?
+- Operation type breakdown?
+- Reads vs writes distribution?
+- Large result sets over 16MB?
+- Any huge reslen responses?
+- Queries examining too many documents?
+- High docs examined vs keys examined?
+- How many IXSCAN operations?
+- Index scans in slow ops?
+- Busiest time period?
+- Operations over time?
+- Traffic timeline
+- How many slow queries ?
+- What is the slowest query ?
+- What is the time in slow ops ?
+- What are the query patterns ?
+- What is the busiest namespace ?
+- Which slowest namespaces ?
+- What is the operation types ?
+- When was traffic highest ?
+- Any inefficient queries ?
+- How many IXSCAN operations ?
+- Any large result sets ?
+- How many slow queries ? from this log?
+- What is the slowest query ? from this log?
+- What is the time in slow ops ? from this log?
+- What are the query patterns ? from this log?
+- What is the busiest namespace ? from this log?
+- Which slowest namespaces ? from this log?
+- What is the operation types ? from this log?
+- When was traffic highest ? from this log?
+- Any inefficient queries ? from this log?
+- How many IXSCAN operations ? from this log?
+- Any large result sets ? from this log?
+- How many slow queries ? in this log?
+- What is the slowest query ? in this log?
+- What is the time in slow ops ? in this log?
+- What are the query patterns ? in this log?
+- What is the busiest namespace ? in this log?
+- Which slowest namespaces ? in this log?
+- What is the operation types ? in this log?
+- When was traffic highest ? in this log?
+- Any inefficient queries ? in this log?
+- How many IXSCAN operations ? in this log?
+- Any large result sets ? in this log?
+- How many slow queries ? in the uploaded file?
+- What is the slowest query ? in the uploaded file?
+- What is the time in slow ops ? in the uploaded file?
+- What are the query patterns ? in the uploaded file?
+- What is the busiest namespace ? in the uploaded file?
+- Which slowest namespaces ? in the uploaded file?
+- What is the operation types ? in the uploaded file?
+- When was traffic highest ? in the uploaded file?
+- Any inefficient queries ? in the uploaded file?
+- How many IXSCAN operations ? in the uploaded file?
+- Any large result sets ? in the uploaded file?
+- How many slow queries ? according to the parsed log?
+- What is the slowest query ? according to the parsed log?
+- What is the time in slow ops ? according to the parsed log?
+- What are the query patterns ? according to the parsed log?
+- What is the busiest namespace ? according to the parsed log?
+- Which slowest namespaces ? according to the parsed log?
+- What is the operation types ? according to the parsed log?
+- When was traffic highest ? according to the parsed log?
+- Any inefficient queries ? according to the parsed log?
+- How many IXSCAN operations ? according to the parsed log?
+- Any large result sets ? according to the parsed log?
+- How many slow queries ? for this mongod?
+- What is the slowest query ? for this mongod?
+- What is the time in slow ops ? for this mongod?
+- What are the query patterns ? for this mongod?
+- What is the busiest namespace ? for this mongod?
+- Which slowest namespaces ? for this mongod?
+- What is the operation types ? for this mongod?
+- When was traffic highest ? for this mongod?
+- Any inefficient queries ? for this mongod?
+- How many IXSCAN operations ? for this mongod?
+- Any large result sets ? for this mongod?
+- How many slow queries ? for troubleshooting?
+- What is the slowest query ? for troubleshooting?
+- What is the time in slow ops ? for troubleshooting?
+- What are the query patterns ? for troubleshooting?
+- What is the busiest namespace ? for troubleshooting?
+- Which slowest namespaces ? for troubleshooting?
+- What is the operation types ? for troubleshooting?
+- When was traffic highest ? for troubleshooting?
+- Any inefficient queries ? for troubleshooting?
+- How many IXSCAN operations ? for troubleshooting?
+- Any large result sets ? for troubleshooting?
+- How many slow queries ? for performance review?
+- What is the slowest query ? for performance review?
+- What is the time in slow ops ? for performance review?
+- What are the query patterns ? for performance review?
+- What is the busiest namespace ? for performance review?
+- Which slowest namespaces ? for performance review?
+- What is the operation types ? for performance review?
+- When was traffic highest ? for performance review?
+- Any inefficient queries ? for performance review?
+- How many IXSCAN operations ? for performance review?
+- Any large result sets ? for performance review?
+- How many slow queries ? for the DBA review?
+- What is the slowest query ? for the DBA review?
+- What is the time in slow ops ? for the DBA review?
+- What are the query patterns ? for the DBA review?
+- What is the busiest namespace ? for the DBA review?
+- Which slowest namespaces ? for the DBA review?
+- What is the operation types ? for the DBA review?
+- When was traffic highest ? for the DBA review?
+- Any inefficient queries ? for the DBA review?
+- How many IXSCAN operations ? for the DBA review?
+- Any large result sets ? for the DBA review?
+- How many slow queries ? please?
+- What is the slowest query ? please?
+- What is the time in slow ops ? please?
+- What are the query patterns ? please?
+- What is the busiest namespace ? please?
+- Which slowest namespaces ? please?
+- What is the operation types ? please?
+- When was traffic highest ? please?
+- Any inefficient queries ? please?
+- How many IXSCAN operations ? please?
+- Any large result sets ? please?
+- How many slow queries in this log?
+- What is the slowest query in this log?
+- What is the time in slow ops in this log?
+- What are the query patterns in this log?
+- What is the busiest namespace in this log?
+- Which slowest namespaces in this log?
+- What is the operation types in this log?
+- When was traffic highest in this log?
+- Any inefficient queries in slow ops?
+- How many IXSCAN operations in this log?
+- Any large result sets in this log?
+- How many slow queries in this log from this log?
+- What is the slowest query in this log from this log?
+- What is the time in slow ops in this log from this log?
+- What are the query patterns in this log from this log?
+- What is the busiest namespace in this log from this log?
+- Which slowest namespaces in this log from this log?
+- What is the operation types in this log from this log?
+- When was traffic highest in this log from this log?
+- Any inefficient queries in slow ops from this log?
+- How many IXSCAN operations in this log from this log?
+- Any large result sets in this log from this log?
+- How many slow queries in this log in this log?
+- What is the slowest query in this log in this log?
+- What is the time in slow ops in this log in this log?
+- What are the query patterns in this log in this log?
+- What is the busiest namespace in this log in this log?
+- Which slowest namespaces in this log in this log?
+- What is the operation types in this log in this log?
+- When was traffic highest in this log in this log?
+- Any inefficient queries in slow ops in this log?
+- How many IXSCAN operations in this log in this log?
+- Any large result sets in this log in this log?
+- How many slow queries in this log in the uploaded file?
+- What is the slowest query in this log in the uploaded file?
+- What is the time in slow ops in this log in the uploaded file?
+- What are the query patterns in this log in the uploaded file?
+- What is the busiest namespace in this log in the uploaded file?
+- Which slowest namespaces in this log in the uploaded file?
+- What is the operation types in this log in the uploaded file?
+- When was traffic highest in this log in the uploaded file?
+- Any inefficient queries in slow ops in the uploaded file?
+- How many IXSCAN operations in this log in the uploaded file?
+- Any large result sets in this log in the uploaded file?
+- How many slow queries in this log according to the parsed log?
+- What is the slowest query in this log according to the parsed log?
+- What is the time in slow ops in this log according to the parsed log?
+- What are the query patterns in this log according to the parsed log?
+- What is the busiest namespace in this log according to the parsed log?
+- Which slowest namespaces in this log according to the parsed log?
+- What is the operation types in this log according to the parsed log?
+- When was traffic highest in this log according to the parsed log?
+- Any inefficient queries in slow ops according to the parsed log?
+- How many IXSCAN operations in this log according to the parsed log?
+- Any large result sets in this log according to the parsed log?
+- How many slow queries in this log for this mongod?
+- What is the slowest query in this log for this mongod?
+- What is the time in slow ops in this log for this mongod?
+- What are the query patterns in this log for this mongod?
+- What is the busiest namespace in this log for this mongod?
+- Which slowest namespaces in this log for this mongod?
+- What is the operation types in this log for this mongod?
+- When was traffic highest in this log for this mongod?
+- Any inefficient queries in slow ops for this mongod?
+- How many IXSCAN operations in this log for this mongod?
+- Any large result sets in this log for this mongod?
+- How many slow queries in this log for troubleshooting?
+- What is the slowest query in this log for troubleshooting?
+- What is the time in slow ops in this log for troubleshooting?
+- What are the query patterns in this log for troubleshooting?
+- What is the busiest namespace in this log for troubleshooting?
+- Which slowest namespaces in this log for troubleshooting?
+- What is the operation types in this log for troubleshooting?
+- When was traffic highest in this log for troubleshooting?
+- Any inefficient queries in slow ops for troubleshooting?
+- How many IXSCAN operations in this log for troubleshooting?
+- Any large result sets in this log for troubleshooting?
+- How many slow queries in this log for performance review?
+- What is the slowest query in this log for performance review?
+- What is the time in slow ops in this log for performance review?
+- What are the query patterns in this log for performance review?
+- What is the busiest namespace in this log for performance review?
+- Which slowest namespaces in this log for performance review?
+- What is the operation types in this log for performance review?
+- When was traffic highest in this log for performance review?
+- Any inefficient queries in slow ops for performance review?
+- How many IXSCAN operations in this log for performance review?
+- Any large result sets in this log for performance review?
+- How many slow queries in this log for the DBA review?
+- What is the slowest query in this log for the DBA review?
+- What is the time in slow ops in this log for the DBA review?
+- What are the query patterns in this log for the DBA review?
+- What is the busiest namespace in this log for the DBA review?
+- Which slowest namespaces in this log for the DBA review?
+- What is the operation types in this log for the DBA review?
+- When was traffic highest in this log for the DBA review?
+- Any inefficient queries in slow ops for the DBA review?
+- How many IXSCAN operations in this log for the DBA review?
+- Any large result sets in this log for the DBA review?
+- How many slow queries in this log please?
+- What is the slowest query in this log please?
+- What is the time in slow ops in this log please?
+- What are the query patterns in this log please?
+- What is the busiest namespace in this log please?
+- Which slowest namespaces in this log please?
+- What is the operation types in this log please?
+- When was traffic highest in this log please?
+- Any inefficient queries in slow ops please?
+- How many IXSCAN operations in this log please?
+- Any large result sets in this log please?
+- How many slow queries in the log file?
+- What is the slowest operation ?
+- What is the slow query time ?
+- What are the common query shapes ?
+- What is the hottest collection ?
+- Which slowest collections ?
+- What is the read vs write ratio ?
+- When was the busiest period ?
+- Any high docs examined ?
+- How many index scans ?
+- Any responses over 16MB ?
+- How many slow queries in the log file from this log?
+- What is the slowest operation ? from this log?
+- What is the slow query time ? from this log?
+- What are the common query shapes ? from this log?
+- What is the hottest collection ? from this log?
+- Which slowest collections ? from this log?
+- What is the read vs write ratio ? from this log?
+- When was the busiest period ? from this log?
+- Any high docs examined ? from this log?
+- How many index scans ? from this log?
+- Any responses over 16MB ? from this log?
+- How many slow queries in the log file in this log?
+- What is the slowest operation ? in this log?
+- What is the slow query time ? in this log?
+- What are the common query shapes ? in this log?
+- What is the hottest collection ? in this log?
+- Which slowest collections ? in this log?
+- What is the read vs write ratio ? in this log?
+- When was the busiest period ? in this log?
+- Any high docs examined ? in this log?
+- How many index scans ? in this log?
+- Any responses over 16MB ? in this log?
+- How many slow queries in the log file in the uploaded file?
+- What is the slowest operation ? in the uploaded file?
+- What is the slow query time ? in the uploaded file?
+- What are the common query shapes ? in the uploaded file?
+- What is the hottest collection ? in the uploaded file?
+- Which slowest collections ? in the uploaded file?
+- What is the read vs write ratio ? in the uploaded file?
+- When was the busiest period ? in the uploaded file?
+- Any high docs examined ? in the uploaded file?
+- How many index scans ? in the uploaded file?
+- Any responses over 16MB ? in the uploaded file?
+- How many slow queries in the log file according to the parsed log?
+- What is the slowest operation ? according to the parsed log?
+- What is the slow query time ? according to the parsed log?
+- What are the common query shapes ? according to the parsed log?
+- What is the hottest collection ? according to the parsed log?
+- Which slowest collections ? according to the parsed log?
+- What is the read vs write ratio ? according to the parsed log?
+- When was the busiest period ? according to the parsed log?
+- Any high docs examined ? according to the parsed log?
+- How many index scans ? according to the parsed log?
+- Any responses over 16MB ? according to the parsed log?
+- How many slow queries in the log file for this mongod?
+- What is the slowest operation ? for this mongod?
+- What is the slow query time ? for this mongod?
+- What are the common query shapes ? for this mongod?
+- What is the hottest collection ? for this mongod?
+- Which slowest collections ? for this mongod?
+- What is the read vs write ratio ? for this mongod?
+- When was the busiest period ? for this mongod?
+- Any high docs examined ? for this mongod?
+- How many index scans ? for this mongod?
+- Any responses over 16MB ? for this mongod?
+- How many slow queries in the log file for troubleshooting?
+- What is the slowest operation ? for troubleshooting?
+- What is the slow query time ? for troubleshooting?
+- What are the common query shapes ? for troubleshooting?
+- What is the hottest collection ? for troubleshooting?
+- Which slowest collections ? for troubleshooting?
+- What is the read vs write ratio ? for troubleshooting?
+- When was the busiest period ? for troubleshooting?
+- Any high docs examined ? for troubleshooting?
+- How many index scans ? for troubleshooting?
+- Any responses over 16MB ? for troubleshooting?
+- How many slow queries in the log file for performance review?
+- What is the slowest operation ? for performance review?
+- What is the slow query time ? for performance review?
+- What are the common query shapes ? for performance review?
+- What is the hottest collection ? for performance review?
+- Which slowest collections ? for performance review?
+- What is the read vs write ratio ? for performance review?
+- When was the busiest period ? for performance review?
+- Any high docs examined ? for performance review?
+- How many index scans ? for performance review?
+- Any responses over 16MB ? for performance review?
+- How many slow queries in the log file for the DBA review?
+- What is the slowest operation ? for the DBA review?
+- What is the slow query time ? for the DBA review?
+- What are the common query shapes ? for the DBA review?
+- What is the hottest collection ? for the DBA review?
+- Which slowest collections ? for the DBA review?
+- What is the read vs write ratio ? for the DBA review?
+- When was the busiest period ? for the DBA review?
+- Any high docs examined ? for the DBA review?
+- How many index scans ? for the DBA review?
+- Any responses over 16MB ? for the DBA review?
+- How many slow queries in the log file please?
+- What is the slowest operation ? please?
+- What is the slow query time ? please?
+- What are the common query shapes ? please?
+- What is the hottest collection ? please?
+- Which slowest collections ? please?
+- What is the read vs write ratio ? please?
+- When was the busiest period ? please?
+- Any high docs examined ? please?
+- How many index scans ? please?
+- Any responses over 16MB ? please?
+- How many slow operations ?
+- What is the slowest operation in this log?
+- What is the slow query time in this log?
+- What are the common query shapes in this log?
+- What is the hottest collection in this log?
+- Which slowest collections in this log?
+- What is the read vs write ratio in this log?
+- When was the busiest period in this log?
+- Any high docs examined in slow ops?
+- How many index scans in this log?
+- Any responses over 16MB in this log?
+- How many slow operations ? from this log?
+- What is the slowest operation in this log from this log?
+- What is the slow query time in this log from this log?
+- What are the common query shapes in this log from this log?
+- What is the hottest collection in this log from this log?
+- Which slowest collections in this log from this log?
+- What is the read vs write ratio in this log from this log?
+- When was the busiest period in this log from this log?
+- Any high docs examined in slow ops from this log?
+- How many index scans in this log from this log?
+- Any responses over 16MB in this log from this log?
+- How many slow operations ? in this log?
+- What is the slowest operation in this log in this log?
+- What is the slow query time in this log in this log?
+- What are the common query shapes in this log in this log?
+- What is the hottest collection in this log in this log?
+- Which slowest collections in this log in this log?
+- What is the read vs write ratio in this log in this log?
+- When was the busiest period in this log in this log?
+- Any high docs examined in slow ops in this log?
+- How many index scans in this log in this log?
+- Any responses over 16MB in this log in this log?
+- How many slow operations ? in the uploaded file?
+- What is the slowest operation in this log in the uploaded file?
+- What is the slow query time in this log in the uploaded file?
+- What are the common query shapes in this log in the uploaded file?
+- What is the hottest collection in this log in the uploaded file?
+- Which slowest collections in this log in the uploaded file?
+- What is the read vs write ratio in this log in the uploaded file?
+- When was the busiest period in this log in the uploaded file?
+- Any high docs examined in slow ops in the uploaded file?
+- How many index scans in this log in the uploaded file?
+- Any responses over 16MB in this log in the uploaded file?
+- How many slow operations ? according to the parsed log?
+- What is the slowest operation in this log according to the parsed log?
+- What is the slow query time in this log according to the parsed log?
+- What are the common query shapes in this log according to the parsed log?
+- What is the hottest collection in this log according to the parsed log?
+- Which slowest collections in this log according to the parsed log?
+- What is the read vs write ratio in this log according to the parsed log?
+- When was the busiest period in this log according to the parsed log?
+- Any high docs examined in slow ops according to the parsed log?
+- How many index scans in this log according to the parsed log?
+- Any responses over 16MB in this log according to the parsed log?
+- How many slow operations ? for this mongod?
+- What is the slowest operation in this log for this mongod?
+- What is the slow query time in this log for this mongod?
+- What are the common query shapes in this log for this mongod?
+- What is the hottest collection in this log for this mongod?
+- Which slowest collections in this log for this mongod?
+- What is the read vs write ratio in this log for this mongod?
+- When was the busiest period in this log for this mongod?
+- Any high docs examined in slow ops for this mongod?
+- How many index scans in this log for this mongod?
+- Any responses over 16MB in this log for this mongod?
+- How many slow operations ? for troubleshooting?
+- What is the slowest operation in this log for troubleshooting?
+- What is the slow query time in this log for troubleshooting?
+- What are the common query shapes in this log for troubleshooting?
+- What is the hottest collection in this log for troubleshooting?
+- Which slowest collections in this log for troubleshooting?
+- What is the read vs write ratio in this log for troubleshooting?
+- When was the busiest period in this log for troubleshooting?
+- Any high docs examined in slow ops for troubleshooting?
+- How many index scans in this log for troubleshooting?
+- Any responses over 16MB in this log for troubleshooting?
+- How many slow operations ? for performance review?
+- What is the slowest operation in this log for performance review?
+- What is the slow query time in this log for performance review?
+- What are the common query shapes in this log for performance review?
+- What is the hottest collection in this log for performance review?
+- Which slowest collections in this log for performance review?
+- What is the read vs write ratio in this log for performance review?
+- When was the busiest period in this log for performance review?
+- Any high docs examined in slow ops for performance review?
+- How many index scans in this log for performance review?
+- Any responses over 16MB in this log for performance review?
+- How many slow operations ? for the DBA review?
+- What is the slowest operation in this log for the DBA review?
+- What is the slow query time in this log for the DBA review?
+- What are the common query shapes in this log for the DBA review?
+- What is the hottest collection in this log for the DBA review?
+- Which slowest collections in this log for the DBA review?
+- What is the read vs write ratio in this log for the DBA review?
+- When was the busiest period in this log for the DBA review?
+- Any high docs examined in slow ops for the DBA review?
+- How many index scans in this log for the DBA review?
+- Any responses over 16MB in this log for the DBA review?
+- How many slow operations ? please?
+- What is the slowest operation in this log please?
+- What is the slow query time in this log please?
+- What are the common query shapes in this log please?
+- What is the hottest collection in this log please?
+- Which slowest collections in this log please?
+- What is the read vs write ratio in this log please?
+- When was the busiest period in this log please?
+- Any high docs examined in slow ops please?
+- How many index scans in this log please?
+- Any responses over 16MB in this log please?
+- How many slow operations in this log?
+- What is the worst query ?
+- What is the cumulative slow duration ?
+- What are the frequent slow patterns ?
+- What is the top namespace by traffic ?
+- Which namespaces by avg duration ?
+- What is the command vs query count ?
+- When was ops per minute ?
+- Any queries scanning too many docs ?
+- How many queries using indexes ?
+- Any huge reslen ?
+- How many slow operations in this log from this log?
+- What is the worst query ? from this log?
+- What is the cumulative slow duration ? from this log?
+- What are the frequent slow patterns ? from this log?
+- What is the top namespace by traffic ? from this log?
+- Which namespaces by avg duration ? from this log?
+- What is the command vs query count ? from this log?
+- When was ops per minute ? from this log?
+- Any queries scanning too many docs ? from this log?
+- How many queries using indexes ? from this log?
+- Any huge reslen ? from this log?
+- How many slow operations in this log in this log?
+- What is the worst query ? in this log?
+- What is the cumulative slow duration ? in this log?
+- What are the frequent slow patterns ? in this log?
+- What is the top namespace by traffic ? in this log?
+- Which namespaces by avg duration ? in this log?
+- What is the command vs query count ? in this log?
+- When was ops per minute ? in this log?
+- Any queries scanning too many docs ? in this log?
+- How many queries using indexes ? in this log?
+- Any huge reslen ? in this log?
+- How many slow operations in this log in the uploaded file?
+- What is the worst query ? in the uploaded file?
+- What is the cumulative slow duration ? in the uploaded file?
+- What are the frequent slow patterns ? in the uploaded file?
+- What is the top namespace by traffic ? in the uploaded file?
+- Which namespaces by avg duration ? in the uploaded file?
+- What is the command vs query count ? in the uploaded file?
+- When was ops per minute ? in the uploaded file?
+- Any queries scanning too many docs ? in the uploaded file?
+- How many queries using indexes ? in the uploaded file?
+- Any huge reslen ? in the uploaded file?
+- How many slow operations in this log according to the parsed log?
+- What is the worst query ? according to the parsed log?
+- What is the cumulative slow duration ? according to the parsed log?
+- What are the frequent slow patterns ? according to the parsed log?
+- What is the top namespace by traffic ? according to the parsed log?
+- Which namespaces by avg duration ? according to the parsed log?
+- What is the command vs query count ? according to the parsed log?
+- When was ops per minute ? according to the parsed log?
+- Any queries scanning too many docs ? according to the parsed log?
+- How many queries using indexes ? according to the parsed log?
+- Any huge reslen ? according to the parsed log?
+- How many slow operations in this log for this mongod?
+- What is the worst query ? for this mongod?
+- What is the cumulative slow duration ? for this mongod?
+- What are the frequent slow patterns ? for this mongod?
+- What is the top namespace by traffic ? for this mongod?
+- Which namespaces by avg duration ? for this mongod?
+- What is the command vs query count ? for this mongod?
+- When was ops per minute ? for this mongod?
+- Any queries scanning too many docs ? for this mongod?
+- How many queries using indexes ? for this mongod?
+- Any huge reslen ? for this mongod?
+- How many slow operations in this log for troubleshooting?
+- What is the worst query ? for troubleshooting?
+- What is the cumulative slow duration ? for troubleshooting?
+- What are the frequent slow patterns ? for troubleshooting?
+- What is the top namespace by traffic ? for troubleshooting?
+- Which namespaces by avg duration ? for troubleshooting?
+- What is the command vs query count ? for troubleshooting?
+- When was ops per minute ? for troubleshooting?
+- Any queries scanning too many docs ? for troubleshooting?
+- How many queries using indexes ? for troubleshooting?
+- Any huge reslen ? for troubleshooting?
+- How many slow operations in this log for performance review?
+- What is the worst query ? for performance review?
+- What is the cumulative slow duration ? for performance review?
+- What are the frequent slow patterns ? for performance review?
+- What is the top namespace by traffic ? for performance review?
+- Which namespaces by avg duration ? for performance review?
+- What is the command vs query count ? for performance review?
+- When was ops per minute ? for performance review?
+- Any queries scanning too many docs ? for performance review?
+- How many queries using indexes ? for performance review?
+- Any huge reslen ? for performance review?
+- How many slow operations in this log for the DBA review?
+- What is the worst query ? for the DBA review?
+- What is the cumulative slow duration ? for the DBA review?
+- What are the frequent slow patterns ? for the DBA review?
+- What is the top namespace by traffic ? for the DBA review?
+- Which namespaces by avg duration ? for the DBA review?
+- What is the command vs query count ? for the DBA review?
+- When was ops per minute ? for the DBA review?
+- Any queries scanning too many docs ? for the DBA review?
+- How many queries using indexes ? for the DBA review?
+- Any huge reslen ? for the DBA review?
+- How many slow operations in this log please?
+- What is the worst query ? please?
+- What is the cumulative slow duration ? please?
+- What are the frequent slow patterns ? please?
+- What is the top namespace by traffic ? please?
+- Which namespaces by avg duration ? please?
+- What is the command vs query count ? please?
+- When was ops per minute ? please?
+- Any queries scanning too many docs ? please?
+- How many queries using indexes ? please?
+- Any huge reslen ? please?
+- How many slow operations in the log file?
+- What is the worst query in this log?
+- What is the cumulative slow duration in this log?
+- What are the frequent slow patterns in this log?
+- What is the top namespace by traffic in this log?
+- Which namespaces by avg duration in this log?
+- What is the command vs query count in this log?
+- When was ops per minute in this log?
+- Any queries scanning too many docs in slow ops?
+- How many queries using indexes in this log?
+- Any huge reslen in this log?
+- How many slow operations in the log file from this log?
+- What is the worst query in this log from this log?
+- What is the cumulative slow duration in this log from this log?
+- What are the frequent slow patterns in this log from this log?
+- What is the top namespace by traffic in this log from this log?
+- Which namespaces by avg duration in this log from this log?
+- What is the command vs query count in this log from this log?
+- When was ops per minute in this log from this log?
+- Any queries scanning too many docs in slow ops from this log?
+- How many queries using indexes in this log from this log?
+- Any huge reslen in this log from this log?
+- How many slow operations in the log file in this log?
+- What is the worst query in this log in this log?
+- What is the cumulative slow duration in this log in this log?
+- What are the frequent slow patterns in this log in this log?
+- What is the top namespace by traffic in this log in this log?
+- Which namespaces by avg duration in this log in this log?
+- What is the command vs query count in this log in this log?
+- When was ops per minute in this log in this log?
+- Any queries scanning too many docs in slow ops in this log?
+- How many queries using indexes in this log in this log?
+- Any huge reslen in this log in this log?
+- How many slow operations in the log file in the uploaded file?
+- What is the worst query in this log in the uploaded file?
+- What is the cumulative slow duration in this log in the uploaded file?
+- What are the frequent slow patterns in this log in the uploaded file?
+- What is the top namespace by traffic in this log in the uploaded file?
+- Which namespaces by avg duration in this log in the uploaded file?
+- What is the command vs query count in this log in the uploaded file?
+- When was ops per minute in this log in the uploaded file?
+- Any queries scanning too many docs in slow ops in the uploaded file?
+- How many queries using indexes in this log in the uploaded file?
+- Any huge reslen in this log in the uploaded file?
+- How many slow operations in the log file according to the parsed log?
+- What is the worst query in this log according to the parsed log?
+- What is the cumulative slow duration in this log according to the parsed log?
+- What are the frequent slow patterns in this log according to the parsed log?
+- What is the top namespace by traffic in this log according to the parsed log?
+- Which namespaces by avg duration in this log according to the parsed log?
+- What is the command vs query count in this log according to the parsed log?
+- When was ops per minute in this log according to the parsed log?
+- Any queries scanning too many docs in slow ops according to the parsed log?
+- How many queries using indexes in this log according to the parsed log?
+- Any huge reslen in this log according to the parsed log?
+- How many slow operations in the log file for this mongod?
+- What is the worst query in this log for this mongod?
+- What is the cumulative slow duration in this log for this mongod?
+- What are the frequent slow patterns in this log for this mongod?
+- What is the top namespace by traffic in this log for this mongod?
+- Which namespaces by avg duration in this log for this mongod?
+- What is the command vs query count in this log for this mongod?
+- When was ops per minute in this log for this mongod?
+- Any queries scanning too many docs in slow ops for this mongod?
+- How many queries using indexes in this log for this mongod?
+- Any huge reslen in this log for this mongod?
+- How many slow operations in the log file for troubleshooting?
+- What is the worst query in this log for troubleshooting?
+- What is the cumulative slow duration in this log for troubleshooting?
+- What are the frequent slow patterns in this log for troubleshooting?
+- What is the top namespace by traffic in this log for troubleshooting?
+- Which namespaces by avg duration in this log for troubleshooting?
+- What is the command vs query count in this log for troubleshooting?
+- When was ops per minute in this log for troubleshooting?
+- Any queries scanning too many docs in slow ops for troubleshooting?
+- How many queries using indexes in this log for troubleshooting?
+- Any huge reslen in this log for troubleshooting?
+- How many slow operations in the log file for performance review?
+- What is the worst query in this log for performance review?
+- What is the cumulative slow duration in this log for performance review?
+- What are the frequent slow patterns in this log for performance review?
+- What is the top namespace by traffic in this log for performance review?
+- Which namespaces by avg duration in this log for performance review?
+- What is the command vs query count in this log for performance review?
+- When was ops per minute in this log for performance review?
+- Any queries scanning too many docs in slow ops for performance review?
+- How many queries using indexes in this log for performance review?
+- Any huge reslen in this log for performance review?
+- How many slow operations in the log file for the DBA review?
+- What is the worst query in this log for the DBA review?
+- What is the cumulative slow duration in this log for the DBA review?
+- What are the frequent slow patterns in this log for the DBA review?
+- What is the top namespace by traffic in this log for the DBA review?
+- Which namespaces by avg duration in this log for the DBA review?
+- What is the command vs query count in this log for the DBA review?
+- When was ops per minute in this log for the DBA review?
+- Any queries scanning too many docs in slow ops for the DBA review?
+- How many queries using indexes in this log for the DBA review?
+- Any huge reslen in this log for the DBA review?
+- How many slow operations in the log file please?
+- What is the worst query in this log please?
+- What is the cumulative slow duration in this log please?
+- What are the frequent slow patterns in this log please?
+- What is the top namespace by traffic in this log please?
+- Which namespaces by avg duration in this log please?
+- What is the command vs query count in this log please?
+- When was ops per minute in this log please?
+- Any queries scanning too many docs in slow ops please?
+- How many queries using indexes in this log please?
+- Any huge reslen in this log please?
+- How many slow ops ?
+- What is the longest running query ?
+- What is the wasted time on slow queries ?
+- What are the repeated query patterns ?
+- What is the most active database ?
+- Which collections with highest avg ms ?
+- What is the insert update delete breakdown ?
+- When was operation timeline ?
+- Any low keys examined high docs ?
+- How many IXSCAN in slow ops ?
+- Any big query results ?
+- How many slow ops ? from this log?
+- What is the longest running query ? from this log?
+- What is the wasted time on slow queries ? from this log?
+- What are the repeated query patterns ? from this log?
+- What is the most active database ? from this log?
+- Which collections with highest avg ms ? from this log?
+- What is the insert update delete breakdown ? from this log?
+- When was operation timeline ? from this log?
+- Any low keys examined high docs ? from this log?
+- How many IXSCAN in slow ops ? from this log?
+- Any big query results ? from this log?
+- How many slow ops ? in this log?
+- What is the longest running query ? in this log?
+- What is the wasted time on slow queries ? in this log?
+- What are the repeated query patterns ? in this log?
+- What is the most active database ? in this log?
+- Which collections with highest avg ms ? in this log?
+- What is the insert update delete breakdown ? in this log?
+- When was operation timeline ? in this log?
+- Any low keys examined high docs ? in this log?
+- How many IXSCAN in slow ops ? in this log?
+- Any big query results ? in this log?
+- How many slow ops ? in the uploaded file?
+- What is the longest running query ? in the uploaded file?
+- What is the wasted time on slow queries ? in the uploaded file?
+- What are the repeated query patterns ? in the uploaded file?
+- What is the most active database ? in the uploaded file?
+- Which collections with highest avg ms ? in the uploaded file?
+- What is the insert update delete breakdown ? in the uploaded file?
+- When was operation timeline ? in the uploaded file?
+- Any low keys examined high docs ? in the uploaded file?
+- How many IXSCAN in slow ops ? in the uploaded file?
+- Any big query results ? in the uploaded file?
+- How many slow ops ? according to the parsed log?
+- What is the longest running query ? according to the parsed log?
+- What is the wasted time on slow queries ? according to the parsed log?
+- What are the repeated query patterns ? according to the parsed log?
+- What is the most active database ? according to the parsed log?
+- Which collections with highest avg ms ? according to the parsed log?
+- What is the insert update delete breakdown ? according to the parsed log?
+- When was operation timeline ? according to the parsed log?
+- Any low keys examined high docs ? according to the parsed log?
+- How many IXSCAN in slow ops ? according to the parsed log?
+- Any big query results ? according to the parsed log?
+- How many slow ops ? for this mongod?
+- What is the longest running query ? for this mongod?
+- What is the wasted time on slow queries ? for this mongod?
+- What are the repeated query patterns ? for this mongod?
+- What is the most active database ? for this mongod?
+- Which collections with highest avg ms ? for this mongod?
+- What is the insert update delete breakdown ? for this mongod?
+- When was operation timeline ? for this mongod?
+- Any low keys examined high docs ? for this mongod?
+- How many IXSCAN in slow ops ? for this mongod?
+- Any big query results ? for this mongod?
+- How many slow ops ? for troubleshooting?
+- What is the longest running query ? for troubleshooting?
+- What is the wasted time on slow queries ? for troubleshooting?
+- What are the repeated query patterns ? for troubleshooting?
+- What is the most active database ? for troubleshooting?
+- Which collections with highest avg ms ? for troubleshooting?
+- What is the insert update delete breakdown ? for troubleshooting?
+- When was operation timeline ? for troubleshooting?
+- Any low keys examined high docs ? for troubleshooting?
+- How many IXSCAN in slow ops ? for troubleshooting?
+- Any big query results ? for troubleshooting?
+- How many slow ops ? for performance review?
+- What is the longest running query ? for performance review?
+- What is the wasted time on slow queries ? for performance review?
+- What are the repeated query patterns ? for performance review?
+- What is the most active database ? for performance review?
+- Which collections with highest avg ms ? for performance review?
+- What is the insert update delete breakdown ? for performance review?
+- When was operation timeline ? for performance review?
+- Any low keys examined high docs ? for performance review?
+- How many IXSCAN in slow ops ? for performance review?
+- Any big query results ? for performance review?
+- How many slow ops ? for the DBA review?
+- What is the longest running query ? for the DBA review?
+- What is the wasted time on slow queries ? for the DBA review?
+- What are the repeated query patterns ? for the DBA review?
+- What is the most active database ? for the DBA review?
+- Which collections with highest avg ms ? for the DBA review?
+- What is the insert update delete breakdown ? for the DBA review?
+- When was operation timeline ? for the DBA review?
+- Any low keys examined high docs ? for the DBA review?
+- How many IXSCAN in slow ops ? for the DBA review?
+- Any big query results ? for the DBA review?
+- How many slow ops ? please?
+- What is the longest running query ? please?
+- What is the wasted time on slow queries ? please?
+- What are the repeated query patterns ? please?
+- What is the most active database ? please?
+- Which collections with highest avg ms ? please?
+- What is the insert update delete breakdown ? please?
+- When was operation timeline ? please?
+- Any low keys examined high docs ? please?
+- How many IXSCAN in slow ops ? please?
+- Any big query results ? please?
+- How many slow ops in this log?
+- What is the longest running query in this log?
+- What is the wasted time on slow queries in this log?
+- What are the repeated query patterns in this log?
+- What is the most active database in this log?
+- Which collections with highest avg ms in this log?
+- What is the insert update delete breakdown in this log?
+- When was operation timeline in this log?
+- Any low keys examined high docs in slow ops?
+- How many IXSCAN in slow ops in this log?
+- Any big query results in this log?
+- How many slow ops in this log from this log?
+- What is the longest running query in this log from this log?
+- What is the wasted time on slow queries in this log from this log?
+- What are the repeated query patterns in this log from this log?
+- What is the most active database in this log from this log?
+- Which collections with highest avg ms in this log from this log?
+- What is the insert update delete breakdown in this log from this log?
+- When was operation timeline in this log from this log?
+- Any low keys examined high docs in slow ops from this log?
+- How many IXSCAN in slow ops in this log from this log?
+- Any big query results in this log from this log?
+- How many slow ops in this log in this log?
+- What is the longest running query in this log in this log?
+- What is the wasted time on slow queries in this log in this log?
+- What are the repeated query patterns in this log in this log?
+- What is the most active database in this log in this log?
+- Which collections with highest avg ms in this log in this log?
+- What is the insert update delete breakdown in this log in this log?
+- When was operation timeline in this log in this log?
+- Any low keys examined high docs in slow ops in this log?
+- How many IXSCAN in slow ops in this log in this log?
+- Any big query results in this log in this log?
+- How many slow ops in this log in the uploaded file?
+- What is the longest running query in this log in the uploaded file?
+- What is the wasted time on slow queries in this log in the uploaded file?
+- What are the repeated query patterns in this log in the uploaded file?
+- What is the most active database in this log in the uploaded file?
+- Which collections with highest avg ms in this log in the uploaded file?
+- What is the insert update delete breakdown in this log in the uploaded file?
+- When was operation timeline in this log in the uploaded file?
+- Any low keys examined high docs in slow ops in the uploaded file?
+- How many IXSCAN in slow ops in this log in the uploaded file?
+- Any big query results in this log in the uploaded file?
+- How many slow ops in this log according to the parsed log?
+- What is the longest running query in this log according to the parsed log?
+- What is the wasted time on slow queries in this log according to the parsed log?
+- What are the repeated query patterns in this log according to the parsed log?
+- What is the most active database in this log according to the parsed log?
+- Which collections with highest avg ms in this log according to the parsed log?
+- What is the insert update delete breakdown in this log according to the parsed log?
+- When was operation timeline in this log according to the parsed log?
+- Any low keys examined high docs in slow ops according to the parsed log?
+- How many IXSCAN in slow ops in this log according to the parsed log?
+- Any big query results in this log according to the parsed log?
+- How many slow ops in this log for this mongod?
+- What is the longest running query in this log for this mongod?
+- What is the wasted time on slow queries in this log for this mongod?
+- What are the repeated query patterns in this log for this mongod?
+- What is the most active database in this log for this mongod?
+- Which collections with highest avg ms in this log for this mongod?
+- What is the insert update delete breakdown in this log for this mongod?
+- When was operation timeline in this log for this mongod?
+- Any low keys examined high docs in slow ops for this mongod?
+- How many IXSCAN in slow ops in this log for this mongod?
+- Any big query results in this log for this mongod?
+- How many slow ops in this log for troubleshooting?
+- What is the longest running query in this log for troubleshooting?
+- What is the wasted time on slow queries in this log for troubleshooting?
+- What are the repeated query patterns in this log for troubleshooting?
+- What is the most active database in this log for troubleshooting?
+- Which collections with highest avg ms in this log for troubleshooting?
+- What is the insert update delete breakdown in this log for troubleshooting?
+- When was operation timeline in this log for troubleshooting?
+- Any low keys examined high docs in slow ops for troubleshooting?
+- How many IXSCAN in slow ops in this log for troubleshooting?
+- Any big query results in this log for troubleshooting?
+- How many slow ops in this log for performance review?
+- What is the longest running query in this log for performance review?
+- What is the wasted time on slow queries in this log for performance review?
+- What are the repeated query patterns in this log for performance review?
+- What is the most active database in this log for performance review?
+- Which collections with highest avg ms in this log for performance review?
+- What is the insert update delete breakdown in this log for performance review?
+- When was operation timeline in this log for performance review?
+- Any low keys examined high docs in slow ops for performance review?
+- How many IXSCAN in slow ops in this log for performance review?
+- Any big query results in this log for performance review?
+- How many slow ops in this log for the DBA review?
+- What is the longest running query in this log for the DBA review?
+- What is the wasted time on slow queries in this log for the DBA review?
+- What are the repeated query patterns in this log for the DBA review?
+- What is the most active database in this log for the DBA review?
+- Which collections with highest avg ms in this log for the DBA review?
+- What is the insert update delete breakdown in this log for the DBA review?
+- When was operation timeline in this log for the DBA review?
+- Any low keys examined high docs in slow ops for the DBA review?
+- How many IXSCAN in slow ops in this log for the DBA review?
+- Any big query results in this log for the DBA review?
+- How many slow ops in this log please?
+- What is the longest running query in this log please?
+- What is the wasted time on slow queries in this log please?
+- What are the repeated query patterns in this log please?
+- What is the most active database in this log please?
+- Which collections with highest avg ms in this log please?
+- What is the insert update delete breakdown in this log please?
+- When was operation timeline in this log please?
+- Any low keys examined high docs in slow ops please?
+- How many IXSCAN in slow ops in this log please?
+- Any big query results in this log please?
+- How many slow ops in the log file?
+- What is the max duration query ?
+- What is the total slow operation time ?
+- What are the hot query shapes ?
+- What is the namespace with most ops ?
+- Which top slow namespaces ?
+- What is the operation mix ?
+- When was load over time ?
+- Any bad examination ratio ?
+- How many index-based plans ?
+- Any oversized responses ?
+- How many slow ops in the log file from this log?
+- What is the max duration query ? from this log?
+- What is the total slow operation time ? from this log?
+- What are the hot query shapes ? from this log?
+- What is the namespace with most ops ? from this log?
+- Which top slow namespaces ? from this log?
+- What is the operation mix ? from this log?
+- When was load over time ? from this log?
+- Any bad examination ratio ? from this log?
+- How many index-based plans ? from this log?
+- Any oversized responses ? from this log?
+- How many slow ops in the log file in this log?
+- What is the max duration query ? in this log?
+- What is the total slow operation time ? in this log?
+- What are the hot query shapes ? in this log?
+- What is the namespace with most ops ? in this log?
+- Which top slow namespaces ? in this log?
+- What is the operation mix ? in this log?
+- When was load over time ? in this log?
+- Any bad examination ratio ? in this log?
+- How many index-based plans ? in this log?
+- Any oversized responses ? in this log?
+- How many slow ops in the log file in the uploaded file?
+- What is the max duration query ? in the uploaded file?
+- What is the total slow operation time ? in the uploaded file?
+- What are the hot query shapes ? in the uploaded file?
+- What is the namespace with most ops ? in the uploaded file?
+- Which top slow namespaces ? in the uploaded file?
+- What is the operation mix ? in the uploaded file?
+- When was load over time ? in the uploaded file?
+- Any bad examination ratio ? in the uploaded file?
+- How many index-based plans ? in the uploaded file?
+- Any oversized responses ? in the uploaded file?
+- How many slow ops in the log file according to the parsed log?
+- What is the max duration query ? according to the parsed log?
+- What is the total slow operation time ? according to the parsed log?
+- What are the hot query shapes ? according to the parsed log?
+- What is the namespace with most ops ? according to the parsed log?
+- Which top slow namespaces ? according to the parsed log?
+- What is the operation mix ? according to the parsed log?
+- When was load over time ? according to the parsed log?
+- Any bad examination ratio ? according to the parsed log?
+- How many index-based plans ? according to the parsed log?
+- Any oversized responses ? according to the parsed log?
+- How many slow ops in the log file for this mongod?
+- What is the max duration query ? for this mongod?
+- What is the total slow operation time ? for this mongod?
+- What are the hot query shapes ? for this mongod?
+- What is the namespace with most ops ? for this mongod?
+- Which top slow namespaces ? for this mongod?
+- What is the operation mix ? for this mongod?
+- When was load over time ? for this mongod?
+- Any bad examination ratio ? for this mongod?
+- How many index-based plans ? for this mongod?
+- Any oversized responses ? for this mongod?
+- How many slow ops in the log file for troubleshooting?
+- What is the max duration query ? for troubleshooting?
+- What is the total slow operation time ? for troubleshooting?
+- What are the hot query shapes ? for troubleshooting?
+- What is the namespace with most ops ? for troubleshooting?
+- Which top slow namespaces ? for troubleshooting?
+- What is the operation mix ? for troubleshooting?
+- When was load over time ? for troubleshooting?
+- Any bad examination ratio ? for troubleshooting?
+- How many index-based plans ? for troubleshooting?
+- Any oversized responses ? for troubleshooting?
+- How many slow ops in the log file for performance review?
+- What is the max duration query ? for performance review?
+- What is the total slow operation time ? for performance review?
+- What are the hot query shapes ? for performance review?
+- What is the namespace with most ops ? for performance review?
+- Which top slow namespaces ? for performance review?
+- What is the operation mix ? for performance review?
+- When was load over time ? for performance review?
+- Any bad examination ratio ? for performance review?
+- How many index-based plans ? for performance review?
+- Any oversized responses ? for performance review?
+- How many slow ops in the log file for the DBA review?
+- What is the max duration query ? for the DBA review?
+- What is the total slow operation time ? for the DBA review?
+- What are the hot query shapes ? for the DBA review?
+- What is the namespace with most ops ? for the DBA review?
+- Which top slow namespaces ? for the DBA review?
+- What is the operation mix ? for the DBA review?
+- When was load over time ? for the DBA review?
+- Any bad examination ratio ? for the DBA review?
+- How many index-based plans ? for the DBA review?
+- Any oversized responses ? for the DBA review?
+- How many slow ops in the log file please?
+- What is the max duration query ? please?
+- What is the total slow operation time ? please?
+- What are the hot query shapes ? please?
+- What is the namespace with most ops ? please?
+- Which top slow namespaces ? please?
+- What is the operation mix ? please?
+- When was load over time ? please?
+- Any bad examination ratio ? please?
+- How many index-based plans ? please?
+- Any oversized responses ? please?
+- How many queries over threshold ?
+- What is the max duration query in this log?
+- What is the total slow operation time in this log?
+- What are the hot query shapes in this log?
+- What is the namespace with most ops in this log?
+- Which top slow namespaces in this log?
+- What is the operation mix in this log?
+- When was load over time in this log?
+- Any bad examination ratio in slow ops?
+- How many index-based plans in this log?
+- Any oversized responses in this log?
+- How many queries over threshold ? from this log?
+- What is the max duration query in this log from this log?
+- What is the total slow operation time in this log from this log?
+- What are the hot query shapes in this log from this log?
+- What is the namespace with most ops in this log from this log?
+- Which top slow namespaces in this log from this log?
+- What is the operation mix in this log from this log?
+- When was load over time in this log from this log?
+- Any bad examination ratio in slow ops from this log?
+- How many index-based plans in this log from this log?
+- Any oversized responses in this log from this log?
+- How many queries over threshold ? in this log?
+- What is the max duration query in this log in this log?
+- What is the total slow operation time in this log in this log?
+- What are the hot query shapes in this log in this log?
+- What is the namespace with most ops in this log in this log?
+- Which top slow namespaces in this log in this log?
+- What is the operation mix in this log in this log?
+- When was load over time in this log in this log?
+- Any bad examination ratio in slow ops in this log?
+- How many index-based plans in this log in this log?
+- Any oversized responses in this log in this log?
+- How many queries over threshold ? in the uploaded file?
+- What is the max duration query in this log in the uploaded file?
+- What is the total slow operation time in this log in the uploaded file?
+- What are the hot query shapes in this log in the uploaded file?
+- What is the namespace with most ops in this log in the uploaded file?
+- Which top slow namespaces in this log in the uploaded file?
+- What is the operation mix in this log in the uploaded file?
+- When was load over time in this log in the uploaded file?
+- Any bad examination ratio in slow ops in the uploaded file?
+- How many index-based plans in this log in the uploaded file?
+- Any oversized responses in this log in the uploaded file?
+- How many queries over threshold ? according to the parsed log?
+- What is the max duration query in this log according to the parsed log?
+- What is the total slow operation time in this log according to the parsed log?
+- What are the hot query shapes in this log according to the parsed log?
+- What is the namespace with most ops in this log according to the parsed log?
+- Which top slow namespaces in this log according to the parsed log?
+- What is the operation mix in this log according to the parsed log?
+- When was load over time in this log according to the parsed log?
+- Any bad examination ratio in slow ops according to the parsed log?
+- How many index-based plans in this log according to the parsed log?
+- Any oversized responses in this log according to the parsed log?
+- How many queries over threshold ? for this mongod?
+- What is the max duration query in this log for this mongod?
+- What is the total slow operation time in this log for this mongod?
+- What are the hot query shapes in this log for this mongod?
+- What is the namespace with most ops in this log for this mongod?
+- Which top slow namespaces in this log for this mongod?
+- What is the operation mix in this log for this mongod?
+- When was load over time in this log for this mongod?
+- Any bad examination ratio in slow ops for this mongod?
+- How many index-based plans in this log for this mongod?
+- Any oversized responses in this log for this mongod?
+- How many queries over threshold ? for troubleshooting?
+- What is the max duration query in this log for troubleshooting?
+- What is the total slow operation time in this log for troubleshooting?
+- What are the hot query shapes in this log for troubleshooting?
+- What is the namespace with most ops in this log for troubleshooting?
+- Which top slow namespaces in this log for troubleshooting?
+- What is the operation mix in this log for troubleshooting?
+- When was load over time in this log for troubleshooting?
+- Any bad examination ratio in slow ops for troubleshooting?
+- How many index-based plans in this log for troubleshooting?
+- Any oversized responses in this log for troubleshooting?
+- How many queries over threshold ? for performance review?
+- What is the max duration query in this log for performance review?
+- What is the total slow operation time in this log for performance review?
+- What are the hot query shapes in this log for performance review?
+- What is the namespace with most ops in this log for performance review?
+- Which top slow namespaces in this log for performance review?
+- What is the operation mix in this log for performance review?
+- When was load over time in this log for performance review?
+- Any bad examination ratio in slow ops for performance review?
+- How many index-based plans in this log for performance review?
+- Any oversized responses in this log for performance review?
+- How many queries over threshold ? for the DBA review?
+- What is the max duration query in this log for the DBA review?
+- What is the total slow operation time in this log for the DBA review?
+- What are the hot query shapes in this log for the DBA review?
+- What is the namespace with most ops in this log for the DBA review?
+- Which top slow namespaces in this log for the DBA review?
+- What is the operation mix in this log for the DBA review?
+- When was load over time in this log for the DBA review?
+- Any bad examination ratio in slow ops for the DBA review?
+- How many index-based plans in this log for the DBA review?
+- Any oversized responses in this log for the DBA review?
+- How many queries over threshold ? please?
+- What is the max duration query in this log please?
+- What is the total slow operation time in this log please?
+- What are the hot query shapes in this log please?
+- What is the namespace with most ops in this log please?
+- Which top slow namespaces in this log please?
+- What is the operation mix in this log please?
+- When was load over time in this log please?
+- Any bad examination ratio in slow ops please?
+- How many index-based plans in this log please?
+- Any oversized responses in this log please?
+- How many queries over threshold in this log?
+- What is the top slow op ?
+- How much time in slow ops ?
+- What are the slow query templates ?
+- What is the busiest collection ?
+- What are the slowest namespaces ?
+- What is the op type distribution ?
+- When was peak traffic time ?
+- Any expensive collection scans ?
+- Any IXSCAN operations ?
+- Any reslen violations ?
+- How many queries over threshold in this log from this log?
+- What is the top slow op ? from this log?
+- How much time in slow ops ? from this log?
+- What are the slow query templates ? from this log?
+- What is the busiest collection ? from this log?
+- What are the slowest namespaces ? from this log?
+- What is the op type distribution ? from this log?
+- When was peak traffic time ? from this log?
+- Any expensive collection scans ? from this log?
+- Any IXSCAN operations ? from this log?
+- Any reslen violations ? from this log?
+- How many queries over threshold in this log in this log?
+- What is the top slow op ? in this log?
+- How much time in slow ops ? in this log?
+- What are the slow query templates ? in this log?
+- What is the busiest collection ? in this log?
+- What are the slowest namespaces ? in this log?
+- What is the op type distribution ? in this log?
+- When was peak traffic time ? in this log?
+- Any expensive collection scans ? in this log?
+- Any IXSCAN operations ? in this log?
+- Any reslen violations ? in this log?
+- How many queries over threshold in this log in the uploaded file?
+- What is the top slow op ? in the uploaded file?
+- How much time in slow ops ? in the uploaded file?
+- What are the slow query templates ? in the uploaded file?
+- What is the busiest collection ? in the uploaded file?
+- What are the slowest namespaces ? in the uploaded file?
+- What is the op type distribution ? in the uploaded file?
+- When was peak traffic time ? in the uploaded file?
+- Any expensive collection scans ? in the uploaded file?
+- Any IXSCAN operations ? in the uploaded file?
+- Any reslen violations ? in the uploaded file?
+- How many queries over threshold in this log according to the parsed log?
+- What is the top slow op ? according to the parsed log?
+- How much time in slow ops ? according to the parsed log?
+- What are the slow query templates ? according to the parsed log?
+- What is the busiest collection ? according to the parsed log?
+- What are the slowest namespaces ? according to the parsed log?
+- What is the op type distribution ? according to the parsed log?
+- When was peak traffic time ? according to the parsed log?
+- Any expensive collection scans ? according to the parsed log?
+- Any IXSCAN operations ? according to the parsed log?
+- Any reslen violations ? according to the parsed log?
+- How many queries over threshold in this log for this mongod?
+- What is the top slow op ? for this mongod?
+- How much time in slow ops ? for this mongod?
+- What are the slow query templates ? for this mongod?
+- What is the busiest collection ? for this mongod?
+- What are the slowest namespaces ? for this mongod?
+- What is the op type distribution ? for this mongod?
+- When was peak traffic time ? for this mongod?
+- Any expensive collection scans ? for this mongod?
+- Any IXSCAN operations ? for this mongod?
+- Any reslen violations ? for this mongod?
+- How many queries over threshold in this log for troubleshooting?
+- What is the top slow op ? for troubleshooting?
+- How much time in slow ops ? for troubleshooting?
+- What are the slow query templates ? for troubleshooting?
+- What is the busiest collection ? for troubleshooting?
+- What are the slowest namespaces ? for troubleshooting?
+- What is the op type distribution ? for troubleshooting?
+- When was peak traffic time ? for troubleshooting?
+- Any expensive collection scans ? for troubleshooting?
+- Any IXSCAN operations ? for troubleshooting?
+- Any reslen violations ? for troubleshooting?
+- How many queries over threshold in this log for performance review?
+- What is the top slow op ? for performance review?
+- How much time in slow ops ? for performance review?
+- What are the slow query templates ? for performance review?
+- What is the busiest collection ? for performance review?
+- What are the slowest namespaces ? for performance review?
+- What is the op type distribution ? for performance review?
+- When was peak traffic time ? for performance review?
+- Any expensive collection scans ? for performance review?
+- Any IXSCAN operations ? for performance review?
+- Any reslen violations ? for performance review?
+- How many queries over threshold in this log for the DBA review?
+- What is the top slow op ? for the DBA review?
+- How much time in slow ops ? for the DBA review?
+- What are the slow query templates ? for the DBA review?
+- What is the busiest collection ? for the DBA review?
+- What are the slowest namespaces ? for the DBA review?
+- What is the op type distribution ? for the DBA review?
+- When was peak traffic time ? for the DBA review?
+- Any expensive collection scans ? for the DBA review?
+- Any IXSCAN operations ? for the DBA review?
+- Any reslen violations ? for the DBA review?
+- How many queries over threshold in this log please?
+- What is the top slow op ? please?
+- How much time in slow ops ? please?
+- What are the slow query templates ? please?
+- What is the busiest collection ? please?
+- What are the slowest namespaces ? please?
+- What is the op type distribution ? please?
+- When was peak traffic time ? please?
+- Any expensive collection scans ? please?
+- Any IXSCAN operations ? please?
+- Any reslen violations ? please?
+- How many queries over threshold in the log file?
+- What is the top slow op in this log?
+- How much time in slow ops in this log?
+- What are the slow query templates in this log?
+- What is the busiest collection in this log?
+- What are the slowest namespaces in this log?
+- What is the op type distribution in this log?
+- When was peak traffic time in this log?
+- Any expensive collection scans in slow ops?
+- Any IXSCAN operations in this log?
+- Any reslen violations in this log?
+- How many queries over threshold in the log file from this log?
+- What is the top slow op in this log from this log?
+- How much time in slow ops in this log from this log?
+- What are the slow query templates in this log from this log?
+- What is the busiest collection in this log from this log?
+- What are the slowest namespaces in this log from this log?
+- What is the op type distribution in this log from this log?
+- When was peak traffic time in this log from this log?
+- Any expensive collection scans in slow ops from this log?
+- Any IXSCAN operations in this log from this log?
+- Any reslen violations in this log from this log?
+- How many queries over threshold in the log file in this log?
+- What is the top slow op in this log in this log?
+- How much time in slow ops in this log in this log?
+- What are the slow query templates in this log in this log?
+- What is the busiest collection in this log in this log?
+- What are the slowest namespaces in this log in this log?
+- What is the op type distribution in this log in this log?
+- When was peak traffic time in this log in this log?
+- Any expensive collection scans in slow ops in this log?
+- Any IXSCAN operations in this log in this log?
+- Any reslen violations in this log in this log?
+- How many queries over threshold in the log file in the uploaded file?
+- What is the top slow op in this log in the uploaded file?
+- How much time in slow ops in this log in the uploaded file?
+- What are the slow query templates in this log in the uploaded file?
+- What is the busiest collection in this log in the uploaded file?
+- What are the slowest namespaces in this log in the uploaded file?
+- What is the op type distribution in this log in the uploaded file?
+- When was peak traffic time in this log in the uploaded file?
+- Any expensive collection scans in slow ops in the uploaded file?
+- Any IXSCAN operations in this log in the uploaded file?
+- Any reslen violations in this log in the uploaded file?
+- How many queries over threshold in the log file according to the parsed log?
+- What is the top slow op in this log according to the parsed log?
+- How much time in slow ops in this log according to the parsed log?
+- What are the slow query templates in this log according to the parsed log?
+- What is the busiest collection in this log according to the parsed log?
+- What are the slowest namespaces in this log according to the parsed log?
+- What is the op type distribution in this log according to the parsed log?
+- When was peak traffic time in this log according to the parsed log?
+- Any expensive collection scans in slow ops according to the parsed log?
+- Any IXSCAN operations in this log according to the parsed log?
+- Any reslen violations in this log according to the parsed log?
+- How many queries over threshold in the log file for this mongod?
+- What is the top slow op in this log for this mongod?
+- How much time in slow ops in this log for this mongod?
+- What are the slow query templates in this log for this mongod?
+- What is the busiest collection in this log for this mongod?
+- What are the slowest namespaces in this log for this mongod?
+- What is the op type distribution in this log for this mongod?
+- When was peak traffic time in this log for this mongod?
+- Any expensive collection scans in slow ops for this mongod?
+- Any IXSCAN operations in this log for this mongod?
+- Any reslen violations in this log for this mongod?
+- How many queries over threshold in the log file for troubleshooting?
+- What is the top slow op in this log for troubleshooting?
+- How much time in slow ops in this log for troubleshooting?
+- What are the slow query templates in this log for troubleshooting?
+- What is the busiest collection in this log for troubleshooting?
+- What are the slowest namespaces in this log for troubleshooting?
+- What is the op type distribution in this log for troubleshooting?
+- When was peak traffic time in this log for troubleshooting?
+- Any expensive collection scans in slow ops for troubleshooting?
+- Any IXSCAN operations in this log for troubleshooting?
+- Any reslen violations in this log for troubleshooting?
+- How many queries over threshold in the log file for performance review?
+- What is the top slow op in this log for performance review?
+- How much time in slow ops in this log for performance review?
+- What are the slow query templates in this log for performance review?
+- What is the busiest collection in this log for performance review?
+- What are the slowest namespaces in this log for performance review?
+- What is the op type distribution in this log for performance review?
+- When was peak traffic time in this log for performance review?
+- Any expensive collection scans in slow ops for performance review?
+- Any IXSCAN operations in this log for performance review?
+- Any reslen violations in this log for performance review?
+- How many queries over threshold in the log file for the DBA review?
+- What is the top slow op in this log for the DBA review?
+- How much time in slow ops in this log for the DBA review?
+- What are the slow query templates in this log for the DBA review?
+- What is the busiest collection in this log for the DBA review?
+- What are the slowest namespaces in this log for the DBA review?
+- What is the op type distribution in this log for the DBA review?
+- When was peak traffic time in this log for the DBA review?
+- Any expensive collection scans in slow ops for the DBA review?
+- Any IXSCAN operations in this log for the DBA review?
+- Any reslen violations in this log for the DBA review?
+- How many queries over threshold in the log file please?
+- What is the top slow op in this log please?
+- How much time in slow ops in this log please?
+- What are the slow query templates in this log please?
+- What is the busiest collection in this log please?
+- What are the slowest namespaces in this log please?
+- What is the op type distribution in this log please?
+- When was peak traffic time in this log please?
+- Any expensive collection scans in slow ops please?
+- Any IXSCAN operations in this log please?
+- Any reslen violations in this log please?
+- How many long running operations ?
+- What is the highest latency operation ?
+- How much slow query time ?
+- Show query patterns ?
+- Which is the busiest namespace ?
+- What are the slowest collections ?
+- Show operation types ?
+- When was activity timeline ?
+- Show inefficient queries ?
+- Any index scans ?
+- Show large result sets ?
+- How many long running operations ? from this log?
+- What is the highest latency operation ? from this log?
+- How much slow query time ? from this log?
+- Show query patterns ? from this log?
+- Which is the busiest namespace ? from this log?
+- What are the slowest collections ? from this log?
+- Show operation types ? from this log?
+- When was activity timeline ? from this log?
+- Show inefficient queries ? from this log?
+- Any index scans ? from this log?
+- Show large result sets ? from this log?
+- How many long running operations ? in this log?
+- What is the highest latency operation ? in this log?
+- How much slow query time ? in this log?
+- Show query patterns ? in this log?
+- Which is the busiest namespace ? in this log?
+- What are the slowest collections ? in this log?
+- Show operation types ? in this log?
+- When was activity timeline ? in this log?
+- Show inefficient queries ? in this log?
+- Any index scans ? in this log?
+- Show large result sets ? in this log?
+- How many long running operations ? in the uploaded file?
+- What is the highest latency operation ? in the uploaded file?
+- How much slow query time ? in the uploaded file?
+- Show query patterns ? in the uploaded file?
+- Which is the busiest namespace ? in the uploaded file?
+- What are the slowest collections ? in the uploaded file?
+- Show operation types ? in the uploaded file?
+- When was activity timeline ? in the uploaded file?
+- Show inefficient queries ? in the uploaded file?
+- Any index scans ? in the uploaded file?
+- Show large result sets ? in the uploaded file?
+- How many long running operations ? according to the parsed log?
+- What is the highest latency operation ? according to the parsed log?
+- How much slow query time ? according to the parsed log?
+- Show query patterns ? according to the parsed log?
+- Which is the busiest namespace ? according to the parsed log?
+- What are the slowest collections ? according to the parsed log?
+- Show operation types ? according to the parsed log?
+- When was activity timeline ? according to the parsed log?
+- Show inefficient queries ? according to the parsed log?
+- Any index scans ? according to the parsed log?
+- Show large result sets ? according to the parsed log?
+- How many long running operations ? for this mongod?
+- What is the highest latency operation ? for this mongod?
+- How much slow query time ? for this mongod?
+- Show query patterns ? for this mongod?
+- Which is the busiest namespace ? for this mongod?
+- What are the slowest collections ? for this mongod?
+- Show operation types ? for this mongod?
+- When was activity timeline ? for this mongod?
+- Show inefficient queries ? for this mongod?
+- Any index scans ? for this mongod?
+- Show large result sets ? for this mongod?
+- How many long running operations ? for troubleshooting?
+- What is the highest latency operation ? for troubleshooting?
+- How much slow query time ? for troubleshooting?
+- Show query patterns ? for troubleshooting?
+- Which is the busiest namespace ? for troubleshooting?
+- What are the slowest collections ? for troubleshooting?
+- Show operation types ? for troubleshooting?
+- When was activity timeline ? for troubleshooting?
+- Show inefficient queries ? for troubleshooting?
+- Any index scans ? for troubleshooting?
+- Show large result sets ? for troubleshooting?
+- How many long running operations ? for performance review?
+- What is the highest latency operation ? for performance review?
+- How much slow query time ? for performance review?
+- Show query patterns ? for performance review?
+- Which is the busiest namespace ? for performance review?
+- What are the slowest collections ? for performance review?
+- Show operation types ? for performance review?
+- When was activity timeline ? for performance review?
+- Show inefficient queries ? for performance review?
+- Any index scans ? for performance review?
+- Show large result sets ? for performance review?
+- How many long running operations ? for the DBA review?
+- What is the highest latency operation ? for the DBA review?
+- How much slow query time ? for the DBA review?
+- Show query patterns ? for the DBA review?
+- Which is the busiest namespace ? for the DBA review?
+- What are the slowest collections ? for the DBA review?
+- Show operation types ? for the DBA review?
+- When was activity timeline ? for the DBA review?
+- Show inefficient queries ? for the DBA review?
+- Any index scans ? for the DBA review?
+- Show large result sets ? for the DBA review?
+- How many long running operations ? please?
+- What is the highest latency operation ? please?
+- How much slow query time ? please?
+- Show query patterns ? please?
+- Which is the busiest namespace ? please?
+- What are the slowest collections ? please?
+- Show operation types ? please?
+- When was activity timeline ? please?
+- Show inefficient queries ? please?
+- Any index scans ? please?
+- Show large result sets ? please?
+- How many long running operations in this log?
+- What is the highest latency operation in this log?
+- How much slow query time in this log?
+- Show query patterns in this log?
+- Which is the busiest namespace in this log?
+- What are the slowest collections in this log?
+- Show operation types in this log?
+- When was activity timeline in this log?
+- Show inefficient queries in slow ops?
+- Any index scans in this log?
+- Show large result sets in this log?
+- How many long running operations in this log from this log?
+- What is the highest latency operation in this log from this log?
+- How much slow query time in this log from this log?
+- Show query patterns in this log from this log?
+- Which is the busiest namespace in this log from this log?
+- What are the slowest collections in this log from this log?
+- Show operation types in this log from this log?
+- When was activity timeline in this log from this log?
+- Show inefficient queries in slow ops from this log?
+- Any index scans in this log from this log?
+- Show large result sets in this log from this log?
+- How many long running operations in this log in this log?
+- What is the highest latency operation in this log in this log?
+- How much slow query time in this log in this log?
+- Show query patterns in this log in this log?
+- Which is the busiest namespace in this log in this log?
+- What are the slowest collections in this log in this log?
+- Show operation types in this log in this log?
+- When was activity timeline in this log in this log?
+- Show inefficient queries in slow ops in this log?
+- Any index scans in this log in this log?
+- Show large result sets in this log in this log?
+- How many long running operations in this log in the uploaded file?
+- What is the highest latency operation in this log in the uploaded file?
+- How much slow query time in this log in the uploaded file?
+- Show query patterns in this log in the uploaded file?
+- Which is the busiest namespace in this log in the uploaded file?
+- What are the slowest collections in this log in the uploaded file?
+- Show operation types in this log in the uploaded file?
+- When was activity timeline in this log in the uploaded file?
+- Show inefficient queries in slow ops in the uploaded file?
+- Any index scans in this log in the uploaded file?
+- Show large result sets in this log in the uploaded file?
+- How many long running operations in this log according to the parsed log?
+- What is the highest latency operation in this log according to the parsed log?
+- How much slow query time in this log according to the parsed log?
+- Show query patterns in this log according to the parsed log?
+- Which is the busiest namespace in this log according to the parsed log?
+- What are the slowest collections in this log according to the parsed log?
+- Show operation types in this log according to the parsed log?
+- When was activity timeline in this log according to the parsed log?
+- Show inefficient queries in slow ops according to the parsed log?
+- Any index scans in this log according to the parsed log?
+- Show large result sets in this log according to the parsed log?
+- How many long running operations in this log for this mongod?
+- What is the highest latency operation in this log for this mongod?
+- How much slow query time in this log for this mongod?
+- Show query patterns in this log for this mongod?
+- Which is the busiest namespace in this log for this mongod?
+- What are the slowest collections in this log for this mongod?
+- Show operation types in this log for this mongod?
+- When was activity timeline in this log for this mongod?
+- Show inefficient queries in slow ops for this mongod?
+- Any index scans in this log for this mongod?
+- Show large result sets in this log for this mongod?
+- How many long running operations in this log for troubleshooting?
+- What is the highest latency operation in this log for troubleshooting?
+- How much slow query time in this log for troubleshooting?
+- Show query patterns in this log for troubleshooting?
+- Which is the busiest namespace in this log for troubleshooting?
+- What are the slowest collections in this log for troubleshooting?
+- Show operation types in this log for troubleshooting?
+- When was activity timeline in this log for troubleshooting?
+- Show inefficient queries in slow ops for troubleshooting?
+- Any index scans in this log for troubleshooting?
+- Show large result sets in this log for troubleshooting?
+- How many long running operations in this log for performance review?
+- What is the highest latency operation in this log for performance review?
+- How much slow query time in this log for performance review?
+- Show query patterns in this log for performance review?
+- Which is the busiest namespace in this log for performance review?
+- What are the slowest collections in this log for performance review?
+- Show operation types in this log for performance review?
+- When was activity timeline in this log for performance review?
+- Show inefficient queries in slow ops for performance review?
+- Any index scans in this log for performance review?
+- Show large result sets in this log for performance review?
+- How many long running operations in this log for the DBA review?
+- What is the highest latency operation in this log for the DBA review?
+- How much slow query time in this log for the DBA review?
+- Show query patterns in this log for the DBA review?
+- Which is the busiest namespace in this log for the DBA review?
+- What are the slowest collections in this log for the DBA review?
+- Show operation types in this log for the DBA review?
+- When was activity timeline in this log for the DBA review?
+- Show inefficient queries in slow ops for the DBA review?
+- Any index scans in this log for the DBA review?
+- Show large result sets in this log for the DBA review?
+- How many long running operations in this log please?
+- What is the highest latency operation in this log please?
+- How much slow query time in this log please?
+- Show query patterns in this log please?
+- Which is the busiest namespace in this log please?
+- What are the slowest collections in this log please?
+- Show operation types in this log please?
+- When was activity timeline in this log please?
+- Show inefficient queries in slow ops please?
+- Any index scans in this log please?
+- Show large result sets in this log please?
+- How many long running operations in the log file?
+- Show slowest query ?
+- How much cumulative slow duration ?
+- Show common query shapes ?
+- Which is the hottest collection ?
+- What are the namespaces by avg duration ?
+- Show read vs write ratio ?
+- What was traffic highest ?
+- Show high docs examined ?
+- Any queries using indexes ?
+- Show responses over 16MB ?
+- How many long running operations in the log file from this log?
+- Show slowest query ? from this log?
+- How much cumulative slow duration ? from this log?
+- Show common query shapes ? from this log?
+- Which is the hottest collection ? from this log?
+- What are the namespaces by avg duration ? from this log?
+- Show read vs write ratio ? from this log?
+- What was traffic highest ? from this log?
+- Show high docs examined ? from this log?
+- Any queries using indexes ? from this log?
+- Show responses over 16MB ? from this log?
+- How many long running operations in the log file in this log?
+- Show slowest query ? in this log?
+- How much cumulative slow duration ? in this log?
+- Show common query shapes ? in this log?
+- Which is the hottest collection ? in this log?
+- What are the namespaces by avg duration ? in this log?
+- Show read vs write ratio ? in this log?
+- What was traffic highest ? in this log?
+- Show high docs examined ? in this log?
+- Any queries using indexes ? in this log?
+- Show responses over 16MB ? in this log?
+- How many long running operations in the log file in the uploaded file?
+- Show slowest query ? in the uploaded file?
+- How much cumulative slow duration ? in the uploaded file?
+- Show common query shapes ? in the uploaded file?
+- Which is the hottest collection ? in the uploaded file?
+- What are the namespaces by avg duration ? in the uploaded file?
+- Show read vs write ratio ? in the uploaded file?
+- What was traffic highest ? in the uploaded file?
+- Show high docs examined ? in the uploaded file?
+- Any queries using indexes ? in the uploaded file?
+- Show responses over 16MB ? in the uploaded file?
+- How many long running operations in the log file according to the parsed log?
+- Show slowest query ? according to the parsed log?
+- How much cumulative slow duration ? according to the parsed log?
+- Show common query shapes ? according to the parsed log?
+- Which is the hottest collection ? according to the parsed log?
+- What are the namespaces by avg duration ? according to the parsed log?
+- Show read vs write ratio ? according to the parsed log?
+- What was traffic highest ? according to the parsed log?
+- Show high docs examined ? according to the parsed log?
+- Any queries using indexes ? according to the parsed log?
+- Show responses over 16MB ? according to the parsed log?
+- How many long running operations in the log file for this mongod?
+- Show slowest query ? for this mongod?
+- How much cumulative slow duration ? for this mongod?
+- Show common query shapes ? for this mongod?
+- Which is the hottest collection ? for this mongod?
+- What are the namespaces by avg duration ? for this mongod?
+- Show read vs write ratio ? for this mongod?
+- What was traffic highest ? for this mongod?
+- Show high docs examined ? for this mongod?
+- Any queries using indexes ? for this mongod?
+- Show responses over 16MB ? for this mongod?
+- How many long running operations in the log file for troubleshooting?
+- Show slowest query ? for troubleshooting?
+- How much cumulative slow duration ? for troubleshooting?
+- Show common query shapes ? for troubleshooting?
+- Which is the hottest collection ? for troubleshooting?
+- What are the namespaces by avg duration ? for troubleshooting?
+- Show read vs write ratio ? for troubleshooting?
+- What was traffic highest ? for troubleshooting?
+- Show high docs examined ? for troubleshooting?
+- Any queries using indexes ? for troubleshooting?
+- Show responses over 16MB ? for troubleshooting?
+- How many long running operations in the log file for performance review?
+- Show slowest query ? for performance review?
+- How much cumulative slow duration ? for performance review?
+- Show common query shapes ? for performance review?
+- Which is the hottest collection ? for performance review?
+- What are the namespaces by avg duration ? for performance review?
+- Show read vs write ratio ? for performance review?
+- What was traffic highest ? for performance review?
+- Show high docs examined ? for performance review?
+- Any queries using indexes ? for performance review?
+- Show responses over 16MB ? for performance review?
+- How many long running operations in the log file for the DBA review?
+- Show slowest query ? for the DBA review?
+- How much cumulative slow duration ? for the DBA review?
+- Show common query shapes ? for the DBA review?
+- Which is the hottest collection ? for the DBA review?
+- What are the namespaces by avg duration ? for the DBA review?
+- Show read vs write ratio ? for the DBA review?
+- What was traffic highest ? for the DBA review?
+- Show high docs examined ? for the DBA review?
+- Any queries using indexes ? for the DBA review?
+- Show responses over 16MB ? for the DBA review?
+- How many long running operations in the log file please?
+- Show slowest query ? please?
+- How much cumulative slow duration ? please?
+- Show common query shapes ? please?
+- Which is the hottest collection ? please?
+- What are the namespaces by avg duration ? please?
+- Show read vs write ratio ? please?
+- What was traffic highest ? please?
+- Show high docs examined ? please?
+- Any queries using indexes ? please?
+- Show responses over 16MB ? please?
+- How many slow commands ?
+- Show slowest query in this log?
+- How much cumulative slow duration in this log?
+- Show common query shapes in this log?
+- Which is the hottest collection in this log?
+- What are the namespaces by avg duration in this log?
+- Show read vs write ratio in this log?
+- What was traffic highest in this log?
+- Show high docs examined in slow ops?
+- Any queries using indexes in this log?
+- Show responses over 16MB in this log?
+- How many slow commands ? from this log?
+- Show slowest query in this log from this log?
+- How much cumulative slow duration in this log from this log?
+- Show common query shapes in this log from this log?
+- Which is the hottest collection in this log from this log?
+- What are the namespaces by avg duration in this log from this log?
+- Show read vs write ratio in this log from this log?
+- What was traffic highest in this log from this log?
+- Show high docs examined in slow ops from this log?
+- Any queries using indexes in this log from this log?
+- Show responses over 16MB in this log from this log?
+- How many slow commands ? in this log?
+- Show slowest query in this log in this log?
+- How much cumulative slow duration in this log in this log?
+- Show common query shapes in this log in this log?
+- Which is the hottest collection in this log in this log?
+- What are the namespaces by avg duration in this log in this log?
+- Show read vs write ratio in this log in this log?
+- What was traffic highest in this log in this log?
+- Show high docs examined in slow ops in this log?
+- Any queries using indexes in this log in this log?
+- Show responses over 16MB in this log in this log?
+- How many slow commands ? in the uploaded file?
+- Show slowest query in this log in the uploaded file?
+- How much cumulative slow duration in this log in the uploaded file?
+- Show common query shapes in this log in the uploaded file?
+- Which is the hottest collection in this log in the uploaded file?
+- What are the namespaces by avg duration in this log in the uploaded file?
+- Show read vs write ratio in this log in the uploaded file?
+- What was traffic highest in this log in the uploaded file?
+- Show high docs examined in slow ops in the uploaded file?
+- Any queries using indexes in this log in the uploaded file?
+- Show responses over 16MB in this log in the uploaded file?
+- How many slow commands ? according to the parsed log?
+- Show slowest query in this log according to the parsed log?
+- How much cumulative slow duration in this log according to the parsed log?
+- Show common query shapes in this log according to the parsed log?
+- Which is the hottest collection in this log according to the parsed log?
+- What are the namespaces by avg duration in this log according to the parsed log?
+- Show read vs write ratio in this log according to the parsed log?
+- What was traffic highest in this log according to the parsed log?
+- Show high docs examined in slow ops according to the parsed log?
+- Any queries using indexes in this log according to the parsed log?
+- Show responses over 16MB in this log according to the parsed log?
+- How many slow commands ? for this mongod?
+- Show slowest query in this log for this mongod?
+- How much cumulative slow duration in this log for this mongod?
+- Show common query shapes in this log for this mongod?
+- Which is the hottest collection in this log for this mongod?
+- What are the namespaces by avg duration in this log for this mongod?
+- Show read vs write ratio in this log for this mongod?
+- What was traffic highest in this log for this mongod?
+- Show high docs examined in slow ops for this mongod?
+- Any queries using indexes in this log for this mongod?
+- Show responses over 16MB in this log for this mongod?
+- How many slow commands ? for troubleshooting?
+- Show slowest query in this log for troubleshooting?
+- How much cumulative slow duration in this log for troubleshooting?
+- Show common query shapes in this log for troubleshooting?
+- Which is the hottest collection in this log for troubleshooting?
+- What are the namespaces by avg duration in this log for troubleshooting?
+- Show read vs write ratio in this log for troubleshooting?
+- What was traffic highest in this log for troubleshooting?
+- Show high docs examined in slow ops for troubleshooting?
+- Any queries using indexes in this log for troubleshooting?
+- Show responses over 16MB in this log for troubleshooting?
+- How many slow commands ? for performance review?
+- Show slowest query in this log for performance review?
+- How much cumulative slow duration in this log for performance review?
+- Show common query shapes in this log for performance review?
+- Which is the hottest collection in this log for performance review?
+- What are the namespaces by avg duration in this log for performance review?
+- Show read vs write ratio in this log for performance review?
+- What was traffic highest in this log for performance review?
+- Show high docs examined in slow ops for performance review?
+- Any queries using indexes in this log for performance review?
+- Show responses over 16MB in this log for performance review?
+- How many slow commands ? for the DBA review?
+- Show slowest query in this log for the DBA review?
+- How much cumulative slow duration in this log for the DBA review?
+- Show common query shapes in this log for the DBA review?
+- Which is the hottest collection in this log for the DBA review?
+- What are the namespaces by avg duration in this log for the DBA review?
+- Show read vs write ratio in this log for the DBA review?
+- What was traffic highest in this log for the DBA review?
+- Show high docs examined in slow ops for the DBA review?
+- Any queries using indexes in this log for the DBA review?
+- Show responses over 16MB in this log for the DBA review?
+- How many slow commands ? please?
+- Show slowest query in this log please?
+- How much cumulative slow duration in this log please?
+- Show common query shapes in this log please?
+- Which is the hottest collection in this log please?
+- What are the namespaces by avg duration in this log please?
+- Show read vs write ratio in this log please?
+- What was traffic highest in this log please?
+- Show high docs examined in slow ops please?
+- Any queries using indexes in this log please?
+- Show responses over 16MB in this log please?
+- How many slow commands in this log?
+- Show slowest operation ?
+- How much wasted time on slow queries ?
+- Show frequent slow patterns ?
+- Which is the top namespace by traffic ?
+- What are the collections with highest avg ms ?
+- Show command vs query count ?
+- What was the busiest period ?
+- Show queries scanning too many docs ?
+- Any IXSCAN in slow ops ?
+- Show huge reslen ?
+- How many slow commands in this log from this log?
+- Show slowest operation ? from this log?
+- How much wasted time on slow queries ? from this log?
+- Show frequent slow patterns ? from this log?
+- Which is the top namespace by traffic ? from this log?
+- What are the collections with highest avg ms ? from this log?
+- Show command vs query count ? from this log?
+- What was the busiest period ? from this log?
+- Show queries scanning too many docs ? from this log?
+- Any IXSCAN in slow ops ? from this log?
+- Show huge reslen ? from this log?
+- How many slow commands in this log in this log?
+- Show slowest operation ? in this log?
+- How much wasted time on slow queries ? in this log?
+- Show frequent slow patterns ? in this log?
+- Which is the top namespace by traffic ? in this log?
+- What are the collections with highest avg ms ? in this log?
+- Show command vs query count ? in this log?
+- What was the busiest period ? in this log?
+- Show queries scanning too many docs ? in this log?
+- Any IXSCAN in slow ops ? in this log?
+- Show huge reslen ? in this log?
+- How many slow commands in this log in the uploaded file?
+- Show slowest operation ? in the uploaded file?
+- How much wasted time on slow queries ? in the uploaded file?
+- Show frequent slow patterns ? in the uploaded file?
+- Which is the top namespace by traffic ? in the uploaded file?
+- What are the collections with highest avg ms ? in the uploaded file?
+- Show command vs query count ? in the uploaded file?
+- What was the busiest period ? in the uploaded file?
+- Show queries scanning too many docs ? in the uploaded file?
+- Any IXSCAN in slow ops ? in the uploaded file?
+- Show huge reslen ? in the uploaded file?
+- How many slow commands in this log according to the parsed log?
+- Show slowest operation ? according to the parsed log?
+- How much wasted time on slow queries ? according to the parsed log?
+- Show frequent slow patterns ? according to the parsed log?
+- Which is the top namespace by traffic ? according to the parsed log?
+- What are the collections with highest avg ms ? according to the parsed log?
+- Show command vs query count ? according to the parsed log?
+- What was the busiest period ? according to the parsed log?
+- Show queries scanning too many docs ? according to the parsed log?
+- Any IXSCAN in slow ops ? according to the parsed log?
+- Show huge reslen ? according to the parsed log?
+- How many slow commands in this log for this mongod?
+- Show slowest operation ? for this mongod?
+- How much wasted time on slow queries ? for this mongod?
+- Show frequent slow patterns ? for this mongod?
+- Which is the top namespace by traffic ? for this mongod?
+- What are the collections with highest avg ms ? for this mongod?
+- Show command vs query count ? for this mongod?
+- What was the busiest period ? for this mongod?
+- Show queries scanning too many docs ? for this mongod?
+- Any IXSCAN in slow ops ? for this mongod?
+- Show huge reslen ? for this mongod?
+- How many slow commands in this log for troubleshooting?
+- Show slowest operation ? for troubleshooting?
+- How much wasted time on slow queries ? for troubleshooting?
+- Show frequent slow patterns ? for troubleshooting?
+- Which is the top namespace by traffic ? for troubleshooting?
+- What are the collections with highest avg ms ? for troubleshooting?
+- Show command vs query count ? for troubleshooting?
+- What was the busiest period ? for troubleshooting?
+- Show queries scanning too many docs ? for troubleshooting?
+- Any IXSCAN in slow ops ? for troubleshooting?
+- Show huge reslen ? for troubleshooting?
+- How many slow commands in this log for performance review?
+- Show slowest operation ? for performance review?
+- How much wasted time on slow queries ? for performance review?
+- Show frequent slow patterns ? for performance review?
+- Which is the top namespace by traffic ? for performance review?
+- What are the collections with highest avg ms ? for performance review?
+- Show command vs query count ? for performance review?
+- What was the busiest period ? for performance review?
+- Show queries scanning too many docs ? for performance review?
+- Any IXSCAN in slow ops ? for performance review?
+- Show huge reslen ? for performance review?
+- How many slow commands in this log for the DBA review?
+- Show slowest operation ? for the DBA review?
+- How much wasted time on slow queries ? for the DBA review?
+- Show frequent slow patterns ? for the DBA review?
+- Which is the top namespace by traffic ? for the DBA review?
+- What are the collections with highest avg ms ? for the DBA review?
+- Show command vs query count ? for the DBA review?
+- What was the busiest period ? for the DBA review?
+- Show queries scanning too many docs ? for the DBA review?
+- Any IXSCAN in slow ops ? for the DBA review?
+- Show huge reslen ? for the DBA review?
+- How many slow commands in this log please?
+- Show slowest operation ? please?
+- How much wasted time on slow queries ? please?
+- Show frequent slow patterns ? please?
+- Which is the top namespace by traffic ? please?
+- What are the collections with highest avg ms ? please?
+- Show command vs query count ? please?
+- What was the busiest period ? please?
+- Show queries scanning too many docs ? please?
+- Any IXSCAN in slow ops ? please?
+- Show huge reslen ? please?
+- How many slow commands in the log file?
+- Show slowest operation in this log?
+- How much wasted time on slow queries in this log?
+- Show frequent slow patterns in this log?
+- Which is the top namespace by traffic in this log?
+- What are the collections with highest avg ms in this log?
+- Show command vs query count in this log?
+- What was the busiest period in this log?
+- Show queries scanning too many docs in slow ops?
+- Any IXSCAN in slow ops in this log?
+- Show huge reslen in this log?
+- How many slow commands in the log file from this log?
+- Show slowest operation in this log from this log?
+- How much wasted time on slow queries in this log from this log?
+- Show frequent slow patterns in this log from this log?
+- Which is the top namespace by traffic in this log from this log?
+- What are the collections with highest avg ms in this log from this log?
+- Show command vs query count in this log from this log?
+- What was the busiest period in this log from this log?
+- Show queries scanning too many docs in slow ops from this log?
+- Any IXSCAN in slow ops in this log from this log?
+- Show huge reslen in this log from this log?
+- How many slow commands in the log file in this log?
+- Show slowest operation in this log in this log?
+- How much wasted time on slow queries in this log in this log?
+- Show frequent slow patterns in this log in this log?
+- Which is the top namespace by traffic in this log in this log?
+- What are the collections with highest avg ms in this log in this log?
+- Show command vs query count in this log in this log?
+- What was the busiest period in this log in this log?
+- Show queries scanning too many docs in slow ops in this log?
+- Any IXSCAN in slow ops in this log in this log?
+- Show huge reslen in this log in this log?
+- How many slow commands in the log file in the uploaded file?
+- Show slowest operation in this log in the uploaded file?
+- How much wasted time on slow queries in this log in the uploaded file?
+- Show frequent slow patterns in this log in the uploaded file?
+- Which is the top namespace by traffic in this log in the uploaded file?
+- What are the collections with highest avg ms in this log in the uploaded file?
+- Show command vs query count in this log in the uploaded file?
+- What was the busiest period in this log in the uploaded file?
+- Show queries scanning too many docs in slow ops in the uploaded file?
+- Any IXSCAN in slow ops in this log in the uploaded file?
+- Show huge reslen in this log in the uploaded file?
+- How many slow commands in the log file according to the parsed log?
+- Show slowest operation in this log according to the parsed log?
+- How much wasted time on slow queries in this log according to the parsed log?
+- Show frequent slow patterns in this log according to the parsed log?
+- Which is the top namespace by traffic in this log according to the parsed log?
+- What are the collections with highest avg ms in this log according to the parsed log?
+- Show command vs query count in this log according to the parsed log?
+- What was the busiest period in this log according to the parsed log?
+- Show queries scanning too many docs in slow ops according to the parsed log?
+- Any IXSCAN in slow ops in this log according to the parsed log?
+- Show huge reslen in this log according to the parsed log?
+- How many slow commands in the log file for this mongod?
+- Show slowest operation in this log for this mongod?
+- How much wasted time on slow queries in this log for this mongod?
+- Show frequent slow patterns in this log for this mongod?
+- Which is the top namespace by traffic in this log for this mongod?
+- What are the collections with highest avg ms in this log for this mongod?
+- Show command vs query count in this log for this mongod?
+- What was the busiest period in this log for this mongod?
+- Show queries scanning too many docs in slow ops for this mongod?
+- Any IXSCAN in slow ops in this log for this mongod?
+- Show huge reslen in this log for this mongod?
+- How many slow commands in the log file for troubleshooting?
+- Show slowest operation in this log for troubleshooting?
+- How much wasted time on slow queries in this log for troubleshooting?
+- Show frequent slow patterns in this log for troubleshooting?
+- Which is the top namespace by traffic in this log for troubleshooting?
+- What are the collections with highest avg ms in this log for troubleshooting?
+- Show command vs query count in this log for troubleshooting?
+- What was the busiest period in this log for troubleshooting?
+- Show queries scanning too many docs in slow ops for troubleshooting?
+- Any IXSCAN in slow ops in this log for troubleshooting?
+- Show huge reslen in this log for troubleshooting?
+- How many slow commands in the log file for performance review?
+- Show slowest operation in this log for performance review?
+- How much wasted time on slow queries in this log for performance review?
+- Show frequent slow patterns in this log for performance review?
+- Which is the top namespace by traffic in this log for performance review?
+- What are the collections with highest avg ms in this log for performance review?
+- Show command vs query count in this log for performance review?
+- What was the busiest period in this log for performance review?
+- Show queries scanning too many docs in slow ops for performance review?
+- Any IXSCAN in slow ops in this log for performance review?
+- Show huge reslen in this log for performance review?
+- How many slow commands in the log file for the DBA review?
+- Show slowest operation in this log for the DBA review?
+- How much wasted time on slow queries in this log for the DBA review?
+- Show frequent slow patterns in this log for the DBA review?
+- Which is the top namespace by traffic in this log for the DBA review?
+- What are the collections with highest avg ms in this log for the DBA review?
+- Show command vs query count in this log for the DBA review?
+- What was the busiest period in this log for the DBA review?
+- Show queries scanning too many docs in slow ops for the DBA review?
+- Any IXSCAN in slow ops in this log for the DBA review?
+- Show huge reslen in this log for the DBA review?
+- How many slow commands in the log file please?
+- Show slowest operation in this log please?
+- How much wasted time on slow queries in this log please?
+- Show frequent slow patterns in this log please?
+- Which is the top namespace by traffic in this log please?
+- What are the collections with highest avg ms in this log please?
+- Show command vs query count in this log please?
+- What was the busiest period in this log please?
+- Show queries scanning too many docs in slow ops please?
+- Any IXSCAN in slow ops in this log please?
+- Show huge reslen in this log please?
+- How many slow requests ?
+- Show worst query ?
+- How much total slow operation time ?
+- Show repeated query patterns ?
+- Which is the most active database ?
+- What are the top slow namespaces ?
+- Show insert update delete breakdown ?
+- What was ops per minute ?
+- Show low keys examined high docs ?
+- Any index-based plans ?
+- Show big query results ?
+- How many slow requests ? from this log?
+- Show worst query ? from this log?
+- How much total slow operation time ? from this log?
+- Show repeated query patterns ? from this log?
+- Which is the most active database ? from this log?
+- What are the top slow namespaces ? from this log?
+- Show insert update delete breakdown ? from this log?
+- What was ops per minute ? from this log?
+- Show low keys examined high docs ? from this log?
+- Any index-based plans ? from this log?
+- Show big query results ? from this log?
+- How many slow requests ? in this log?
+- Show worst query ? in this log?
+- How much total slow operation time ? in this log?
+- Show repeated query patterns ? in this log?
+- Which is the most active database ? in this log?
+- What are the top slow namespaces ? in this log?
+- Show insert update delete breakdown ? in this log?
+- What was ops per minute ? in this log?
+- Show low keys examined high docs ? in this log?
+- Any index-based plans ? in this log?
+- Show big query results ? in this log?
+- How many slow requests ? in the uploaded file?
+- Show worst query ? in the uploaded file?
+- How much total slow operation time ? in the uploaded file?
+- Show repeated query patterns ? in the uploaded file?
+- Which is the most active database ? in the uploaded file?
+- What are the top slow namespaces ? in the uploaded file?
+- Show insert update delete breakdown ? in the uploaded file?
+- What was ops per minute ? in the uploaded file?
+- Show low keys examined high docs ? in the uploaded file?
+- Any index-based plans ? in the uploaded file?
+- Show big query results ? in the uploaded file?
+- How many slow requests ? according to the parsed log?
+- Show worst query ? according to the parsed log?
+- How much total slow operation time ? according to the parsed log?
+- Show repeated query patterns ? according to the parsed log?
+- Which is the most active database ? according to the parsed log?
+- What are the top slow namespaces ? according to the parsed log?
+- Show insert update delete breakdown ? according to the parsed log?
+- What was ops per minute ? according to the parsed log?
+- Show low keys examined high docs ? according to the parsed log?
+- Any index-based plans ? according to the parsed log?
+- Show big query results ? according to the parsed log?
+- How many slow requests ? for this mongod?
+- Show worst query ? for this mongod?
+- How much total slow operation time ? for this mongod?
+- Show repeated query patterns ? for this mongod?
+- Which is the most active database ? for this mongod?
+- What are the top slow namespaces ? for this mongod?
+- Show insert update delete breakdown ? for this mongod?
+- What was ops per minute ? for this mongod?
+- Show low keys examined high docs ? for this mongod?
+- Any index-based plans ? for this mongod?
+- Show big query results ? for this mongod?
+- How many slow requests ? for troubleshooting?
+- Show worst query ? for troubleshooting?
+- How much total slow operation time ? for troubleshooting?
+- Show repeated query patterns ? for troubleshooting?
+- Which is the most active database ? for troubleshooting?
+- What are the top slow namespaces ? for troubleshooting?
+- Show insert update delete breakdown ? for troubleshooting?
+- What was ops per minute ? for troubleshooting?
+- Show low keys examined high docs ? for troubleshooting?
+- Any index-based plans ? for troubleshooting?
+- Show big query results ? for troubleshooting?
+- How many slow requests ? for performance review?
+- Show worst query ? for performance review?
+- How much total slow operation time ? for performance review?
+- Show repeated query patterns ? for performance review?
+- Which is the most active database ? for performance review?
+- What are the top slow namespaces ? for performance review?
+- Show insert update delete breakdown ? for performance review?
+- What was ops per minute ? for performance review?
+- Show low keys examined high docs ? for performance review?
+- Any index-based plans ? for performance review?
+- Show big query results ? for performance review?
+- How many slow requests ? for the DBA review?
+- Show worst query ? for the DBA review?
+- How much total slow operation time ? for the DBA review?
+- Show repeated query patterns ? for the DBA review?
+- Which is the most active database ? for the DBA review?
+- What are the top slow namespaces ? for the DBA review?
+- Show insert update delete breakdown ? for the DBA review?
+- What was ops per minute ? for the DBA review?
+- Show low keys examined high docs ? for the DBA review?
+- Any index-based plans ? for the DBA review?
+- Show big query results ? for the DBA review?
+- How many slow requests ? please?
+- Show worst query ? please?
+- How much total slow operation time ? please?
+- Show repeated query patterns ? please?
+- Which is the most active database ? please?
+- What are the top slow namespaces ? please?
+- Show insert update delete breakdown ? please?
+- What was ops per minute ? please?
+- Show low keys examined high docs ? please?
+- Any index-based plans ? please?
+- Show big query results ? please?
+- How many slow requests in this log?
+- Show worst query in this log?
+- How much total slow operation time in this log?
+- Show repeated query patterns in this log?
+- Which is the most active database in this log?
+- What are the top slow namespaces in this log?
+- Show insert update delete breakdown in this log?
+- What was ops per minute in this log?
+- Show low keys examined high docs in slow ops?
+- Any index-based plans in this log?
+- Show big query results in this log?
+- How many slow requests in this log from this log?
+- Show worst query in this log from this log?
+- How much total slow operation time in this log from this log?
+- Show repeated query patterns in this log from this log?
+- Which is the most active database in this log from this log?
+- What are the top slow namespaces in this log from this log?
+- Show insert update delete breakdown in this log from this log?
+- What was ops per minute in this log from this log?
+- Show low keys examined high docs in slow ops from this log?
+- Any index-based plans in this log from this log?
+- Show big query results in this log from this log?
+- How many slow requests in this log in this log?
+- Show worst query in this log in this log?
+- How much total slow operation time in this log in this log?
+- Show repeated query patterns in this log in this log?
+- Which is the most active database in this log in this log?
+- What are the top slow namespaces in this log in this log?
+- Show insert update delete breakdown in this log in this log?
+- What was ops per minute in this log in this log?
+- Show low keys examined high docs in slow ops in this log?
+- Any index-based plans in this log in this log?
+- Show big query results in this log in this log?
+- How many slow requests in this log in the uploaded file?
+- Show worst query in this log in the uploaded file?
+- How much total slow operation time in this log in the uploaded file?
+- Show repeated query patterns in this log in the uploaded file?
+- Which is the most active database in this log in the uploaded file?
+- What are the top slow namespaces in this log in the uploaded file?
+- Show insert update delete breakdown in this log in the uploaded file?
+- What was ops per minute in this log in the uploaded file?
+- Show low keys examined high docs in slow ops in the uploaded file?
+- Any index-based plans in this log in the uploaded file?
+- Show big query results in this log in the uploaded file?
+- How many slow requests in this log according to the parsed log?
+- Show worst query in this log according to the parsed log?
+- How much total slow operation time in this log according to the parsed log?
+- Show repeated query patterns in this log according to the parsed log?
+- Which is the most active database in this log according to the parsed log?
+- What are the top slow namespaces in this log according to the parsed log?
+- Show insert update delete breakdown in this log according to the parsed log?
+
+## Indexes & COLLSCAN
+
+- Any COLLSCAN?
+- Collection scans in the log?
+- Missing indexes?
+- Internal COLLSCAN on config?
+- System namespace scans?
+- What indexes should I add?
+- Index recommendations
+- createIndex suggestions
+- Any COLLSCAN operations ?
+- Any internal COLLSCAN ?
+- What indexes to add ?
+- Any COLLSCAN operations ? from this log?
+- Any internal COLLSCAN ? from this log?
+- What indexes to add ? from this log?
+- Any COLLSCAN operations ? in this log?
+- Any internal COLLSCAN ? in this log?
+- What indexes to add ? in this log?
+- Any COLLSCAN operations ? in the uploaded file?
+- Any internal COLLSCAN ? in the uploaded file?
+- What indexes to add ? in the uploaded file?
+- Any COLLSCAN operations ? according to the parsed log?
+- Any internal COLLSCAN ? according to the parsed log?
+- What indexes to add ? according to the parsed log?
+- Any COLLSCAN operations ? for this mongod?
+- Any internal COLLSCAN ? for this mongod?
+- What indexes to add ? for this mongod?
+- Any COLLSCAN operations ? for troubleshooting?
+- Any internal COLLSCAN ? for troubleshooting?
+- What indexes to add ? for troubleshooting?
+- Any COLLSCAN operations ? for performance review?
+- Any internal COLLSCAN ? for performance review?
+- What indexes to add ? for performance review?
+- Any COLLSCAN operations ? for the DBA review?
+- Any internal COLLSCAN ? for the DBA review?
+- What indexes to add ? for the DBA review?
+- Any COLLSCAN operations ? please?
+- Any internal COLLSCAN ? please?
+- What indexes to add ? please?
+- Any COLLSCAN operations in this log?
+- Any internal COLLSCAN in this log?
+- What indexes to add from this log?
+- Any COLLSCAN operations in this log from this log?
+- Any internal COLLSCAN in this log from this log?
+- What indexes to add from this log from this log?
+- Any COLLSCAN operations in this log in this log?
+- Any internal COLLSCAN in this log in this log?
+- What indexes to add from this log in this log?
+- Any COLLSCAN operations in this log in the uploaded file?
+- Any internal COLLSCAN in this log in the uploaded file?
+- What indexes to add from this log in the uploaded file?
+- Any COLLSCAN operations in this log according to the parsed log?
+- Any internal COLLSCAN in this log according to the parsed log?
+- What indexes to add from this log according to the parsed log?
+- Any COLLSCAN operations in this log for this mongod?
+- Any internal COLLSCAN in this log for this mongod?
+- What indexes to add from this log for this mongod?
+- Any COLLSCAN operations in this log for troubleshooting?
+- Any internal COLLSCAN in this log for troubleshooting?
+- What indexes to add from this log for troubleshooting?
+- Any COLLSCAN operations in this log for performance review?
+- Any internal COLLSCAN in this log for performance review?
+- What indexes to add from this log for performance review?
+- Any COLLSCAN operations in this log for the DBA review?
+- Any internal COLLSCAN in this log for the DBA review?
+- What indexes to add from this log for the DBA review?
+- Any COLLSCAN operations in this log please?
+- Any internal COLLSCAN in this log please?
+- What indexes to add from this log please?
+- Any collection scans ?
+- Any config namespace scans ?
+- What index recommendations ?
+- Any collection scans ? from this log?
+- Any config namespace scans ? from this log?
+- What index recommendations ? from this log?
+- Any collection scans ? in this log?
+- Any config namespace scans ? in this log?
+- What index recommendations ? in this log?
+- Any collection scans ? in the uploaded file?
+- Any config namespace scans ? in the uploaded file?
+- What index recommendations ? in the uploaded file?
+- Any collection scans ? according to the parsed log?
+- Any config namespace scans ? according to the parsed log?
+- What index recommendations ? according to the parsed log?
+- Any collection scans ? for this mongod?
+- Any config namespace scans ? for this mongod?
+- What index recommendations ? for this mongod?
+- Any collection scans ? for troubleshooting?
+- Any config namespace scans ? for troubleshooting?
+- What index recommendations ? for troubleshooting?
+- Any collection scans ? for performance review?
+- Any config namespace scans ? for performance review?
+- What index recommendations ? for performance review?
+- Any collection scans ? for the DBA review?
+- Any config namespace scans ? for the DBA review?
+- What index recommendations ? for the DBA review?
+- Any collection scans ? please?
+- Any config namespace scans ? please?
+- What index recommendations ? please?
+- Any collection scans in this log?
+- Any config namespace scans in this log?
+- What index recommendations from this log?
+- Any collection scans in this log from this log?
+- Any config namespace scans in this log from this log?
+- What index recommendations from this log from this log?
+- Any collection scans in this log in this log?
+- Any config namespace scans in this log in this log?
+- What index recommendations from this log in this log?
+- Any collection scans in this log in the uploaded file?
+- Any config namespace scans in this log in the uploaded file?
+- What index recommendations from this log in the uploaded file?
+- Any collection scans in this log according to the parsed log?
+- Any config namespace scans in this log according to the parsed log?
+- What index recommendations from this log according to the parsed log?
+- Any collection scans in this log for this mongod?
+- Any config namespace scans in this log for this mongod?
+- What index recommendations from this log for this mongod?
+- Any collection scans in this log for troubleshooting?
+- Any config namespace scans in this log for troubleshooting?
+- What index recommendations from this log for troubleshooting?
+- Any collection scans in this log for performance review?
+- Any config namespace scans in this log for performance review?
+- What index recommendations from this log for performance review?
+- Any collection scans in this log for the DBA review?
+- Any config namespace scans in this log for the DBA review?
+- What index recommendations from this log for the DBA review?
+- Any collection scans in this log please?
+- Any config namespace scans in this log please?
+- What index recommendations from this log please?
+- Any full collection scans ?
+- Any system collection scans ?
+- What createIndex suggestions ?
+- Any full collection scans ? from this log?
+- Any system collection scans ? from this log?
+- What createIndex suggestions ? from this log?
+- Any full collection scans ? in this log?
+- Any system collection scans ? in this log?
+- What createIndex suggestions ? in this log?
+- Any full collection scans ? in the uploaded file?
+- Any system collection scans ? in the uploaded file?
+- What createIndex suggestions ? in the uploaded file?
+- Any full collection scans ? according to the parsed log?
+- Any system collection scans ? according to the parsed log?
+- What createIndex suggestions ? according to the parsed log?
+- Any full collection scans ? for this mongod?
+- Any system collection scans ? for this mongod?
+- What createIndex suggestions ? for this mongod?
+- Any full collection scans ? for troubleshooting?
+- Any system collection scans ? for troubleshooting?
+- What createIndex suggestions ? for troubleshooting?
+- Any full collection scans ? for performance review?
+- Any system collection scans ? for performance review?
+- What createIndex suggestions ? for performance review?
+- Any full collection scans ? for the DBA review?
+- Any system collection scans ? for the DBA review?
+- What createIndex suggestions ? for the DBA review?
+- Any full collection scans ? please?
+- Any system collection scans ? please?
+- What createIndex suggestions ? please?
+- Any full collection scans in this log?
+- Any system collection scans in this log?
+- What createIndex suggestions from this log?
+- Any full collection scans in this log from this log?
+- Any system collection scans in this log from this log?
+- What createIndex suggestions from this log from this log?
+- Any full collection scans in this log in this log?
+- Any system collection scans in this log in this log?
+- What createIndex suggestions from this log in this log?
+- Any full collection scans in this log in the uploaded file?
+- Any system collection scans in this log in the uploaded file?
+- What createIndex suggestions from this log in the uploaded file?
+- Any full collection scans in this log according to the parsed log?
+- Any system collection scans in this log according to the parsed log?
+- What createIndex suggestions from this log according to the parsed log?
+- Any full collection scans in this log for this mongod?
+- Any system collection scans in this log for this mongod?
+- What createIndex suggestions from this log for this mongod?
+- Any full collection scans in this log for troubleshooting?
+- Any system collection scans in this log for troubleshooting?
+- What createIndex suggestions from this log for troubleshooting?
+- Any full collection scans in this log for performance review?
+- Any system collection scans in this log for performance review?
+- What createIndex suggestions from this log for performance review?
+- Any full collection scans in this log for the DBA review?
+- Any system collection scans in this log for the DBA review?
+- What createIndex suggestions from this log for the DBA review?
+- Any full collection scans in this log please?
+- Any system collection scans in this log please?
+- What createIndex suggestions from this log please?
+- Any missing index scans ?
+- Any COLLSCAN on config ?
+- What missing indexes ?
+- Any missing index scans ? from this log?
+- Any COLLSCAN on config ? from this log?
+- What missing indexes ? from this log?
+- Any missing index scans ? in this log?
+- Any COLLSCAN on config ? in this log?
+- What missing indexes ? in this log?
+- Any missing index scans ? in the uploaded file?
+- Any COLLSCAN on config ? in the uploaded file?
+- What missing indexes ? in the uploaded file?
+- Any missing index scans ? according to the parsed log?
+- Any COLLSCAN on config ? according to the parsed log?
+- What missing indexes ? according to the parsed log?
+- Any missing index scans ? for this mongod?
+- Any COLLSCAN on config ? for this mongod?
+- What missing indexes ? for this mongod?
+- Any missing index scans ? for troubleshooting?
+- Any COLLSCAN on config ? for troubleshooting?
+- What missing indexes ? for troubleshooting?
+- Any missing index scans ? for performance review?
+- Any COLLSCAN on config ? for performance review?
+- What missing indexes ? for performance review?
+- Any missing index scans ? for the DBA review?
+- Any COLLSCAN on config ? for the DBA review?
+- What missing indexes ? for the DBA review?
+- Any missing index scans ? please?
+- Any COLLSCAN on config ? please?
+- What missing indexes ? please?
+- Any missing index scans in this log?
+- Any COLLSCAN on config in this log?
+- What missing indexes from this log?
+- Any missing index scans in this log from this log?
+- Any COLLSCAN on config in this log from this log?
+- What missing indexes from this log from this log?
+- Any missing index scans in this log in this log?
+- Any COLLSCAN on config in this log in this log?
+- What missing indexes from this log in this log?
+- Any missing index scans in this log in the uploaded file?
+- Any COLLSCAN on config in this log in the uploaded file?
+- What missing indexes from this log in the uploaded file?
+- Any missing index scans in this log according to the parsed log?
+- Any COLLSCAN on config in this log according to the parsed log?
+- What missing indexes from this log according to the parsed log?
+- Any missing index scans in this log for this mongod?
+- Any COLLSCAN on config in this log for this mongod?
+- What missing indexes from this log for this mongod?
+- Any missing index scans in this log for troubleshooting?
+- Any COLLSCAN on config in this log for troubleshooting?
+- What missing indexes from this log for troubleshooting?
+- Any missing index scans in this log for performance review?
+- Any COLLSCAN on config in this log for performance review?
+- What missing indexes from this log for performance review?
+- Any missing index scans in this log for the DBA review?
+- Any COLLSCAN on config in this log for the DBA review?
+- What missing indexes from this log for the DBA review?
+- Any missing index scans in this log please?
+- Any COLLSCAN on config in this log please?
+- What missing indexes from this log please?
+- Any COLLSCAN in the log ?
+- Any sharding internal scans ?
+- What index advice ?
+- Any COLLSCAN in the log ? from this log?
+- Any sharding internal scans ? from this log?
+- What index advice ? from this log?
+- Any COLLSCAN in the log ? in this log?
+- Any sharding internal scans ? in this log?
+- What index advice ? in this log?
+- Any COLLSCAN in the log ? in the uploaded file?
+- Any sharding internal scans ? in the uploaded file?
+- What index advice ? in the uploaded file?
+- Any COLLSCAN in the log ? according to the parsed log?
+- Any sharding internal scans ? according to the parsed log?
+- What index advice ? according to the parsed log?
+- Any COLLSCAN in the log ? for this mongod?
+- Any sharding internal scans ? for this mongod?
+- What index advice ? for this mongod?
+- Any COLLSCAN in the log ? for troubleshooting?
+- Any sharding internal scans ? for troubleshooting?
+- What index advice ? for troubleshooting?
+- Any COLLSCAN in the log ? for performance review?
+- Any sharding internal scans ? for performance review?
+- What index advice ? for performance review?
+- Any COLLSCAN in the log ? for the DBA review?
+- Any sharding internal scans ? for the DBA review?
+- What index advice ? for the DBA review?
+- Any COLLSCAN in the log ? please?
+- Any sharding internal scans ? please?
+- What index advice ? please?
+- Any COLLSCAN in the log in this log?
+- Any sharding internal scans in this log?
+- What index advice from this log?
+- Any COLLSCAN in the log in this log from this log?
+- Any sharding internal scans in this log from this log?
+- What index advice from this log from this log?
+- Any COLLSCAN in the log in this log in this log?
+- Any sharding internal scans in this log in this log?
+- What index advice from this log in this log?
+- Any COLLSCAN in the log in this log in the uploaded file?
+- Any sharding internal scans in this log in the uploaded file?
+- What index advice from this log in the uploaded file?
+- Any COLLSCAN in the log in this log according to the parsed log?
+- Any sharding internal scans in this log according to the parsed log?
+- What index advice from this log according to the parsed log?
+- Any COLLSCAN in the log in this log for this mongod?
+- Any sharding internal scans in this log for this mongod?
+- What index advice from this log for this mongod?
+- Any COLLSCAN in the log in this log for troubleshooting?
+- Any sharding internal scans in this log for troubleshooting?
+- What index advice from this log for troubleshooting?
+- Any COLLSCAN in the log in this log for performance review?
+- Any sharding internal scans in this log for performance review?
+- What index advice from this log for performance review?
+- Any COLLSCAN in the log in this log for the DBA review?
+- Any sharding internal scans in this log for the DBA review?
+- What index advice from this log for the DBA review?
+- Any COLLSCAN in the log in this log please?
+- Any sharding internal scans in this log please?
+- What index advice from this log please?
+- Any table scans ?
+- Show internal COLLSCAN ?
+- What indexes to create ?
+- Any table scans ? from this log?
+- Show internal COLLSCAN ? from this log?
+- What indexes to create ? from this log?
+- Any table scans ? in this log?
+- Show internal COLLSCAN ? in this log?
+- What indexes to create ? in this log?
+- Any table scans ? in the uploaded file?
+- Show internal COLLSCAN ? in the uploaded file?
+- What indexes to create ? in the uploaded file?
+- Any table scans ? according to the parsed log?
+- Show internal COLLSCAN ? according to the parsed log?
+- What indexes to create ? according to the parsed log?
+- Any table scans ? for this mongod?
+- Show internal COLLSCAN ? for this mongod?
+- What indexes to create ? for this mongod?
+- Any table scans ? for troubleshooting?
+- Show internal COLLSCAN ? for troubleshooting?
+- What indexes to create ? for troubleshooting?
+- Any table scans ? for performance review?
+- Show internal COLLSCAN ? for performance review?
+- What indexes to create ? for performance review?
+- Any table scans ? for the DBA review?
+- Show internal COLLSCAN ? for the DBA review?
+- What indexes to create ? for the DBA review?
+- Any table scans ? please?
+- Show internal COLLSCAN ? please?
+- What indexes to create ? please?
+- Any table scans in this log?
+- Show internal COLLSCAN in this log?
+- What indexes to create from this log?
+- Any table scans in this log from this log?
+- Show internal COLLSCAN in this log from this log?
+- What indexes to create from this log from this log?
+- Any table scans in this log in this log?
+- Show internal COLLSCAN in this log in this log?
+- What indexes to create from this log in this log?
+- Any table scans in this log in the uploaded file?
+- Show internal COLLSCAN in this log in the uploaded file?
+- What indexes to create from this log in the uploaded file?
+- Any table scans in this log according to the parsed log?
+- Show internal COLLSCAN in this log according to the parsed log?
+- What indexes to create from this log according to the parsed log?
+- Any table scans in this log for this mongod?
+- Show internal COLLSCAN in this log for this mongod?
+- What indexes to create from this log for this mongod?
+- Any table scans in this log for troubleshooting?
+- Show internal COLLSCAN in this log for troubleshooting?
+- What indexes to create from this log for troubleshooting?
+- Any table scans in this log for performance review?
+- Show internal COLLSCAN in this log for performance review?
+- What indexes to create from this log for performance review?
+- Any table scans in this log for the DBA review?
+- Show internal COLLSCAN in this log for the DBA review?
+- What indexes to create from this log for the DBA review?
+- Any table scans in this log please?
+- Show internal COLLSCAN in this log please?
+- What indexes to create from this log please?
+- Were there COLLSCAN operations ?
+- Show config namespace scans ?
+- Which indexes to add ?
+- Were there COLLSCAN operations ? from this log?
+- Show config namespace scans ? from this log?
+- Which indexes to add ? from this log?
+- Were there COLLSCAN operations ? in this log?
+- Show config namespace scans ? in this log?
+- Which indexes to add ? in this log?
+- Were there COLLSCAN operations ? in the uploaded file?
+- Show config namespace scans ? in the uploaded file?
+- Which indexes to add ? in the uploaded file?
+- Were there COLLSCAN operations ? according to the parsed log?
+- Show config namespace scans ? according to the parsed log?
+- Which indexes to add ? according to the parsed log?
+- Were there COLLSCAN operations ? for this mongod?
+- Show config namespace scans ? for this mongod?
+- Which indexes to add ? for this mongod?
+- Were there COLLSCAN operations ? for troubleshooting?
+- Show config namespace scans ? for troubleshooting?
+- Which indexes to add ? for troubleshooting?
+- Were there COLLSCAN operations ? for performance review?
+- Show config namespace scans ? for performance review?
+- Which indexes to add ? for performance review?
+- Were there COLLSCAN operations ? for the DBA review?
+- Show config namespace scans ? for the DBA review?
+- Which indexes to add ? for the DBA review?
+- Were there COLLSCAN operations ? please?
+- Show config namespace scans ? please?
+- Which indexes to add ? please?
+- Were there COLLSCAN operations in this log?
+- Show config namespace scans in this log?
+- Which indexes to add from this log?
+- Were there COLLSCAN operations in this log from this log?
+- Show config namespace scans in this log from this log?
+- Which indexes to add from this log from this log?
+- Were there COLLSCAN operations in this log in this log?
+- Show config namespace scans in this log in this log?
+- Which indexes to add from this log in this log?
+- Were there COLLSCAN operations in this log in the uploaded file?
+- Show config namespace scans in this log in the uploaded file?
+- Which indexes to add from this log in the uploaded file?
+- Were there COLLSCAN operations in this log according to the parsed log?
+- Show config namespace scans in this log according to the parsed log?
+- Which indexes to add from this log according to the parsed log?
+- Were there COLLSCAN operations in this log for this mongod?
+- Show config namespace scans in this log for this mongod?
+- Which indexes to add from this log for this mongod?
+- Were there COLLSCAN operations in this log for troubleshooting?
+- Show config namespace scans in this log for troubleshooting?
+- Which indexes to add from this log for troubleshooting?
+- Were there COLLSCAN operations in this log for performance review?
+- Show config namespace scans in this log for performance review?
+- Which indexes to add from this log for performance review?
+- Were there COLLSCAN operations in this log for the DBA review?
+- Show config namespace scans in this log for the DBA review?
+- Which indexes to add from this log for the DBA review?
+- Were there COLLSCAN operations in this log please?
+- Show config namespace scans in this log please?
+- Which indexes to add from this log please?
+- Were there collection scans ?
+- Show system collection scans ?
+- Which index recommendations ?
+- Were there collection scans ? from this log?
+- Show system collection scans ? from this log?
+- Which index recommendations ? from this log?
+- Were there collection scans ? in this log?
+- Show system collection scans ? in this log?
+- Which index recommendations ? in this log?
+- Were there collection scans ? in the uploaded file?
+- Show system collection scans ? in the uploaded file?
+- Which index recommendations ? in the uploaded file?
+- Were there collection scans ? according to the parsed log?
+- Show system collection scans ? according to the parsed log?
+- Which index recommendations ? according to the parsed log?
+- Were there collection scans ? for this mongod?
+- Show system collection scans ? for this mongod?
+- Which index recommendations ? for this mongod?
+- Were there collection scans ? for troubleshooting?
+- Show system collection scans ? for troubleshooting?
+- Which index recommendations ? for troubleshooting?
+- Were there collection scans ? for performance review?
+- Show system collection scans ? for performance review?
+- Which index recommendations ? for performance review?
+- Were there collection scans ? for the DBA review?
+- Show system collection scans ? for the DBA review?
+- Which index recommendations ? for the DBA review?
+- Were there collection scans ? please?
+- Show system collection scans ? please?
+- Which index recommendations ? please?
+- Were there collection scans in this log?
+- Show system collection scans in this log?
+- Which index recommendations from this log?
+- Were there collection scans in this log from this log?
+- Show system collection scans in this log from this log?
+- Which index recommendations from this log from this log?
+- Were there collection scans in this log in this log?
+- Show system collection scans in this log in this log?
+- Which index recommendations from this log in this log?
+- Were there collection scans in this log in the uploaded file?
+- Show system collection scans in this log in the uploaded file?
+- Which index recommendations from this log in the uploaded file?
+- Were there collection scans in this log according to the parsed log?
+- Show system collection scans in this log according to the parsed log?
+- Which index recommendations from this log according to the parsed log?
+- Were there collection scans in this log for this mongod?
+- Show system collection scans in this log for this mongod?
+- Which index recommendations from this log for this mongod?
+- Were there collection scans in this log for troubleshooting?
+- Show system collection scans in this log for troubleshooting?
+- Which index recommendations from this log for troubleshooting?
+- Were there collection scans in this log for performance review?
+- Show system collection scans in this log for performance review?
+- Which index recommendations from this log for performance review?
+- Were there collection scans in this log for the DBA review?
+- Show system collection scans in this log for the DBA review?
+- Which index recommendations from this log for the DBA review?
+- Were there collection scans in this log please?
+- Show system collection scans in this log please?
+- Which index recommendations from this log please?
+- Were there full collection scans ?
+- Show COLLSCAN on config ?
+- Which createIndex suggestions ?
+- Were there full collection scans ? from this log?
+- Show COLLSCAN on config ? from this log?
+- Which createIndex suggestions ? from this log?
+- Were there full collection scans ? in this log?
+- Show COLLSCAN on config ? in this log?
+- Which createIndex suggestions ? in this log?
+- Were there full collection scans ? in the uploaded file?
+- Show COLLSCAN on config ? in the uploaded file?
+- Which createIndex suggestions ? in the uploaded file?
+- Were there full collection scans ? according to the parsed log?
+- Show COLLSCAN on config ? according to the parsed log?
+- Which createIndex suggestions ? according to the parsed log?
+- Were there full collection scans ? for this mongod?
+- Show COLLSCAN on config ? for this mongod?
+- Which createIndex suggestions ? for this mongod?
+- Were there full collection scans ? for troubleshooting?
+- Show COLLSCAN on config ? for troubleshooting?
+- Which createIndex suggestions ? for troubleshooting?
+- Were there full collection scans ? for performance review?
+- Show COLLSCAN on config ? for performance review?
+- Which createIndex suggestions ? for performance review?
+- Were there full collection scans ? for the DBA review?
+- Show COLLSCAN on config ? for the DBA review?
+- Which createIndex suggestions ? for the DBA review?
+- Were there full collection scans ? please?
+- Show COLLSCAN on config ? please?
+- Which createIndex suggestions ? please?
+- Were there full collection scans in this log?
+- Show COLLSCAN on config in this log?
+- Which createIndex suggestions from this log?
+- Were there full collection scans in this log from this log?
+- Show COLLSCAN on config in this log from this log?
+- Which createIndex suggestions from this log from this log?
+- Were there full collection scans in this log in this log?
+- Show COLLSCAN on config in this log in this log?
+- Which createIndex suggestions from this log in this log?
+- Were there full collection scans in this log in the uploaded file?
+- Show COLLSCAN on config in this log in the uploaded file?
+- Which createIndex suggestions from this log in the uploaded file?
+- Were there full collection scans in this log according to the parsed log?
+- Show COLLSCAN on config in this log according to the parsed log?
+- Which createIndex suggestions from this log according to the parsed log?
+- Were there full collection scans in this log for this mongod?
+- Show COLLSCAN on config in this log for this mongod?
+- Which createIndex suggestions from this log for this mongod?
+- Were there full collection scans in this log for troubleshooting?
+- Show COLLSCAN on config in this log for troubleshooting?
+- Which createIndex suggestions from this log for troubleshooting?
+- Were there full collection scans in this log for performance review?
+- Show COLLSCAN on config in this log for performance review?
+- Which createIndex suggestions from this log for performance review?
+- Were there full collection scans in this log for the DBA review?
+- Show COLLSCAN on config in this log for the DBA review?
+- Which createIndex suggestions from this log for the DBA review?
+- Were there full collection scans in this log please?
+- Show COLLSCAN on config in this log please?
+- Which createIndex suggestions from this log please?
+- Were there missing index scans ?
+- Show sharding internal scans ?
+- Which missing indexes ?
+- Were there missing index scans ? from this log?
+- Show sharding internal scans ? from this log?
+- Which missing indexes ? from this log?
+- Were there missing index scans ? in this log?
+- Show sharding internal scans ? in this log?
+- Which missing indexes ? in this log?
+- Were there missing index scans ? in the uploaded file?
+- Show sharding internal scans ? in the uploaded file?
+- Which missing indexes ? in the uploaded file?
+- Were there missing index scans ? according to the parsed log?
+- Show sharding internal scans ? according to the parsed log?
+- Which missing indexes ? according to the parsed log?
+- Were there missing index scans ? for this mongod?
+- Show sharding internal scans ? for this mongod?
+- Which missing indexes ? for this mongod?
+- Were there missing index scans ? for troubleshooting?
+- Show sharding internal scans ? for troubleshooting?
+- Which missing indexes ? for troubleshooting?
+- Were there missing index scans ? for performance review?
+- Show sharding internal scans ? for performance review?
+- Which missing indexes ? for performance review?
+- Were there missing index scans ? for the DBA review?
+- Show sharding internal scans ? for the DBA review?
+- Which missing indexes ? for the DBA review?
+- Were there missing index scans ? please?
+- Show sharding internal scans ? please?
+- Which missing indexes ? please?
+- Were there missing index scans in this log?
+- Show sharding internal scans in this log?
+- Which missing indexes from this log?
+- Were there missing index scans in this log from this log?
+- Show sharding internal scans in this log from this log?
+- Which missing indexes from this log from this log?
+- Were there missing index scans in this log in this log?
+- Show sharding internal scans in this log in this log?
+- Which missing indexes from this log in this log?
+- Were there missing index scans in this log in the uploaded file?
+- Show sharding internal scans in this log in the uploaded file?
+- Which missing indexes from this log in the uploaded file?
+
+## Errors & warnings
+
+- How many errors?
+- Error count in log
+- Top errors?
+- Show me the errors
+- List recent errors
+- What failed?
+- How many warnings?
+- Top warnings?
+- Show warnings
+- Severity distribution?
+- Info vs warning vs error counts?
+- How to fix auth errors?
+- Fix suggestions for errors
+- OOM or timeout remediation?
+- How many errors ?
+- How many warnings ?
+- What are the errors ?
+- What are the warnings ?
+- What is the severity distribution ?
+- How to fix auth errors ?
+- How many errors ? from this log?
+- How many warnings ? from this log?
+- What are the errors ? from this log?
+- What are the warnings ? from this log?
+- What is the severity distribution ? from this log?
+- How to fix auth errors ? from this log?
+- How many errors ? in this log?
+- How many warnings ? in this log?
+- What are the errors ? in this log?
+- What are the warnings ? in this log?
+- What is the severity distribution ? in this log?
+- How to fix auth errors ? in this log?
+- How many errors ? in the uploaded file?
+- How many warnings ? in the uploaded file?
+- What are the errors ? in the uploaded file?
+- What are the warnings ? in the uploaded file?
+- What is the severity distribution ? in the uploaded file?
+- How to fix auth errors ? in the uploaded file?
+- How many errors ? according to the parsed log?
+- How many warnings ? according to the parsed log?
+- What are the errors ? according to the parsed log?
+- What are the warnings ? according to the parsed log?
+- What is the severity distribution ? according to the parsed log?
+- How to fix auth errors ? according to the parsed log?
+- How many errors ? for this mongod?
+- How many warnings ? for this mongod?
+- What are the errors ? for this mongod?
+- What are the warnings ? for this mongod?
+- What is the severity distribution ? for this mongod?
+- How to fix auth errors ? for this mongod?
+- How many errors ? for troubleshooting?
+- How many warnings ? for troubleshooting?
+- What are the errors ? for troubleshooting?
+- What are the warnings ? for troubleshooting?
+- What is the severity distribution ? for troubleshooting?
+- How to fix auth errors ? for troubleshooting?
+- How many errors ? for performance review?
+- How many warnings ? for performance review?
+- What are the errors ? for performance review?
+- What are the warnings ? for performance review?
+- What is the severity distribution ? for performance review?
+- How to fix auth errors ? for performance review?
+- How many errors ? for the DBA review?
+- How many warnings ? for the DBA review?
+- What are the errors ? for the DBA review?
+- What are the warnings ? for the DBA review?
+- What is the severity distribution ? for the DBA review?
+- How to fix auth errors ? for the DBA review?
+- How many errors ? please?
+- How many warnings ? please?
+- What are the errors ? please?
+- What are the warnings ? please?
+- What is the severity distribution ? please?
+- How to fix auth errors ? please?
+- How many errors in this log?
+- How many warnings in this log?
+- What are the errors in this log?
+- What are the warnings in this log?
+- What is the severity distribution in this log?
+- How to fix auth errors in this log?
+- How many errors in this log from this log?
+- How many warnings in this log from this log?
+- What are the errors in this log from this log?
+- What are the warnings in this log from this log?
+- What is the severity distribution in this log from this log?
+- How to fix auth errors in this log from this log?
+- How many errors in this log in this log?
+- How many warnings in this log in this log?
+- What are the errors in this log in this log?
+- What are the warnings in this log in this log?
+- What is the severity distribution in this log in this log?
+- How to fix auth errors in this log in this log?
+- How many errors in this log in the uploaded file?
+- How many warnings in this log in the uploaded file?
+- What are the errors in this log in the uploaded file?
+- What are the warnings in this log in the uploaded file?
+- What is the severity distribution in this log in the uploaded file?
+- How to fix auth errors in this log in the uploaded file?
+- How many errors in this log according to the parsed log?
+- How many warnings in this log according to the parsed log?
+- What are the errors in this log according to the parsed log?
+- What are the warnings in this log according to the parsed log?
+- What is the severity distribution in this log according to the parsed log?
+- How to fix auth errors in this log according to the parsed log?
+- How many errors in this log for this mongod?
+- How many warnings in this log for this mongod?
+- What are the errors in this log for this mongod?
+- What are the warnings in this log for this mongod?
+- What is the severity distribution in this log for this mongod?
+- How to fix auth errors in this log for this mongod?
+- How many errors in this log for troubleshooting?
+- How many warnings in this log for troubleshooting?
+- What are the errors in this log for troubleshooting?
+- What are the warnings in this log for troubleshooting?
+- What is the severity distribution in this log for troubleshooting?
+- How to fix auth errors in this log for troubleshooting?
+- How many errors in this log for performance review?
+- How many warnings in this log for performance review?
+- What are the errors in this log for performance review?
+- What are the warnings in this log for performance review?
+- What is the severity distribution in this log for performance review?
+- How to fix auth errors in this log for performance review?
+- How many errors in this log for the DBA review?
+- How many warnings in this log for the DBA review?
+- What are the errors in this log for the DBA review?
+- What are the warnings in this log for the DBA review?
+- What is the severity distribution in this log for the DBA review?
+- How to fix auth errors in this log for the DBA review?
+- How many errors in this log please?
+- How many warnings in this log please?
+- What are the errors in this log please?
+- What are the warnings in this log please?
+- What is the severity distribution in this log please?
+- How to fix auth errors in this log please?
+- How many error lines ?
+- How many warning lines ?
+- What are the top errors ?
+- What are the top warnings ?
+- What is the info warning error counts ?
+- How to fix timeouts ?
+- How many error lines ? from this log?
+- How many warning lines ? from this log?
+- What are the top errors ? from this log?
+- What are the top warnings ? from this log?
+- What is the info warning error counts ? from this log?
+- How to fix timeouts ? from this log?
+- How many error lines ? in this log?
+- How many warning lines ? in this log?
+- What are the top errors ? in this log?
+- What are the top warnings ? in this log?
+- What is the info warning error counts ? in this log?
+- How to fix timeouts ? in this log?
+- How many error lines ? in the uploaded file?
+- How many warning lines ? in the uploaded file?
+- What are the top errors ? in the uploaded file?
+- What are the top warnings ? in the uploaded file?
+- What is the info warning error counts ? in the uploaded file?
+- How to fix timeouts ? in the uploaded file?
+- How many error lines ? according to the parsed log?
+- How many warning lines ? according to the parsed log?
+- What are the top errors ? according to the parsed log?
+- What are the top warnings ? according to the parsed log?
+- What is the info warning error counts ? according to the parsed log?
+- How to fix timeouts ? according to the parsed log?
+- How many error lines ? for this mongod?
+- How many warning lines ? for this mongod?
+- What are the top errors ? for this mongod?
+- What are the top warnings ? for this mongod?
+- What is the info warning error counts ? for this mongod?
+- How to fix timeouts ? for this mongod?
+- How many error lines ? for troubleshooting?
+- How many warning lines ? for troubleshooting?
+- What are the top errors ? for troubleshooting?
+- What are the top warnings ? for troubleshooting?
+- What is the info warning error counts ? for troubleshooting?
+- How to fix timeouts ? for troubleshooting?
+- How many error lines ? for performance review?
+- How many warning lines ? for performance review?
+- What are the top errors ? for performance review?
+- What are the top warnings ? for performance review?
+- What is the info warning error counts ? for performance review?
+- How to fix timeouts ? for performance review?
+- How many error lines ? for the DBA review?
+- How many warning lines ? for the DBA review?
+- What are the top errors ? for the DBA review?
+- What are the top warnings ? for the DBA review?
+- What is the info warning error counts ? for the DBA review?
+- How to fix timeouts ? for the DBA review?
+- How many error lines ? please?
+- How many warning lines ? please?
+- What are the top errors ? please?
+- What are the top warnings ? please?
+- What is the info warning error counts ? please?
+- How to fix timeouts ? please?
+- How many error lines in this log?
+- How many warning lines in this log?
+- What are the top errors in this log?
+- What are the top warnings in this log?
+- What is the info warning error counts in this log?
+- How to fix timeouts in this log?
+- How many error lines in this log from this log?
+- How many warning lines in this log from this log?
+- What are the top errors in this log from this log?
+- What are the top warnings in this log from this log?
+- What is the info warning error counts in this log from this log?
+- How to fix timeouts in this log from this log?
+- How many error lines in this log in this log?
+- How many warning lines in this log in this log?
+- What are the top errors in this log in this log?
+- What are the top warnings in this log in this log?
+- What is the info warning error counts in this log in this log?
+- How to fix timeouts in this log in this log?
+- How many error lines in this log in the uploaded file?
+- How many warning lines in this log in the uploaded file?
+- What are the top errors in this log in the uploaded file?
+- What are the top warnings in this log in the uploaded file?
+- What is the info warning error counts in this log in the uploaded file?
+- How to fix timeouts in this log in the uploaded file?
+- How many error lines in this log according to the parsed log?
+- How many warning lines in this log according to the parsed log?
+- What are the top errors in this log according to the parsed log?
+- What are the top warnings in this log according to the parsed log?
+- What is the info warning error counts in this log according to the parsed log?
+- How to fix timeouts in this log according to the parsed log?
+- How many error lines in this log for this mongod?
+- How many warning lines in this log for this mongod?
+- What are the top errors in this log for this mongod?
+- What are the top warnings in this log for this mongod?
+- What is the info warning error counts in this log for this mongod?
+- How to fix timeouts in this log for this mongod?
+- How many error lines in this log for troubleshooting?
+- How many warning lines in this log for troubleshooting?
+- What are the top errors in this log for troubleshooting?
+- What are the top warnings in this log for troubleshooting?
+- What is the info warning error counts in this log for troubleshooting?
+- How to fix timeouts in this log for troubleshooting?
+- How many error lines in this log for performance review?
+- How many warning lines in this log for performance review?
+- What are the top errors in this log for performance review?
+- What are the top warnings in this log for performance review?
+- What is the info warning error counts in this log for performance review?
+- How to fix timeouts in this log for performance review?
+- How many error lines in this log for the DBA review?
+- How many warning lines in this log for the DBA review?
+- What are the top errors in this log for the DBA review?
+- What are the top warnings in this log for the DBA review?
+- What is the info warning error counts in this log for the DBA review?
+- How to fix timeouts in this log for the DBA review?
+- How many error lines in this log please?
+- How many warning lines in this log please?
+- What are the top errors in this log please?
+- What are the top warnings in this log please?
+- What is the info warning error counts in this log please?
+- How to fix timeouts in this log please?
+- How many severity E lines ?
+- How many severity W lines ?
+- What are the recent errors ?
+- What are the recent warnings ?
+- What is the log level breakdown ?
+- How to fix OOM errors ?
+- How many severity E lines ? from this log?
+- How many severity W lines ? from this log?
+- What are the recent errors ? from this log?
+- What are the recent warnings ? from this log?
+- What is the log level breakdown ? from this log?
+- How to fix OOM errors ? from this log?
+- How many severity E lines ? in this log?
+- How many severity W lines ? in this log?
+- What are the recent errors ? in this log?
+- What are the recent warnings ? in this log?
+- What is the log level breakdown ? in this log?
+- How to fix OOM errors ? in this log?
+- How many severity E lines ? in the uploaded file?
+- How many severity W lines ? in the uploaded file?
+- What are the recent errors ? in the uploaded file?
+- What are the recent warnings ? in the uploaded file?
+- What is the log level breakdown ? in the uploaded file?
+- How to fix OOM errors ? in the uploaded file?
+- How many severity E lines ? according to the parsed log?
+- How many severity W lines ? according to the parsed log?
+- What are the recent errors ? according to the parsed log?
+- What are the recent warnings ? according to the parsed log?
+- What is the log level breakdown ? according to the parsed log?
+- How to fix OOM errors ? according to the parsed log?
+- How many severity E lines ? for this mongod?
+- How many severity W lines ? for this mongod?
+- What are the recent errors ? for this mongod?
+- What are the recent warnings ? for this mongod?
+- What is the log level breakdown ? for this mongod?
+- How to fix OOM errors ? for this mongod?
+- How many severity E lines ? for troubleshooting?
+- How many severity W lines ? for troubleshooting?
+- What are the recent errors ? for troubleshooting?
+- What are the recent warnings ? for troubleshooting?
+- What is the log level breakdown ? for troubleshooting?
+- How to fix OOM errors ? for troubleshooting?
+- How many severity E lines ? for performance review?
+- How many severity W lines ? for performance review?
+- What are the recent errors ? for performance review?
+- What are the recent warnings ? for performance review?
+- What is the log level breakdown ? for performance review?
+- How to fix OOM errors ? for performance review?
+- How many severity E lines ? for the DBA review?
+- How many severity W lines ? for the DBA review?
+- What are the recent errors ? for the DBA review?
+- What are the recent warnings ? for the DBA review?
+- What is the log level breakdown ? for the DBA review?
+- How to fix OOM errors ? for the DBA review?
+- How many severity E lines ? please?
+- How many severity W lines ? please?
+- What are the recent errors ? please?
+- What are the recent warnings ? please?
+- What is the log level breakdown ? please?
+- How to fix OOM errors ? please?
+- How many severity E lines in this log?
+- How many severity W lines in this log?
+- What are the recent errors in this log?
+- What are the recent warnings in this log?
+- What is the log level breakdown in this log?
+- How to fix OOM errors in this log?
+- How many severity E lines in this log from this log?
+- How many severity W lines in this log from this log?
+- What are the recent errors in this log from this log?
+- What are the recent warnings in this log from this log?
+- What is the log level breakdown in this log from this log?
+- How to fix OOM errors in this log from this log?
+- How many severity E lines in this log in this log?
+- How many severity W lines in this log in this log?
+- What are the recent errors in this log in this log?
+- What are the recent warnings in this log in this log?
+- What is the log level breakdown in this log in this log?
+- How to fix OOM errors in this log in this log?
+- How many severity E lines in this log in the uploaded file?
+- How many severity W lines in this log in the uploaded file?
+- What are the recent errors in this log in the uploaded file?
+- What are the recent warnings in this log in the uploaded file?
+- What is the log level breakdown in this log in the uploaded file?
+- How to fix OOM errors in this log in the uploaded file?
+- How many severity E lines in this log according to the parsed log?
+- How many severity W lines in this log according to the parsed log?
+- What are the recent errors in this log according to the parsed log?
+- What are the recent warnings in this log according to the parsed log?
+- What is the log level breakdown in this log according to the parsed log?
+- How to fix OOM errors in this log according to the parsed log?
+- How many severity E lines in this log for this mongod?
+- How many severity W lines in this log for this mongod?
+- What are the recent errors in this log for this mongod?
+- What are the recent warnings in this log for this mongod?
+- What is the log level breakdown in this log for this mongod?
+- How to fix OOM errors in this log for this mongod?
+- How many severity E lines in this log for troubleshooting?
+- How many severity W lines in this log for troubleshooting?
+- What are the recent errors in this log for troubleshooting?
+- What are the recent warnings in this log for troubleshooting?
+- What is the log level breakdown in this log for troubleshooting?
+- How to fix OOM errors in this log for troubleshooting?
+- How many severity E lines in this log for performance review?
+- How many severity W lines in this log for performance review?
+- What are the recent errors in this log for performance review?
+- What are the recent warnings in this log for performance review?
+- What is the log level breakdown in this log for performance review?
+- How to fix OOM errors in this log for performance review?
+- How many severity E lines in this log for the DBA review?
+- How many severity W lines in this log for the DBA review?
+- What are the recent errors in this log for the DBA review?
+- What are the recent warnings in this log for the DBA review?
+- What is the log level breakdown in this log for the DBA review?
+- How to fix OOM errors in this log for the DBA review?
+- How many severity E lines in this log please?
+- How many severity W lines in this log please?
+- What are the recent errors in this log please?
+- What are the recent warnings in this log please?
+- What is the log level breakdown in this log please?
+- How to fix OOM errors in this log please?
+- How many fatal errors ?
+- How many warn events ?
+- What are the common errors ?
+- What are the warning messages ?
+- What is the severity breakdown ?
+- How to fix write conflicts ?
+- How many fatal errors ? from this log?
+- How many warn events ? from this log?
+- What are the common errors ? from this log?
+- What are the warning messages ? from this log?
+- What is the severity breakdown ? from this log?
+- How to fix write conflicts ? from this log?
+- How many fatal errors ? in this log?
+- How many warn events ? in this log?
+- What are the common errors ? in this log?
+- What are the warning messages ? in this log?
+- What is the severity breakdown ? in this log?
+- How to fix write conflicts ? in this log?
+- How many fatal errors ? in the uploaded file?
+- How many warn events ? in the uploaded file?
+- What are the common errors ? in the uploaded file?
+- What are the warning messages ? in the uploaded file?
+- What is the severity breakdown ? in the uploaded file?
+- How to fix write conflicts ? in the uploaded file?
+- How many fatal errors ? according to the parsed log?
+- How many warn events ? according to the parsed log?
+- What are the common errors ? according to the parsed log?
+- What are the warning messages ? according to the parsed log?
+- What is the severity breakdown ? according to the parsed log?
+- How to fix write conflicts ? according to the parsed log?
+- How many fatal errors ? for this mongod?
+- How many warn events ? for this mongod?
+- What are the common errors ? for this mongod?
+- What are the warning messages ? for this mongod?
+- What is the severity breakdown ? for this mongod?
+- How to fix write conflicts ? for this mongod?
+- How many fatal errors ? for troubleshooting?
+- How many warn events ? for troubleshooting?
+- What are the common errors ? for troubleshooting?
+- What are the warning messages ? for troubleshooting?
+- What is the severity breakdown ? for troubleshooting?
+- How to fix write conflicts ? for troubleshooting?
+- How many fatal errors ? for performance review?
+- How many warn events ? for performance review?
+- What are the common errors ? for performance review?
+- What are the warning messages ? for performance review?
+- What is the severity breakdown ? for performance review?
+- How to fix write conflicts ? for performance review?
+- How many fatal errors ? for the DBA review?
+- How many warn events ? for the DBA review?
+- What are the common errors ? for the DBA review?
+- What are the warning messages ? for the DBA review?
+- What is the severity breakdown ? for the DBA review?
+- How to fix write conflicts ? for the DBA review?
+- How many fatal errors ? please?
+- How many warn events ? please?
+- What are the common errors ? please?
+- What are the warning messages ? please?
+- What is the severity breakdown ? please?
+- How to fix write conflicts ? please?
+- How many fatal errors in this log?
+- How many warn events in this log?
+- What are the common errors in this log?
+- What are the warning messages in this log?
+- What is the severity breakdown in this log?
+- How to fix write conflicts in this log?
+- How many fatal errors in this log from this log?
+- How many warn events in this log from this log?
+- What are the common errors in this log from this log?
+- What are the warning messages in this log from this log?
+- What is the severity breakdown in this log from this log?
+- How to fix write conflicts in this log from this log?
+- How many fatal errors in this log in this log?
+- How many warn events in this log in this log?
+- What are the common errors in this log in this log?
+- What are the warning messages in this log in this log?
+- What is the severity breakdown in this log in this log?
+- How to fix write conflicts in this log in this log?
+- How many fatal errors in this log in the uploaded file?
+- How many warn events in this log in the uploaded file?
+- What are the common errors in this log in the uploaded file?
+- What are the warning messages in this log in the uploaded file?
+- What is the severity breakdown in this log in the uploaded file?
+- How to fix write conflicts in this log in the uploaded file?
+- How many fatal errors in this log according to the parsed log?
+- How many warn events in this log according to the parsed log?
+- What are the common errors in this log according to the parsed log?
+- What are the warning messages in this log according to the parsed log?
+- What is the severity breakdown in this log according to the parsed log?
+- How to fix write conflicts in this log according to the parsed log?
+- How many fatal errors in this log for this mongod?
+- How many warn events in this log for this mongod?
+- What are the common errors in this log for this mongod?
+- What are the warning messages in this log for this mongod?
+- What is the severity breakdown in this log for this mongod?
+- How to fix write conflicts in this log for this mongod?
+- How many fatal errors in this log for troubleshooting?
+- How many warn events in this log for troubleshooting?
+- What are the common errors in this log for troubleshooting?
+- What are the warning messages in this log for troubleshooting?
+- What is the severity breakdown in this log for troubleshooting?
+- How to fix write conflicts in this log for troubleshooting?
+- How many fatal errors in this log for performance review?
+- How many warn events in this log for performance review?
+- What are the common errors in this log for performance review?
+- What are the warning messages in this log for performance review?
+- What is the severity breakdown in this log for performance review?
+- How to fix write conflicts in this log for performance review?
+- How many fatal errors in this log for the DBA review?
+- How many warn events in this log for the DBA review?
+- What are the common errors in this log for the DBA review?
+- What are the warning messages in this log for the DBA review?
+- What is the severity breakdown in this log for the DBA review?
+- How to fix write conflicts in this log for the DBA review?
+- How many fatal errors in this log please?
+- How many warn events in this log please?
+- What are the common errors in this log please?
+- What are the warning messages in this log please?
+- What is the severity breakdown in this log please?
+- How to fix write conflicts in this log please?
+- How many error events ?
+- Count warnings ?
+- What are the error messages ?
+- Show warnings ?
+- What is the I W E F counts ?
+- How to fix assertions ?
+- How many error events ? from this log?
+- Count warnings ? from this log?
+- What are the error messages ? from this log?
+- Show warnings ? from this log?
+- What is the I W E F counts ? from this log?
+- How to fix assertions ? from this log?
+- How many error events ? in this log?
+- Count warnings ? in this log?
+- What are the error messages ? in this log?
+- Show warnings ? in this log?
+- What is the I W E F counts ? in this log?
+- How to fix assertions ? in this log?
+- How many error events ? in the uploaded file?
+- Count warnings ? in the uploaded file?
+- What are the error messages ? in the uploaded file?
+- Show warnings ? in the uploaded file?
+- What is the I W E F counts ? in the uploaded file?
+- How to fix assertions ? in the uploaded file?
+- How many error events ? according to the parsed log?
+- Count warnings ? according to the parsed log?
+- What are the error messages ? according to the parsed log?
+- Show warnings ? according to the parsed log?
+- What is the I W E F counts ? according to the parsed log?
+- How to fix assertions ? according to the parsed log?
+- How many error events ? for this mongod?
+- Count warnings ? for this mongod?
+- What are the error messages ? for this mongod?
+- Show warnings ? for this mongod?
+- What is the I W E F counts ? for this mongod?
+- How to fix assertions ? for this mongod?
+- How many error events ? for troubleshooting?
+- Count warnings ? for troubleshooting?
+- What are the error messages ? for troubleshooting?
+- Show warnings ? for troubleshooting?
+- What is the I W E F counts ? for troubleshooting?
+- How to fix assertions ? for troubleshooting?
+- How many error events ? for performance review?
+- Count warnings ? for performance review?
+- What are the error messages ? for performance review?
+- Show warnings ? for performance review?
+- What is the I W E F counts ? for performance review?
+- How to fix assertions ? for performance review?
+- How many error events ? for the DBA review?
+- Count warnings ? for the DBA review?
+- What are the error messages ? for the DBA review?
+- Show warnings ? for the DBA review?
+- What is the I W E F counts ? for the DBA review?
+- How to fix assertions ? for the DBA review?
+- How many error events ? please?
+- Count warnings ? please?
+- What are the error messages ? please?
+- Show warnings ? please?
+- What is the I W E F counts ? please?
+- How to fix assertions ? please?
+- How many error events in this log?
+- Count warnings in this log?
+- What are the error messages in this log?
+- Show warnings in this log?
+- What is the I W E F counts in this log?
+- How to fix assertions in this log?
+- How many error events in this log from this log?
+- Count warnings in this log from this log?
+- What are the error messages in this log from this log?
+- Show warnings in this log from this log?
+- What is the I W E F counts in this log from this log?
+- How to fix assertions in this log from this log?
+- How many error events in this log in this log?
+- Count warnings in this log in this log?
+- What are the error messages in this log in this log?
+- Show warnings in this log in this log?
+- What is the I W E F counts in this log in this log?
+- How to fix assertions in this log in this log?
+- How many error events in this log in the uploaded file?
+- Count warnings in this log in the uploaded file?
+- What are the error messages in this log in the uploaded file?
+- Show warnings in this log in the uploaded file?
+- What is the I W E F counts in this log in the uploaded file?
+- How to fix assertions in this log in the uploaded file?
+- How many error events in this log according to the parsed log?
+- Count warnings in this log according to the parsed log?
+- What are the error messages in this log according to the parsed log?
+- Show warnings in this log according to the parsed log?
+- What is the I W E F counts in this log according to the parsed log?
+- How to fix assertions in this log according to the parsed log?
+- How many error events in this log for this mongod?
+- Count warnings in this log for this mongod?
+- What are the error messages in this log for this mongod?
+- Show warnings in this log for this mongod?
+- What is the I W E F counts in this log for this mongod?
+- How to fix assertions in this log for this mongod?
+- How many error events in this log for troubleshooting?
+- Count warnings in this log for troubleshooting?
+- What are the error messages in this log for troubleshooting?
+- Show warnings in this log for troubleshooting?
+- What is the I W E F counts in this log for troubleshooting?
+- How to fix assertions in this log for troubleshooting?
+- How many error events in this log for performance review?
+- Count warnings in this log for performance review?
+- What are the error messages in this log for performance review?
+- Show warnings in this log for performance review?
+- What is the I W E F counts in this log for performance review?
+- How to fix assertions in this log for performance review?
+- How many error events in this log for the DBA review?
+- Count warnings in this log for the DBA review?
+- What are the error messages in this log for the DBA review?
+- Show warnings in this log for the DBA review?
+- What is the I W E F counts in this log for the DBA review?
+- How to fix assertions in this log for the DBA review?
+- How many error events in this log please?
+- Count warnings in this log please?
+- What are the error messages in this log please?
+- Show warnings in this log please?
+- What is the I W E F counts in this log please?
+- How to fix assertions in this log please?
+- Count errors ?
+- Count warning lines ?
+- What are the failures ?
+- Show top warnings ?
+- Show severity distribution ?
+- How to fix tripwire ?
+- Count errors ? from this log?
+- Count warning lines ? from this log?
+- What are the failures ? from this log?
+- Show top warnings ? from this log?
+- Show severity distribution ? from this log?
+- How to fix tripwire ? from this log?
+- Count errors ? in this log?
+- Count warning lines ? in this log?
+- What are the failures ? in this log?
+- Show top warnings ? in this log?
+- Show severity distribution ? in this log?
+- How to fix tripwire ? in this log?
+- Count errors ? in the uploaded file?
+- Count warning lines ? in the uploaded file?
+- What are the failures ? in the uploaded file?
+- Show top warnings ? in the uploaded file?
+- Show severity distribution ? in the uploaded file?
+- How to fix tripwire ? in the uploaded file?
+- Count errors ? according to the parsed log?
+- Count warning lines ? according to the parsed log?
+- What are the failures ? according to the parsed log?
+- Show top warnings ? according to the parsed log?
+- Show severity distribution ? according to the parsed log?
+- How to fix tripwire ? according to the parsed log?
+- Count errors ? for this mongod?
+- Count warning lines ? for this mongod?
+- What are the failures ? for this mongod?
+- Show top warnings ? for this mongod?
+- Show severity distribution ? for this mongod?
+- How to fix tripwire ? for this mongod?
+- Count errors ? for troubleshooting?
+- Count warning lines ? for troubleshooting?
+- What are the failures ? for troubleshooting?
+- Show top warnings ? for troubleshooting?
+- Show severity distribution ? for troubleshooting?
+- How to fix tripwire ? for troubleshooting?
+- Count errors ? for performance review?
+- Count warning lines ? for performance review?
+- What are the failures ? for performance review?
+- Show top warnings ? for performance review?
+- Show severity distribution ? for performance review?
+- How to fix tripwire ? for performance review?
+- Count errors ? for the DBA review?
+- Count warning lines ? for the DBA review?
+- What are the failures ? for the DBA review?
+- Show top warnings ? for the DBA review?
+- Show severity distribution ? for the DBA review?
+- How to fix tripwire ? for the DBA review?
+- Count errors ? please?
+- Count warning lines ? please?
+- What are the failures ? please?
+- Show top warnings ? please?
+- Show severity distribution ? please?
+- How to fix tripwire ? please?
+- Count errors in this log?
+- Count warning lines in this log?
+- What are the failures in this log?
+- Show top warnings in this log?
+- Show severity distribution in this log?
+- How to fix tripwire in this log?
+- Count errors in this log from this log?
+- Count warning lines in this log from this log?
+- What are the failures in this log from this log?
+- Show top warnings in this log from this log?
+- Show severity distribution in this log from this log?
+- How to fix tripwire in this log from this log?
+- Count errors in this log in this log?
+- Count warning lines in this log in this log?
+- What are the failures in this log in this log?
+- Show top warnings in this log in this log?
+- Show severity distribution in this log in this log?
+- How to fix tripwire in this log in this log?
+- Count errors in this log in the uploaded file?
+- Count warning lines in this log in the uploaded file?
+- What are the failures in this log in the uploaded file?
+- Show top warnings in this log in the uploaded file?
+- Show severity distribution in this log in the uploaded file?
+- How to fix tripwire in this log in the uploaded file?
+- Count errors in this log according to the parsed log?
+- Count warning lines in this log according to the parsed log?
+- What are the failures in this log according to the parsed log?
+- Show top warnings in this log according to the parsed log?
+- Show severity distribution in this log according to the parsed log?
+- How to fix tripwire in this log according to the parsed log?
+- Count errors in this log for this mongod?
+- Count warning lines in this log for this mongod?
+- What are the failures in this log for this mongod?
+- Show top warnings in this log for this mongod?
+- Show severity distribution in this log for this mongod?
+- How to fix tripwire in this log for this mongod?
+- Count errors in this log for troubleshooting?
+- Count warning lines in this log for troubleshooting?
+- What are the failures in this log for troubleshooting?
+- Show top warnings in this log for troubleshooting?
+- Show severity distribution in this log for troubleshooting?
+- How to fix tripwire in this log for troubleshooting?
+- Count errors in this log for performance review?
+- Count warning lines in this log for performance review?
+- What are the failures in this log for performance review?
+- Show top warnings in this log for performance review?
+- Show severity distribution in this log for performance review?
+- How to fix tripwire in this log for performance review?
+- Count errors in this log for the DBA review?
+- Count warning lines in this log for the DBA review?
+- What are the failures in this log for the DBA review?
+- Show top warnings in this log for the DBA review?
+- Show severity distribution in this log for the DBA review?
+- How to fix tripwire in this log for the DBA review?
+- Count errors in this log please?
+- Count warning lines in this log please?
+- What are the failures in this log please?
+- Show top warnings in this log please?
+- Show severity distribution in this log please?
+- How to fix tripwire in this log please?
+- Count error lines ?
+- Count severity W lines ?
+- What are the fatal messages ?
+- Show recent warnings ?
+- Show info warning error counts ?
+- How to fix connection failures ?
+- Count error lines ? from this log?
+- Count severity W lines ? from this log?
+- What are the fatal messages ? from this log?
+- Show recent warnings ? from this log?
+- Show info warning error counts ? from this log?
+- How to fix connection failures ? from this log?
+- Count error lines ? in this log?
+- Count severity W lines ? in this log?
+- What are the fatal messages ? in this log?
+- Show recent warnings ? in this log?
+- Show info warning error counts ? in this log?
+- How to fix connection failures ? in this log?
+- Count error lines ? in the uploaded file?
+- Count severity W lines ? in the uploaded file?
+- What are the fatal messages ? in the uploaded file?
+- Show recent warnings ? in the uploaded file?
+- Show info warning error counts ? in the uploaded file?
+- How to fix connection failures ? in the uploaded file?
+- Count error lines ? according to the parsed log?
+- Count severity W lines ? according to the parsed log?
+- What are the fatal messages ? according to the parsed log?
+- Show recent warnings ? according to the parsed log?
+- Show info warning error counts ? according to the parsed log?
+- How to fix connection failures ? according to the parsed log?
+- Count error lines ? for this mongod?
+- Count severity W lines ? for this mongod?
+- What are the fatal messages ? for this mongod?
+- Show recent warnings ? for this mongod?
+- Show info warning error counts ? for this mongod?
+- How to fix connection failures ? for this mongod?
+- Count error lines ? for troubleshooting?
+- Count severity W lines ? for troubleshooting?
+- What are the fatal messages ? for troubleshooting?
+- Show recent warnings ? for troubleshooting?
+- Show info warning error counts ? for troubleshooting?
+- How to fix connection failures ? for troubleshooting?
+- Count error lines ? for performance review?
+- Count severity W lines ? for performance review?
+- What are the fatal messages ? for performance review?
+- Show recent warnings ? for performance review?
+- Show info warning error counts ? for performance review?
+- How to fix connection failures ? for performance review?
+- Count error lines ? for the DBA review?
+- Count severity W lines ? for the DBA review?
+- What are the fatal messages ? for the DBA review?
+- Show recent warnings ? for the DBA review?
+- Show info warning error counts ? for the DBA review?
+- How to fix connection failures ? for the DBA review?
+- Count error lines ? please?
+- Count severity W lines ? please?
+- What are the fatal messages ? please?
+- Show recent warnings ? please?
+- Show info warning error counts ? please?
+- How to fix connection failures ? please?
+- Count error lines in this log?
+- Count severity W lines in this log?
+- What are the fatal messages in this log?
+- Show recent warnings in this log?
+- Show info warning error counts in this log?
+- How to fix connection failures in this log?
+- Count error lines in this log from this log?
+- Count severity W lines in this log from this log?
+- What are the fatal messages in this log from this log?
+- Show recent warnings in this log from this log?
+- Show info warning error counts in this log from this log?
+- How to fix connection failures in this log from this log?
+- Count error lines in this log in this log?
+- Count severity W lines in this log in this log?
+- What are the fatal messages in this log in this log?
+- Show recent warnings in this log in this log?
+- Show info warning error counts in this log in this log?
+- How to fix connection failures in this log in this log?
+- Count error lines in this log in the uploaded file?
+- Count severity W lines in this log in the uploaded file?
+- What are the fatal messages in this log in the uploaded file?
+- Show recent warnings in this log in the uploaded file?
+- Show info warning error counts in this log in the uploaded file?
+- How to fix connection failures in this log in the uploaded file?
+- Count error lines in this log according to the parsed log?
+- Count severity W lines in this log according to the parsed log?
+- What are the fatal messages in this log according to the parsed log?
+- Show recent warnings in this log according to the parsed log?
+- Show info warning error counts in this log according to the parsed log?
+- How to fix connection failures in this log according to the parsed log?
+- Count error lines in this log for this mongod?
+- Count severity W lines in this log for this mongod?
+- What are the fatal messages in this log for this mongod?
+- Show recent warnings in this log for this mongod?
+- Show info warning error counts in this log for this mongod?
+- How to fix connection failures in this log for this mongod?
+- Count error lines in this log for troubleshooting?
+- Count severity W lines in this log for troubleshooting?
+- What are the fatal messages in this log for troubleshooting?
+- Show recent warnings in this log for troubleshooting?
+- Show info warning error counts in this log for troubleshooting?
+- How to fix connection failures in this log for troubleshooting?
+- Count error lines in this log for performance review?
+- Count severity W lines in this log for performance review?
+- What are the fatal messages in this log for performance review?
+- Show recent warnings in this log for performance review?
+- Show info warning error counts in this log for performance review?
+- How to fix connection failures in this log for performance review?
+- Count error lines in this log for the DBA review?
+- Count severity W lines in this log for the DBA review?
+- What are the fatal messages in this log for the DBA review?
+- Show recent warnings in this log for the DBA review?
+- Show info warning error counts in this log for the DBA review?
+- How to fix connection failures in this log for the DBA review?
+- Count error lines in this log please?
+- Count severity W lines in this log please?
+- What are the fatal messages in this log please?
+- Show recent warnings in this log please?
+- Show info warning error counts in this log please?
+- How to fix connection failures in this log please?
+- Count severity E lines ?
+- Count warn events ?
+- Show errors ?
+- Show warning messages ?
+- Show log level breakdown ?
+- How to fix duplicate key errors ?
+- Count severity E lines ? from this log?
+- Count warn events ? from this log?
+- Show errors ? from this log?
+- Show warning messages ? from this log?
+- Show log level breakdown ? from this log?
+- How to fix duplicate key errors ? from this log?
+- Count severity E lines ? in this log?
+- Count warn events ? in this log?
+- Show errors ? in this log?
+- Show warning messages ? in this log?
+- Show log level breakdown ? in this log?
+- How to fix duplicate key errors ? in this log?
+- Count severity E lines ? in the uploaded file?
+- Count warn events ? in the uploaded file?
+- Show errors ? in the uploaded file?
+- Show warning messages ? in the uploaded file?
+- Show log level breakdown ? in the uploaded file?
+- How to fix duplicate key errors ? in the uploaded file?
+- Count severity E lines ? according to the parsed log?
+- Count warn events ? according to the parsed log?
+- Show errors ? according to the parsed log?
+- Show warning messages ? according to the parsed log?
+- Show log level breakdown ? according to the parsed log?
+- How to fix duplicate key errors ? according to the parsed log?
+- Count severity E lines ? for this mongod?
+- Count warn events ? for this mongod?
+- Show errors ? for this mongod?
+- Show warning messages ? for this mongod?
+- Show log level breakdown ? for this mongod?
+- How to fix duplicate key errors ? for this mongod?
+- Count severity E lines ? for troubleshooting?
+- Count warn events ? for troubleshooting?
+- Show errors ? for troubleshooting?
+- Show warning messages ? for troubleshooting?
+- Show log level breakdown ? for troubleshooting?
+- How to fix duplicate key errors ? for troubleshooting?
+- Count severity E lines ? for performance review?
+- Count warn events ? for performance review?
+- Show errors ? for performance review?
+- Show warning messages ? for performance review?
+- Show log level breakdown ? for performance review?
+- How to fix duplicate key errors ? for performance review?
+- Count severity E lines ? for the DBA review?
+- Count warn events ? for the DBA review?
+- Show errors ? for the DBA review?
+- Show warning messages ? for the DBA review?
+- Show log level breakdown ? for the DBA review?
+- How to fix duplicate key errors ? for the DBA review?
+- Count severity E lines ? please?
+- Count warn events ? please?
+- Show errors ? please?
+- Show warning messages ? please?
+- Show log level breakdown ? please?
+- How to fix duplicate key errors ? please?
+- Count severity E lines in this log?
+- Count warn events in this log?
+- Show errors in this log?
+- Show warning messages in this log?
+- Show log level breakdown in this log?
+- How to fix duplicate key errors in this log?
+- Count severity E lines in this log from this log?
+- Count warn events in this log from this log?
+- Show errors in this log from this log?
+- Show warning messages in this log from this log?
+- Show log level breakdown in this log from this log?
+- How to fix duplicate key errors in this log from this log?
+- Count severity E lines in this log in this log?
+- Count warn events in this log in this log?
+- Show errors in this log in this log?
+- Show warning messages in this log in this log?
+- Show log level breakdown in this log in this log?
+- How to fix duplicate key errors in this log in this log?
+- Count severity E lines in this log in the uploaded file?
+- Count warn events in this log in the uploaded file?
+- Show errors in this log in the uploaded file?
+- Show warning messages in this log in the uploaded file?
+- Show log level breakdown in this log in the uploaded file?
+- How to fix duplicate key errors in this log in the uploaded file?
+- Count severity E lines in this log according to the parsed log?
+- Count warn events in this log according to the parsed log?
+- Show errors in this log according to the parsed log?
+- Show warning messages in this log according to the parsed log?
+- Show log level breakdown in this log according to the parsed log?
+- How to fix duplicate key errors in this log according to the parsed log?
+- Count severity E lines in this log for this mongod?
+- Count warn events in this log for this mongod?
+- Show errors in this log for this mongod?
+- Show warning messages in this log for this mongod?
+- Show log level breakdown in this log for this mongod?
+- How to fix duplicate key errors in this log for this mongod?
+- Count severity E lines in this log for troubleshooting?
+- Count warn events in this log for troubleshooting?
+- Show errors in this log for troubleshooting?
+- Show warning messages in this log for troubleshooting?
+- Show log level breakdown in this log for troubleshooting?
+- How to fix duplicate key errors in this log for troubleshooting?
+- Count severity E lines in this log for performance review?
+- Count warn events in this log for performance review?
+- Show errors in this log for performance review?
+- Show warning messages in this log for performance review?
+- Show log level breakdown in this log for performance review?
+- How to fix duplicate key errors in this log for performance review?
+- Count severity E lines in this log for the DBA review?
+- Count warn events in this log for the DBA review?
+- Show errors in this log for the DBA review?
+- Show warning messages in this log for the DBA review?
+- Show log level breakdown in this log for the DBA review?
+- How to fix duplicate key errors in this log for the DBA review?
+- Count severity E lines in this log please?
+- Count warn events in this log please?
+- Show errors in this log please?
+- Show warning messages in this log please?
+- Show log level breakdown in this log please?
+- How to fix duplicate key errors in this log please?
+- Count fatal errors ?
+- What is the number of warnings ?
+- Show top errors ?
+- List warnings ?
+- Show severity breakdown ?
+- Remediation for auth errors ?
+- Count fatal errors ? from this log?
+- What is the number of warnings ? from this log?
+- Show top errors ? from this log?
+- List warnings ? from this log?
+- Show severity breakdown ? from this log?
+- Remediation for auth errors ? from this log?
+- Count fatal errors ? in this log?
+- What is the number of warnings ? in this log?
+- Show top errors ? in this log?
+- List warnings ? in this log?
+- Show severity breakdown ? in this log?
+- Remediation for auth errors ? in this log?
+- Count fatal errors ? in the uploaded file?
+- What is the number of warnings ? in the uploaded file?
+- Show top errors ? in the uploaded file?
+- List warnings ? in the uploaded file?
+- Show severity breakdown ? in the uploaded file?
+- Remediation for auth errors ? in the uploaded file?
+- Count fatal errors ? according to the parsed log?
+- What is the number of warnings ? according to the parsed log?
+- Show top errors ? according to the parsed log?
+- List warnings ? according to the parsed log?
+- Show severity breakdown ? according to the parsed log?
+- Remediation for auth errors ? according to the parsed log?
+- Count fatal errors ? for this mongod?
+- What is the number of warnings ? for this mongod?
+- Show top errors ? for this mongod?
+- List warnings ? for this mongod?
+- Show severity breakdown ? for this mongod?
+- Remediation for auth errors ? for this mongod?
+- Count fatal errors ? for troubleshooting?
+- What is the number of warnings ? for troubleshooting?
+- Show top errors ? for troubleshooting?
+- List warnings ? for troubleshooting?
+- Show severity breakdown ? for troubleshooting?
+- Remediation for auth errors ? for troubleshooting?
+- Count fatal errors ? for performance review?
+- What is the number of warnings ? for performance review?
+- Show top errors ? for performance review?
+- List warnings ? for performance review?
+- Show severity breakdown ? for performance review?
+- Remediation for auth errors ? for performance review?
+- Count fatal errors ? for the DBA review?
+- What is the number of warnings ? for the DBA review?
+- Show top errors ? for the DBA review?
+- List warnings ? for the DBA review?
+- Show severity breakdown ? for the DBA review?
+- Remediation for auth errors ? for the DBA review?
+- Count fatal errors ? please?
+- What is the number of warnings ? please?
+- Show top errors ? please?
+- List warnings ? please?
+- Show severity breakdown ? please?
+- Remediation for auth errors ? please?
+- Count fatal errors in this log?
+- What is the number of warnings in this log?
+- Show top errors in this log?
+- List warnings in this log?
+- Show severity breakdown in this log?
+- Remediation for auth errors in this log?
+- Count fatal errors in this log from this log?
+- What is the number of warnings in this log from this log?
+- Show top errors in this log from this log?
+- List warnings in this log from this log?
+- Show severity breakdown in this log from this log?
+- Remediation for auth errors in this log from this log?
+- Count fatal errors in this log in this log?
+- What is the number of warnings in this log in this log?
+- Show top errors in this log in this log?
+- List warnings in this log in this log?
+- Show severity breakdown in this log in this log?
+- Remediation for auth errors in this log in this log?
+- Count fatal errors in this log in the uploaded file?
+- What is the number of warnings in this log in the uploaded file?
+- Show top errors in this log in the uploaded file?
+- List warnings in this log in the uploaded file?
+- Show severity breakdown in this log in the uploaded file?
+- Remediation for auth errors in this log in the uploaded file?
+- Count fatal errors in this log according to the parsed log?
+- What is the number of warnings in this log according to the parsed log?
+- Show top errors in this log according to the parsed log?
+- List warnings in this log according to the parsed log?
+- Show severity breakdown in this log according to the parsed log?
+- Remediation for auth errors in this log according to the parsed log?
+- Count fatal errors in this log for this mongod?
+- What is the number of warnings in this log for this mongod?
+- Show top errors in this log for this mongod?
+- List warnings in this log for this mongod?
+- Show severity breakdown in this log for this mongod?
+- Remediation for auth errors in this log for this mongod?
+- Count fatal errors in this log for troubleshooting?
+- What is the number of warnings in this log for troubleshooting?
+- Show top errors in this log for troubleshooting?
+- List warnings in this log for troubleshooting?
+- Show severity breakdown in this log for troubleshooting?
+- Remediation for auth errors in this log for troubleshooting?
+- Count fatal errors in this log for performance review?
+- What is the number of warnings in this log for performance review?
+- Show top errors in this log for performance review?
+- List warnings in this log for performance review?
+- Show severity breakdown in this log for performance review?
+- Remediation for auth errors in this log for performance review?
+- Count fatal errors in this log for the DBA review?
+- What is the number of warnings in this log for the DBA review?
+- Show top errors in this log for the DBA review?
+- List warnings in this log for the DBA review?
+- Show severity breakdown in this log for the DBA review?
+- Remediation for auth errors in this log for the DBA review?
+- Count fatal errors in this log please?
+- What is the number of warnings in this log please?
+- Show top errors in this log please?
+- List warnings in this log please?
+- Show severity breakdown in this log please?
+- Remediation for auth errors in this log please?
+- Count error events ?
+- What is the number of warning lines ?
+- Show recent errors ?
+- List top warnings ?
+- Show I W E F counts ?
+- Remediation for timeouts ?
+- Count error events ? from this log?
+- What is the number of warning lines ? from this log?
+- Show recent errors ? from this log?
+- List top warnings ? from this log?
+- Show I W E F counts ? from this log?
+- Remediation for timeouts ? from this log?
+- Count error events ? in this log?
+- What is the number of warning lines ? in this log?
+- Show recent errors ? in this log?
+- List top warnings ? in this log?
+- Show I W E F counts ? in this log?
+- Remediation for timeouts ? in this log?
+- Count error events ? in the uploaded file?
+- What is the number of warning lines ? in the uploaded file?
+- Show recent errors ? in the uploaded file?
+- List top warnings ? in the uploaded file?
+- Show I W E F counts ? in the uploaded file?
+- Remediation for timeouts ? in the uploaded file?
+- Count error events ? according to the parsed log?
+- What is the number of warning lines ? according to the parsed log?
+- Show recent errors ? according to the parsed log?
+- List top warnings ? according to the parsed log?
+- Show I W E F counts ? according to the parsed log?
+- Remediation for timeouts ? according to the parsed log?
+- Count error events ? for this mongod?
+- What is the number of warning lines ? for this mongod?
+- Show recent errors ? for this mongod?
+- List top warnings ? for this mongod?
+- Show I W E F counts ? for this mongod?
+- Remediation for timeouts ? for this mongod?
+- Count error events ? for troubleshooting?
+- What is the number of warning lines ? for troubleshooting?
+- Show recent errors ? for troubleshooting?
+- List top warnings ? for troubleshooting?
+- Show I W E F counts ? for troubleshooting?
+- Remediation for timeouts ? for troubleshooting?
+- Count error events ? for performance review?
+- What is the number of warning lines ? for performance review?
+- Show recent errors ? for performance review?
+- List top warnings ? for performance review?
+- Show I W E F counts ? for performance review?
+- Remediation for timeouts ? for performance review?
+- Count error events ? for the DBA review?
+- What is the number of warning lines ? for the DBA review?
+- Show recent errors ? for the DBA review?
+- List top warnings ? for the DBA review?
+- Show I W E F counts ? for the DBA review?
+- Remediation for timeouts ? for the DBA review?
+- Count error events ? please?
+- What is the number of warning lines ? please?
+- Show recent errors ? please?
+- List top warnings ? please?
+- Show I W E F counts ? please?
+- Remediation for timeouts ? please?
+- Count error events in this log?
+- What is the number of warning lines in this log?
+- Show recent errors in this log?
+- List top warnings in this log?
+- Show I W E F counts in this log?
+- Remediation for timeouts in this log?
+- Count error events in this log from this log?
+- What is the number of warning lines in this log from this log?
+- Show recent errors in this log from this log?
+- List top warnings in this log from this log?
+- Show I W E F counts in this log from this log?
+- Remediation for timeouts in this log from this log?
+- Count error events in this log in this log?
+- What is the number of warning lines in this log in this log?
+- Show recent errors in this log in this log?
+- List top warnings in this log in this log?
+- Show I W E F counts in this log in this log?
+- Remediation for timeouts in this log in this log?
+- Count error events in this log in the uploaded file?
+- What is the number of warning lines in this log in the uploaded file?
+- Show recent errors in this log in the uploaded file?
+- List top warnings in this log in the uploaded file?
+- Show I W E F counts in this log in the uploaded file?
+- Remediation for timeouts in this log in the uploaded file?
+
+## Security
+
+- Security issues?
+- Auth failures?
+- Audit events summary
+- TLS or SSL problems?
+- Unauthorized access attempts?
+- Any security issues ?
+- Any security issues ? from this log?
+- Any security issues ? in this log?
+- Any security issues ? in the uploaded file?
+- Any security issues ? according to the parsed log?
+- Any security issues ? for this mongod?
+- Any security issues ? for troubleshooting?
+- Any security issues ? for performance review?
+- Any security issues ? for the DBA review?
+- Any security issues ? please?
+- Any security issues in this log?
+- Any security issues in this log from this log?
+- Any security issues in this log in this log?
+- Any security issues in this log in the uploaded file?
+- Any security issues in this log according to the parsed log?
+- Any security issues in this log for this mongod?
+- Any security issues in this log for troubleshooting?
+- Any security issues in this log for performance review?
+- Any security issues in this log for the DBA review?
+- Any security issues in this log please?
+- Any audit events ?
+- Any audit events ? from this log?
+- Any audit events ? in this log?
+- Any audit events ? in the uploaded file?
+- Any audit events ? according to the parsed log?
+- Any audit events ? for this mongod?
+- Any audit events ? for troubleshooting?
+- Any audit events ? for performance review?
+- Any audit events ? for the DBA review?
+- Any audit events ? please?
+- Any audit events in this log?
+- Any audit events in this log from this log?
+- Any audit events in this log in this log?
+- Any audit events in this log in the uploaded file?
+- Any audit events in this log according to the parsed log?
+- Any audit events in this log for this mongod?
+- Any audit events in this log for troubleshooting?
+- Any audit events in this log for performance review?
+- Any audit events in this log for the DBA review?
+- Any audit events in this log please?
+- Any auth failures ?
+- Any auth failures ? from this log?
+- Any auth failures ? in this log?
+- Any auth failures ? in the uploaded file?
+- Any auth failures ? according to the parsed log?
+- Any auth failures ? for this mongod?
+- Any auth failures ? for troubleshooting?
+- Any auth failures ? for performance review?
+- Any auth failures ? for the DBA review?
+- Any auth failures ? please?
+- Any auth failures in this log?
+- Any auth failures in this log from this log?
+- Any auth failures in this log in this log?
+- Any auth failures in this log in the uploaded file?
+- Any auth failures in this log according to the parsed log?
+- Any auth failures in this log for this mongod?
+- Any auth failures in this log for troubleshooting?
+- Any auth failures in this log for performance review?
+- Any auth failures in this log for the DBA review?
+- Any auth failures in this log please?
+- Any unauthorized access ?
+- Any unauthorized access ? from this log?
+- Any unauthorized access ? in this log?
+- Any unauthorized access ? in the uploaded file?
+- Any unauthorized access ? according to the parsed log?
+- Any unauthorized access ? for this mongod?
+- Any unauthorized access ? for troubleshooting?
+- Any unauthorized access ? for performance review?
+- Any unauthorized access ? for the DBA review?
+- Any unauthorized access ? please?
+- Any unauthorized access in this log?
+- Any unauthorized access in this log from this log?
+- Any unauthorized access in this log in this log?
+- Any unauthorized access in this log in the uploaded file?
+- Any unauthorized access in this log according to the parsed log?
+- Any unauthorized access in this log for this mongod?
+- Any unauthorized access in this log for troubleshooting?
+- Any unauthorized access in this log for performance review?
+- Any unauthorized access in this log for the DBA review?
+- Any unauthorized access in this log please?
+- Any TLS problems ?
+- Any TLS problems ? from this log?
+- Any TLS problems ? in this log?
+- Any TLS problems ? in the uploaded file?
+- Any TLS problems ? according to the parsed log?
+- Any TLS problems ? for this mongod?
+- Any TLS problems ? for troubleshooting?
+- Any TLS problems ? for performance review?
+- Any TLS problems ? for the DBA review?
+- Any TLS problems ? please?
+- Any TLS problems in this log?
+- Any TLS problems in this log from this log?
+- Any TLS problems in this log in this log?
+- Any TLS problems in this log in the uploaded file?
+- Any TLS problems in this log according to the parsed log?
+- Any TLS problems in this log for this mongod?
+- Any TLS problems in this log for troubleshooting?
+- Any TLS problems in this log for performance review?
+- Any TLS problems in this log for the DBA review?
+- Any TLS problems in this log please?
+- Any SSL errors ?
+- Any SSL errors ? from this log?
+- Any SSL errors ? in this log?
+- Any SSL errors ? in the uploaded file?
+- Any SSL errors ? according to the parsed log?
+- Any SSL errors ? for this mongod?
+- Any SSL errors ? for troubleshooting?
+- Any SSL errors ? for performance review?
+- Any SSL errors ? for the DBA review?
+- Any SSL errors ? please?
+- Any SSL errors in this log?
+- Any SSL errors in this log from this log?
+- Any SSL errors in this log in this log?
+- Any SSL errors in this log in the uploaded file?
+- Any SSL errors in this log according to the parsed log?
+- Any SSL errors in this log for this mongod?
+- Any SSL errors in this log for troubleshooting?
+- Any SSL errors in this log for performance review?
+- Any SSL errors in this log for the DBA review?
+- Any SSL errors in this log please?
+- Any shutdown signals ?
+- Any shutdown signals ? from this log?
+- Any shutdown signals ? in this log?
+- Any shutdown signals ? in the uploaded file?
+- Any shutdown signals ? according to the parsed log?
+- Any shutdown signals ? for this mongod?
+- Any shutdown signals ? for troubleshooting?
+- Any shutdown signals ? for performance review?
+- Any shutdown signals ? for the DBA review?
+- Any shutdown signals ? please?
+- Any shutdown signals in this log?
+- Any shutdown signals in this log from this log?
+- Any shutdown signals in this log in this log?
+- Any shutdown signals in this log in the uploaded file?
+- Any shutdown signals in this log according to the parsed log?
+- Any shutdown signals in this log for this mongod?
+- Any shutdown signals in this log for troubleshooting?
+- Any shutdown signals in this log for performance review?
+- Any shutdown signals in this log for the DBA review?
+- Any shutdown signals in this log please?
+- Any authentication failures ?
+- Any authentication failures ? from this log?
+- Any authentication failures ? in this log?
+- Any authentication failures ? in the uploaded file?
+- Any authentication failures ? according to the parsed log?
+- Any authentication failures ? for this mongod?
+- Any authentication failures ? for troubleshooting?
+- Any authentication failures ? for performance review?
+- Any authentication failures ? for the DBA review?
+- Any authentication failures ? please?
+- Any authentication failures in this log?
+- Any authentication failures in this log from this log?
+- Any authentication failures in this log in this log?
+- Any authentication failures in this log in the uploaded file?
+- Any authentication failures in this log according to the parsed log?
+- Any authentication failures in this log for this mongod?
+- Any authentication failures in this log for troubleshooting?
+- Any authentication failures in this log for performance review?
+- Any authentication failures in this log for the DBA review?
+- Any authentication failures in this log please?
+- Show security issues ?
+- Show security issues ? from this log?
+- Show security issues ? in this log?
+- Show security issues ? in the uploaded file?
+- Show security issues ? according to the parsed log?
+- Show security issues ? for this mongod?
+- Show security issues ? for troubleshooting?
+- Show security issues ? for performance review?
+- Show security issues ? for the DBA review?
+- Show security issues ? please?
+- Show security issues in this log?
+- Show security issues in this log from this log?
+- Show security issues in this log in this log?
+- Show security issues in this log in the uploaded file?
+- Show security issues in this log according to the parsed log?
+- Show security issues in this log for this mongod?
+- Show security issues in this log for troubleshooting?
+- Show security issues in this log for performance review?
+- Show security issues in this log for the DBA review?
+- Show security issues in this log please?
+- Show audit events ?
+- Show audit events ? from this log?
+- Show audit events ? in this log?
+- Show audit events ? in the uploaded file?
+- Show audit events ? according to the parsed log?
+- Show audit events ? for this mongod?
+- Show audit events ? for troubleshooting?
+- Show audit events ? for performance review?
+- Show audit events ? for the DBA review?
+- Show audit events ? please?
+- Show audit events in this log?
+- Show audit events in this log from this log?
+- Show audit events in this log in this log?
+- Show audit events in this log in the uploaded file?
+
+## Applications & drivers
+
+- Which applications connect?
+- appName breakdown
+- Which app causes slow queries?
+- Driver versions?
+- Java or Node driver version?
+- Which applications connect ?
+- What driver versions ?
+- Which applications connect ? from this log?
+- What driver versions ? from this log?
+- Which applications connect ? in this log?
+- What driver versions ? in this log?
+- Which applications connect ? in the uploaded file?
+- What driver versions ? in the uploaded file?
+- Which applications connect ? according to the parsed log?
+- What driver versions ? according to the parsed log?
+- Which applications connect ? for this mongod?
+- What driver versions ? for this mongod?
+- Which applications connect ? for troubleshooting?
+- What driver versions ? for troubleshooting?
+- Which applications connect ? for performance review?
+- What driver versions ? for performance review?
+- Which applications connect ? for the DBA review?
+- What driver versions ? for the DBA review?
+- Which applications connect ? please?
+- What driver versions ? please?
+- Which applications connect in this log?
+- What driver versions in this log?
+- Which applications connect in this log from this log?
+- What driver versions in this log from this log?
+- Which applications connect in this log in this log?
+- What driver versions in this log in this log?
+- Which applications connect in this log in the uploaded file?
+- What driver versions in this log in the uploaded file?
+- Which applications connect in this log according to the parsed log?
+- What driver versions in this log according to the parsed log?
+- Which applications connect in this log for this mongod?
+- What driver versions in this log for this mongod?
+- Which applications connect in this log for troubleshooting?
+- What driver versions in this log for troubleshooting?
+- Which applications connect in this log for performance review?
+- What driver versions in this log for performance review?
+- Which applications connect in this log for the DBA review?
+- What driver versions in this log for the DBA review?
+- Which applications connect in this log please?
+- What driver versions in this log please?
+- Which appName values ?
+- What client drivers ?
+- Which appName values ? from this log?
+- What client drivers ? from this log?
+- Which appName values ? in this log?
+- What client drivers ? in this log?
+- Which appName values ? in the uploaded file?
+- What client drivers ? in the uploaded file?
+- Which appName values ? according to the parsed log?
+- What client drivers ? according to the parsed log?
+- Which appName values ? for this mongod?
+- What client drivers ? for this mongod?
+- Which appName values ? for troubleshooting?
+- What client drivers ? for troubleshooting?
+- Which appName values ? for performance review?
+- What client drivers ? for performance review?
+- Which appName values ? for the DBA review?
+- What client drivers ? for the DBA review?
+- Which appName values ? please?
+- What client drivers ? please?
+- Which appName values in this log?
+- What client drivers in this log?
+- Which appName values in this log from this log?
+- What client drivers in this log from this log?
+- Which appName values in this log in this log?
+- What client drivers in this log in this log?
+- Which appName values in this log in the uploaded file?
+- What client drivers in this log in the uploaded file?
+- Which appName values in this log according to the parsed log?
+- What client drivers in this log according to the parsed log?
+- Which appName values in this log for this mongod?
+- What client drivers in this log for this mongod?
+- Which appName values in this log for troubleshooting?
+- What client drivers in this log for troubleshooting?
+- Which appName values in this log for performance review?
+- What client drivers in this log for performance review?
+- Which appName values in this log for the DBA review?
+- What client drivers in this log for the DBA review?
+- Which appName values in this log please?
+- What client drivers in this log please?
+- Which client applications ?
+- What Java driver version ?
+- Which client applications ? from this log?
+- What Java driver version ? from this log?
+- Which client applications ? in this log?
+- What Java driver version ? in this log?
+- Which client applications ? in the uploaded file?
+- What Java driver version ? in the uploaded file?
+- Which client applications ? according to the parsed log?
+- What Java driver version ? according to the parsed log?
+- Which client applications ? for this mongod?
+- What Java driver version ? for this mongod?
+- Which client applications ? for troubleshooting?
+- What Java driver version ? for troubleshooting?
+- Which client applications ? for performance review?
+- What Java driver version ? for performance review?
+- Which client applications ? for the DBA review?
+- What Java driver version ? for the DBA review?
+- Which client applications ? please?
+- What Java driver version ? please?
+- Which client applications in this log?
+- What Java driver version in this log?
+- Which client applications in this log from this log?
+- What Java driver version in this log from this log?
+- Which client applications in this log in this log?
+- What Java driver version in this log in this log?
+- Which client applications in this log in the uploaded file?
+- What Java driver version in this log in the uploaded file?
+- Which client applications in this log according to the parsed log?
+- What Java driver version in this log according to the parsed log?
+- Which client applications in this log for this mongod?
+- What Java driver version in this log for this mongod?
+- Which client applications in this log for troubleshooting?
+- What Java driver version in this log for troubleshooting?
+- Which client applications in this log for performance review?
+- What Java driver version in this log for performance review?
+- Which client applications in this log for the DBA review?
+- What Java driver version in this log for the DBA review?
+- Which client applications in this log please?
+- What Java driver version in this log please?
+- Which apps hitting the server ?
+- What Node driver version ?
+- Which apps hitting the server ? from this log?
+- What Node driver version ? from this log?
+- Which apps hitting the server ? in this log?
+- What Node driver version ? in this log?
+- Which apps hitting the server ? in the uploaded file?
+- What Node driver version ? in the uploaded file?
+- Which apps hitting the server ? according to the parsed log?
+- What Node driver version ? according to the parsed log?
+- Which apps hitting the server ? for this mongod?
+- What Node driver version ? for this mongod?
+- Which apps hitting the server ? for troubleshooting?
+- What Node driver version ? for troubleshooting?
+- Which apps hitting the server ? for performance review?
+- What Node driver version ? for performance review?
+- Which apps hitting the server ? for the DBA review?
+- What Node driver version ? for the DBA review?
+- Which apps hitting the server ? please?
+- What Node driver version ? please?
+- Which apps hitting the server in this log?
+- What Node driver version in this log?
+- Which apps hitting the server in this log from this log?
+- What Node driver version in this log from this log?
+- Which apps hitting the server in this log in this log?
+- What Node driver version in this log in this log?
+- Which apps hitting the server in this log in the uploaded file?
+- What Node driver version in this log in the uploaded file?
+- Which apps hitting the server in this log according to the parsed log?
+- What Node driver version in this log according to the parsed log?
+- Which apps hitting the server in this log for this mongod?
+- What Node driver version in this log for this mongod?
+- Which apps hitting the server in this log for troubleshooting?
+- What Node driver version in this log for troubleshooting?
+- Which apps hitting the server in this log for performance review?
+- What Node driver version in this log for performance review?
+- Which apps hitting the server in this log for the DBA review?
+- What Node driver version in this log for the DBA review?
+- Which apps hitting the server in this log please?
+- What Node driver version in this log please?
+- Which application breakdown ?
+- What Python driver ?
+- Which application breakdown ? from this log?
+- What Python driver ? from this log?
+- Which application breakdown ? in this log?
+- What Python driver ? in this log?
+- Which application breakdown ? in the uploaded file?
+- What Python driver ? in the uploaded file?
+- Which application breakdown ? according to the parsed log?
+- What Python driver ? according to the parsed log?
+- Which application breakdown ? for this mongod?
+- What Python driver ? for this mongod?
+- Which application breakdown ? for troubleshooting?
+- What Python driver ? for troubleshooting?
+- Which application breakdown ? for performance review?
+- What Python driver ? for performance review?
+- Which application breakdown ? for the DBA review?
+- What Python driver ? for the DBA review?
+- Which application breakdown ? please?
+- What Python driver ? please?
+- Which application breakdown in this log?
+- What Python driver in this log?
+- Which application breakdown in this log from this log?
+- What Python driver in this log from this log?
+- Which application breakdown in this log in this log?
+- What Python driver in this log in this log?
+- Which application breakdown in this log in the uploaded file?
+- What Python driver in this log in the uploaded file?
+- Which application breakdown in this log according to the parsed log?
+- What Python driver in this log according to the parsed log?
+- Which application breakdown in this log for this mongod?
+- What Python driver in this log for this mongod?
+- Which application breakdown in this log for troubleshooting?
+- What Python driver in this log for troubleshooting?
+- Which application breakdown in this log for performance review?
+- What Python driver in this log for performance review?
+- Which application breakdown in this log for the DBA review?
+- What Python driver in this log for the DBA review?
+- Which application breakdown in this log please?
+- What Python driver in this log please?
+- Which connecting apps ?
+- What Go driver ?
+- Which connecting apps ? from this log?
+- What Go driver ? from this log?
+- Which connecting apps ? in this log?
+- What Go driver ? in this log?
+- Which connecting apps ? in the uploaded file?
+- What Go driver ? in the uploaded file?
+- Which connecting apps ? according to the parsed log?
+- What Go driver ? according to the parsed log?
+- Which connecting apps ? for this mongod?
+- What Go driver ? for this mongod?
+- Which connecting apps ? for troubleshooting?
+- What Go driver ? for troubleshooting?
+- Which connecting apps ? for performance review?
+- What Go driver ? for performance review?
+- Which connecting apps ? for the DBA review?
+- What Go driver ? for the DBA review?
+- Which connecting apps ? please?
+- What Go driver ? please?
+- Which connecting apps in this log?
+- What Go driver in this log?
+- Which connecting apps in this log from this log?
+- What Go driver in this log from this log?
+- Which connecting apps in this log in this log?
+- What Go driver in this log in this log?
+- Which connecting apps in this log in the uploaded file?
+- What Go driver in this log in the uploaded file?
+- Which connecting apps in this log according to the parsed log?
+- What Go driver in this log according to the parsed log?
+- Which connecting apps in this log for this mongod?
+- What Go driver in this log for this mongod?
+- Which connecting apps in this log for troubleshooting?
+- What Go driver in this log for troubleshooting?
+- Which connecting apps in this log for performance review?
+- What Go driver in this log for performance review?
+- Which connecting apps in this log for the DBA review?
+- What Go driver in this log for the DBA review?
+- Which connecting apps in this log please?
+- What Go driver in this log please?
+- What applications connect ?
+- Which driver versions ?
+- What applications connect ? from this log?
+- Which driver versions ? from this log?
+- What applications connect ? in this log?
+- Which driver versions ? in this log?
+- What applications connect ? in the uploaded file?
+- Which driver versions ? in the uploaded file?
+- What applications connect ? according to the parsed log?
+- Which driver versions ? according to the parsed log?
+- What applications connect ? for this mongod?
+- Which driver versions ? for this mongod?
+- What applications connect ? for troubleshooting?
+- Which driver versions ? for troubleshooting?
+- What applications connect ? for performance review?
+- Which driver versions ? for performance review?
+- What applications connect ? for the DBA review?
+- Which driver versions ? for the DBA review?
+- What applications connect ? please?
+- Which driver versions ? please?
+- What applications connect in this log?
+- Which driver versions in this log?
+- What applications connect in this log from this log?
+- Which driver versions in this log from this log?
+- What applications connect in this log in this log?
+- Which driver versions in this log in this log?
+- What applications connect in this log in the uploaded file?
+- Which driver versions in this log in the uploaded file?
+- What applications connect in this log according to the parsed log?
+- Which driver versions in this log according to the parsed log?
+- What applications connect in this log for this mongod?
+- Which driver versions in this log for this mongod?
+- What applications connect in this log for troubleshooting?
+- Which driver versions in this log for troubleshooting?
+- What applications connect in this log for performance review?
+- Which driver versions in this log for performance review?
+- What applications connect in this log for the DBA review?
+- Which driver versions in this log for the DBA review?
+- What applications connect in this log please?
+- Which driver versions in this log please?
+- What appName values ?
+- Which client drivers ?
+- What appName values ? from this log?
+- Which client drivers ? from this log?
+- What appName values ? in this log?
+- Which client drivers ? in this log?
+- What appName values ? in the uploaded file?
+- Which client drivers ? in the uploaded file?
+- What appName values ? according to the parsed log?
+- Which client drivers ? according to the parsed log?
+- What appName values ? for this mongod?
+- Which client drivers ? for this mongod?
+- What appName values ? for troubleshooting?
+- Which client drivers ? for troubleshooting?
+- What appName values ? for performance review?
+- Which client drivers ? for performance review?
+- What appName values ? for the DBA review?
+- Which client drivers ? for the DBA review?
+- What appName values ? please?
+- Which client drivers ? please?
+- What appName values in this log?
+- Which client drivers in this log?
+- What appName values in this log from this log?
+- Which client drivers in this log from this log?
+- What appName values in this log in this log?
+- Which client drivers in this log in this log?
+- What appName values in this log in the uploaded file?
+- Which client drivers in this log in the uploaded file?
+- What appName values in this log according to the parsed log?
+- Which client drivers in this log according to the parsed log?
+- What appName values in this log for this mongod?
+- Which client drivers in this log for this mongod?
+- What appName values in this log for troubleshooting?
+- Which client drivers in this log for troubleshooting?
+- What appName values in this log for performance review?
+- Which client drivers in this log for performance review?
+- What appName values in this log for the DBA review?
+- Which client drivers in this log for the DBA review?
+- What appName values in this log please?
+- Which client drivers in this log please?
+- What client applications ?
+- Which Java driver version ?
+- What client applications ? from this log?
+- Which Java driver version ? from this log?
+- What client applications ? in this log?
+- Which Java driver version ? in this log?
+- What client applications ? in the uploaded file?
+- Which Java driver version ? in the uploaded file?
+- What client applications ? according to the parsed log?
+- Which Java driver version ? according to the parsed log?
+- What client applications ? for this mongod?
+- Which Java driver version ? for this mongod?
+- What client applications ? for troubleshooting?
+- Which Java driver version ? for troubleshooting?
+- What client applications ? for performance review?
+- Which Java driver version ? for performance review?
+- What client applications ? for the DBA review?
+- Which Java driver version ? for the DBA review?
+- What client applications ? please?
+- Which Java driver version ? please?
+- What client applications in this log?
+- Which Java driver version in this log?
+- What client applications in this log from this log?
+- Which Java driver version in this log from this log?
+- What client applications in this log in this log?
+- Which Java driver version in this log in this log?
+- What client applications in this log in the uploaded file?
+- Which Java driver version in this log in the uploaded file?
+- What client applications in this log according to the parsed log?
+- Which Java driver version in this log according to the parsed log?
+- What client applications in this log for this mongod?
+- Which Java driver version in this log for this mongod?
+- What client applications in this log for troubleshooting?
+- Which Java driver version in this log for troubleshooting?
+- What client applications in this log for performance review?
+- Which Java driver version in this log for performance review?
+- What client applications in this log for the DBA review?
+- Which Java driver version in this log for the DBA review?
+- What client applications in this log please?
+- Which Java driver version in this log please?
+- What apps hitting the server ?
+- Which Node driver version ?
+- What apps hitting the server ? from this log?
+- Which Node driver version ? from this log?
+- What apps hitting the server ? in this log?
+- Which Node driver version ? in this log?
+- What apps hitting the server ? in the uploaded file?
+- Which Node driver version ? in the uploaded file?
+- What apps hitting the server ? according to the parsed log?
+- Which Node driver version ? according to the parsed log?
+- What apps hitting the server ? for this mongod?
+- Which Node driver version ? for this mongod?
+- What apps hitting the server ? for troubleshooting?
+- Which Node driver version ? for troubleshooting?
+- What apps hitting the server ? for performance review?
+- Which Node driver version ? for performance review?
+- What apps hitting the server ? for the DBA review?
+- Which Node driver version ? for the DBA review?
+- What apps hitting the server ? please?
+- Which Node driver version ? please?
+- What apps hitting the server in this log?
+- Which Node driver version in this log?
+- What apps hitting the server in this log from this log?
+- Which Node driver version in this log from this log?
+- What apps hitting the server in this log in this log?
+- Which Node driver version in this log in this log?
+- What apps hitting the server in this log in the uploaded file?
+- Which Node driver version in this log in the uploaded file?
+
+## Connections
+
+- Peak connections?
+- Connection count and pool stats?
+- Top client IP addresses?
+- Which IPs connect?
+- Long-lived connections?
+- Stale connections?
+- Connection open close timeline?
+- What was peak connections ?
+- Which client IPs ?
+- Any long-lived connections ?
+- Show connection timeline ?
+- What was peak connections ? from this log?
+- Which client IPs ? from this log?
+- Any long-lived connections ? from this log?
+- Show connection timeline ? from this log?
+- What was peak connections ? in this log?
+- Which client IPs ? in this log?
+- Any long-lived connections ? in this log?
+- Show connection timeline ? in this log?
+- What was peak connections ? in the uploaded file?
+- Which client IPs ? in the uploaded file?
+- Any long-lived connections ? in the uploaded file?
+- Show connection timeline ? in the uploaded file?
+- What was peak connections ? according to the parsed log?
+- Which client IPs ? according to the parsed log?
+- Any long-lived connections ? according to the parsed log?
+- Show connection timeline ? according to the parsed log?
+- What was peak connections ? for this mongod?
+- Which client IPs ? for this mongod?
+- Any long-lived connections ? for this mongod?
+- Show connection timeline ? for this mongod?
+- What was peak connections ? for troubleshooting?
+- Which client IPs ? for troubleshooting?
+- Any long-lived connections ? for troubleshooting?
+- Show connection timeline ? for troubleshooting?
+- What was peak connections ? for performance review?
+- Which client IPs ? for performance review?
+- Any long-lived connections ? for performance review?
+- Show connection timeline ? for performance review?
+- What was peak connections ? for the DBA review?
+- Which client IPs ? for the DBA review?
+- Any long-lived connections ? for the DBA review?
+- Show connection timeline ? for the DBA review?
+- What was peak connections ? please?
+- Which client IPs ? please?
+- Any long-lived connections ? please?
+- Show connection timeline ? please?
+- What was peak connections in this log?
+- Which client IPs in this log?
+- Any long-lived connections in this log?
+- Show connection timeline in this log?
+- What was peak connections in this log from this log?
+- Which client IPs in this log from this log?
+- Any long-lived connections in this log from this log?
+- Show connection timeline in this log from this log?
+- What was peak connections in this log in this log?
+- Which client IPs in this log in this log?
+- Any long-lived connections in this log in this log?
+- Show connection timeline in this log in this log?
+- What was peak connections in this log in the uploaded file?
+- Which client IPs in this log in the uploaded file?
+- Any long-lived connections in this log in the uploaded file?
+- Show connection timeline in this log in the uploaded file?
+- What was peak connections in this log according to the parsed log?
+- Which client IPs in this log according to the parsed log?
+- Any long-lived connections in this log according to the parsed log?
+- Show connection timeline in this log according to the parsed log?
+- What was peak connections in this log for this mongod?
+- Which client IPs in this log for this mongod?
+- Any long-lived connections in this log for this mongod?
+- Show connection timeline in this log for this mongod?
+- What was peak connections in this log for troubleshooting?
+- Which client IPs in this log for troubleshooting?
+- Any long-lived connections in this log for troubleshooting?
+- Show connection timeline in this log for troubleshooting?
+- What was peak connections in this log for performance review?
+- Which client IPs in this log for performance review?
+- Any long-lived connections in this log for performance review?
+- Show connection timeline in this log for performance review?
+- What was peak connections in this log for the DBA review?
+- Which client IPs in this log for the DBA review?
+- Any long-lived connections in this log for the DBA review?
+- Show connection timeline in this log for the DBA review?
+- What was peak connections in this log please?
+- Which client IPs in this log please?
+- Any long-lived connections in this log please?
+- Show connection timeline in this log please?
+- What was connection count ?
+- Which connecting IP addresses ?
+- Any stale connections ?
+- Show connections over time ?
+- What was connection count ? from this log?
+- Which connecting IP addresses ? from this log?
+- Any stale connections ? from this log?
+- Show connections over time ? from this log?
+- What was connection count ? in this log?
+- Which connecting IP addresses ? in this log?
+- Any stale connections ? in this log?
+- Show connections over time ? in this log?
+- What was connection count ? in the uploaded file?
+- Which connecting IP addresses ? in the uploaded file?
+- Any stale connections ? in the uploaded file?
+- Show connections over time ? in the uploaded file?
+- What was connection count ? according to the parsed log?
+- Which connecting IP addresses ? according to the parsed log?
+- Any stale connections ? according to the parsed log?
+- Show connections over time ? according to the parsed log?
+- What was connection count ? for this mongod?
+- Which connecting IP addresses ? for this mongod?
+- Any stale connections ? for this mongod?
+- Show connections over time ? for this mongod?
+- What was connection count ? for troubleshooting?
+- Which connecting IP addresses ? for troubleshooting?
+- Any stale connections ? for troubleshooting?
+- Show connections over time ? for troubleshooting?
+- What was connection count ? for performance review?
+- Which connecting IP addresses ? for performance review?
+- Any stale connections ? for performance review?
+- Show connections over time ? for performance review?
+- What was connection count ? for the DBA review?
+- Which connecting IP addresses ? for the DBA review?
+- Any stale connections ? for the DBA review?
+- Show connections over time ? for the DBA review?
+- What was connection count ? please?
+- Which connecting IP addresses ? please?
+- Any stale connections ? please?
+- Show connections over time ? please?
+- What was connection count in this log?
+- Which connecting IP addresses in this log?
+- Any stale connections in this log?
+- Show connections over time in this log?
+- What was connection count in this log from this log?
+- Which connecting IP addresses in this log from this log?
+- Any stale connections in this log from this log?
+- Show connections over time in this log from this log?
+- What was connection count in this log in this log?
+- Which connecting IP addresses in this log in this log?
+- Any stale connections in this log in this log?
+- Show connections over time in this log in this log?
+- What was connection count in this log in the uploaded file?
+- Which connecting IP addresses in this log in the uploaded file?
+- Any stale connections in this log in the uploaded file?
+- Show connections over time in this log in the uploaded file?
+- What was connection count in this log according to the parsed log?
+- Which connecting IP addresses in this log according to the parsed log?
+- Any stale connections in this log according to the parsed log?
+- Show connections over time in this log according to the parsed log?
+- What was connection count in this log for this mongod?
+- Which connecting IP addresses in this log for this mongod?
+- Any stale connections in this log for this mongod?
+- Show connections over time in this log for this mongod?
+- What was connection count in this log for troubleshooting?
+- Which connecting IP addresses in this log for troubleshooting?
+- Any stale connections in this log for troubleshooting?
+- Show connections over time in this log for troubleshooting?
+- What was connection count in this log for performance review?
+- Which connecting IP addresses in this log for performance review?
+- Any stale connections in this log for performance review?
+- Show connections over time in this log for performance review?
+- What was connection count in this log for the DBA review?
+- Which connecting IP addresses in this log for the DBA review?
+- Any stale connections in this log for the DBA review?
+- Show connections over time in this log for the DBA review?
+- What was connection count in this log please?
+- Which connecting IP addresses in this log please?
+- Any stale connections in this log please?
+- Show connections over time in this log please?
+- What was open connections ?
+- Which source IPs ?
+- Any idle connections ?
+- Show open close events ?
+- What was open connections ? from this log?
+- Which source IPs ? from this log?
+- Any idle connections ? from this log?
+- Show open close events ? from this log?
+- What was open connections ? in this log?
+- Which source IPs ? in this log?
+- Any idle connections ? in this log?
+- Show open close events ? in this log?
+- What was open connections ? in the uploaded file?
+- Which source IPs ? in the uploaded file?
+- Any idle connections ? in the uploaded file?
+- Show open close events ? in the uploaded file?
+- What was open connections ? according to the parsed log?
+- Which source IPs ? according to the parsed log?
+- Any idle connections ? according to the parsed log?
+- Show open close events ? according to the parsed log?
+- What was open connections ? for this mongod?
+- Which source IPs ? for this mongod?
+- Any idle connections ? for this mongod?
+- Show open close events ? for this mongod?
+- What was open connections ? for troubleshooting?
+- Which source IPs ? for troubleshooting?
+- Any idle connections ? for troubleshooting?
+- Show open close events ? for troubleshooting?
+- What was open connections ? for performance review?
+- Which source IPs ? for performance review?
+- Any idle connections ? for performance review?
+- Show open close events ? for performance review?
+- What was open connections ? for the DBA review?
+- Which source IPs ? for the DBA review?
+- Any idle connections ? for the DBA review?
+- Show open close events ? for the DBA review?
+- What was open connections ? please?
+- Which source IPs ? please?
+- Any idle connections ? please?
+- Show open close events ? please?
+- What was open connections in this log?
+- Which source IPs in this log?
+- Any idle connections in this log?
+- Show open close events in this log?
+- What was open connections in this log from this log?
+- Which source IPs in this log from this log?
+- Any idle connections in this log from this log?
+- Show open close events in this log from this log?
+- What was open connections in this log in this log?
+- Which source IPs in this log in this log?
+- Any idle connections in this log in this log?
+- Show open close events in this log in this log?
+- What was open connections in this log in the uploaded file?
+- Which source IPs in this log in the uploaded file?
+- Any idle connections in this log in the uploaded file?
+- Show open close events in this log in the uploaded file?
+- What was open connections in this log according to the parsed log?
+- Which source IPs in this log according to the parsed log?
+- Any idle connections in this log according to the parsed log?
+- Show open close events in this log according to the parsed log?
+- What was open connections in this log for this mongod?
+- Which source IPs in this log for this mongod?
+- Any idle connections in this log for this mongod?
+- Show open close events in this log for this mongod?
+- What was open connections in this log for troubleshooting?
+- Which source IPs in this log for troubleshooting?
+- Any idle connections in this log for troubleshooting?
+- Show open close events in this log for troubleshooting?
+- What was open connections in this log for performance review?
+- Which source IPs in this log for performance review?
+- Any idle connections in this log for performance review?
+- Show open close events in this log for performance review?
+- What was open connections in this log for the DBA review?
+- Which source IPs in this log for the DBA review?
+- Any idle connections in this log for the DBA review?
+- Show open close events in this log for the DBA review?
+- What was open connections in this log please?
+- Which source IPs in this log please?
+- Any idle connections in this log please?
+- Show open close events in this log please?
+- What was connection pool usage ?
+- Which remote IPs ?
+- Any long running sessions ?
+- Show connection activity timeline ?
+- What was connection pool usage ? from this log?
+- Which remote IPs ? from this log?
+- Any long running sessions ? from this log?
+- Show connection activity timeline ? from this log?
+- What was connection pool usage ? in this log?
+- Which remote IPs ? in this log?
+- Any long running sessions ? in this log?
+- Show connection activity timeline ? in this log?
+- What was connection pool usage ? in the uploaded file?
+- Which remote IPs ? in the uploaded file?
+- Any long running sessions ? in the uploaded file?
+- Show connection activity timeline ? in the uploaded file?
+- What was connection pool usage ? according to the parsed log?
+- Which remote IPs ? according to the parsed log?
+- Any long running sessions ? according to the parsed log?
+- Show connection activity timeline ? according to the parsed log?
+- What was connection pool usage ? for this mongod?
+- Which remote IPs ? for this mongod?
+- Any long running sessions ? for this mongod?
+- Show connection activity timeline ? for this mongod?
+- What was connection pool usage ? for troubleshooting?
+- Which remote IPs ? for troubleshooting?
+- Any long running sessions ? for troubleshooting?
+- Show connection activity timeline ? for troubleshooting?
+- What was connection pool usage ? for performance review?
+- Which remote IPs ? for performance review?
+- Any long running sessions ? for performance review?
+- Show connection activity timeline ? for performance review?
+- What was connection pool usage ? for the DBA review?
+- Which remote IPs ? for the DBA review?
+- Any long running sessions ? for the DBA review?
+- Show connection activity timeline ? for the DBA review?
+- What was connection pool usage ? please?
+- Which remote IPs ? please?
+- Any long running sessions ? please?
+- Show connection activity timeline ? please?
+- What was connection pool usage in this log?
+- Which remote IPs in this log?
+- Any long running sessions in this log?
+- Show connection activity timeline in this log?
+- What was connection pool usage in this log from this log?
+- Which remote IPs in this log from this log?
+- Any long running sessions in this log from this log?
+- Show connection activity timeline in this log from this log?
+- What was connection pool usage in this log in this log?
+- Which remote IPs in this log in this log?
+- Any long running sessions in this log in this log?
+- Show connection activity timeline in this log in this log?
+- What was connection pool usage in this log in the uploaded file?
+- Which remote IPs in this log in the uploaded file?
+- Any long running sessions in this log in the uploaded file?
+- Show connection activity timeline in this log in the uploaded file?
+- What was connection pool usage in this log according to the parsed log?
+- Which remote IPs in this log according to the parsed log?
+- Any long running sessions in this log according to the parsed log?
+- Show connection activity timeline in this log according to the parsed log?
+- What was connection pool usage in this log for this mongod?
+- Which remote IPs in this log for this mongod?
+- Any long running sessions in this log for this mongod?
+- Show connection activity timeline in this log for this mongod?
+- What was connection pool usage in this log for troubleshooting?
+- Which remote IPs in this log for troubleshooting?
+- Any long running sessions in this log for troubleshooting?
+- Show connection activity timeline in this log for troubleshooting?
+- What was connection pool usage in this log for performance review?
+- Which remote IPs in this log for performance review?
+- Any long running sessions in this log for performance review?
+- Show connection activity timeline in this log for performance review?
+- What was connection pool usage in this log for the DBA review?
+- Which remote IPs in this log for the DBA review?
+- Any long running sessions in this log for the DBA review?
+- Show connection activity timeline in this log for the DBA review?
+- What was connection pool usage in this log please?
+- Which remote IPs in this log please?
+- Any long running sessions in this log please?
+- Show connection activity timeline in this log please?
+- What was active connections ?
+- Which client addresses ?
+- Any connections open too long ?
+- Graph connection timeline ?
+- What was active connections ? from this log?
+- Which client addresses ? from this log?
+- Any connections open too long ? from this log?
+- Graph connection timeline ? from this log?
+- What was active connections ? in this log?
+- Which client addresses ? in this log?
+- Any connections open too long ? in this log?
+- Graph connection timeline ? in this log?
+- What was active connections ? in the uploaded file?
+- Which client addresses ? in the uploaded file?
+- Any connections open too long ? in the uploaded file?
+- Graph connection timeline ? in the uploaded file?
+- What was active connections ? according to the parsed log?
+- Which client addresses ? according to the parsed log?
+- Any connections open too long ? according to the parsed log?
+- Graph connection timeline ? according to the parsed log?
+- What was active connections ? for this mongod?
+- Which client addresses ? for this mongod?
+- Any connections open too long ? for this mongod?
+- Graph connection timeline ? for this mongod?
+- What was active connections ? for troubleshooting?
+- Which client addresses ? for troubleshooting?
+- Any connections open too long ? for troubleshooting?
+- Graph connection timeline ? for troubleshooting?
+- What was active connections ? for performance review?
+- Which client addresses ? for performance review?
+- Any connections open too long ? for performance review?
+- Graph connection timeline ? for performance review?
+- What was active connections ? for the DBA review?
+- Which client addresses ? for the DBA review?
+- Any connections open too long ? for the DBA review?
+- Graph connection timeline ? for the DBA review?
+- What was active connections ? please?
+- Which client addresses ? please?
+- Any connections open too long ? please?
+- Graph connection timeline ? please?
+- What was active connections in this log?
+- Which client addresses in this log?
+- Any connections open too long in this log?
+- Graph connection timeline in this log?
+- What was active connections in this log from this log?
+- Which client addresses in this log from this log?
+- Any connections open too long in this log from this log?
+- Graph connection timeline in this log from this log?
+- What was active connections in this log in this log?
+- Which client addresses in this log in this log?
+- Any connections open too long in this log in this log?
+- Graph connection timeline in this log in this log?
+- What was active connections in this log in the uploaded file?
+- Which client addresses in this log in the uploaded file?
+- Any connections open too long in this log in the uploaded file?
+- Graph connection timeline in this log in the uploaded file?
+- What was active connections in this log according to the parsed log?
+- Which client addresses in this log according to the parsed log?
+- Any connections open too long in this log according to the parsed log?
+- Graph connection timeline in this log according to the parsed log?
+- What was active connections in this log for this mongod?
+- Which client addresses in this log for this mongod?
+- Any connections open too long in this log for this mongod?
+- Graph connection timeline in this log for this mongod?
+- What was active connections in this log for troubleshooting?
+- Which client addresses in this log for troubleshooting?
+- Any connections open too long in this log for troubleshooting?
+- Graph connection timeline in this log for troubleshooting?
+- What was active connections in this log for performance review?
+- Which client addresses in this log for performance review?
+- Any connections open too long in this log for performance review?
+- Graph connection timeline in this log for performance review?
+- What was active connections in this log for the DBA review?
+- Which client addresses in this log for the DBA review?
+- Any connections open too long in this log for the DBA review?
+- Graph connection timeline in this log for the DBA review?
+- What was active connections in this log please?
+- Which client addresses in this log please?
+- Any connections open too long in this log please?
+- Graph connection timeline in this log please?
+- What was connection stats ?
+- What are the client IPs ?
+- Show long-lived connections ?
+- Graph connections over time ?
+- What was connection stats ? from this log?
+- What are the client IPs ? from this log?
+- Show long-lived connections ? from this log?
+- Graph connections over time ? from this log?
+- What was connection stats ? in this log?
+- What are the client IPs ? in this log?
+- Show long-lived connections ? in this log?
+- Graph connections over time ? in this log?
+- What was connection stats ? in the uploaded file?
+- What are the client IPs ? in the uploaded file?
+- Show long-lived connections ? in the uploaded file?
+- Graph connections over time ? in the uploaded file?
+- What was connection stats ? according to the parsed log?
+- What are the client IPs ? according to the parsed log?
+- Show long-lived connections ? according to the parsed log?
+- Graph connections over time ? according to the parsed log?
+- What was connection stats ? for this mongod?
+- What are the client IPs ? for this mongod?
+- Show long-lived connections ? for this mongod?
+- Graph connections over time ? for this mongod?
+- What was connection stats ? for troubleshooting?
+- What are the client IPs ? for troubleshooting?
+- Show long-lived connections ? for troubleshooting?
+- Graph connections over time ? for troubleshooting?
+- What was connection stats ? for performance review?
+- What are the client IPs ? for performance review?
+- Show long-lived connections ? for performance review?
+- Graph connections over time ? for performance review?
+- What was connection stats ? for the DBA review?
+- What are the client IPs ? for the DBA review?
+- Show long-lived connections ? for the DBA review?
+- Graph connections over time ? for the DBA review?
+- What was connection stats ? please?
+- What are the client IPs ? please?
+- Show long-lived connections ? please?
+- Graph connections over time ? please?
+- What was connection stats in this log?
+- What are the client IPs in this log?
+- Show long-lived connections in this log?
+- Graph connections over time in this log?
+- What was connection stats in this log from this log?
+- What are the client IPs in this log from this log?
+- Show long-lived connections in this log from this log?
+- Graph connections over time in this log from this log?
+- What was connection stats in this log in this log?
+- What are the client IPs in this log in this log?
+- Show long-lived connections in this log in this log?
+- Graph connections over time in this log in this log?
+- What was connection stats in this log in the uploaded file?
+- What are the client IPs in this log in the uploaded file?
+- Show long-lived connections in this log in the uploaded file?
+- Graph connections over time in this log in the uploaded file?
+- What was connection stats in this log according to the parsed log?
+- What are the client IPs in this log according to the parsed log?
+- Show long-lived connections in this log according to the parsed log?
+- Graph connections over time in this log according to the parsed log?
+- What was connection stats in this log for this mongod?
+- What are the client IPs in this log for this mongod?
+- Show long-lived connections in this log for this mongod?
+- Graph connections over time in this log for this mongod?
+- What was connection stats in this log for troubleshooting?
+- What are the client IPs in this log for troubleshooting?
+- Show long-lived connections in this log for troubleshooting?
+- Graph connections over time in this log for troubleshooting?
+- What was connection stats in this log for performance review?
+- What are the client IPs in this log for performance review?
+- Show long-lived connections in this log for performance review?
+- Graph connections over time in this log for performance review?
+- What was connection stats in this log for the DBA review?
+- What are the client IPs in this log for the DBA review?
+- Show long-lived connections in this log for the DBA review?
+- Graph connections over time in this log for the DBA review?
+- What was connection stats in this log please?
+- What are the client IPs in this log please?
+- Show long-lived connections in this log please?
+- Graph connections over time in this log please?
+- Show peak connections ?
+- What are the connecting IP addresses ?
+- Show stale connections ?
+- Graph open close events ?
+- Show peak connections ? from this log?
+- What are the connecting IP addresses ? from this log?
+- Show stale connections ? from this log?
+- Graph open close events ? from this log?
+- Show peak connections ? in this log?
+- What are the connecting IP addresses ? in this log?
+- Show stale connections ? in this log?
+- Graph open close events ? in this log?
+- Show peak connections ? in the uploaded file?
+- What are the connecting IP addresses ? in the uploaded file?
+- Show stale connections ? in the uploaded file?
+- Graph open close events ? in the uploaded file?
+- Show peak connections ? according to the parsed log?
+- What are the connecting IP addresses ? according to the parsed log?
+- Show stale connections ? according to the parsed log?
+- Graph open close events ? according to the parsed log?
+- Show peak connections ? for this mongod?
+- What are the connecting IP addresses ? for this mongod?
+- Show stale connections ? for this mongod?
+- Graph open close events ? for this mongod?
+- Show peak connections ? for troubleshooting?
+- What are the connecting IP addresses ? for troubleshooting?
+- Show stale connections ? for troubleshooting?
+- Graph open close events ? for troubleshooting?
+- Show peak connections ? for performance review?
+- What are the connecting IP addresses ? for performance review?
+- Show stale connections ? for performance review?
+- Graph open close events ? for performance review?
+- Show peak connections ? for the DBA review?
+- What are the connecting IP addresses ? for the DBA review?
+- Show stale connections ? for the DBA review?
+- Graph open close events ? for the DBA review?
+- Show peak connections ? please?
+- What are the connecting IP addresses ? please?
+- Show stale connections ? please?
+- Graph open close events ? please?
+- Show peak connections in this log?
+- What are the connecting IP addresses in this log?
+- Show stale connections in this log?
+- Graph open close events in this log?
+- Show peak connections in this log from this log?
+- What are the connecting IP addresses in this log from this log?
+- Show stale connections in this log from this log?
+- Graph open close events in this log from this log?
+- Show peak connections in this log in this log?
+- What are the connecting IP addresses in this log in this log?
+- Show stale connections in this log in this log?
+- Graph open close events in this log in this log?
+- Show peak connections in this log in the uploaded file?
+- What are the connecting IP addresses in this log in the uploaded file?
+- Show stale connections in this log in the uploaded file?
+- Graph open close events in this log in the uploaded file?
+- Show peak connections in this log according to the parsed log?
+- What are the connecting IP addresses in this log according to the parsed log?
+- Show stale connections in this log according to the parsed log?
+- Graph open close events in this log according to the parsed log?
+- Show peak connections in this log for this mongod?
+- What are the connecting IP addresses in this log for this mongod?
+- Show stale connections in this log for this mongod?
+- Graph open close events in this log for this mongod?
+- Show peak connections in this log for troubleshooting?
+- What are the connecting IP addresses in this log for troubleshooting?
+- Show stale connections in this log for troubleshooting?
+- Graph open close events in this log for troubleshooting?
+- Show peak connections in this log for performance review?
+- What are the connecting IP addresses in this log for performance review?
+- Show stale connections in this log for performance review?
+- Graph open close events in this log for performance review?
+- Show peak connections in this log for the DBA review?
+- What are the connecting IP addresses in this log for the DBA review?
+- Show stale connections in this log for the DBA review?
+- Graph open close events in this log for the DBA review?
+- Show peak connections in this log please?
+- What are the connecting IP addresses in this log please?
+- Show stale connections in this log please?
+- Graph open close events in this log please?
+- Show connection count ?
+- What are the source IPs ?
+- Show idle connections ?
+- Graph connection activity timeline ?
+- Show connection count ? from this log?
+- What are the source IPs ? from this log?
+- Show idle connections ? from this log?
+- Graph connection activity timeline ? from this log?
+- Show connection count ? in this log?
+- What are the source IPs ? in this log?
+- Show idle connections ? in this log?
+- Graph connection activity timeline ? in this log?
+- Show connection count ? in the uploaded file?
+- What are the source IPs ? in the uploaded file?
+- Show idle connections ? in the uploaded file?
+- Graph connection activity timeline ? in the uploaded file?
+- Show connection count ? according to the parsed log?
+- What are the source IPs ? according to the parsed log?
+- Show idle connections ? according to the parsed log?
+- Graph connection activity timeline ? according to the parsed log?
+- Show connection count ? for this mongod?
+- What are the source IPs ? for this mongod?
+- Show idle connections ? for this mongod?
+- Graph connection activity timeline ? for this mongod?
+- Show connection count ? for troubleshooting?
+- What are the source IPs ? for troubleshooting?
+- Show idle connections ? for troubleshooting?
+- Graph connection activity timeline ? for troubleshooting?
+- Show connection count ? for performance review?
+- What are the source IPs ? for performance review?
+- Show idle connections ? for performance review?
+- Graph connection activity timeline ? for performance review?
+- Show connection count ? for the DBA review?
+- What are the source IPs ? for the DBA review?
+- Show idle connections ? for the DBA review?
+- Graph connection activity timeline ? for the DBA review?
+- Show connection count ? please?
+- What are the source IPs ? please?
+- Show idle connections ? please?
+- Graph connection activity timeline ? please?
+- Show connection count in this log?
+- What are the source IPs in this log?
+- Show idle connections in this log?
+- Graph connection activity timeline in this log?
+- Show connection count in this log from this log?
+- What are the source IPs in this log from this log?
+- Show idle connections in this log from this log?
+- Graph connection activity timeline in this log from this log?
+- Show connection count in this log in this log?
+- What are the source IPs in this log in this log?
+- Show idle connections in this log in this log?
+- Graph connection activity timeline in this log in this log?
+- Show connection count in this log in the uploaded file?
+- What are the source IPs in this log in the uploaded file?
+- Show idle connections in this log in the uploaded file?
+- Graph connection activity timeline in this log in the uploaded file?
+- Show connection count in this log according to the parsed log?
+- What are the source IPs in this log according to the parsed log?
+- Show idle connections in this log according to the parsed log?
+- Graph connection activity timeline in this log according to the parsed log?
+- Show connection count in this log for this mongod?
+- What are the source IPs in this log for this mongod?
+- Show idle connections in this log for this mongod?
+- Graph connection activity timeline in this log for this mongod?
+- Show connection count in this log for troubleshooting?
+- What are the source IPs in this log for troubleshooting?
+- Show idle connections in this log for troubleshooting?
+- Graph connection activity timeline in this log for troubleshooting?
+- Show connection count in this log for performance review?
+- What are the source IPs in this log for performance review?
+- Show idle connections in this log for performance review?
+- Graph connection activity timeline in this log for performance review?
+- Show connection count in this log for the DBA review?
+- What are the source IPs in this log for the DBA review?
+- Show idle connections in this log for the DBA review?
+- Graph connection activity timeline in this log for the DBA review?
+- Show connection count in this log please?
+- What are the source IPs in this log please?
+- Show idle connections in this log please?
+- Graph connection activity timeline in this log please?
+- Show open connections ?
+- What are the remote IPs ?
+- Show long running sessions ?
+- Connection connection timeline ?
+- Show open connections ? from this log?
+- What are the remote IPs ? from this log?
+- Show long running sessions ? from this log?
+- Connection connection timeline ? from this log?
+- Show open connections ? in this log?
+- What are the remote IPs ? in this log?
+- Show long running sessions ? in this log?
+- Connection connection timeline ? in this log?
+- Show open connections ? in the uploaded file?
+- What are the remote IPs ? in the uploaded file?
+- Show long running sessions ? in the uploaded file?
+- Connection connection timeline ? in the uploaded file?
+- Show open connections ? according to the parsed log?
+- What are the remote IPs ? according to the parsed log?
+- Show long running sessions ? according to the parsed log?
+- Connection connection timeline ? according to the parsed log?
+- Show open connections ? for this mongod?
+- What are the remote IPs ? for this mongod?
+- Show long running sessions ? for this mongod?
+- Connection connection timeline ? for this mongod?
+- Show open connections ? for troubleshooting?
+- What are the remote IPs ? for troubleshooting?
+- Show long running sessions ? for troubleshooting?
+- Connection connection timeline ? for troubleshooting?
+- Show open connections ? for performance review?
+- What are the remote IPs ? for performance review?
+- Show long running sessions ? for performance review?
+- Connection connection timeline ? for performance review?
+- Show open connections ? for the DBA review?
+- What are the remote IPs ? for the DBA review?
+- Show long running sessions ? for the DBA review?
+- Connection connection timeline ? for the DBA review?
+- Show open connections ? please?
+- What are the remote IPs ? please?
+- Show long running sessions ? please?
+- Connection connection timeline ? please?
+- Show open connections in this log?
+- What are the remote IPs in this log?
+- Show long running sessions in this log?
+- Connection connection timeline in this log?
+- Show open connections in this log from this log?
+- What are the remote IPs in this log from this log?
+- Show long running sessions in this log from this log?
+- Connection connection timeline in this log from this log?
+- Show open connections in this log in this log?
+- What are the remote IPs in this log in this log?
+- Show long running sessions in this log in this log?
+- Connection connection timeline in this log in this log?
+- Show open connections in this log in the uploaded file?
+- What are the remote IPs in this log in the uploaded file?
+- Show long running sessions in this log in the uploaded file?
+- Connection connection timeline in this log in the uploaded file?
+- Show open connections in this log according to the parsed log?
+- What are the remote IPs in this log according to the parsed log?
+- Show long running sessions in this log according to the parsed log?
+- Connection connection timeline in this log according to the parsed log?
+- Show open connections in this log for this mongod?
+- What are the remote IPs in this log for this mongod?
+- Show long running sessions in this log for this mongod?
+- Connection connection timeline in this log for this mongod?
+- Show open connections in this log for troubleshooting?
+- What are the remote IPs in this log for troubleshooting?
+- Show long running sessions in this log for troubleshooting?
+- Connection connection timeline in this log for troubleshooting?
+- Show open connections in this log for performance review?
+- What are the remote IPs in this log for performance review?
+- Show long running sessions in this log for performance review?
+- Connection connection timeline in this log for performance review?
+- Show open connections in this log for the DBA review?
+- What are the remote IPs in this log for the DBA review?
+- Show long running sessions in this log for the DBA review?
+- Connection connection timeline in this log for the DBA review?
+- Show open connections in this log please?
+- What are the remote IPs in this log please?
+- Show long running sessions in this log please?
+- Connection connection timeline in this log please?
+- Show connection pool usage ?
+- What are the client addresses ?
+- Show connections open too long ?
+- Connection connections over time ?
+- Show connection pool usage ? from this log?
+- What are the client addresses ? from this log?
+- Show connections open too long ? from this log?
+- Connection connections over time ? from this log?
+- Show connection pool usage ? in this log?
+- What are the client addresses ? in this log?
+- Show connections open too long ? in this log?
+- Connection connections over time ? in this log?
+- Show connection pool usage ? in the uploaded file?
+- What are the client addresses ? in the uploaded file?
+- Show connections open too long ? in the uploaded file?
+- Connection connections over time ? in the uploaded file?
+- Show connection pool usage ? according to the parsed log?
+- What are the client addresses ? according to the parsed log?
+- Show connections open too long ? according to the parsed log?
+- Connection connections over time ? according to the parsed log?
+- Show connection pool usage ? for this mongod?
+- What are the client addresses ? for this mongod?
+- Show connections open too long ? for this mongod?
+- Connection connections over time ? for this mongod?
+- Show connection pool usage ? for troubleshooting?
+- What are the client addresses ? for troubleshooting?
+- Show connections open too long ? for troubleshooting?
+- Connection connections over time ? for troubleshooting?
+- Show connection pool usage ? for performance review?
+- What are the client addresses ? for performance review?
+- Show connections open too long ? for performance review?
+- Connection connections over time ? for performance review?
+- Show connection pool usage ? for the DBA review?
+- What are the client addresses ? for the DBA review?
+- Show connections open too long ? for the DBA review?
+- Connection connections over time ? for the DBA review?
+- Show connection pool usage ? please?
+- What are the client addresses ? please?
+- Show connections open too long ? please?
+- Connection connections over time ? please?
+- Show connection pool usage in this log?
+- What are the client addresses in this log?
+- Show connections open too long in this log?
+- Connection connections over time in this log?
+- Show connection pool usage in this log from this log?
+- What are the client addresses in this log from this log?
+- Show connections open too long in this log from this log?
+- Connection connections over time in this log from this log?
+- Show connection pool usage in this log in this log?
+- What are the client addresses in this log in this log?
+- Show connections open too long in this log in this log?
+- Connection connections over time in this log in this log?
+- Show connection pool usage in this log in the uploaded file?
+- What are the client addresses in this log in the uploaded file?
+- Show connections open too long in this log in the uploaded file?
+- Connection connections over time in this log in the uploaded file?
+
+## Time & coverage
+
+- Log time range?
+- Start and end timestamp?
+- How many lines parsed?
+- Skipped lines count?
+- How many database operations?
+- Any restarts?
+- Replica set state changes?
+- When did the server restart?
+- List RS state change events
+- What is the log time range ?
+- How many lines in the log ?
+- How many database operations ?
+- Any restarts ?
+- When did the server restart ?
+- List RS state changes ?
+- What is the log time range ? from this log?
+- How many lines in the log ? from this log?
+- How many database operations ? from this log?
+- Any restarts ? from this log?
+- When did the server restart ? from this log?
+- List RS state changes ? from this log?
+- What is the log time range ? in this log?
+- How many lines in the log ? in this log?
+- How many database operations ? in this log?
+- Any restarts ? in this log?
+- When did the server restart ? in this log?
+- List RS state changes ? in this log?
+- What is the log time range ? in the uploaded file?
+- How many lines in the log ? in the uploaded file?
+- How many database operations ? in the uploaded file?
+- Any restarts ? in the uploaded file?
+- When did the server restart ? in the uploaded file?
+- List RS state changes ? in the uploaded file?
+- What is the log time range ? according to the parsed log?
+- How many lines in the log ? according to the parsed log?
+- How many database operations ? according to the parsed log?
+- Any restarts ? according to the parsed log?
+- When did the server restart ? according to the parsed log?
+- List RS state changes ? according to the parsed log?
+- What is the log time range ? for this mongod?
+- How many lines in the log ? for this mongod?
+- How many database operations ? for this mongod?
+- Any restarts ? for this mongod?
+- When did the server restart ? for this mongod?
+- List RS state changes ? for this mongod?
+- What is the log time range ? for troubleshooting?
+- How many lines in the log ? for troubleshooting?
+- How many database operations ? for troubleshooting?
+- Any restarts ? for troubleshooting?
+- When did the server restart ? for troubleshooting?
+- List RS state changes ? for troubleshooting?
+- What is the log time range ? for performance review?
+- How many lines in the log ? for performance review?
+- How many database operations ? for performance review?
+- Any restarts ? for performance review?
+- When did the server restart ? for performance review?
+- List RS state changes ? for performance review?
+- What is the log time range ? for the DBA review?
+- How many lines in the log ? for the DBA review?
+- How many database operations ? for the DBA review?
+- Any restarts ? for the DBA review?
+- When did the server restart ? for the DBA review?
+- List RS state changes ? for the DBA review?
+- What is the log time range ? please?
+- How many lines in the log ? please?
+- How many database operations ? please?
+- Any restarts ? please?
+- When did the server restart ? please?
+- List RS state changes ? please?
+- What is the log time range of this file?
+- How many lines in the log in this file?
+- How many database operations in this log?
+- Any restarts in this log?
+- When did the server restart in this log?
+- List RS state changes in this log?
+- What is the log time range of this file from this log?
+- How many lines in the log in this file from this log?
+- How many database operations in this log from this log?
+- Any restarts in this log from this log?
+- When did the server restart in this log from this log?
+- List RS state changes in this log from this log?
+- What is the log time range of this file in this log?
+- How many lines in the log in this file in this log?
+- How many database operations in this log in this log?
+- Any restarts in this log in this log?
+- When did the server restart in this log in this log?
+- List RS state changes in this log in this log?
+- What is the log time range of this file in the uploaded file?
+- How many lines in the log in this file in the uploaded file?
+- How many database operations in this log in the uploaded file?
+- Any restarts in this log in the uploaded file?
+- When did the server restart in this log in the uploaded file?
+- List RS state changes in this log in the uploaded file?
+- What is the log time range of this file according to the parsed log?
+- How many lines in the log in this file according to the parsed log?
+- How many database operations in this log according to the parsed log?
+- Any restarts in this log according to the parsed log?
+- When did the server restart in this log according to the parsed log?
+- List RS state changes in this log according to the parsed log?
+- What is the log time range of this file for this mongod?
+- How many lines in the log in this file for this mongod?
+- How many database operations in this log for this mongod?
+- Any restarts in this log for this mongod?
+- When did the server restart in this log for this mongod?
+- List RS state changes in this log for this mongod?
+- What is the log time range of this file for troubleshooting?
+- How many lines in the log in this file for troubleshooting?
+- How many database operations in this log for troubleshooting?
+- Any restarts in this log for troubleshooting?
+- When did the server restart in this log for troubleshooting?
+- List RS state changes in this log for troubleshooting?
+- What is the log time range of this file for performance review?
+- How many lines in the log in this file for performance review?
+- How many database operations in this log for performance review?
+- Any restarts in this log for performance review?
+- When did the server restart in this log for performance review?
+- List RS state changes in this log for performance review?
+- What is the log time range of this file for the DBA review?
+- How many lines in the log in this file for the DBA review?
+- How many database operations in this log for the DBA review?
+- Any restarts in this log for the DBA review?
+- When did the server restart in this log for the DBA review?
+- List RS state changes in this log for the DBA review?
+- What is the log time range of this file please?
+- How many lines in the log in this file please?
+- How many database operations in this log please?
+- Any restarts in this log please?
+- When did the server restart in this log please?
+- List RS state changes in this log please?
+- What is the start and end time ?
+- How many parsed lines ?
+- How many DB ops parsed ?
+- Any server restarts ?
+- When did restart events ?
+- List stepdown events ?
+- What is the start and end time ? from this log?
+- How many parsed lines ? from this log?
+- How many DB ops parsed ? from this log?
+- Any server restarts ? from this log?
+- When did restart events ? from this log?
+- List stepdown events ? from this log?
+- What is the start and end time ? in this log?
+- How many parsed lines ? in this log?
+- How many DB ops parsed ? in this log?
+- Any server restarts ? in this log?
+- When did restart events ? in this log?
+- List stepdown events ? in this log?
+- What is the start and end time ? in the uploaded file?
+- How many parsed lines ? in the uploaded file?
+- How many DB ops parsed ? in the uploaded file?
+- Any server restarts ? in the uploaded file?
+- When did restart events ? in the uploaded file?
+- List stepdown events ? in the uploaded file?
+- What is the start and end time ? according to the parsed log?
+- How many parsed lines ? according to the parsed log?
+- How many DB ops parsed ? according to the parsed log?
+- Any server restarts ? according to the parsed log?
+- When did restart events ? according to the parsed log?
+- List stepdown events ? according to the parsed log?
+- What is the start and end time ? for this mongod?
+- How many parsed lines ? for this mongod?
+- How many DB ops parsed ? for this mongod?
+- Any server restarts ? for this mongod?
+- When did restart events ? for this mongod?
+- List stepdown events ? for this mongod?
+- What is the start and end time ? for troubleshooting?
+- How many parsed lines ? for troubleshooting?
+- How many DB ops parsed ? for troubleshooting?
+- Any server restarts ? for troubleshooting?
+- When did restart events ? for troubleshooting?
+- List stepdown events ? for troubleshooting?
+- What is the start and end time ? for performance review?
+- How many parsed lines ? for performance review?
+- How many DB ops parsed ? for performance review?
+- Any server restarts ? for performance review?
+- When did restart events ? for performance review?
+- List stepdown events ? for performance review?
+- What is the start and end time ? for the DBA review?
+- How many parsed lines ? for the DBA review?
+- How many DB ops parsed ? for the DBA review?
+- Any server restarts ? for the DBA review?
+- When did restart events ? for the DBA review?
+- List stepdown events ? for the DBA review?
+- What is the start and end time ? please?
+- How many parsed lines ? please?
+- How many DB ops parsed ? please?
+- Any server restarts ? please?
+- When did restart events ? please?
+- List stepdown events ? please?
+- What is the start and end time of this file?
+- How many parsed lines in this file?
+- How many DB ops parsed in this log?
+- Any server restarts in this log?
+- When did restart events in this log?
+- List stepdown events in this log?
+- What is the start and end time of this file from this log?
+- How many parsed lines in this file from this log?
+- How many DB ops parsed in this log from this log?
+- Any server restarts in this log from this log?
+- When did restart events in this log from this log?
+- List stepdown events in this log from this log?
+- What is the start and end time of this file in this log?
+- How many parsed lines in this file in this log?
+- How many DB ops parsed in this log in this log?
+- Any server restarts in this log in this log?
+- When did restart events in this log in this log?
+- List stepdown events in this log in this log?
+- What is the start and end time of this file in the uploaded file?
+- How many parsed lines in this file in the uploaded file?
+- How many DB ops parsed in this log in the uploaded file?
+- Any server restarts in this log in the uploaded file?
+- When did restart events in this log in the uploaded file?
+- List stepdown events in this log in the uploaded file?
+- What is the start and end time of this file according to the parsed log?
+- How many parsed lines in this file according to the parsed log?
+- How many DB ops parsed in this log according to the parsed log?
+- Any server restarts in this log according to the parsed log?
+- When did restart events in this log according to the parsed log?
+- List stepdown events in this log according to the parsed log?
+- What is the start and end time of this file for this mongod?
+- How many parsed lines in this file for this mongod?
+- How many DB ops parsed in this log for this mongod?
+- Any server restarts in this log for this mongod?
+- When did restart events in this log for this mongod?
+- List stepdown events in this log for this mongod?
+- What is the start and end time of this file for troubleshooting?
+- How many parsed lines in this file for troubleshooting?
+- How many DB ops parsed in this log for troubleshooting?
+- Any server restarts in this log for troubleshooting?
+- When did restart events in this log for troubleshooting?
+- List stepdown events in this log for troubleshooting?
+- What is the start and end time of this file for performance review?
+- How many parsed lines in this file for performance review?
+- How many DB ops parsed in this log for performance review?
+- Any server restarts in this log for performance review?
+- When did restart events in this log for performance review?
+- List stepdown events in this log for performance review?
+- What is the start and end time of this file for the DBA review?
+- How many parsed lines in this file for the DBA review?
+- How many DB ops parsed in this log for the DBA review?
+- Any server restarts in this log for the DBA review?
+- When did restart events in this log for the DBA review?
+- List stepdown events in this log for the DBA review?
+- What is the start and end time of this file please?
+- How many parsed lines in this file please?
+- How many DB ops parsed in this log please?
+- Any server restarts in this log please?
+- When did restart events in this log please?
+- List stepdown events in this log please?
+- What is the time span ?
+- How many skipped lines ?
+- How many operations in log ?
+- Any mongod restarts ?
+- When did startup times ?
+- List election events ?
+- What is the time span ? from this log?
+- How many skipped lines ? from this log?
+- How many operations in log ? from this log?
+- Any mongod restarts ? from this log?
+- When did startup times ? from this log?
+- List election events ? from this log?
+- What is the time span ? in this log?
+- How many skipped lines ? in this log?
+- How many operations in log ? in this log?
+- Any mongod restarts ? in this log?
+- When did startup times ? in this log?
+- List election events ? in this log?
+- What is the time span ? in the uploaded file?
+- How many skipped lines ? in the uploaded file?
+- How many operations in log ? in the uploaded file?
+- Any mongod restarts ? in the uploaded file?
+- When did startup times ? in the uploaded file?
+- List election events ? in the uploaded file?
+- What is the time span ? according to the parsed log?
+- How many skipped lines ? according to the parsed log?
+- How many operations in log ? according to the parsed log?
+- Any mongod restarts ? according to the parsed log?
+- When did startup times ? according to the parsed log?
+- List election events ? according to the parsed log?
+- What is the time span ? for this mongod?
+- How many skipped lines ? for this mongod?
+- How many operations in log ? for this mongod?
+- Any mongod restarts ? for this mongod?
+- When did startup times ? for this mongod?
+- List election events ? for this mongod?
+- What is the time span ? for troubleshooting?
+- How many skipped lines ? for troubleshooting?
+- How many operations in log ? for troubleshooting?
+- Any mongod restarts ? for troubleshooting?
+- When did startup times ? for troubleshooting?
+- List election events ? for troubleshooting?
+- What is the time span ? for performance review?
+- How many skipped lines ? for performance review?
+- How many operations in log ? for performance review?
+- Any mongod restarts ? for performance review?
+- When did startup times ? for performance review?
+- List election events ? for performance review?
+- What is the time span ? for the DBA review?
+- How many skipped lines ? for the DBA review?
+- How many operations in log ? for the DBA review?
+- Any mongod restarts ? for the DBA review?
+- When did startup times ? for the DBA review?
+- List election events ? for the DBA review?
+- What is the time span ? please?
+- How many skipped lines ? please?
+- How many operations in log ? please?
+- Any mongod restarts ? please?
+- When did startup times ? please?
+- List election events ? please?
+- What is the time span of this file?
+- How many skipped lines in this file?
+- How many operations in log in this log?
+- Any mongod restarts in this log?
+- When did startup times in this log?
+- List election events in this log?
+- What is the time span of this file from this log?
+- How many skipped lines in this file from this log?
+- How many operations in log in this log from this log?
+- Any mongod restarts in this log from this log?
+- When did startup times in this log from this log?
+- List election events in this log from this log?
+- What is the time span of this file in this log?
+- How many skipped lines in this file in this log?
+- How many operations in log in this log in this log?
+- Any mongod restarts in this log in this log?
+- When did startup times in this log in this log?
+- List election events in this log in this log?
+- What is the time span of this file in the uploaded file?
+- How many skipped lines in this file in the uploaded file?
+- How many operations in log in this log in the uploaded file?
+- Any mongod restarts in this log in the uploaded file?
+- When did startup times in this log in the uploaded file?
+- List election events in this log in the uploaded file?
+- What is the time span of this file according to the parsed log?
+- How many skipped lines in this file according to the parsed log?
+- How many operations in log in this log according to the parsed log?
+- Any mongod restarts in this log according to the parsed log?
+- When did startup times in this log according to the parsed log?
+- List election events in this log according to the parsed log?
+- What is the time span of this file for this mongod?
+- How many skipped lines in this file for this mongod?
+- How many operations in log in this log for this mongod?
+- Any mongod restarts in this log for this mongod?
+- When did startup times in this log for this mongod?
+- List election events in this log for this mongod?
+- What is the time span of this file for troubleshooting?
+- How many skipped lines in this file for troubleshooting?
+- How many operations in log in this log for troubleshooting?
+- Any mongod restarts in this log for troubleshooting?
+- When did startup times in this log for troubleshooting?
+- List election events in this log for troubleshooting?
+- What is the time span of this file for performance review?
+- How many skipped lines in this file for performance review?
+- How many operations in log in this log for performance review?
+- Any mongod restarts in this log for performance review?
+- When did startup times in this log for performance review?
+- List election events in this log for performance review?
+- What is the time span of this file for the DBA review?
+- How many skipped lines in this file for the DBA review?
+- How many operations in log in this log for the DBA review?
+- Any mongod restarts in this log for the DBA review?
+- When did startup times in this log for the DBA review?
+- List election events in this log for the DBA review?
+- What is the time span of this file please?
+- How many skipped lines in this file please?
+- How many operations in log in this log please?
+- Any mongod restarts in this log please?
+- When did startup times in this log please?
+- List election events in this log please?
+- What is the log duration ?
+- How many total lines ?
+- How many command operations ?
+- Any startup events ?
+- When did last restart ?
+- List role changes ?
+- What is the log duration ? from this log?
+- How many total lines ? from this log?
+- How many command operations ? from this log?
+- Any startup events ? from this log?
+- When did last restart ? from this log?
+- List role changes ? from this log?
+- What is the log duration ? in this log?
+- How many total lines ? in this log?
+- How many command operations ? in this log?
+- Any startup events ? in this log?
+- When did last restart ? in this log?
+- List role changes ? in this log?
+- What is the log duration ? in the uploaded file?
+- How many total lines ? in the uploaded file?
+- How many command operations ? in the uploaded file?
+- Any startup events ? in the uploaded file?
+- When did last restart ? in the uploaded file?
+- List role changes ? in the uploaded file?
+- What is the log duration ? according to the parsed log?
+- How many total lines ? according to the parsed log?
+- How many command operations ? according to the parsed log?
+- Any startup events ? according to the parsed log?
+- When did last restart ? according to the parsed log?
+- List role changes ? according to the parsed log?
+- What is the log duration ? for this mongod?
+- How many total lines ? for this mongod?
+- How many command operations ? for this mongod?
+- Any startup events ? for this mongod?
+- When did last restart ? for this mongod?
+- List role changes ? for this mongod?
+- What is the log duration ? for troubleshooting?
+- How many total lines ? for troubleshooting?
+- How many command operations ? for troubleshooting?
+- Any startup events ? for troubleshooting?
+- When did last restart ? for troubleshooting?
+- List role changes ? for troubleshooting?
+- What is the log duration ? for performance review?
+- How many total lines ? for performance review?
+- How many command operations ? for performance review?
+- Any startup events ? for performance review?
+- When did last restart ? for performance review?
+- List role changes ? for performance review?
+- What is the log duration ? for the DBA review?
+- How many total lines ? for the DBA review?
+- How many command operations ? for the DBA review?
+- Any startup events ? for the DBA review?
+- When did last restart ? for the DBA review?
+- List role changes ? for the DBA review?
+- What is the log duration ? please?
+- How many total lines ? please?
+- How many command operations ? please?
+- Any startup events ? please?
+- When did last restart ? please?
+- List role changes ? please?
+- What is the log duration of this file?
+- How many total lines in this file?
+- How many command operations in this log?
+- Any startup events in this log?
+- When did last restart in this log?
+- List role changes in this log?
+- What is the log duration of this file from this log?
+- How many total lines in this file from this log?
+- How many command operations in this log from this log?
+- Any startup events in this log from this log?
+- When did last restart in this log from this log?
+- List role changes in this log from this log?
+- What is the log duration of this file in this log?
+- How many total lines in this file in this log?
+- How many command operations in this log in this log?
+- Any startup events in this log in this log?
+- When did last restart in this log in this log?
+- List role changes in this log in this log?
+- What is the log duration of this file in the uploaded file?
+- How many total lines in this file in the uploaded file?
+- How many command operations in this log in the uploaded file?
+- Any startup events in this log in the uploaded file?
+- When did last restart in this log in the uploaded file?
+- List role changes in this log in the uploaded file?
+- What is the log duration of this file according to the parsed log?
+- How many total lines in this file according to the parsed log?
+- How many command operations in this log according to the parsed log?
+- Any startup events in this log according to the parsed log?
+- When did last restart in this log according to the parsed log?
+- List role changes in this log according to the parsed log?
+- What is the log duration of this file for this mongod?
+- How many total lines in this file for this mongod?
+- How many command operations in this log for this mongod?
+- Any startup events in this log for this mongod?
+- When did last restart in this log for this mongod?
+- List role changes in this log for this mongod?
+- What is the log duration of this file for troubleshooting?
+- How many total lines in this file for troubleshooting?
+- How many command operations in this log for troubleshooting?
+- Any startup events in this log for troubleshooting?
+- When did last restart in this log for troubleshooting?
+- List role changes in this log for troubleshooting?
+- What is the log duration of this file for performance review?
+- How many total lines in this file for performance review?
+- How many command operations in this log for performance review?
+- Any startup events in this log for performance review?
+- When did last restart in this log for performance review?
+- List role changes in this log for performance review?
+- What is the log duration of this file for the DBA review?
+- How many total lines in this file for the DBA review?
+- How many command operations in this log for the DBA review?
+- Any startup events in this log for the DBA review?
+- When did last restart in this log for the DBA review?
+- List role changes in this log for the DBA review?
+- What is the log duration of this file please?
+- How many total lines in this file please?
+- How many command operations in this log please?
+- Any startup events in this log please?
+- When did last restart in this log please?
+- List role changes in this log please?
+- What is the coverage period ?
+- How many lines parsed ?
+- How many total ops ?
+- Any RS state changes ?
+- When did mongod startup ?
+- List became primary events ?
+- What is the coverage period ? from this log?
+- How many lines parsed ? from this log?
+- How many total ops ? from this log?
+- Any RS state changes ? from this log?
+- When did mongod startup ? from this log?
+- List became primary events ? from this log?
+- What is the coverage period ? in this log?
+- How many lines parsed ? in this log?
+- How many total ops ? in this log?
+- Any RS state changes ? in this log?
+- When did mongod startup ? in this log?
+- List became primary events ? in this log?
+- What is the coverage period ? in the uploaded file?
+- How many lines parsed ? in the uploaded file?
+- How many total ops ? in the uploaded file?
+- Any RS state changes ? in the uploaded file?
+- When did mongod startup ? in the uploaded file?
+- List became primary events ? in the uploaded file?
+- What is the coverage period ? according to the parsed log?
+- How many lines parsed ? according to the parsed log?
+- How many total ops ? according to the parsed log?
+- Any RS state changes ? according to the parsed log?
+- When did mongod startup ? according to the parsed log?
+- List became primary events ? according to the parsed log?
+- What is the coverage period ? for this mongod?
+- How many lines parsed ? for this mongod?
+- How many total ops ? for this mongod?
+- Any RS state changes ? for this mongod?
+- When did mongod startup ? for this mongod?
+- List became primary events ? for this mongod?
+- What is the coverage period ? for troubleshooting?
+- How many lines parsed ? for troubleshooting?
+- How many total ops ? for troubleshooting?
+- Any RS state changes ? for troubleshooting?
+- When did mongod startup ? for troubleshooting?
+- List became primary events ? for troubleshooting?
+- What is the coverage period ? for performance review?
+- How many lines parsed ? for performance review?
+- How many total ops ? for performance review?
+- Any RS state changes ? for performance review?
+- When did mongod startup ? for performance review?
+- List became primary events ? for performance review?
+- What is the coverage period ? for the DBA review?
+- How many lines parsed ? for the DBA review?
+- How many total ops ? for the DBA review?
+- Any RS state changes ? for the DBA review?
+- When did mongod startup ? for the DBA review?
+- List became primary events ? for the DBA review?
+- What is the coverage period ? please?
+- How many lines parsed ? please?
+- How many total ops ? please?
+- Any RS state changes ? please?
+- When did mongod startup ? please?
+- List became primary events ? please?
+- What is the coverage period of this file?
+- How many lines parsed in this file?
+- How many total ops in this log?
+- Any RS state changes in this log?
+- When did mongod startup in this log?
+- List became primary events in this log?
+- What is the coverage period of this file from this log?
+- How many lines parsed in this file from this log?
+- How many total ops in this log from this log?
+- Any RS state changes in this log from this log?
+- When did mongod startup in this log from this log?
+- List became primary events in this log from this log?
+- What is the coverage period of this file in this log?
+- How many lines parsed in this file in this log?
+- How many total ops in this log in this log?
+- Any RS state changes in this log in this log?
+- When did mongod startup in this log in this log?
+- List became primary events in this log in this log?
+- What is the coverage period of this file in the uploaded file?
+- How many lines parsed in this file in the uploaded file?
+- How many total ops in this log in the uploaded file?
+- Any RS state changes in this log in the uploaded file?
+- When did mongod startup in this log in the uploaded file?
+- List became primary events in this log in the uploaded file?
+- What is the coverage period of this file according to the parsed log?
+- How many lines parsed in this file according to the parsed log?
+- How many total ops in this log according to the parsed log?
+- Any RS state changes in this log according to the parsed log?
+- When did mongod startup in this log according to the parsed log?
+- List became primary events in this log according to the parsed log?
+- What is the coverage period of this file for this mongod?
+- How many lines parsed in this file for this mongod?
+- How many total ops in this log for this mongod?
+- Any RS state changes in this log for this mongod?
+- When did mongod startup in this log for this mongod?
+- List became primary events in this log for this mongod?
+- What is the coverage period of this file for troubleshooting?
+- How many lines parsed in this file for troubleshooting?
+- How many total ops in this log for troubleshooting?
+- Any RS state changes in this log for troubleshooting?
+- When did mongod startup in this log for troubleshooting?
+- List became primary events in this log for troubleshooting?
+- What is the coverage period of this file for performance review?
+- How many lines parsed in this file for performance review?
+- How many total ops in this log for performance review?
+- Any RS state changes in this log for performance review?
+- When did mongod startup in this log for performance review?
+- List became primary events in this log for performance review?
+- What is the coverage period of this file for the DBA review?
+- How many lines parsed in this file for the DBA review?
+- How many total ops in this log for the DBA review?
+- Any RS state changes in this log for the DBA review?
+- When did mongod startup in this log for the DBA review?
+- List became primary events in this log for the DBA review?
+- What is the coverage period of this file please?
+- How many lines parsed in this file please?
+- How many total ops in this log please?
+- Any RS state changes in this log please?
+- When did mongod startup in this log please?
+- List became primary events in this log please?
+- What is the first and last timestamp ?
+- What is the lines in the log ?
+- Count database operations ?
+- Any failover events ?
+- Show the server restart ?
+- Show RS state changes ?
+- What is the first and last timestamp ? from this log?
+- What is the lines in the log ? from this log?
+- Count database operations ? from this log?
+- Any failover events ? from this log?
+- Show the server restart ? from this log?
+- Show RS state changes ? from this log?
+- What is the first and last timestamp ? in this log?
+- What is the lines in the log ? in this log?
+- Count database operations ? in this log?
+- Any failover events ? in this log?
+- Show the server restart ? in this log?
+- Show RS state changes ? in this log?
+- What is the first and last timestamp ? in the uploaded file?
+- What is the lines in the log ? in the uploaded file?
+- Count database operations ? in the uploaded file?
+- Any failover events ? in the uploaded file?
+- Show the server restart ? in the uploaded file?
+- Show RS state changes ? in the uploaded file?
+- What is the first and last timestamp ? according to the parsed log?
+- What is the lines in the log ? according to the parsed log?
+- Count database operations ? according to the parsed log?
+- Any failover events ? according to the parsed log?
+- Show the server restart ? according to the parsed log?
+- Show RS state changes ? according to the parsed log?
+- What is the first and last timestamp ? for this mongod?
+- What is the lines in the log ? for this mongod?
+- Count database operations ? for this mongod?
+- Any failover events ? for this mongod?
+- Show the server restart ? for this mongod?
+- Show RS state changes ? for this mongod?
+- What is the first and last timestamp ? for troubleshooting?
+- What is the lines in the log ? for troubleshooting?
+- Count database operations ? for troubleshooting?
+- Any failover events ? for troubleshooting?
+- Show the server restart ? for troubleshooting?
+- Show RS state changes ? for troubleshooting?
+- What is the first and last timestamp ? for performance review?
+- What is the lines in the log ? for performance review?
+- Count database operations ? for performance review?
+- Any failover events ? for performance review?
+- Show the server restart ? for performance review?
+- Show RS state changes ? for performance review?
+- What is the first and last timestamp ? for the DBA review?
+- What is the lines in the log ? for the DBA review?
+- Count database operations ? for the DBA review?
+- Any failover events ? for the DBA review?
+- Show the server restart ? for the DBA review?
+- Show RS state changes ? for the DBA review?
+- What is the first and last timestamp ? please?
+- What is the lines in the log ? please?
+- Count database operations ? please?
+- Any failover events ? please?
+- Show the server restart ? please?
+- Show RS state changes ? please?
+- What is the first and last timestamp of this file?
+- What is the lines in the log in this file?
+- Count database operations in this log?
+- Any failover events in this log?
+- Show the server restart in this log?
+- Show RS state changes in this log?
+- What is the first and last timestamp of this file from this log?
+- What is the lines in the log in this file from this log?
+- Count database operations in this log from this log?
+- Any failover events in this log from this log?
+- Show the server restart in this log from this log?
+- Show RS state changes in this log from this log?
+- What is the first and last timestamp of this file in this log?
+- What is the lines in the log in this file in this log?
+- Count database operations in this log in this log?
+- Any failover events in this log in this log?
+- Show the server restart in this log in this log?
+- Show RS state changes in this log in this log?
+- What is the first and last timestamp of this file in the uploaded file?
+- What is the lines in the log in this file in the uploaded file?
+- Count database operations in this log in the uploaded file?
+- Any failover events in this log in the uploaded file?
+- Show the server restart in this log in the uploaded file?
+- Show RS state changes in this log in the uploaded file?
+- What is the first and last timestamp of this file according to the parsed log?
+- What is the lines in the log in this file according to the parsed log?
+- Count database operations in this log according to the parsed log?
+- Any failover events in this log according to the parsed log?
+- Show the server restart in this log according to the parsed log?
+- Show RS state changes in this log according to the parsed log?
+- What is the first and last timestamp of this file for this mongod?
+- What is the lines in the log in this file for this mongod?
+- Count database operations in this log for this mongod?
+- Any failover events in this log for this mongod?
+- Show the server restart in this log for this mongod?
+- Show RS state changes in this log for this mongod?
+- What is the first and last timestamp of this file for troubleshooting?
+- What is the lines in the log in this file for troubleshooting?
+- Count database operations in this log for troubleshooting?
+- Any failover events in this log for troubleshooting?
+- Show the server restart in this log for troubleshooting?
+- Show RS state changes in this log for troubleshooting?
+- What is the first and last timestamp of this file for performance review?
+- What is the lines in the log in this file for performance review?
+- Count database operations in this log for performance review?
+- Any failover events in this log for performance review?
+- Show the server restart in this log for performance review?
+- Show RS state changes in this log for performance review?
+- What is the first and last timestamp of this file for the DBA review?
+- What is the lines in the log in this file for the DBA review?
+- Count database operations in this log for the DBA review?
+- Any failover events in this log for the DBA review?
+- Show the server restart in this log for the DBA review?
+- Show RS state changes in this log for the DBA review?
+- What is the first and last timestamp of this file please?
+- What is the lines in the log in this file please?
+- Count database operations in this log please?
+- Any failover events in this log please?
+- Show the server restart in this log please?
+- Show RS state changes in this log please?
+- Show log time range ?
+- What is the parsed lines ?
+- Count DB ops parsed ?
+- Were there restarts ?
+- Show restart events ?
+- Show stepdown events ?
+- Show log time range ? from this log?
+- What is the parsed lines ? from this log?
+- Count DB ops parsed ? from this log?
+- Were there restarts ? from this log?
+- Show restart events ? from this log?
+- Show stepdown events ? from this log?
+- Show log time range ? in this log?
+- What is the parsed lines ? in this log?
+- Count DB ops parsed ? in this log?
+- Were there restarts ? in this log?
+- Show restart events ? in this log?
+- Show stepdown events ? in this log?
+- Show log time range ? in the uploaded file?
+- What is the parsed lines ? in the uploaded file?
+- Count DB ops parsed ? in the uploaded file?
+- Were there restarts ? in the uploaded file?
+- Show restart events ? in the uploaded file?
+- Show stepdown events ? in the uploaded file?
+- Show log time range ? according to the parsed log?
+- What is the parsed lines ? according to the parsed log?
+- Count DB ops parsed ? according to the parsed log?
+- Were there restarts ? according to the parsed log?
+- Show restart events ? according to the parsed log?
+- Show stepdown events ? according to the parsed log?
+- Show log time range ? for this mongod?
+- What is the parsed lines ? for this mongod?
+- Count DB ops parsed ? for this mongod?
+- Were there restarts ? for this mongod?
+- Show restart events ? for this mongod?
+- Show stepdown events ? for this mongod?
+- Show log time range ? for troubleshooting?
+- What is the parsed lines ? for troubleshooting?
+- Count DB ops parsed ? for troubleshooting?
+- Were there restarts ? for troubleshooting?
+- Show restart events ? for troubleshooting?
+- Show stepdown events ? for troubleshooting?
+- Show log time range ? for performance review?
+- What is the parsed lines ? for performance review?
+- Count DB ops parsed ? for performance review?
+- Were there restarts ? for performance review?
+- Show restart events ? for performance review?
+- Show stepdown events ? for performance review?
+- Show log time range ? for the DBA review?
+- What is the parsed lines ? for the DBA review?
+- Count DB ops parsed ? for the DBA review?
+- Were there restarts ? for the DBA review?
+- Show restart events ? for the DBA review?
+- Show stepdown events ? for the DBA review?
+- Show log time range ? please?
+- What is the parsed lines ? please?
+- Count DB ops parsed ? please?
+- Were there restarts ? please?
+- Show restart events ? please?
+- Show stepdown events ? please?
+- Show log time range of this file?
+- What is the parsed lines in this file?
+- Count DB ops parsed in this log?
+- Were there restarts in this log?
+- Show restart events in this log?
+- Show stepdown events in this log?
+- Show log time range of this file from this log?
+- What is the parsed lines in this file from this log?
+- Count DB ops parsed in this log from this log?
+- Were there restarts in this log from this log?
+- Show restart events in this log from this log?
+- Show stepdown events in this log from this log?
+- Show log time range of this file in this log?
+- What is the parsed lines in this file in this log?
+- Count DB ops parsed in this log in this log?
+- Were there restarts in this log in this log?
+- Show restart events in this log in this log?
+- Show stepdown events in this log in this log?
+- Show log time range of this file in the uploaded file?
+- What is the parsed lines in this file in the uploaded file?
+- Count DB ops parsed in this log in the uploaded file?
+- Were there restarts in this log in the uploaded file?
+- Show restart events in this log in the uploaded file?
+- Show stepdown events in this log in the uploaded file?
+- Show log time range of this file according to the parsed log?
+- What is the parsed lines in this file according to the parsed log?
+- Count DB ops parsed in this log according to the parsed log?
+- Were there restarts in this log according to the parsed log?
+- Show restart events in this log according to the parsed log?
+- Show stepdown events in this log according to the parsed log?
+- Show log time range of this file for this mongod?
+- What is the parsed lines in this file for this mongod?
+- Count DB ops parsed in this log for this mongod?
+- Were there restarts in this log for this mongod?
+- Show restart events in this log for this mongod?
+- Show stepdown events in this log for this mongod?
+- Show log time range of this file for troubleshooting?
+- What is the parsed lines in this file for troubleshooting?
+- Count DB ops parsed in this log for troubleshooting?
+- Were there restarts in this log for troubleshooting?
+- Show restart events in this log for troubleshooting?
+- Show stepdown events in this log for troubleshooting?
+- Show log time range of this file for performance review?
+- What is the parsed lines in this file for performance review?
+- Count DB ops parsed in this log for performance review?
+- Were there restarts in this log for performance review?
+- Show restart events in this log for performance review?
+- Show stepdown events in this log for performance review?
+- Show log time range of this file for the DBA review?
+- What is the parsed lines in this file for the DBA review?
+- Count DB ops parsed in this log for the DBA review?
+- Were there restarts in this log for the DBA review?
+- Show restart events in this log for the DBA review?
+- Show stepdown events in this log for the DBA review?
+- Show log time range of this file please?
+- What is the parsed lines in this file please?
+- Count DB ops parsed in this log please?
+- Were there restarts in this log please?
+- Show restart events in this log please?
+- Show stepdown events in this log please?
+- Show start and end time ?
+- What is the skipped lines ?
+- Count operations in log ?
+- Were there server restarts ?
+- Show startup times ?
+- Show election events ?
+- Show start and end time ? from this log?
+- What is the skipped lines ? from this log?
+- Count operations in log ? from this log?
+- Were there server restarts ? from this log?
+- Show startup times ? from this log?
+- Show election events ? from this log?
+- Show start and end time ? in this log?
+- What is the skipped lines ? in this log?
+- Count operations in log ? in this log?
+- Were there server restarts ? in this log?
+- Show startup times ? in this log?
+- Show election events ? in this log?
+- Show start and end time ? in the uploaded file?
+- What is the skipped lines ? in the uploaded file?
+- Count operations in log ? in the uploaded file?
+- Were there server restarts ? in the uploaded file?
+- Show startup times ? in the uploaded file?
+- Show election events ? in the uploaded file?
+- Show start and end time ? according to the parsed log?
+- What is the skipped lines ? according to the parsed log?
+- Count operations in log ? according to the parsed log?
+- Were there server restarts ? according to the parsed log?
+- Show startup times ? according to the parsed log?
+- Show election events ? according to the parsed log?
+- Show start and end time ? for this mongod?
+- What is the skipped lines ? for this mongod?
+- Count operations in log ? for this mongod?
+- Were there server restarts ? for this mongod?
+- Show startup times ? for this mongod?
+- Show election events ? for this mongod?
+- Show start and end time ? for troubleshooting?
+- What is the skipped lines ? for troubleshooting?
+- Count operations in log ? for troubleshooting?
+- Were there server restarts ? for troubleshooting?
+- Show startup times ? for troubleshooting?
+- Show election events ? for troubleshooting?
+- Show start and end time ? for performance review?
+- What is the skipped lines ? for performance review?
+- Count operations in log ? for performance review?
+- Were there server restarts ? for performance review?
+- Show startup times ? for performance review?
+- Show election events ? for performance review?
+- Show start and end time ? for the DBA review?
+- What is the skipped lines ? for the DBA review?
+- Count operations in log ? for the DBA review?
+- Were there server restarts ? for the DBA review?
+- Show startup times ? for the DBA review?
+- Show election events ? for the DBA review?
+- Show start and end time ? please?
+- What is the skipped lines ? please?
+- Count operations in log ? please?
+- Were there server restarts ? please?
+- Show startup times ? please?
+- Show election events ? please?
+- Show start and end time of this file?
+- What is the skipped lines in this file?
+- Count operations in log in this log?
+- Were there server restarts in this log?
+- Show startup times in this log?
+- Show election events in this log?
+- Show start and end time of this file from this log?
+- What is the skipped lines in this file from this log?
+- Count operations in log in this log from this log?
+- Were there server restarts in this log from this log?
+- Show startup times in this log from this log?
+- Show election events in this log from this log?
+- Show start and end time of this file in this log?
+- What is the skipped lines in this file in this log?
+- Count operations in log in this log in this log?
+- Were there server restarts in this log in this log?
+- Show startup times in this log in this log?
+- Show election events in this log in this log?
+- Show start and end time of this file in the uploaded file?
+- What is the skipped lines in this file in the uploaded file?
+- Count operations in log in this log in the uploaded file?
+- Were there server restarts in this log in the uploaded file?
+- Show startup times in this log in the uploaded file?
+- Show election events in this log in the uploaded file?
+- Show start and end time of this file according to the parsed log?
+- What is the skipped lines in this file according to the parsed log?
+- Count operations in log in this log according to the parsed log?
+- Were there server restarts in this log according to the parsed log?
+- Show startup times in this log according to the parsed log?
+- Show election events in this log according to the parsed log?
+- Show start and end time of this file for this mongod?
+- What is the skipped lines in this file for this mongod?
+- Count operations in log in this log for this mongod?
+- Were there server restarts in this log for this mongod?
+- Show startup times in this log for this mongod?
+- Show election events in this log for this mongod?
+- Show start and end time of this file for troubleshooting?
+- What is the skipped lines in this file for troubleshooting?
+- Count operations in log in this log for troubleshooting?
+- Were there server restarts in this log for troubleshooting?
+- Show startup times in this log for troubleshooting?
+- Show election events in this log for troubleshooting?
+- Show start and end time of this file for performance review?
+- What is the skipped lines in this file for performance review?
+- Count operations in log in this log for performance review?
+- Were there server restarts in this log for performance review?
+- Show startup times in this log for performance review?
+- Show election events in this log for performance review?
+- Show start and end time of this file for the DBA review?
+- What is the skipped lines in this file for the DBA review?
+- Count operations in log in this log for the DBA review?
+- Were there server restarts in this log for the DBA review?
+- Show startup times in this log for the DBA review?
+- Show election events in this log for the DBA review?
+- Show start and end time of this file please?
+- What is the skipped lines in this file please?
+- Count operations in log in this log please?
+- Were there server restarts in this log please?
+- Show startup times in this log please?
+- Show election events in this log please?
+- Show time span ?
+- What is the total lines ?
+- Count command operations ?
+- Were there mongod restarts ?
+- Show last restart ?
+- Show role changes ?
+- Show time span ? from this log?
+- What is the total lines ? from this log?
+- Count command operations ? from this log?
+- Were there mongod restarts ? from this log?
+- Show last restart ? from this log?
+- Show role changes ? from this log?
+- Show time span ? in this log?
+- What is the total lines ? in this log?
+- Count command operations ? in this log?
+- Were there mongod restarts ? in this log?
+- Show last restart ? in this log?
+- Show role changes ? in this log?
+- Show time span ? in the uploaded file?
+- What is the total lines ? in the uploaded file?
+- Count command operations ? in the uploaded file?
+- Were there mongod restarts ? in the uploaded file?
+- Show last restart ? in the uploaded file?
+- Show role changes ? in the uploaded file?
+- Show time span ? according to the parsed log?
+- What is the total lines ? according to the parsed log?
+- Count command operations ? according to the parsed log?
+- Were there mongod restarts ? according to the parsed log?
+- Show last restart ? according to the parsed log?
+- Show role changes ? according to the parsed log?
+- Show time span ? for this mongod?
+- What is the total lines ? for this mongod?
+- Count command operations ? for this mongod?
+- Were there mongod restarts ? for this mongod?
+- Show last restart ? for this mongod?
+- Show role changes ? for this mongod?
+- Show time span ? for troubleshooting?
+- What is the total lines ? for troubleshooting?
+- Count command operations ? for troubleshooting?
+- Were there mongod restarts ? for troubleshooting?
+- Show last restart ? for troubleshooting?
+- Show role changes ? for troubleshooting?
+- Show time span ? for performance review?
+- What is the total lines ? for performance review?
+- Count command operations ? for performance review?
+- Were there mongod restarts ? for performance review?
+- Show last restart ? for performance review?
+- Show role changes ? for performance review?
+- Show time span ? for the DBA review?
+- What is the total lines ? for the DBA review?
+- Count command operations ? for the DBA review?
+- Were there mongod restarts ? for the DBA review?
+- Show last restart ? for the DBA review?
+- Show role changes ? for the DBA review?
+- Show time span ? please?
+- What is the total lines ? please?
+- Count command operations ? please?
+- Were there mongod restarts ? please?
+- Show last restart ? please?
+- Show role changes ? please?
+- Show time span of this file?
+- What is the total lines in this file?
+- Count command operations in this log?
+- Were there mongod restarts in this log?
+- Show last restart in this log?
+- Show role changes in this log?
+- Show time span of this file from this log?
+- What is the total lines in this file from this log?
+- Count command operations in this log from this log?
+- Were there mongod restarts in this log from this log?
+- Show last restart in this log from this log?
+- Show role changes in this log from this log?
+- Show time span of this file in this log?
+- What is the total lines in this file in this log?
+- Count command operations in this log in this log?
+- Were there mongod restarts in this log in this log?
+- Show last restart in this log in this log?
+- Show role changes in this log in this log?
+- Show time span of this file in the uploaded file?
+- What is the total lines in this file in the uploaded file?
+- Count command operations in this log in the uploaded file?
+- Were there mongod restarts in this log in the uploaded file?
+- Show last restart in this log in the uploaded file?
+- Show role changes in this log in the uploaded file?
+- Show time span of this file according to the parsed log?
+- What is the total lines in this file according to the parsed log?
+- Count command operations in this log according to the parsed log?
+- Were there mongod restarts in this log according to the parsed log?
+- Show last restart in this log according to the parsed log?
+- Show role changes in this log according to the parsed log?
+- Show time span of this file for this mongod?
+- What is the total lines in this file for this mongod?
+- Count command operations in this log for this mongod?
+- Were there mongod restarts in this log for this mongod?
+- Show last restart in this log for this mongod?
+- Show role changes in this log for this mongod?
+- Show time span of this file for troubleshooting?
+- What is the total lines in this file for troubleshooting?
+- Count command operations in this log for troubleshooting?
+- Were there mongod restarts in this log for troubleshooting?
+- Show last restart in this log for troubleshooting?
+- Show role changes in this log for troubleshooting?
+- Show time span of this file for performance review?
+- What is the total lines in this file for performance review?
+- Count command operations in this log for performance review?
+- Were there mongod restarts in this log for performance review?
+- Show last restart in this log for performance review?
+- Show role changes in this log for performance review?
+- Show time span of this file for the DBA review?
+- What is the total lines in this file for the DBA review?
+- Count command operations in this log for the DBA review?
+- Were there mongod restarts in this log for the DBA review?
+- Show last restart in this log for the DBA review?
+- Show role changes in this log for the DBA review?
+- Show time span of this file please?
+- What is the total lines in this file please?
+- Count command operations in this log please?
+- Were there mongod restarts in this log please?
+- Show last restart in this log please?
+- Show role changes in this log please?
+- Show log duration ?
+- What is the lines parsed ?
+- Count total ops ?
+- Were there startup events ?
+- Show mongod startup ?
+- Show became primary events ?
+- Show log duration ? from this log?
+- What is the lines parsed ? from this log?
+- Count total ops ? from this log?
+- Were there startup events ? from this log?
+- Show mongod startup ? from this log?
+- Show became primary events ? from this log?
+- Show log duration ? in this log?
+- What is the lines parsed ? in this log?
+- Count total ops ? in this log?
+- Were there startup events ? in this log?
+- Show mongod startup ? in this log?
+- Show became primary events ? in this log?
+- Show log duration ? in the uploaded file?
+- What is the lines parsed ? in the uploaded file?
+- Count total ops ? in the uploaded file?
+- Were there startup events ? in the uploaded file?
+- Show mongod startup ? in the uploaded file?
+- Show became primary events ? in the uploaded file?
+- Show log duration ? according to the parsed log?
+- What is the lines parsed ? according to the parsed log?
+- Count total ops ? according to the parsed log?
+- Were there startup events ? according to the parsed log?
+- Show mongod startup ? according to the parsed log?
+- Show became primary events ? according to the parsed log?
+- Show log duration ? for this mongod?
+- What is the lines parsed ? for this mongod?
+- Count total ops ? for this mongod?
+- Were there startup events ? for this mongod?
+- Show mongod startup ? for this mongod?
+- Show became primary events ? for this mongod?
+- Show log duration ? for troubleshooting?
+- What is the lines parsed ? for troubleshooting?
+- Count total ops ? for troubleshooting?
+- Were there startup events ? for troubleshooting?
+- Show mongod startup ? for troubleshooting?
+- Show became primary events ? for troubleshooting?
+- Show log duration ? for performance review?
+- What is the lines parsed ? for performance review?
+- Count total ops ? for performance review?
+- Were there startup events ? for performance review?
+- Show mongod startup ? for performance review?
+- Show became primary events ? for performance review?
+- Show log duration ? for the DBA review?
+- What is the lines parsed ? for the DBA review?
+- Count total ops ? for the DBA review?
+- Were there startup events ? for the DBA review?
+- Show mongod startup ? for the DBA review?
+- Show became primary events ? for the DBA review?
+- Show log duration ? please?
+- What is the lines parsed ? please?
+- Count total ops ? please?
+- Were there startup events ? please?
+- Show mongod startup ? please?
+- Show became primary events ? please?
+- Show log duration of this file?
+- What is the lines parsed in this file?
+- Count total ops in this log?
+- Were there startup events in this log?
+- Show mongod startup in this log?
+- Show became primary events in this log?
+- Show log duration of this file from this log?
+- What is the lines parsed in this file from this log?
+- Count total ops in this log from this log?
+- Were there startup events in this log from this log?
+- Show mongod startup in this log from this log?
+- Show became primary events in this log from this log?
+- Show log duration of this file in this log?
+- What is the lines parsed in this file in this log?
+- Count total ops in this log in this log?
+- Were there startup events in this log in this log?
+- Show mongod startup in this log in this log?
+- Show became primary events in this log in this log?
+- Show log duration of this file in the uploaded file?
+- What is the lines parsed in this file in the uploaded file?
+- Count total ops in this log in the uploaded file?
+- Were there startup events in this log in the uploaded file?
+- Show mongod startup in this log in the uploaded file?
+- Show became primary events in this log in the uploaded file?
+
+## Search & log content
+
+- Most common log messages?
+- Distinct message types?
+- Which log components appear?
+- COMMAND vs QUERY component volume?
+- What are the log messages ?
+- Which log components appear ?
+- What are the log messages ? from this log?
+- Which log components appear ? from this log?
+- What are the log messages ? in this log?
+- Which log components appear ? in this log?
+- What are the log messages ? in the uploaded file?
+- Which log components appear ? in the uploaded file?
+- What are the log messages ? according to the parsed log?
+- Which log components appear ? according to the parsed log?
+- What are the log messages ? for this mongod?
+- Which log components appear ? for this mongod?
+- What are the log messages ? for troubleshooting?
+- Which log components appear ? for troubleshooting?
+- What are the log messages ? for performance review?
+- Which log components appear ? for performance review?
+- What are the log messages ? for the DBA review?
+- Which log components appear ? for the DBA review?
+- What are the log messages ? please?
+- Which log components appear ? please?
+- What are the log messages in this log?
+- Which log components appear in this log?
+- What are the log messages in this log from this log?
+- Which log components appear in this log from this log?
+- What are the log messages in this log in this log?
+- Which log components appear in this log in this log?
+- What are the log messages in this log in the uploaded file?
+- Which log components appear in this log in the uploaded file?
+- What are the log messages in this log according to the parsed log?
+- Which log components appear in this log according to the parsed log?
+- What are the log messages in this log for this mongod?
+- Which log components appear in this log for this mongod?
+- What are the log messages in this log for troubleshooting?
+- Which log components appear in this log for troubleshooting?
+- What are the log messages in this log for performance review?
+- Which log components appear in this log for performance review?
+- What are the log messages in this log for the DBA review?
+- Which log components appear in this log for the DBA review?
+- What are the log messages in this log please?
+- Which log components appear in this log please?
+- What are the distinct messages ?
+- Which COMMAND component lines ?
+- What are the distinct messages ? from this log?
+- Which COMMAND component lines ? from this log?
+- What are the distinct messages ? in this log?
+- Which COMMAND component lines ? in this log?
+- What are the distinct messages ? in the uploaded file?
+- Which COMMAND component lines ? in the uploaded file?
+- What are the distinct messages ? according to the parsed log?
+- Which COMMAND component lines ? according to the parsed log?
+- What are the distinct messages ? for this mongod?
+- Which COMMAND component lines ? for this mongod?
+- What are the distinct messages ? for troubleshooting?
+- Which COMMAND component lines ? for troubleshooting?
+- What are the distinct messages ? for performance review?
+- Which COMMAND component lines ? for performance review?
+- What are the distinct messages ? for the DBA review?
+- Which COMMAND component lines ? for the DBA review?
+- What are the distinct messages ? please?
+- Which COMMAND component lines ? please?
+- What are the distinct messages in this log?
+- Which COMMAND component lines in this log?
+- What are the distinct messages in this log from this log?
+- Which COMMAND component lines in this log from this log?
+- What are the distinct messages in this log in this log?
+- Which COMMAND component lines in this log in this log?
+- What are the distinct messages in this log in the uploaded file?
+- Which COMMAND component lines in this log in the uploaded file?
+- What are the distinct messages in this log according to the parsed log?
+- Which COMMAND component lines in this log according to the parsed log?
+- What are the distinct messages in this log for this mongod?
+- Which COMMAND component lines in this log for this mongod?
+- What are the distinct messages in this log for troubleshooting?
+- Which COMMAND component lines in this log for troubleshooting?
+- What are the distinct messages in this log for performance review?
+- Which COMMAND component lines in this log for performance review?
+- What are the distinct messages in this log for the DBA review?
+- Which COMMAND component lines in this log for the DBA review?
+- What are the distinct messages in this log please?
+- Which COMMAND component lines in this log please?
+- What are the message templates ?
+- Which QUERY component volume ?
+- What are the message templates ? from this log?
+- Which QUERY component volume ? from this log?
+- What are the message templates ? in this log?
+- Which QUERY component volume ? in this log?
+- What are the message templates ? in the uploaded file?
+- Which QUERY component volume ? in the uploaded file?
+- What are the message templates ? according to the parsed log?
+- Which QUERY component volume ? according to the parsed log?
+- What are the message templates ? for this mongod?
+- Which QUERY component volume ? for this mongod?
+- What are the message templates ? for troubleshooting?
+- Which QUERY component volume ? for troubleshooting?
+- What are the message templates ? for performance review?
+- Which QUERY component volume ? for performance review?
+- What are the message templates ? for the DBA review?
+- Which QUERY component volume ? for the DBA review?
+- What are the message templates ? please?
+- Which QUERY component volume ? please?
+- What are the message templates in this log?
+- Which QUERY component volume in this log?
+- What are the message templates in this log from this log?
+- Which QUERY component volume in this log from this log?
+- What are the message templates in this log in this log?
+- Which QUERY component volume in this log in this log?
+- What are the message templates in this log in the uploaded file?
+- Which QUERY component volume in this log in the uploaded file?
+- What are the message templates in this log according to the parsed log?
+- Which QUERY component volume in this log according to the parsed log?
+- What are the message templates in this log for this mongod?
+- Which QUERY component volume in this log for this mongod?
+- What are the message templates in this log for troubleshooting?
+- Which QUERY component volume in this log for troubleshooting?
+- What are the message templates in this log for performance review?
+- Which QUERY component volume in this log for performance review?
+- What are the message templates in this log for the DBA review?
+- Which QUERY component volume in this log for the DBA review?
+- What are the message templates in this log please?
+- Which QUERY component volume in this log please?
+- What are the unique msg fields ?
+- Which component breakdown ?
+- What are the unique msg fields ? from this log?
+- Which component breakdown ? from this log?
+- What are the unique msg fields ? in this log?
+- Which component breakdown ? in this log?
+- What are the unique msg fields ? in the uploaded file?
+- Which component breakdown ? in the uploaded file?
+- What are the unique msg fields ? according to the parsed log?
+- Which component breakdown ? according to the parsed log?
+- What are the unique msg fields ? for this mongod?
+- Which component breakdown ? for this mongod?
+- What are the unique msg fields ? for troubleshooting?
+- Which component breakdown ? for troubleshooting?
+- What are the unique msg fields ? for performance review?
+- Which component breakdown ? for performance review?
+- What are the unique msg fields ? for the DBA review?
+- Which component breakdown ? for the DBA review?
+- What are the unique msg fields ? please?
+- Which component breakdown ? please?
+- What are the unique msg fields in this log?
+- Which component breakdown in this log?
+- What are the unique msg fields in this log from this log?
+- Which component breakdown in this log from this log?
+- What are the unique msg fields in this log in this log?
+- Which component breakdown in this log in this log?
+- What are the unique msg fields in this log in the uploaded file?
+- Which component breakdown in this log in the uploaded file?
+- What are the unique msg fields in this log according to the parsed log?
+- Which component breakdown in this log according to the parsed log?
+- What are the unique msg fields in this log for this mongod?
+- Which component breakdown in this log for this mongod?
+- What are the unique msg fields in this log for troubleshooting?
+- Which component breakdown in this log for troubleshooting?
+- What are the unique msg fields in this log for performance review?
+- Which component breakdown in this log for performance review?
+- What are the unique msg fields in this log for the DBA review?
+- Which component breakdown in this log for the DBA review?
+- What are the unique msg fields in this log please?
+- Which component breakdown in this log please?
+- What are the frequent log lines ?
+- Which logging components ?
+- What are the frequent log lines ? from this log?
+- Which logging components ? from this log?
+- What are the frequent log lines ? in this log?
+- Which logging components ? in this log?
+- What are the frequent log lines ? in the uploaded file?
+- Which logging components ? in the uploaded file?
+- What are the frequent log lines ? according to the parsed log?
+- Which logging components ? according to the parsed log?
+- What are the frequent log lines ? for this mongod?
+- Which logging components ? for this mongod?
+- What are the frequent log lines ? for troubleshooting?
+- Which logging components ? for troubleshooting?
+- What are the frequent log lines ? for performance review?
+- Which logging components ? for performance review?
+- What are the frequent log lines ? for the DBA review?
+- Which logging components ? for the DBA review?
+- What are the frequent log lines ? please?
+- Which logging components ? please?
+- What are the frequent log lines in this log?
+- Which logging components in this log?
+- What are the frequent log lines in this log from this log?
+- Which logging components in this log from this log?
+- What are the frequent log lines in this log in this log?
+- Which logging components in this log in this log?
+- What are the frequent log lines in this log in the uploaded file?
+- Which logging components in this log in the uploaded file?
+- What are the frequent log lines in this log according to the parsed log?
+- Which logging components in this log according to the parsed log?
+- What are the frequent log lines in this log for this mongod?
+- Which logging components in this log for this mongod?
+- What are the frequent log lines in this log for troubleshooting?
+- Which logging components in this log for troubleshooting?
+- What are the frequent log lines in this log for performance review?
+- Which logging components in this log for performance review?
+- What are the frequent log lines in this log for the DBA review?
+- Which logging components in this log for the DBA review?
+- What are the frequent log lines in this log please?
+- Which logging components in this log please?
+- Most common log messages ?
+- What log components appear ?
+- Most common log messages ? from this log?
+- What log components appear ? from this log?
+- Most common log messages ? in this log?
+- What log components appear ? in this log?
+- Most common log messages ? in the uploaded file?
+- What log components appear ? in the uploaded file?
+- Most common log messages ? according to the parsed log?
+- What log components appear ? according to the parsed log?
+- Most common log messages ? for this mongod?
+- What log components appear ? for this mongod?
+- Most common log messages ? for troubleshooting?
+- What log components appear ? for troubleshooting?
+- Most common log messages ? for performance review?
+- What log components appear ? for performance review?
+- Most common log messages ? for the DBA review?
+- What log components appear ? for the DBA review?
+- Most common log messages ? please?
+- What log components appear ? please?
+- Most common log messages in this log?
+- What log components appear in this log?
+- Most common log messages in this log from this log?
+- What log components appear in this log from this log?
+- Most common log messages in this log in this log?
+- What log components appear in this log in this log?
+- Most common log messages in this log in the uploaded file?
+- What log components appear in this log in the uploaded file?
+- Most common log messages in this log according to the parsed log?
+- What log components appear in this log according to the parsed log?
+- Most common log messages in this log for this mongod?
+- What log components appear in this log for this mongod?
+- Most common log messages in this log for troubleshooting?
+- What log components appear in this log for troubleshooting?
+- Most common log messages in this log for performance review?
+- What log components appear in this log for performance review?
+- Most common log messages in this log for the DBA review?
+- What log components appear in this log for the DBA review?
+- Most common log messages in this log please?
+- What log components appear in this log please?
+- Most common distinct messages ?
+- What COMMAND component lines ?
+- Most common distinct messages ? from this log?
+- What COMMAND component lines ? from this log?
+- Most common distinct messages ? in this log?
+- What COMMAND component lines ? in this log?
+- Most common distinct messages ? in the uploaded file?
+- What COMMAND component lines ? in the uploaded file?
+- Most common distinct messages ? according to the parsed log?
+- What COMMAND component lines ? according to the parsed log?
+- Most common distinct messages ? for this mongod?
+- What COMMAND component lines ? for this mongod?
+- Most common distinct messages ? for troubleshooting?
+- What COMMAND component lines ? for troubleshooting?
+- Most common distinct messages ? for performance review?
+- What COMMAND component lines ? for performance review?
+- Most common distinct messages ? for the DBA review?
+- What COMMAND component lines ? for the DBA review?
+- Most common distinct messages ? please?
+- What COMMAND component lines ? please?
+- Most common distinct messages in this log?
+- What COMMAND component lines in this log?
+- Most common distinct messages in this log from this log?
+- What COMMAND component lines in this log from this log?
+- Most common distinct messages in this log in this log?
+- What COMMAND component lines in this log in this log?
+- Most common distinct messages in this log in the uploaded file?
+- What COMMAND component lines in this log in the uploaded file?
+- Most common distinct messages in this log according to the parsed log?
+- What COMMAND component lines in this log according to the parsed log?
+- Most common distinct messages in this log for this mongod?
+- What COMMAND component lines in this log for this mongod?
+- Most common distinct messages in this log for troubleshooting?
+- What COMMAND component lines in this log for troubleshooting?
+- Most common distinct messages in this log for performance review?
+- What COMMAND component lines in this log for performance review?
+- Most common distinct messages in this log for the DBA review?
+- What COMMAND component lines in this log for the DBA review?
+- Most common distinct messages in this log please?
+- What COMMAND component lines in this log please?
+- Most common message templates ?
+- What QUERY component volume ?
+- Most common message templates ? from this log?
+- What QUERY component volume ? from this log?
+- Most common message templates ? in this log?
+- What QUERY component volume ? in this log?
+- Most common message templates ? in the uploaded file?
+- What QUERY component volume ? in the uploaded file?
+- Most common message templates ? according to the parsed log?
+- What QUERY component volume ? according to the parsed log?
+- Most common message templates ? for this mongod?
+- What QUERY component volume ? for this mongod?
+- Most common message templates ? for troubleshooting?
+- What QUERY component volume ? for troubleshooting?
+- Most common message templates ? for performance review?
+- What QUERY component volume ? for performance review?
+- Most common message templates ? for the DBA review?
+- What QUERY component volume ? for the DBA review?
+- Most common message templates ? please?
+- What QUERY component volume ? please?
+- Most common message templates in this log?
+- What QUERY component volume in this log?
+- Most common message templates in this log from this log?
+- What QUERY component volume in this log from this log?
+- Most common message templates in this log in this log?
+- What QUERY component volume in this log in this log?
+- Most common message templates in this log in the uploaded file?
+- What QUERY component volume in this log in the uploaded file?
+- Most common message templates in this log according to the parsed log?
+- What QUERY component volume in this log according to the parsed log?
+- Most common message templates in this log for this mongod?
+- What QUERY component volume in this log for this mongod?
+- Most common message templates in this log for troubleshooting?
+- What QUERY component volume in this log for troubleshooting?
+- Most common message templates in this log for performance review?
+- What QUERY component volume in this log for performance review?
+- Most common message templates in this log for the DBA review?
+- What QUERY component volume in this log for the DBA review?
+- Most common message templates in this log please?
+- What QUERY component volume in this log please?
+- Most common unique msg fields ?
+- What component breakdown ?
+- Most common unique msg fields ? from this log?
+- What component breakdown ? from this log?
+- Most common unique msg fields ? in this log?
+- What component breakdown ? in this log?
+- Most common unique msg fields ? in the uploaded file?
+- What component breakdown ? in the uploaded file?
+- Most common unique msg fields ? according to the parsed log?
+- What component breakdown ? according to the parsed log?
+- Most common unique msg fields ? for this mongod?
+- What component breakdown ? for this mongod?
+- Most common unique msg fields ? for troubleshooting?
+- What component breakdown ? for troubleshooting?
+- Most common unique msg fields ? for performance review?
+- What component breakdown ? for performance review?
+- Most common unique msg fields ? for the DBA review?
+- What component breakdown ? for the DBA review?
+- Most common unique msg fields ? please?
+- What component breakdown ? please?
+- Most common unique msg fields in this log?
+- What component breakdown in this log?
+- Most common unique msg fields in this log from this log?
+- What component breakdown in this log from this log?
+- Most common unique msg fields in this log in this log?
+- What component breakdown in this log in this log?
+- Most common unique msg fields in this log in the uploaded file?
+- What component breakdown in this log in the uploaded file?
+- Most common unique msg fields in this log according to the parsed log?
+- What component breakdown in this log according to the parsed log?
+- Most common unique msg fields in this log for this mongod?
+- What component breakdown in this log for this mongod?
+- Most common unique msg fields in this log for troubleshooting?
+- What component breakdown in this log for troubleshooting?
+- Most common unique msg fields in this log for performance review?
+- What component breakdown in this log for performance review?
+- Most common unique msg fields in this log for the DBA review?
+- What component breakdown in this log for the DBA review?
+- Most common unique msg fields in this log please?
+- What component breakdown in this log please?
+- Most common frequent log lines ?
+- What logging components ?
+- Most common frequent log lines ? from this log?
+- What logging components ? from this log?
+- Most common frequent log lines ? in this log?
+- What logging components ? in this log?
+- Most common frequent log lines ? in the uploaded file?
+- What logging components ? in the uploaded file?
+- Most common frequent log lines ? according to the parsed log?
+- What logging components ? according to the parsed log?
+- Most common frequent log lines ? for this mongod?
+- What logging components ? for this mongod?
+- Most common frequent log lines ? for troubleshooting?
+- What logging components ? for troubleshooting?
+- Most common frequent log lines ? for performance review?
+- What logging components ? for performance review?
+- Most common frequent log lines ? for the DBA review?
+- What logging components ? for the DBA review?
+- Most common frequent log lines ? please?
+- What logging components ? please?
+- Most common frequent log lines in this log?
+- What logging components in this log?
+- Most common frequent log lines in this log from this log?
+- What logging components in this log from this log?
+- Most common frequent log lines in this log in this log?
+- What logging components in this log in this log?
+- Most common frequent log lines in this log in the uploaded file?
+- What logging components in this log in the uploaded file?
+
+## Help
+
+- What can you answer?
+- List all questions I can ask
+- Help
+- What data was extracted from this log?
+- What information is in this log?
+- Where do I find slow queries in the UI?
+- Which tab shows indexes?
+- Export JSON context
+- Copy structured summary
+- What can you answer ?
+- What data was extracted ?
+- Where do I find slow queries in the UI ?
+- Export JSON context?
+- What can you answer ? from this log?
+- What data was extracted ? from this log?
+- Where do I find slow queries in the UI ? from this log?
+- Export JSON context from this log?
+- What can you answer ? in this log?
+- What data was extracted ? in this log?
+- Where do I find slow queries in the UI ? in this log?
+- Export JSON context in this log?
+- What can you answer ? in the uploaded file?
+- What data was extracted ? in the uploaded file?
+- Where do I find slow queries in the UI ? in the uploaded file?
+- Export JSON context in the uploaded file?
+- What can you answer ? according to the parsed log?
+- What data was extracted ? according to the parsed log?
+- Where do I find slow queries in the UI ? according to the parsed log?
+- Export JSON context according to the parsed log?
+- What can you answer ? for this mongod?
+- What data was extracted ? for this mongod?
+- Where do I find slow queries in the UI ? for this mongod?
+- Export JSON context for this mongod?
+- What can you answer ? for troubleshooting?
+- What data was extracted ? for troubleshooting?
+- Where do I find slow queries in the UI ? for troubleshooting?
+- Export JSON context for troubleshooting?
+- What can you answer ? for performance review?
+- What data was extracted ? for performance review?
+- Where do I find slow queries in the UI ? for performance review?
+- Export JSON context for performance review?
+- What can you answer ? for the DBA review?
+- What data was extracted ? for the DBA review?
+- Where do I find slow queries in the UI ? for the DBA review?
+- Export JSON context for the DBA review?
+- What can you answer ? please?
+- What data was extracted ? please?
+- Where do I find slow queries in the UI ? please?
+- Export JSON context please?
+- What data was extracted from this file?
+- Export JSON context for external analysis?
+- What can you answer from this log?
+- What data was extracted from this file from this log?
+- Where do I find slow queries in the UI from this log?
+- Export JSON context for external analysis from this log?
+- What can you answer in this log?
+- What data was extracted from this file in this log?
+- Where do I find slow queries in the UI in this log?
+- Export JSON context for external analysis in this log?
+- What can you answer in the uploaded file?
+- What data was extracted from this file in the uploaded file?
+- Where do I find slow queries in the UI in the uploaded file?
+- Export JSON context for external analysis in the uploaded file?
+- What can you answer according to the parsed log?
+- What data was extracted from this file according to the parsed log?
+- Where do I find slow queries in the UI according to the parsed log?
+- Export JSON context for external analysis according to the parsed log?
+- What can you answer for this mongod?
+- What data was extracted from this file for this mongod?
+- Where do I find slow queries in the UI for this mongod?
+- Export JSON context for external analysis for this mongod?
+- What can you answer for troubleshooting?
+- What data was extracted from this file for troubleshooting?
+- Where do I find slow queries in the UI for troubleshooting?
+- Export JSON context for external analysis for troubleshooting?
+- What can you answer for performance review?
+- What data was extracted from this file for performance review?
+- Where do I find slow queries in the UI for performance review?
+- Export JSON context for external analysis for performance review?
+- What can you answer for the DBA review?
+- What data was extracted from this file for the DBA review?
+- Where do I find slow queries in the UI for the DBA review?
+- Export JSON context for external analysis for the DBA review?
+- What can you answer please?
+- What data was extracted from this file please?
+- Where do I find slow queries in the UI please?
+- Export JSON context for external analysis please?
+- What can you ask about this log ?
+- What information is in the log ?
+- Where do I find errors tab ?
+- Export structured summary?
+- What can you ask about this log ? from this log?
+- What information is in the log ? from this log?
+- Where do I find errors tab ? from this log?
+- Export structured summary from this log?
+- What can you ask about this log ? in this log?
+- What information is in the log ? in this log?
+- Where do I find errors tab ? in this log?
+- Export structured summary in this log?
+- What can you ask about this log ? in the uploaded file?
+- What information is in the log ? in the uploaded file?
+- Where do I find errors tab ? in the uploaded file?
+- Export structured summary in the uploaded file?
+- What can you ask about this log ? according to the parsed log?
+- What information is in the log ? according to the parsed log?
+- Where do I find errors tab ? according to the parsed log?
+- Export structured summary according to the parsed log?
+- What can you ask about this log ? for this mongod?
+- What information is in the log ? for this mongod?
+- Where do I find errors tab ? for this mongod?
+- Export structured summary for this mongod?
+- What can you ask about this log ? for troubleshooting?
+- What information is in the log ? for troubleshooting?
+- Where do I find errors tab ? for troubleshooting?
+- Export structured summary for troubleshooting?
+- What can you ask about this log ? for performance review?
+- What information is in the log ? for performance review?
+- Where do I find errors tab ? for performance review?
+- Export structured summary for performance review?
+- What can you ask about this log ? for the DBA review?
+- What information is in the log ? for the DBA review?
+- Where do I find errors tab ? for the DBA review?
+- Export structured summary for the DBA review?
+- What can you ask about this log ? please?
+- What information is in the log ? please?
+- Where do I find errors tab ? please?
+- Export structured summary please?
+- What can you ask about this log?
+- What information is in the log from this file?
+- Where do I find errors tab?
+- Export structured summary for external analysis?
+- What can you ask about this log from this log?
+- What information is in the log from this file from this log?
+- Where do I find errors tab from this log?
+- Export structured summary for external analysis from this log?
+- What can you ask about this log in this log?
+- What information is in the log from this file in this log?
+- Where do I find errors tab in this log?
+- Export structured summary for external analysis in this log?
+- What can you ask about this log in the uploaded file?
+- What information is in the log from this file in the uploaded file?
+- Where do I find errors tab in the uploaded file?
+- Export structured summary for external analysis in the uploaded file?
+- What can you ask about this log according to the parsed log?
+- What information is in the log from this file according to the parsed log?
+- Where do I find errors tab according to the parsed log?
+- Export structured summary for external analysis according to the parsed log?
+- What can you ask about this log for this mongod?
+- What information is in the log from this file for this mongod?
+- Where do I find errors tab for this mongod?
+- Export structured summary for external analysis for this mongod?
+- What can you ask about this log for troubleshooting?
+- What information is in the log from this file for troubleshooting?
+- Where do I find errors tab for troubleshooting?
+- Export structured summary for external analysis for troubleshooting?
+- What can you ask about this log for performance review?
+- What information is in the log from this file for performance review?
+- Where do I find errors tab for performance review?
+- Export structured summary for external analysis for performance review?
+- What can you ask about this log for the DBA review?
+- What information is in the log from this file for the DBA review?
+- Where do I find errors tab for the DBA review?
+- Export structured summary for external analysis for the DBA review?
+- What can you ask about this log please?
+- What information is in the log from this file please?
+- Where do I find errors tab please?
+- Export structured summary for external analysis please?
+- What can you do with this tool ?
+- What fields are available ?
+- Where do I find indexes tab ?
+- Export machine readable export?
+- What can you do with this tool ? from this log?
+- What fields are available ? from this log?
+- Where do I find indexes tab ? from this log?
+- Export machine readable export from this log?
+- What can you do with this tool ? in this log?
+- What fields are available ? in this log?
+- Where do I find indexes tab ? in this log?
+- Export machine readable export in this log?
+- What can you do with this tool ? in the uploaded file?
+- What fields are available ? in the uploaded file?
+- Where do I find indexes tab ? in the uploaded file?
+- Export machine readable export in the uploaded file?
+- What can you do with this tool ? according to the parsed log?
+- What fields are available ? according to the parsed log?
+- Where do I find indexes tab ? according to the parsed log?
+- Export machine readable export according to the parsed log?
+- What can you do with this tool ? for this mongod?
+- What fields are available ? for this mongod?
+- Where do I find indexes tab ? for this mongod?
+- Export machine readable export for this mongod?
+- What can you do with this tool ? for troubleshooting?
+- What fields are available ? for troubleshooting?
+- Where do I find indexes tab ? for troubleshooting?
+- Export machine readable export for troubleshooting?
+- What can you do with this tool ? for performance review?
+- What fields are available ? for performance review?
+- Where do I find indexes tab ? for performance review?
+- Export machine readable export for performance review?
+- What can you do with this tool ? for the DBA review?
+- What fields are available ? for the DBA review?
+- Where do I find indexes tab ? for the DBA review?
+- Export machine readable export for the DBA review?
+- What can you do with this tool ? please?
+- What fields are available ? please?
+- Where do I find indexes tab ? please?
+- Export machine readable export please?
+- What can you do with this tool?
+- What fields are available from this file?
+- Where do I find indexes tab?
+- Export machine readable export for external analysis?
+- What can you do with this tool from this log?
+- What fields are available from this file from this log?
+- Where do I find indexes tab from this log?
+- Export machine readable export for external analysis from this log?
+- What can you do with this tool in this log?
+- What fields are available from this file in this log?
+- Where do I find indexes tab in this log?
+- Export machine readable export for external analysis in this log?
+- What can you do with this tool in the uploaded file?
+- What fields are available from this file in the uploaded file?
+- Where do I find indexes tab in the uploaded file?
+- Export machine readable export for external analysis in the uploaded file?
+- What can you do with this tool according to the parsed log?
+- What fields are available from this file according to the parsed log?
+- Where do I find indexes tab according to the parsed log?
+- Export machine readable export for external analysis according to the parsed log?
+- What can you do with this tool for this mongod?
+- What fields are available from this file for this mongod?
+- Where do I find indexes tab for this mongod?
+- Export machine readable export for external analysis for this mongod?
+- What can you do with this tool for troubleshooting?
+- What fields are available from this file for troubleshooting?
+- Where do I find indexes tab for troubleshooting?
+- Export machine readable export for external analysis for troubleshooting?
+- What can you do with this tool for performance review?
+- What fields are available from this file for performance review?
+- Where do I find indexes tab for performance review?
+- Export machine readable export for external analysis for performance review?
+- What can you do with this tool for the DBA review?
+- What fields are available from this file for the DBA review?
+- Where do I find indexes tab for the DBA review?
+- Export machine readable export for external analysis for the DBA review?
+- What can you do with this tool please?
+- What fields are available from this file please?
+- Where do I find indexes tab please?
+- Export machine readable export for external analysis please?
+- What can you questions are supported ?
+- What categories you parsed ?
+- Where do I find audit events ?
+- Export masked log summary?
+- What can you questions are supported ? from this log?
+- What categories you parsed ? from this log?
+- Where do I find audit events ? from this log?
+- Export masked log summary from this log?
+- What can you questions are supported ? in this log?
+- What categories you parsed ? in this log?
+- Where do I find audit events ? in this log?
+- Export masked log summary in this log?
+- What can you questions are supported ? in the uploaded file?
+- What categories you parsed ? in the uploaded file?
+- Where do I find audit events ? in the uploaded file?
+- Export masked log summary in the uploaded file?
+- What can you questions are supported ? according to the parsed log?
+- What categories you parsed ? according to the parsed log?
+- Where do I find audit events ? according to the parsed log?
+- Export masked log summary according to the parsed log?
+- What can you questions are supported ? for this mongod?
+- What categories you parsed ? for this mongod?
+- Where do I find audit events ? for this mongod?
+- Export masked log summary for this mongod?
+- What can you questions are supported ? for troubleshooting?
+- What categories you parsed ? for troubleshooting?
+- Where do I find audit events ? for troubleshooting?
+- Export masked log summary for troubleshooting?
+- What can you questions are supported ? for performance review?
+- What categories you parsed ? for performance review?
+- Where do I find audit events ? for performance review?
+- Export masked log summary for performance review?
+- What can you questions are supported ? for the DBA review?
+- What categories you parsed ? for the DBA review?
+- Where do I find audit events ? for the DBA review?
+- Export masked log summary for the DBA review?
+- What can you questions are supported ? please?
+- What categories you parsed ? please?
+- Where do I find audit events ? please?
+- Export masked log summary please?
+- What can you questions are supported?
+- What categories you parsed from this file?
+- Where do I find audit events?
+- Export masked log summary for external analysis?
+- What can you questions are supported from this log?
+- What categories you parsed from this file from this log?
+- Where do I find audit events from this log?
+- Export masked log summary for external analysis from this log?
+- What can you questions are supported in this log?
+- What categories you parsed from this file in this log?
+- Where do I find audit events in this log?
+- Export masked log summary for external analysis in this log?
+- What can you questions are supported in the uploaded file?
+- What categories you parsed from this file in the uploaded file?
+- Where do I find audit events in the uploaded file?
+- Export masked log summary for external analysis in the uploaded file?
+- What can you questions are supported according to the parsed log?
+- What categories you parsed from this file according to the parsed log?
+- Where do I find audit events according to the parsed log?
+- Export masked log summary for external analysis according to the parsed log?
+- What can you questions are supported for this mongod?
+- What categories you parsed from this file for this mongod?
+- Where do I find audit events for this mongod?
+- Export masked log summary for external analysis for this mongod?
+- What can you questions are supported for troubleshooting?
+- What categories you parsed from this file for troubleshooting?
+- Where do I find audit events for troubleshooting?
+- Export masked log summary for external analysis for troubleshooting?
+- What can you questions are supported for performance review?
+- What categories you parsed from this file for performance review?
+- Where do I find audit events for performance review?
+- Export masked log summary for external analysis for performance review?
+- What can you questions are supported for the DBA review?
+- What categories you parsed from this file for the DBA review?
+- Where do I find audit events for the DBA review?
+- Export masked log summary for external analysis for the DBA review?
+- What can you questions are supported please?
+- What categories you parsed from this file please?
+- Where do I find audit events please?
+- Export masked log summary for external analysis please?
+- What can you capabilities ?
+- What extracted metrics ?
+- Where do I find statistics ?
+- Export parsed data export?
+- What can you capabilities ? from this log?
+- What extracted metrics ? from this log?
+- Where do I find statistics ? from this log?
+- Export parsed data export from this log?
+- What can you capabilities ? in this log?
+- What extracted metrics ? in this log?
+- Where do I find statistics ? in this log?
+- Export parsed data export in this log?
+- What can you capabilities ? in the uploaded file?
+- What extracted metrics ? in the uploaded file?
+- Where do I find statistics ? in the uploaded file?
+- Export parsed data export in the uploaded file?
+- What can you capabilities ? according to the parsed log?
+- What extracted metrics ? according to the parsed log?
+- Where do I find statistics ? according to the parsed log?
+- Export parsed data export according to the parsed log?
+- What can you capabilities ? for this mongod?
+- What extracted metrics ? for this mongod?
+- Where do I find statistics ? for this mongod?
+- Export parsed data export for this mongod?
+- What can you capabilities ? for troubleshooting?
+- What extracted metrics ? for troubleshooting?
+- Where do I find statistics ? for troubleshooting?
+- Export parsed data export for troubleshooting?
+- What can you capabilities ? for performance review?
+- What extracted metrics ? for performance review?
+- Where do I find statistics ? for performance review?
+- Export parsed data export for performance review?
+- What can you capabilities ? for the DBA review?
+- What extracted metrics ? for the DBA review?
+- Where do I find statistics ? for the DBA review?
+- Export parsed data export for the DBA review?
+- What can you capabilities ? please?
+- What extracted metrics ? please?
+- Where do I find statistics ? please?
+- Export parsed data export please?
+- What can you capabilities?
+- What extracted metrics from this file?
+- Where do I find statistics?
+- Export parsed data export for external analysis?
+- What can you capabilities from this log?
+- What extracted metrics from this file from this log?
+- Where do I find statistics from this log?
+- Export parsed data export for external analysis from this log?
+- What can you capabilities in this log?
+- What extracted metrics from this file in this log?
+- Where do I find statistics in this log?
+- Export parsed data export for external analysis in this log?
+- What can you capabilities in the uploaded file?
+- What extracted metrics from this file in the uploaded file?
+- Where do I find statistics in the uploaded file?
+- Export parsed data export for external analysis in the uploaded file?
+- What can you capabilities according to the parsed log?
+- What extracted metrics from this file according to the parsed log?
+- Where do I find statistics according to the parsed log?
+- Export parsed data export for external analysis according to the parsed log?
+- What can you capabilities for this mongod?
+- What extracted metrics from this file for this mongod?
+- Where do I find statistics for this mongod?
+- Export parsed data export for external analysis for this mongod?
+- What can you capabilities for troubleshooting?
+- What extracted metrics from this file for troubleshooting?
+- Where do I find statistics for troubleshooting?
+- Export parsed data export for external analysis for troubleshooting?
+- What can you capabilities for performance review?
+- What extracted metrics from this file for performance review?
+- Where do I find statistics for performance review?
+- Export parsed data export for external analysis for performance review?
+- What can you capabilities for the DBA review?
+- What extracted metrics from this file for the DBA review?
+- Where do I find statistics for the DBA review?
+- Export parsed data export for external analysis for the DBA review?
+- What can you capabilities please?
+- What extracted metrics from this file please?
+- Where do I find statistics please?
+- Export parsed data export for external analysis please?
+- What questions can I answer ?
+- List data was extracted ?
+- Where do I find log search ?
+- Copy JSON context?
+- What questions can I answer ? from this log?
+- List data was extracted ? from this log?
+- Where do I find log search ? from this log?
+- Copy JSON context from this log?
+- What questions can I answer ? in this log?
+- List data was extracted ? in this log?
+- Where do I find log search ? in this log?
+- Copy JSON context in this log?
+- What questions can I answer ? in the uploaded file?
+- List data was extracted ? in the uploaded file?
+- Where do I find log search ? in the uploaded file?
+- Copy JSON context in the uploaded file?
+- What questions can I answer ? according to the parsed log?
+- List data was extracted ? according to the parsed log?
+- Where do I find log search ? according to the parsed log?
+- Copy JSON context according to the parsed log?
+- What questions can I answer ? for this mongod?
+- List data was extracted ? for this mongod?
+- Where do I find log search ? for this mongod?
+- Copy JSON context for this mongod?
+- What questions can I answer ? for troubleshooting?
+- List data was extracted ? for troubleshooting?
+- Where do I find log search ? for troubleshooting?
+- Copy JSON context for troubleshooting?
+- What questions can I answer ? for performance review?
+- List data was extracted ? for performance review?
+- Where do I find log search ? for performance review?
+- Copy JSON context for performance review?
+- What questions can I answer ? for the DBA review?
+- List data was extracted ? for the DBA review?
+- Where do I find log search ? for the DBA review?
+- Copy JSON context for the DBA review?
+- What questions can I answer ? please?
+- List data was extracted ? please?
+- Where do I find log search ? please?
+- Copy JSON context please?
+- What questions can I answer?
+- List data was extracted from this file?
+- Where do I find log search?
+- Copy JSON context for external analysis?
+- What questions can I answer from this log?
+- List data was extracted from this file from this log?
+- Where do I find log search from this log?
+- Copy JSON context for external analysis from this log?
+- What questions can I answer in this log?
+- List data was extracted from this file in this log?
+- Where do I find log search in this log?
+- Copy JSON context for external analysis in this log?
+- What questions can I answer in the uploaded file?
+- List data was extracted from this file in the uploaded file?
+- Where do I find log search in the uploaded file?
+- Copy JSON context for external analysis in the uploaded file?
+- What questions can I answer according to the parsed log?
+- List data was extracted from this file according to the parsed log?
+- Where do I find log search according to the parsed log?
+- Copy JSON context for external analysis according to the parsed log?
+- What questions can I answer for this mongod?
+- List data was extracted from this file for this mongod?
+- Where do I find log search for this mongod?
+- Copy JSON context for external analysis for this mongod?
+- What questions can I answer for troubleshooting?
+- List data was extracted from this file for troubleshooting?
+- Where do I find log search for troubleshooting?
+- Copy JSON context for external analysis for troubleshooting?
+- What questions can I answer for performance review?
+- List data was extracted from this file for performance review?
+- Where do I find log search for performance review?
+- Copy JSON context for external analysis for performance review?
+- What questions can I answer for the DBA review?
+- List data was extracted from this file for the DBA review?
+- Where do I find log search for the DBA review?
+- Copy JSON context for external analysis for the DBA review?
+- What questions can I answer please?
+- List data was extracted from this file please?
+- Where do I find log search please?
+- Copy JSON context for external analysis please?
+- What questions can I ask about this log ?
+- List information is in the log ?
+- Where do I find large results ?
+- Copy structured summary?
+- What questions can I ask about this log ? from this log?
+- List information is in the log ? from this log?
+- Where do I find large results ? from this log?
+- Copy structured summary from this log?
+- What questions can I ask about this log ? in this log?
+- List information is in the log ? in this log?
+- Where do I find large results ? in this log?
+- Copy structured summary in this log?
+- What questions can I ask about this log ? in the uploaded file?
+- List information is in the log ? in the uploaded file?
+- Where do I find large results ? in the uploaded file?
+- Copy structured summary in the uploaded file?
+- What questions can I ask about this log ? according to the parsed log?
+- List information is in the log ? according to the parsed log?
+- Where do I find large results ? according to the parsed log?
+- Copy structured summary according to the parsed log?
+- What questions can I ask about this log ? for this mongod?
+- List information is in the log ? for this mongod?
+- Where do I find large results ? for this mongod?
+- Copy structured summary for this mongod?
+- What questions can I ask about this log ? for troubleshooting?
+- List information is in the log ? for troubleshooting?
+- Where do I find large results ? for troubleshooting?
+- Copy structured summary for troubleshooting?
+- What questions can I ask about this log ? for performance review?
+- List information is in the log ? for performance review?
+- Where do I find large results ? for performance review?
+- Copy structured summary for performance review?
+- What questions can I ask about this log ? for the DBA review?
+- List information is in the log ? for the DBA review?
+- Where do I find large results ? for the DBA review?
+- Copy structured summary for the DBA review?
+- What questions can I ask about this log ? please?
+- List information is in the log ? please?
+- Where do I find large results ? please?
+- Copy structured summary please?
+- What questions can I ask about this log?
+- List information is in the log from this file?
+- Where do I find large results?
+- Copy structured summary for external analysis?
+- What questions can I ask about this log from this log?
+- List information is in the log from this file from this log?
+- Where do I find large results from this log?
+- Copy structured summary for external analysis from this log?
+- What questions can I ask about this log in this log?
+- List information is in the log from this file in this log?
+- Where do I find large results in this log?
+- Copy structured summary for external analysis in this log?
+- What questions can I ask about this log in the uploaded file?
+- List information is in the log from this file in the uploaded file?
+- Where do I find large results in the uploaded file?
+- Copy structured summary for external analysis in the uploaded file?
+- What questions can I ask about this log according to the parsed log?
+- List information is in the log from this file according to the parsed log?
+- Where do I find large results according to the parsed log?
+- Copy structured summary for external analysis according to the parsed log?
+- What questions can I ask about this log for this mongod?
+- List information is in the log from this file for this mongod?
+- Where do I find large results for this mongod?
+- Copy structured summary for external analysis for this mongod?
+- What questions can I ask about this log for troubleshooting?
+- List information is in the log from this file for troubleshooting?
+- Where do I find large results for troubleshooting?
+- Copy structured summary for external analysis for troubleshooting?
+- What questions can I ask about this log for performance review?
+- List information is in the log from this file for performance review?
+- Where do I find large results for performance review?
+- Copy structured summary for external analysis for performance review?
+- What questions can I ask about this log for the DBA review?
+- List information is in the log from this file for the DBA review?
+- Where do I find large results for the DBA review?
+- Copy structured summary for external analysis for the DBA review?
+- What questions can I ask about this log please?
+- List information is in the log from this file please?
+- Where do I find large results please?
+- Copy structured summary for external analysis please?
+- What questions can I do with this tool ?
+- List fields are available ?
+- Where do I find query scatter ?
+- Copy machine readable export?
+- What questions can I do with this tool ? from this log?
+- List fields are available ? from this log?
+- Where do I find query scatter ? from this log?
+- Copy machine readable export from this log?
+- What questions can I do with this tool ? in this log?
+- List fields are available ? in this log?
+- Where do I find query scatter ? in this log?
+- Copy machine readable export in this log?
+- What questions can I do with this tool ? in the uploaded file?
+- List fields are available ? in the uploaded file?
+- Where do I find query scatter ? in the uploaded file?
+- Copy machine readable export in the uploaded file?
+- What questions can I do with this tool ? according to the parsed log?
+- List fields are available ? according to the parsed log?
+- Where do I find query scatter ? according to the parsed log?
+- Copy machine readable export according to the parsed log?
+- What questions can I do with this tool ? for this mongod?
+- List fields are available ? for this mongod?
+- Where do I find query scatter ? for this mongod?
+- Copy machine readable export for this mongod?
+- What questions can I do with this tool ? for troubleshooting?
+- List fields are available ? for troubleshooting?
+- Where do I find query scatter ? for troubleshooting?
+- Copy machine readable export for troubleshooting?
+- What questions can I do with this tool ? for performance review?
+- List fields are available ? for performance review?
+- Where do I find query scatter ? for performance review?
+- Copy machine readable export for performance review?
+- What questions can I do with this tool ? for the DBA review?
+- List fields are available ? for the DBA review?
+- Where do I find query scatter ? for the DBA review?
+- Copy machine readable export for the DBA review?
+- What questions can I do with this tool ? please?
+- List fields are available ? please?
+- Where do I find query scatter ? please?
+- Copy machine readable export please?
+- What questions can I do with this tool?
+- List fields are available from this file?
+- Where do I find query scatter?
+- Copy machine readable export for external analysis?
+- What questions can I do with this tool from this log?
+- List fields are available from this file from this log?
+- Where do I find query scatter from this log?
+- Copy machine readable export for external analysis from this log?
+- What questions can I do with this tool in this log?
+- List fields are available from this file in this log?
+- Where do I find query scatter in this log?
+- Copy machine readable export for external analysis in this log?
+- What questions can I do with this tool in the uploaded file?
+- List fields are available from this file in the uploaded file?
+- Where do I find query scatter in the uploaded file?
+- Copy machine readable export for external analysis in the uploaded file?
+- What questions can I do with this tool according to the parsed log?
+- List fields are available from this file according to the parsed log?
+- Where do I find query scatter according to the parsed log?
+- Copy machine readable export for external analysis according to the parsed log?
+- What questions can I do with this tool for this mongod?
+- List fields are available from this file for this mongod?
+- Where do I find query scatter for this mongod?
+- Copy machine readable export for external analysis for this mongod?
+- What questions can I do with this tool for troubleshooting?
+- List fields are available from this file for troubleshooting?
+- Where do I find query scatter for troubleshooting?
+- Copy machine readable export for external analysis for troubleshooting?
+- What questions can I do with this tool for performance review?
+- List fields are available from this file for performance review?
+- Where do I find query scatter for performance review?
+- Copy machine readable export for external analysis for performance review?
+- What questions can I do with this tool for the DBA review?
+- List fields are available from this file for the DBA review?
+- Where do I find query scatter for the DBA review?
+- Copy machine readable export for external analysis for the DBA review?
+- What questions can I do with this tool please?
+- List fields are available from this file please?
+- Where do I find query scatter please?
+- Copy machine readable export for external analysis please?
+- What questions can I questions are supported ?
+- List categories you parsed ?
+- Which tab shows slow queries in the UI ?
+- Copy masked log summary?
+- What questions can I questions are supported ? from this log?
+- List categories you parsed ? from this log?
+- Which tab shows slow queries in the UI ? from this log?
+- Copy masked log summary from this log?
+- What questions can I questions are supported ? in this log?
+- List categories you parsed ? in this log?
+- Which tab shows slow queries in the UI ? in this log?
+- Copy masked log summary in this log?
+- What questions can I questions are supported ? in the uploaded file?
+- List categories you parsed ? in the uploaded file?
+- Which tab shows slow queries in the UI ? in the uploaded file?
+- Copy masked log summary in the uploaded file?
+- What questions can I questions are supported ? according to the parsed log?
+- List categories you parsed ? according to the parsed log?
+- Which tab shows slow queries in the UI ? according to the parsed log?
+- Copy masked log summary according to the parsed log?
+- What questions can I questions are supported ? for this mongod?
+- List categories you parsed ? for this mongod?
+- Which tab shows slow queries in the UI ? for this mongod?
+- Copy masked log summary for this mongod?
+- What questions can I questions are supported ? for troubleshooting?
+- List categories you parsed ? for troubleshooting?
+- Which tab shows slow queries in the UI ? for troubleshooting?
+- Copy masked log summary for troubleshooting?
+- What questions can I questions are supported ? for performance review?
+- List categories you parsed ? for performance review?
+- Which tab shows slow queries in the UI ? for performance review?
+- Copy masked log summary for performance review?
+- What questions can I questions are supported ? for the DBA review?
+- List categories you parsed ? for the DBA review?
+- Which tab shows slow queries in the UI ? for the DBA review?
+- Copy masked log summary for the DBA review?
+- What questions can I questions are supported ? please?
+- List categories you parsed ? please?
+- Which tab shows slow queries in the UI ? please?
+- Copy masked log summary please?
+- What questions can I questions are supported?
+- List categories you parsed from this file?
+- Which tab shows slow queries in the UI?
+- Copy masked log summary for external analysis?
+- What questions can I questions are supported from this log?
+- List categories you parsed from this file from this log?
+- Which tab shows slow queries in the UI from this log?
+- Copy masked log summary for external analysis from this log?
+- What questions can I questions are supported in this log?
+- List categories you parsed from this file in this log?
+- Which tab shows slow queries in the UI in this log?
+- Copy masked log summary for external analysis in this log?
+- What questions can I questions are supported in the uploaded file?
+- List categories you parsed from this file in the uploaded file?
+- Which tab shows slow queries in the UI in the uploaded file?
+- Copy masked log summary for external analysis in the uploaded file?
+- What questions can I questions are supported according to the parsed log?
+- List categories you parsed from this file according to the parsed log?
+- Which tab shows slow queries in the UI according to the parsed log?
+- Copy masked log summary for external analysis according to the parsed log?
+- What questions can I questions are supported for this mongod?
+- List categories you parsed from this file for this mongod?
+- Which tab shows slow queries in the UI for this mongod?
+- Copy masked log summary for external analysis for this mongod?
+- What questions can I questions are supported for troubleshooting?
+- List categories you parsed from this file for troubleshooting?
+- Which tab shows slow queries in the UI for troubleshooting?
+- Copy masked log summary for external analysis for troubleshooting?
+- What questions can I questions are supported for performance review?
+- List categories you parsed from this file for performance review?
+- Which tab shows slow queries in the UI for performance review?
+- Copy masked log summary for external analysis for performance review?
+- What questions can I questions are supported for the DBA review?
+- List categories you parsed from this file for the DBA review?
+- Which tab shows slow queries in the UI for the DBA review?
+- Copy masked log summary for external analysis for the DBA review?
+- What questions can I questions are supported please?
+- List categories you parsed from this file please?
+- Which tab shows slow queries in the UI please?
+- Copy masked log summary for external analysis please?
+- What questions can I capabilities ?
+- List extracted metrics ?
+- Which tab shows errors tab ?
+- Copy parsed data export?
+- What questions can I capabilities ? from this log?
+- List extracted metrics ? from this log?
+- Which tab shows errors tab ? from this log?
+- Copy parsed data export from this log?
+- What questions can I capabilities ? in this log?
+- List extracted metrics ? in this log?
+- Which tab shows errors tab ? in this log?
+- Copy parsed data export in this log?
+- What questions can I capabilities ? in the uploaded file?
+- List extracted metrics ? in the uploaded file?
+- Which tab shows errors tab ? in the uploaded file?
+- Copy parsed data export in the uploaded file?
+- What questions can I capabilities ? according to the parsed log?
+- List extracted metrics ? according to the parsed log?
+- Which tab shows errors tab ? according to the parsed log?
+- Copy parsed data export according to the parsed log?
+- What questions can I capabilities ? for this mongod?
+- List extracted metrics ? for this mongod?
+- Which tab shows errors tab ? for this mongod?
+- Copy parsed data export for this mongod?
+- What questions can I capabilities ? for troubleshooting?
+- List extracted metrics ? for troubleshooting?
+- Which tab shows errors tab ? for troubleshooting?
+- Copy parsed data export for troubleshooting?
+- What questions can I capabilities ? for performance review?
+- List extracted metrics ? for performance review?
+- Which tab shows errors tab ? for performance review?
+- Copy parsed data export for performance review?
+- What questions can I capabilities ? for the DBA review?
+- List extracted metrics ? for the DBA review?
+- Which tab shows errors tab ? for the DBA review?
+- Copy parsed data export for the DBA review?
+- What questions can I capabilities ? please?
+- List extracted metrics ? please?
+- Which tab shows errors tab ? please?
+- Copy parsed data export please?
+- What questions can I capabilities?
+- List extracted metrics from this file?
+- Which tab shows errors tab?
+- Copy parsed data export for external analysis?
+- What questions can I capabilities from this log?
+- List extracted metrics from this file from this log?
+- Which tab shows errors tab from this log?
+- Copy parsed data export for external analysis from this log?
+- What questions can I capabilities in this log?
+- List extracted metrics from this file in this log?
+- Which tab shows errors tab in this log?
+- Copy parsed data export for external analysis in this log?
+- What questions can I capabilities in the uploaded file?
+- List extracted metrics from this file in the uploaded file?
+- Which tab shows errors tab in the uploaded file?
+- Copy parsed data export for external analysis in the uploaded file?

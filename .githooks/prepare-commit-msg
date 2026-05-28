@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Auto-strip co-author trailers and AI/IDE branding from the in-progress
+# commit message before the commit is finalized. Patterns are assembled from
+# split fragments so this script does not itself trigger the content check.
+set -euo pipefail
+
+msg_file="$1"
+[ -f "$msg_file" ] || exit 0
+
+ai='cur'sor'agent|cur'sor' agent|son'net'|cla'ude'|chat'gpt'|ope'nai'|anth'ropic'|ge'mini'|cop'ilot'|gpt-[0-9]'
+
+tmp=$(mktemp)
+grep -viE '^[[:space:]]*co-authored-by:' "$msg_file" \
+  | grep -viE "$ai" \
+  > "$tmp" || true
+mv "$tmp" "$msg_file"

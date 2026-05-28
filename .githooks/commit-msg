@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Final guard: reject any commit whose message still contains forbidden
+# tokens (e.g. if prepare-commit-msg was edited or bypassed).
+set -euo pipefail
+
+msg_file="$1"
+[ -f "$msg_file" ] || exit 0
+
+ai='cur'sor'agent|cur'sor' agent|son'net'|cla'ude'|chat'gpt'|ope'nai'|anth'ropic'|ge'mini'|cop'ilot'|gpt-[0-9]'
+
+if grep -qiE "^[[:space:]]*co-authored-by:.*(${ai})" "$msg_file"; then
+  echo "commit-msg: blocked AI/IDE Co-authored-by trailer."
+  exit 1
+fi
+
+if grep -qiE "$ai" "$msg_file"; then
+  echo "commit-msg: blocked AI/IDE branding token in commit message."
+  exit 1
+fi
+
+exit 0

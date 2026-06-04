@@ -1,5 +1,7 @@
 import { sortArr } from './queryUtils.js'
 
+export const DEFAULT_SHORT_CONNECTION_THRESHOLD_MS = 3000
+
 export function statsOverviewText(logData, mask) {
   const m = logData.metadata
   return [
@@ -26,13 +28,134 @@ export function statsQueriesText(logData, mask, qpSort) {
   return [header, sep, ...rows].join('\n')
 }
 
-export function statsConnectionsText(logData) {
-  const cs = logData.connectionStats
+const CONNECTION_USER_WIDTH = 35
+const CONNECTION_HOST_WIDTH = 30
+
+function formatDuration(ms) {
+  if (ms === null || ms === undefined || !Number.isFinite(ms)) return 'n/a'
+  if (ms < 1000) return `${Math.round(ms)} ms`
+  if (ms < 60_000) {
+    const seconds = ms / 1000
+    return `${seconds < 10 ? seconds.toFixed(1) : Math.round(seconds)} s`
+  }
+  if (ms < 60 * 60_000) return `${(ms / 60_000).toFixed(1)} min`
+  return `${(ms / (60 * 60_000)).toFixed(1)} h`
+}
+
+function maskCell(mask, value, width) {
+  const text = mask(String(value || ''))
+  return text.slice(0, width).padEnd(width)
+}
+
+function connectionRowsByShortCount(rows, thresholdMs) {
+  return rows
+    .map((row) => ({
+      ...row,
+      shortCount: row.durations.filter((duration) => duration < thresholdMs).length,
+    }))
+    .filter((row) => row.shortCount > 0)
+    .sort((a, b) => b.shortCount - a.shortCount || b.conns - a.conns || (a.user || '').localeCompare(b.user || '') || a.host.localeCompare(b.host))
+}
+
+function userHostTable(rows, mask) {
+  if (!rows.length) return ['(no authenticated connection details detected)']
+
+  const header = `${'user'.padEnd(CONNECTION_USER_WIDTH)} ${'host'.padEnd(CONNECTION_HOST_WIDTH)} ${'conns'.padStart(7)} ${'closed'.padStart(7)} ${'avg'.padStart(10)} ${'p95'.padStart(10)}`
+  const sep = '-'.repeat(header.length)
+  const body = rows.map((row) =>
+    `${maskCell(mask, row.user, CONNECTION_USER_WIDTH)} ${maskCell(mask, row.host, CONNECTION_HOST_WIDTH)} ${String(row.conns).padStart(7)} ${String(row.closed).padStart(7)} ${formatDuration(row.avgMs).padStart(10)} ${formatDuration(row.p95Ms).padStart(10)}`
+  )
+  return [header, sep, ...body]
+}
+
+function hostTable(rows, mask) {
+  if (!rows.length) return ['(no connection host details detected)']
+
+  const header = `${'host'.padEnd(CONNECTION_HOST_WIDTH)} ${'conns'.padStart(7)} ${'closed'.padStart(7)} ${'avg'.padStart(10)} ${'p95'.padStart(10)}`
+  const sep = '-'.repeat(header.length)
+  const body = rows.map((row) =>
+    `${maskCell(mask, row.host, CONNECTION_HOST_WIDTH)} ${String(row.conns).padStart(7)} ${String(row.closed).padStart(7)} ${formatDuration(row.avgMs).padStart(10)} ${formatDuration(row.p95Ms).padStart(10)}`
+  )
+  return [header, sep, ...body]
+}
+
+function shortUserHostTable(rows, thresholdMs, mask) {
+  const shortRows = connectionRowsByShortCount(rows, thresholdMs)
+  if (!shortRows.length) return [`(no closed connections shorter than ${thresholdMs} ms)`]
+
+  const shortLabel = `<${thresholdMs}ms`
+  const shortWidth = Math.max(7, shortLabel.length)
+  const header = `${'user'.padEnd(CONNECTION_USER_WIDTH)} ${'host'.padEnd(CONNECTION_HOST_WIDTH)} ${shortLabel.padStart(shortWidth)} ${'closed'.padStart(7)} ${'avg'.padStart(10)}`
+  const sep = '-'.repeat(header.length)
+  const body = shortRows.map((row) =>
+    `${maskCell(mask, row.user, CONNECTION_USER_WIDTH)} ${maskCell(mask, row.host, CONNECTION_HOST_WIDTH)} ${String(row.shortCount).padStart(shortWidth)} ${String(row.closed).padStart(7)} ${formatDuration(row.avgMs).padStart(10)}`
+  )
+  return [header, sep, ...body]
+}
+
+function shortHostTable(rows, thresholdMs, mask) {
+  const shortRows = connectionRowsByShortCount(rows, thresholdMs)
+  if (!shortRows.length) return [`(no closed connections shorter than ${thresholdMs} ms)`]
+
+  const shortLabel = `<${thresholdMs}ms`
+  const shortWidth = Math.max(7, shortLabel.length)
+  const header = `${'host'.padEnd(CONNECTION_HOST_WIDTH)} ${shortLabel.padStart(shortWidth)} ${'closed'.padStart(7)} ${'avg'.padStart(10)}`
+  const sep = '-'.repeat(header.length)
+  const body = shortRows.map((row) =>
+    `${maskCell(mask, row.host, CONNECTION_HOST_WIDTH)} ${String(row.shortCount).padStart(shortWidth)} ${String(row.closed).padStart(7)} ${formatDuration(row.avgMs).padStart(10)}`
+  )
+  return [header, sep, ...body]
+}
+
+function hourlyConnectionTable(rows) {
+  if (!rows.length) return ['(no hourly connection events detected)']
+
+  const header = `${'TS'.padEnd(19)} ${'accepted'.padStart(10)} ${'closed'.padStart(10)} ${'active_peak'.padStart(12)} ${'errors'.padStart(8)}`
+  const sep = '-'.repeat(header.length)
+  const body = rows.map((row) =>
+    `${row.ts.padEnd(19)} ${String(row.accepted).padStart(10)} ${String(row.closed).padStart(10)} ${String(row.activePeak).padStart(12)} ${String(row.errors).padStart(8)}`
+  )
+  return [header, sep, ...body]
+}
+
+function normalizeShortThreshold(thresholdMs) {
+  const parsed = Number(thresholdMs)
+  if (!Number.isFinite(parsed) || parsed < 0) return DEFAULT_SHORT_CONNECTION_THRESHOLD_MS
+  return Math.floor(parsed)
+}
+
+export function statsConnectionsText(logData, mask = (value) => value, shortThresholdMs = DEFAULT_SHORT_CONNECTION_THRESHOLD_MS) {
+  const churn = logData.connectionChurn || {
+    stats: logData.connectionStats,
+    hasDbUsers: false,
+    summary: { trackedConnections: 0, authenticated: 0, withoutUsername: 0, closedWithDuration: 0 },
+    byUserHost: [],
+    byHost: [],
+  }
+  const cs = churn.stats || logData.connectionStats
+  const thresholdMs = normalizeShortThreshold(shortThresholdMs)
+  const rows = churn.hasDbUsers ? churn.byUserHost : churn.byHost
+  const scope = churn.hasDbUsers ? 'user and host' : 'host'
+
   return [
     `total opened:      ${cs.open}`,
     `total closed:      ${cs.close}`,
     `unique IPs:        ${cs.uniqueIPs}`,
     `max concurrent:    ${cs.peak}`,
+    '',
+    `user/host connections: ${churn.summary.trackedConnections}`,
+    `authenticated:         ${churn.summary.authenticated}`,
+    `without username:      ${churn.summary.withoutUsername}`,
+    `closed with duration:  ${churn.summary.closedWithDuration}`,
+    '',
+    'Connection timeline by hour:',
+    ...hourlyConnectionTable(logData.connHourlyTimeline || []),
+    '',
+    `Connections by ${scope}:`,
+    ...(churn.hasDbUsers ? userHostTable(rows, mask) : hostTable(rows, mask)),
+    '',
+    `Short-lived connections by ${scope} (<${thresholdMs} ms):`,
+    ...(churn.hasDbUsers ? shortUserHostTable(rows, thresholdMs, mask) : shortHostTable(rows, thresholdMs, mask)),
   ].join('\n')
 }
 

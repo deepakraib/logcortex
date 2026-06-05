@@ -1,13 +1,11 @@
 import { useState, useMemo } from 'react'
-import {
-  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
-} from 'recharts'
-import { ChartTip } from '../charts/ChartTip'
+import { RefreshCw } from 'lucide-react'
 import CopyBtn from '../ui/CopyBtn'
 import ExportBtn from '../ui/ExportBtn'
 import SortTh from '../ui/SortTh'
 import { sortArr, mkSort } from '../../utils/queryUtils'
 import {
+  DEFAULT_SHORT_CONNECTION_THRESHOLD_MS,
   statsOverviewText,
   statsQueriesText,
   statsConnectionsText,
@@ -33,32 +31,51 @@ const QUERY_COLUMNS = [
   ['mean', 'Mean ms'], ['p95', '95th ms'], ['sum', 'Sum ms'],
 ]
 
+function terminalHeader(cmd) {
+  return <span className="text-xs text-accent font-mono">$ {cmd}</span>
+}
+
+function TerminalBlock({ cmd, header, text, filename }) {
+  return (
+    <div className="bg-black/50 rounded-xl border border-white/5 p-4">
+      <div className="flex justify-between gap-3 mb-2">
+        <div className="min-w-0">{header || terminalHeader(cmd)}</div>
+        <div className="flex gap-1 shrink-0">
+          <CopyBtn text={text} />
+          <ExportBtn text={text} filename={filename} />
+        </div>
+      </div>
+      <pre className="font-mono text-xs text-green-300 whitespace-pre-wrap leading-relaxed">{text}</pre>
+    </div>
+  )
+}
+
 export default function StatisticsTab({ logData, mask }) {
   const [subTab, setSubTab] = useState('overview')
   const [qpSort, setQpSort] = useState({ key: 'sum', dir: 'desc' })
+  const [shortThresholdDraft, setShortThresholdDraft] = useState(String(DEFAULT_SHORT_CONNECTION_THRESHOLD_MS))
+  const [shortThresholdMs, setShortThresholdMs] = useState(DEFAULT_SHORT_CONNECTION_THRESHOLD_MS)
 
   const qpRows = useMemo(
     () => sortArr(logData.queryPatterns, qpSort),
     [logData, qpSort]
   )
 
-  function terminalHeader(cmd) {
-    return <span className="text-xs text-accent font-mono">$ {cmd}</span>
+  const connectionsText = useMemo(
+    () => statsConnectionsText(logData, mask, shortThresholdMs),
+    [logData, mask, shortThresholdMs]
+  )
+
+  function applyShortThreshold() {
+    const next = Number.parseInt(shortThresholdDraft, 10)
+    if (Number.isFinite(next) && next >= 0) setShortThresholdMs(next)
   }
 
-  function TerminalBlock({ cmd, text, filename }) {
-    return (
-      <div className="bg-black/50 rounded-xl border border-white/5 p-4">
-        <div className="flex justify-between mb-2">
-          {terminalHeader(cmd)}
-          <div className="flex gap-1">
-            <CopyBtn text={text} />
-            <ExportBtn text={text} filename={filename} />
-          </div>
-        </div>
-        <pre className="font-mono text-xs text-green-300 whitespace-pre-wrap leading-relaxed">{text}</pre>
-      </div>
-    )
+  function onShortThresholdKeyDown(event) {
+    if (event.key === 'Enter') {
+      event.preventDefault()
+      applyShortThreshold()
+    }
   }
 
   return (
@@ -135,28 +152,37 @@ export default function StatisticsTab({ logData, mask }) {
       )}
 
       {subTab === 'connections' && (
-        <div className="space-y-3">
-          <TerminalBlock
-            cmd="logcortex stats connections"
-            text={statsConnectionsText(logData)}
-            filename="logcortex-stats-connections.txt"
-          />
-          {logData.connTimeline.length > 0 && (
-            <div className="bg-surface rounded-xl p-3 border border-white/5">
-              <h3 className="text-xs text-white/40 mb-2 uppercase tracking-wider">Connection Timeline</h3>
-              <ResponsiveContainer width="100%" height={120}>
-                <BarChart data={logData.connTimeline} margin={{ top: 0, right: 0, bottom: 0, left: -20 }}>
-                  <CartesianGrid strokeDasharray="3 3" stroke="#ffffff08" />
-                  <XAxis dataKey="minute" tick={{ fontSize: 9, fill: '#64748b' }} interval="preserveStartEnd" />
-                  <YAxis tick={{ fontSize: 9, fill: '#64748b' }} />
-                  <Tooltip content={<ChartTip />} />
-                  <Bar dataKey="open" fill="#00D4AA" name="opened" radius={[2, 2, 0, 0]} />
-                  <Bar dataKey="close" fill="#EF4444" name="closed" radius={[2, 2, 0, 0]} />
-                </BarChart>
-              </ResponsiveContainer>
+        <TerminalBlock
+          header={(
+            <div className="flex flex-wrap items-center gap-2">
+              {terminalHeader('logcortex stats connections')}
+              <span className="text-xs text-white/35 font-mono">short &lt;</span>
+              <input
+                type="number"
+                min="0"
+                step="1"
+                inputMode="numeric"
+                value={shortThresholdDraft}
+                onChange={(event) => setShortThresholdDraft(event.target.value)}
+                onKeyDown={onShortThresholdKeyDown}
+                className="w-24 rounded border border-white/10 bg-black/50 px-2 py-1 text-xs font-mono text-green-300 outline-none focus:border-accent/60"
+                aria-label="Short-lived connection threshold in milliseconds"
+              />
+              <span className="text-xs text-white/35 font-mono">ms</span>
+              <button
+                type="button"
+                onClick={applyShortThreshold}
+                className="inline-flex h-7 w-7 items-center justify-center rounded border border-accent/30 bg-accent/10 text-accent hover:bg-accent/20"
+                title="Refresh connection statistics"
+                aria-label="Refresh connection statistics"
+              >
+                <RefreshCw size={14} />
+              </button>
             </div>
           )}
-        </div>
+          text={connectionsText}
+          filename="logcortex-stats-connections.txt"
+        />
       )}
 
       {subTab === 'restarts' && (

@@ -132,6 +132,353 @@ function maxOf(nums) {
   return max
 }
 
+const CLIENT_CONNECTION_ERROR_COMPONENTS = new Set(['NETWORK', 'ACCESS', 'EXECUTOR'])
+
+function normalizeConnectionKey(ctx, attr = {}) {
+  const id = attr.connectionId ?? attr.connectionID ?? attr.connId
+  if (id !== null && id !== undefined && id !== '') return `conn${id}`
+
+  const ctxMatch = String(ctx || '').match(/\bconn\d+\b/i)
+  if (ctxMatch) return ctxMatch[0].toLowerCase()
+
+  const clientMatch = String(attr.client || '').match(/\bconn\d+\b/i)
+  if (clientMatch) return clientMatch[0].toLowerCase()
+
+  return ''
+}
+
+function extractAddressHost(value) {
+  if (!value || typeof value !== 'string') return ''
+  const text = value.trim()
+  if (!text || /^conn\d+$/i.test(text)) return ''
+  if (text.startsWith('/')) return text
+
+  const bracketed = text.match(/^\[([^\]]+)\](?::\d+)?$/)
+  if (bracketed) return bracketed[1]
+
+  const parsed = extractHostPort(text)
+  if (parsed.host && !/^conn\d+$/i.test(parsed.host)) return parsed.host
+  if (parsed.socket) return parsed.socket
+
+  const ipv4 = text.match(/\b(\d{1,3}(?:\.\d{1,3}){3})(?::\d+)?\b/)
+  if (ipv4) return ipv4[1]
+
+  const hostPort = text.match(/\b([A-Za-z0-9._-]+):\d+\b/)
+  if (hostPort && !/^conn\d+$/i.test(hostPort[1])) return hostPort[1]
+
+  return ''
+}
+
+function extractRemoteHost(attr = {}) {
+  const candidates = [
+    attr.remote,
+    attr.client,
+    attr.remoteAddress,
+    attr.clientAddress,
+    attr.hostAndPort,
+    attr.host,
+    attr.peer,
+  ]
+
+  for (const candidate of candidates) {
+    if (typeof candidate !== 'string') continue
+    const host = extractAddressHost(candidate)
+    if (host) return host
+  }
+
+  return ''
+}
+
+function isConnectionAccepted(msg) {
+  const m = String(msg || '').toLowerCase()
+  return m.includes('connection accepted') || m.includes('client connected')
+}
+
+function isConnectionClosed(msg, component) {
+  const m = String(msg || '').toLowerCase()
+  return (
+    m.includes('connection ended') ||
+    m.includes('end connection') ||
+    (component === 'NETWORK' && m.includes('client disconnected'))
+  )
+}
+
+function isAuthSuccess(msg, attr = {}, id) {
+  const m = String(msg || '').toLowerCase()
+  return (
+    m.includes('successfully authenticated') ||
+    m.includes('authentication succeeded') ||
+    id === 5286306 ||
+    (id === 20250 && attr.result === 0)
+  )
+}
+
+function extractAuthUser(attr = {}) {
+  let user = ''
+  let db = attr.db || attr.authenticationDatabase || attr.authDb || ''
+
+  if (typeof attr.user === 'string') {
+    user = attr.user
+  } else if (attr.user && typeof attr.user === 'object') {
+    user = attr.user.user || attr.user.name || ''
+    db = db || attr.user.db || ''
+  }
+
+  user = user || attr.principalName || attr.userName || attr.username || attr.name || ''
+
+  if (!user || /^unknown$/i.test(String(user))) return ''
+  if (String(user).includes('@')) return String(user)
+  return db ? `${user}@${db}` : String(user)
+}
+
+function isInternalConnection(attr = {}, user = '') {
+  const normalizedUser = String(user || '').toLowerCase()
+  if (attr.isClusterMember === true) return true
+  if (normalizedUser === '__system' || normalizedUser === '__system@local') return true
+
+  const driverName = String(attr.doc?.driver?.name || '')
+  const appName = String(attr.doc?.application?.name || attr.appName || '')
+
+  return (
+    /mongodb internal client/i.test(driverName) ||
+    /^networkinterfacetl/i.test(driverName) ||
+    /oplogfetcher|replica|replication|replnetwork|replcoord|rsm|mirror/i.test(appName)
+  )
+}
+
+function isReplicationRelatedLog(c, msg) {
+  const m = String(msg || '').toLowerCase()
+  return (
+    c === 'CONNPOOL' ||
+    c === 'REPL' ||
+    c === 'REPL_HB' ||
+    m.includes('replica set') ||
+    m.includes('heartbeat') ||
+    m.includes('rsm ') ||
+    m.includes('sync source') ||
+    m.includes('oplog')
+  )
+}
+
+function connectionHourKey(ts) {
+  if (!ts || ts.length < 13) return ''
+  return ts.slice(0, 13)
+}
+
+function formatConnectionHour(key) {
+  return `${key.replace('T', ' ')}:00`
+}
+
+function getConnectionHour(map, ts) {
+  const key = connectionHourKey(ts)
+  if (!key) return null
+  if (!map[key]) {
+    map[key] = {
+      key,
+      ts: formatConnectionHour(key),
+      accepted: 0,
+      closed: 0,
+      activePeak: 0,
+      errors: 0,
+    }
+  }
+  return map[key]
+}
+
+function isClientConnectionErrorEvent(s, c, msg, attr = {}, ctx = '', connKey = '') {
+  const m = String(msg || '').toLowerCase()
+  if (isConnectionAccepted(m) || isConnectionClosed(m, c) || m.includes('client metadata')) return false
+  if (isReplicationRelatedLog(c, msg)) return false
+  if (!connKey && !/\bconn\d+\b/i.test(String(ctx || ''))) return false
+
+  const attrError = attr.error || attr.errMsg || attr.errmsg || ''
+  const text = `${m} ${JSON.stringify(attrError).toLowerCase()}`
+  const connish =
+    CLIENT_CONNECTION_ERROR_COMPONENTS.has(c) ||
+    text.includes('connection') ||
+    text.includes('socket') ||
+    text.includes('broken pipe') ||
+    Boolean(extractRemoteHost(attr))
+  const bad =
+    ['error', 'failed', 'refused', 'reset', 'timeout', 'broken pipe', 'socketexception', 'interrupted', 'unauthorized', 'not authorized', 'authentication failed']
+      .some((needle) => text.includes(needle)) ||
+    (['W', 'E', 'F'].includes(s) && connish)
+
+  return connish && bad
+}
+
+function createConnectionAggregator() {
+  const records = []
+  const activeByKey = new Map()
+
+  return {
+    records,
+    open(connKey, ts, host) {
+      const record = {
+        id: records.length,
+        key: connKey || `connection-${records.length + 1}`,
+        host: host || '',
+        user: '',
+        openTs: ts || '',
+        closeTs: '',
+        durationMs: null,
+        internal: false,
+      }
+      records.push(record)
+      activeByKey.set(record.key, record)
+      return record
+    },
+    active(connKey) {
+      if (!connKey) return null
+      return activeByKey.get(connKey) || null
+    },
+    ensureActive(connKey, ts, host) {
+      return this.active(connKey) || this.open(connKey, ts, host)
+    },
+    close(connKey, ts, host) {
+      const record = this.active(connKey)
+      if (!record) return null
+
+      if (host && !record.host) record.host = host
+      record.closeTs = ts || ''
+      if (record.openTs && record.closeTs) {
+        const duration = new Date(record.closeTs) - new Date(record.openTs)
+        if (Number.isFinite(duration) && duration >= 0) record.durationMs = duration
+      }
+      activeByKey.delete(connKey)
+      return record
+    },
+  }
+}
+
+function aggregateConnectionRows(records) {
+  const byUserHost = new Map()
+  const byHost = new Map()
+  let authenticated = 0
+  let withoutUsername = 0
+  let trackedConnections = 0
+  let closedWithDuration = 0
+
+  const addRow = (map, key, base, durationMs) => {
+    if (!map.has(key)) {
+      map.set(key, { ...base, conns: 0, durations: [] })
+    }
+    const row = map.get(key)
+    row.conns++
+    if (durationMs !== null && durationMs !== undefined) row.durations.push(durationMs)
+  }
+
+  const clientRecords = records.filter((record) => !record.internal)
+
+  for (const record of clientRecords) {
+    if (!record.openTs) continue
+
+    const host = record.host || 'unknown'
+    const durationMs = record.durationMs
+    trackedConnections++
+    if (durationMs !== null && durationMs !== undefined) closedWithDuration++
+
+    addRow(byHost, host, { host }, durationMs)
+
+    if (record.user) {
+      authenticated++
+      addRow(byUserHost, `${record.user}||${host}`, { user: record.user, host }, durationMs)
+    } else {
+      withoutUsername++
+    }
+  }
+
+  const finalize = (rows) => rows
+    .map((row) => {
+      const totalMs = row.durations.reduce((sum, value) => sum + value, 0)
+      return {
+        ...row,
+        closed: row.durations.length,
+        avgMs: row.durations.length ? Math.round(totalMs / row.durations.length) : 0,
+        p95Ms: p95(row.durations),
+      }
+    })
+    .sort((a, b) => b.conns - a.conns || (a.user || '').localeCompare(b.user || '') || a.host.localeCompare(b.host))
+
+  return {
+    hasDbUsers: byUserHost.size > 0,
+    summary: {
+      trackedConnections,
+      authenticated,
+      withoutUsername,
+      closedWithDuration,
+    },
+    byUserHost: finalize([...byUserHost.values()]),
+    byHost: finalize([...byHost.values()]),
+  }
+}
+
+function buildClientConnectionTimeline(records, errorEvents) {
+  const rows = {}
+  const clientRecords = records.filter((record) => record.openTs && !record.internal)
+  const recordsByKey = new Map(clientRecords.map((record) => [record.key, record]))
+  const events = []
+
+  for (const record of clientRecords) {
+    events.push({ ts: record.openTs, type: 'open' })
+    if (record.closeTs) events.push({ ts: record.closeTs, type: 'close' })
+  }
+
+  for (const event of errorEvents) {
+    if (recordsByKey.has(event.connKey)) events.push({ ts: event.ts, type: 'error' })
+  }
+
+  const order = { open: 0, error: 1, close: 2 }
+  events.sort((a, b) => {
+    const ad = Date.parse(a.ts)
+    const bd = Date.parse(b.ts)
+    if (ad !== bd) return ad - bd
+    return order[a.type] - order[b.type]
+  })
+
+  let current = 0
+  let peak = 0
+
+  for (const event of events) {
+    const hour = getConnectionHour(rows, event.ts)
+    if (!hour) continue
+
+    if (event.type === 'open') {
+      current++
+      peak = Math.max(peak, current)
+      hour.accepted++
+      hour.activePeak = Math.max(hour.activePeak, current)
+    } else if (event.type === 'close') {
+      hour.closed++
+      hour.activePeak = Math.max(hour.activePeak, current)
+      current = Math.max(0, current - 1)
+    } else {
+      hour.errors++
+      hour.activePeak = Math.max(hour.activePeak, current)
+    }
+  }
+
+  const uniqueIPs = new Set(clientRecords.map((record) => record.host).filter(Boolean))
+
+  return {
+    stats: {
+      open: clientRecords.length,
+      close: clientRecords.filter((record) => record.closeTs).length,
+      peak,
+      uniqueIPs: uniqueIPs.size,
+    },
+    rows: Object.values(rows)
+      .sort((a, b) => a.key.localeCompare(b.key))
+      .map((row) => ({
+        ts: row.ts,
+        accepted: row.accepted,
+        closed: row.closed,
+        activePeak: row.activePeak,
+        errors: row.errors,
+      })),
+  }
+}
+
 /**
  * Parses a MongoDB JSON log file (plain or gzip) and aggregates metrics.
  * Processing is chunked via setTimeout to avoid blocking the main thread.
@@ -413,6 +760,8 @@ export async function parseLogFile(file, onProgress, slowThreshold = 100) {
   const longConns = []       // long-lasting connections
   const driverMap = {}       // driverName -> { version, ips: Set }
   const connOpenTime = {}    // ctx -> open timestamp (for duration calc)
+  const connectionAggregator = createConnectionAggregator()
+  const connClientErrorEvents = []
   let mongoModule = 'community'
   let mongoArch = '', mongoOS = ''
   let mongoProvider = '', mongoRegion = ''
@@ -475,6 +824,8 @@ export async function parseLogFile(file, onProgress, slowThreshold = 100) {
           }
 
           const row = { ts, s, c, ctx, msg, dur, ns, cmd, plan, keysEx, docsEx, nret, opType, errMsg, appName, reslen, raw: obj }
+          const connKey = normalizeConnectionKey(ctx, attr)
+          const remoteHost = extractRemoteHost(attr)
           // Cap rawLines to avoid OOM on huge logs. Aggregations below still use every line.
           if (parsed.length < MAX_RAW_LINES) parsed.push(row)
           parsedCount++
@@ -537,6 +888,9 @@ export async function parseLogFile(file, onProgress, slowThreshold = 100) {
 
           if (s === 'E' || s === 'F') errors.push(row)
           if (s === 'W') warnings.push(row)
+          if (ts && isClientConnectionErrorEvent(s, c, msg, attr, ctx, connKey)) {
+            connClientErrorEvents.push({ ts, connKey })
+          }
 
           if (plan && plan.includes('COLLSCAN') && ns) {
             const internal = shouldSkipIndexSuggestionNamespace(ns)
@@ -699,38 +1053,59 @@ export async function parseLogFile(file, onProgress, slowThreshold = 100) {
             if (stateAfter) rsChanges.push({ ts, stateBefore, stateAfter, msg })
           }
 
-          if (msg.includes('connection accepted') || msg.includes('client connected')) {
+          if (isAuthSuccess(msg, attr, obj.id)) {
+            const user = extractAuthUser(attr)
+            if (user && connKey) {
+              const record = connectionAggregator.ensureActive(connKey, '', remoteHost)
+              if (!record.user) record.user = user
+              if (remoteHost && !record.host) record.host = remoteHost
+              if (isInternalConnection(attr, user)) record.internal = true
+            }
+          }
+
+          if (connKey && (msg === 'client metadata' || msg.includes('client metadata'))) {
+            const record = connectionAggregator.active(connKey)
+            if (record && isInternalConnection(attr, record.user)) record.internal = true
+          }
+
+          if (isConnectionAccepted(msg)) {
+            const activeKey = connKey || `connection-${connOpen + 1}`
+            const record = connectionAggregator.open(activeKey, ts, remoteHost)
+            if (isInternalConnection(attr, record.user)) record.internal = true
             connOpen++; connCurrent++
             if (connCurrent > connPeak) connPeak = connCurrent
-            const ipMatch = (attr.remote || ctx || msg).match(/\b(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(:\d+)?/)
-            const ip = ipMatch ? ipMatch[1] : null
-            if (ip) {
-              ipSet.add(ip)
-              if (!ipStatsMap[ip]) ipStatsMap[ip] = { accepted: 0, closed: 0, reslen: 0 }
-              ipStatsMap[ip].accepted++
+            if (remoteHost) {
+              ipSet.add(remoteHost)
+              if (!ipStatsMap[remoteHost]) ipStatsMap[remoteHost] = { accepted: 0, closed: 0, reslen: 0 }
+              ipStatsMap[remoteHost].accepted++
             }
-            connOpenTime[ctx] = { ts, ip }
-            connEvents.push({ ts, type: 'open', ctx, msg, ip })
+            connOpenTime[activeKey] = { ts, ip: remoteHost }
+            connEvents.push({ ts, type: 'open', ctx: activeKey, msg, ip: remoteHost })
           }
-          if (msg.includes('end connection') || msg.includes('client disconnected')) {
+          if (isConnectionClosed(msg, c)) {
+            const activeKey = connKey || ''
             connClose++; connCurrent = Math.max(0, connCurrent - 1)
-            const openInfo = connOpenTime[ctx]
-            if (openInfo?.ts && ts) {
-              const durMs = new Date(ts) - new Date(openInfo.ts)
-              if (durMs > 5 * 60 * 1000) { // >5 min = long-lasting
-                longConns.push({ ctx, openTs: openInfo.ts, closeTs: ts, durMs, ip: openInfo.ip || '' })
+            const openInfo = connOpenTime[activeKey]
+            const record = connectionAggregator.close(activeKey, ts, remoteHost)
+            const durationMs = record?.durationMs ?? (
+              openInfo?.ts && ts ? new Date(ts) - new Date(openInfo.ts) : null
+            )
+            if (durationMs !== null && Number.isFinite(durationMs)) {
+              if (durationMs > 5 * 60 * 1000) { // >5 min = long-lasting
+                longConns.push({ ctx: activeKey, openTs: openInfo?.ts || record?.openTs || '', closeTs: ts, durMs: durationMs, ip: openInfo?.ip || record?.host || '' })
               }
-              if (openInfo.ip) {
-                if (!ipStatsMap[openInfo.ip]) ipStatsMap[openInfo.ip] = { accepted: 0, closed: 0, reslen: 0 }
-                ipStatsMap[openInfo.ip].closed++
+              const host = openInfo?.ip || record?.host || remoteHost
+              if (host) {
+                if (!ipStatsMap[host]) ipStatsMap[host] = { accepted: 0, closed: 0, reslen: 0 }
+                ipStatsMap[host].closed++
               }
             }
-            delete connOpenTime[ctx]
-            connEvents.push({ ts, type: 'close', ctx, msg })
+            delete connOpenTime[activeKey]
+            connEvents.push({ ts, type: 'close', ctx: activeKey, msg })
           }
           // Track reslen per IP (from slow ops)
           if (reslen !== null && dur !== null) {
-            const openInfo = connOpenTime[ctx]
+            const openInfo = connOpenTime[connKey]
             if (openInfo?.ip) {
               if (!ipStatsMap[openInfo.ip]) ipStatsMap[openInfo.ip] = { accepted: 0, closed: 0, reslen: 0 }
               ipStatsMap[openInfo.ip].reslen += reslen
@@ -848,6 +1223,9 @@ export async function parseLogFile(file, onProgress, slowThreshold = 100) {
           else acc[m].close++
           return acc
         }, {})
+        const connectionChurn = aggregateConnectionRows(connectionAggregator.records)
+        const clientTimeline = buildClientConnectionTimeline(connectionAggregator.records, connClientErrorEvents)
+        connectionChurn.stats = clientTimeline.stats
 
         // App name summary
         const appNames = Object.entries(appNameMap)
@@ -902,6 +1280,8 @@ export async function parseLogFile(file, onProgress, slowThreshold = 100) {
           connectionEvents: connEvents,
           connectionStats: { open: connOpen, close: connClose, peak: connPeak, uniqueIPs: ipSet.size },
           connTimeline: Object.values(connTimeline).sort((a, b) => a.minute.localeCompare(b.minute)),
+          connHourlyTimeline: clientTimeline.rows,
+          connectionChurn,
           queryPatterns: qpList,
           restartEvents: restarts,
           rsStateChanges: rsChanges,

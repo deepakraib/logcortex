@@ -2,6 +2,7 @@ import pako from 'pako'
 import { unzipSync } from 'fflate'
 import { p95 } from './queryUtils.js'
 import { parseTar, pickLogFile } from './tarParser.js'
+import { resolveCollscanCommand } from './indexSuggestion.js'
 
 /**
  * Extracts a normalized query shape from a MongoDB command.
@@ -894,14 +895,22 @@ export async function parseLogFile(file, onProgress, slowThreshold = 100) {
 
           if (plan && plan.includes('COLLSCAN') && ns) {
             const internal = shouldSkipIndexSuggestionNamespace(ns)
+            const resolved = resolveCollscanCommand(attr, cmd, ot)
+            const example = {
+              ts,
+              cmd: resolved.cmd,
+              opType: resolved.opType,
+              dur,
+              plan,
+            }
             if (!nsCollscanAll[ns]) nsCollscanAll[ns] = { count: 0, examples: [], internal }
             nsCollscanAll[ns].count++
-            if (nsCollscanAll[ns].examples.length < 3) nsCollscanAll[ns].examples.push({ ts, cmd, dur, plan })
+            if (nsCollscanAll[ns].examples.length < 3) nsCollscanAll[ns].examples.push(example)
 
             if (!internal) {
               if (!nsCollscan[ns]) nsCollscan[ns] = { count: 0, examples: [] }
               nsCollscan[ns].count++
-              if (nsCollscan[ns].examples.length < 3) nsCollscan[ns].examples.push({ ts, cmd, dur, plan })
+              if (nsCollscan[ns].examples.length < 3) nsCollscan[ns].examples.push(example)
             }
           }
 

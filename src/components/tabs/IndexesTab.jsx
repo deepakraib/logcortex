@@ -1,30 +1,7 @@
 import { useState, useMemo } from 'react'
 import { CheckCircle, Search, Database } from 'lucide-react'
 import CopyBtn from '../ui/CopyBtn'
-
-function generateIndexCmd(ns, examples) {
-  const dotIdx = ns.indexOf('.')
-  if (dotIdx === -1) return `// Could not parse namespace: ${ns}`
-  const db = ns.slice(0, dotIdx)
-  const coll = ns.slice(dotIdx + 1)
-  if (!coll) return `// Could not parse namespace: ${ns}`
-
-  // Extract query fields from example commands
-  const fields = {}
-  examples.forEach((ex) => {
-    try {
-      const cmd = typeof ex.cmd === 'string' ? JSON.parse(ex.cmd) : ex.cmd
-      const q = cmd?.filter || cmd?.query || cmd?.q || cmd
-      if (q && typeof q === 'object') {
-        Object.keys(q).forEach((k) => {
-          if (!k.startsWith('$') && k !== '_id') fields[k] = 1
-        })
-      }
-    } catch { /* ignore */ }
-  })
-  const fStr = Object.keys(fields).length ? JSON.stringify(fields) : '{ /* add your query fields */ }'
-  return `db.getSiblingDB("${db}").getCollection("${coll}").createIndex(${fStr})`
-}
+import { generateCreateIndexCmd } from '../../utils/indexSuggestion.js'
 
 export default function IndexesTab({ logData, mask }) {
   const [search, setSearch] = useState('')
@@ -49,7 +26,7 @@ export default function IndexesTab({ logData, mask }) {
   }
 
   // All suggested commands (for bulk copy)
-  const allCmds = entries.map(([ns, v]) => generateIndexCmd(ns, v.examples)).join('\n\n')
+  const allCmds = entries.map(([ns, v]) => generateCreateIndexCmd(ns, v.examples)).join('\n\n')
 
   return (
     <div className="space-y-3">
@@ -79,7 +56,7 @@ export default function IndexesTab({ logData, mask }) {
       )}
 
       {entries.map(([ns, v]) => {
-        const cmd = generateIndexCmd(ns, v.examples)
+        const cmd = generateCreateIndexCmd(ns, v.examples)
         return (
           <div key={ns} className="bg-surface rounded-xl p-4 border border-white/5 hover:border-danger/20 transition-colors">
             {/* Header */}

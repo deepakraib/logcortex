@@ -536,7 +536,7 @@ function answerForIntent(intentId, logData, mask, questionText = '') {
         parts.push(`· Worst: **${fmtMs(top.dur)}** on \`${maskNs(top.ns)}\` (${top.plan || 'unknown plan'})`)
       }
       if (coll > 0) {
-        const [ns, v] = Object.entries(logData.indexWarnings).sort((a, b) => b[1].count - a[1].count)[0]
+        const [ns, v] = Object.entries(logData.indexWarnings || {}).sort((a, b) => b[1].count - a[1].count)[0]
         parts.push(`· Top COLLSCAN: \`${maskNs(ns)}\` (**${v.count}** scans) — review **Indexes** tab`)
       }
       if (err > 0) {

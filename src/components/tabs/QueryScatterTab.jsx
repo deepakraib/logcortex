@@ -9,6 +9,7 @@ import { COLORS } from '../../utils/constants'
 
 export default function QueryScatterTab({ logData, mask }) {
   const [plotOpTypes, setPlotOpTypes] = useState({})
+  const slowThresholdMs = logData?.metadata?.slowThresholdMs ?? 100
 
   // Initialise toggled op-types whenever logData changes
   useEffect(() => {
@@ -51,7 +52,7 @@ export default function QueryScatterTab({ logData, mask }) {
             <h3 className="text-xs text-accent font-mono uppercase tracking-wider flex items-center gap-1.5">
               <Activity size={12} />Query Scatter — Slow Op Duration Over Time
             </h3>
-            <p className="text-[10px] text-white/30 mt-0.5">Showing operations &gt;100ms only — all ops below threshold are excluded</p>
+            <p className="text-[10px] text-white/30 mt-0.5">Showing operations &gt;{slowThresholdMs}ms only — all ops below threshold are excluded</p>
           </div>
         </div>
 
@@ -96,7 +97,7 @@ export default function QueryScatterTab({ logData, mask }) {
               label={{ value: 'ms', angle: -90, position: 'insideLeft', fill: '#64748b', fontSize: 10 }}
             />
             <Tooltip content={<ScatterTooltip />} />
-            <ReferenceLine y={100} stroke="#EAB308" strokeDasharray="4 4" label={{ value: '100ms', fill: '#EAB308', fontSize: 9 }} />
+            <ReferenceLine y={slowThresholdMs} stroke="#EAB308" strokeDasharray="4 4" label={{ value: `${slowThresholdMs}ms`, fill: '#EAB308', fontSize: 9 }} />
             <ReferenceLine y={500} stroke="#F59E0B" strokeDasharray="4 4" label={{ value: '500ms', fill: '#F59E0B', fontSize: 9 }} />
             <ReferenceLine y={1000} stroke="#EF4444" strokeDasharray="4 4" label={{ value: '1s', fill: '#EF4444', fontSize: 9 }} />
             {Object.entries(groupedByOp)

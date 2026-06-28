@@ -61,11 +61,12 @@ function buildNarrative(logData) {
   }
 
   // Slow ops
+  const slowThresholdMs = m.slowThresholdMs ?? 100
   const slowCount = logData.slowOps.length
   const maxSlow = logData.slowOps[0]?.dur || 0
   const totalSlowMs = logData.slowOps.reduce((a, r) => a + (r.dur || 0), 0)
   if (slowCount > 0) {
-    lines.push(`Found **${slowCount.toLocaleString()}** slow operations (>100ms). The slowest took **${maxSlow.toLocaleString()}ms**. Total wasted time: **${fmtDuration(totalSlowMs)}**.`)
+    lines.push(`Found **${slowCount.toLocaleString()}** slow operations (>${slowThresholdMs}ms). The slowest took **${maxSlow.toLocaleString()}ms**. Total wasted time: **${fmtDuration(totalSlowMs)}**.`)
     if (totalSlowMs > 3600000) {
       lines.push(`⚠️ The total impact from slow operations exceeds **1 hour** — this may indicate a resource or indexing problem that needs urgent attention.`)
     }
@@ -74,8 +75,8 @@ function buildNarrative(logData) {
   }
 
   // COLLSCAN
-  const collscanCount = Object.values(logData.indexWarnings).reduce((a, v) => a + v.count, 0)
-  const collscanNs = Object.keys(logData.indexWarnings).length
+  const collscanCount = Object.values(logData.indexWarnings || {}).reduce((a, v) => a + v.count, 0)
+  const collscanNs = Object.keys(logData.indexWarnings || {}).length
   if (collscanCount > 0) {
     const collscanMs = logData.slowOps.filter(r => r.plan?.includes('COLLSCAN')).reduce((a, r) => a + (r.dur || 0), 0)
     lines.push(`Found **${collscanCount.toLocaleString()} COLLSCAN** operations across **${collscanNs}** collection${collscanNs > 1 ? 's' : ''}. These are full collection scans caused by missing indexes — **${fmtDuration(collscanMs)}** of wasted time.`)

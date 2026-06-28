@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect } from 'react'
-import { Filter, Download } from 'lucide-react'
+import { Filter, Download, Search } from 'lucide-react'
 import SortTh from '../ui/SortTh'
 import { SEV_COLORS } from '../../utils/constants'
 import { sortArr, mkSort } from '../../utils/queryUtils'
@@ -17,6 +17,7 @@ export default function LogSearchTab({ logData, mask }) {
   const [sort, setSort] = useState({ key: 'ts', dir: 'desc' })
   const [regexError, setRegexError] = useState(false)
   const [compiledRegex, setCompiledRegex] = useState(null)
+  const rawLines = Array.isArray(logData?.rawLines) ? logData.rawLines : null
 
   // Compile regex in an effect to avoid setState inside useMemo
   useEffect(() => {
@@ -40,8 +41,8 @@ export default function LogSearchTab({ logData, mask }) {
   }, [config.msgRegex])
 
   const filteredLines = useMemo(() => {
-    if (!logData) return []
-    return logData.rawLines.filter((row) => {
+    if (!rawLines) return []
+    return rawLines.filter((row) => {
       if (config.start && row.ts < config.start) return false
       if (config.end && row.ts > config.end) return false
       if (config.severities.length && !config.severities.includes(row.s)) return false
@@ -50,9 +51,24 @@ export default function LogSearchTab({ logData, mask }) {
       if (compiledRegex && !compiledRegex.test(row.msg)) return false
       return true
     })
-  }, [logData, config, compiledRegex])
+  }, [rawLines, config, compiledRegex])
 
   const sortedRows = useMemo(() => sortArr(filteredLines, sort), [filteredLines, sort])
+
+  if (!logData) return null
+
+  if (!rawLines) {
+    return (
+      <div className="flex flex-col items-center py-16 text-white/30">
+        <Search size={40} className="mb-3 text-white/20" />
+        <p className="text-sm font-medium text-white/50">Log Search unavailable for this session</p>
+        <p className="text-xs text-white/30 mt-2 max-w-md text-center leading-relaxed">
+          Restored sessions omit raw log lines to save browser storage.
+          Re-upload the log file to search, filter, and download lines.
+        </p>
+      </div>
+    )
+  }
 
   function toggleSeverity(s) {
     setConfig((f) => ({
@@ -129,7 +145,7 @@ export default function LogSearchTab({ logData, mask }) {
         <div>
           <label className="text-[10px] text-white/40 uppercase tracking-wider">Component</label>
           <div className="flex gap-1.5 mt-1 flex-wrap">
-            {logData.componentList.map((c) => (
+            {(logData.componentList || []).map((c) => (
               <button
                 key={c}
                 onClick={() => toggleComponent(c)}

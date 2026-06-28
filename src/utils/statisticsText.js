@@ -2,11 +2,21 @@ import { sortArr } from './queryUtils.js'
 
 export const DEFAULT_SHORT_CONNECTION_THRESHOLD_MS = 3000
 
+function formatServerHost(meta, mask) {
+  if (meta.hostname) {
+    const host = meta.port ? `${meta.hostname}:${meta.port}` : meta.hostname
+    return mask(host)
+  }
+  if (meta.unixSocket) return mask(meta.unixSocket)
+  if (meta.bindIp && meta.port) return mask(`${meta.bindIp}:${meta.port}`)
+  return 'N/A'
+}
+
 export function statsOverviewText(logData, mask) {
   const m = logData.metadata
   return [
     `source:      ${m.filename}`,
-    `host:        ${mask(m.filename.replace(/\.log.*/, ''))}`,
+    `host:        ${formatServerHost(m, mask)}`,
     `start:       ${m.startTime || 'N/A'}`,
     `end:         ${m.endTime || 'N/A'}`,
     `date format: iso8601-utc`,

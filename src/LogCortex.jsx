@@ -313,7 +313,7 @@ Generated: ${new Date().toISOString()}
 </div>
 <div class="cards">
   <div class="card"><div class="card-label">Total Operations</div><div class="card-value accent">${m.parsedLines.toLocaleString()}</div></div>
-  <div class="card"><div class="card-label">Slow Queries &gt;100ms</div><div class="card-value warning">${logData.slowOps.length.toLocaleString()}</div></div>
+  <div class="card"><div class="card-label">Slow Queries &gt;${m.slowThresholdMs ?? slowThreshold}ms</div><div class="card-value warning">${logData.slowOps.length.toLocaleString()}</div></div>
   <div class="card"><div class="card-label">Errors</div><div class="card-value danger">${logData.errors.length.toLocaleString()}</div></div>
   <div class="card"><div class="card-label">Security Events</div><div class="card-value caution">${(logData.auditEvents||[]).length}</div></div>
 </div>
@@ -534,7 +534,7 @@ ${appRows ? `<table><thead><tr><th>App / Driver</th><th>Total Ops</th><th>Slow O
           {sessionRestored && (
             <div className="mt-2 text-xs text-success bg-success/10 border border-success/20 rounded px-3 py-2 flex items-center gap-1.5">
               <RefreshCw size={11} className="text-success" />
-              Session restored — your previous log file is still loaded.
+              Session restored — aggregated stats are available. Re-upload the log file to use Log Search.
             </div>
           )}
         </div>

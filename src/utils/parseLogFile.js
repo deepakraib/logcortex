@@ -1343,6 +1343,7 @@ export async function parseLogFile(file, onProgress, slowThreshold = 100) {
             currentRole,
             rsMembers,
             identityRefs: identityRefs.slice(0, 20),
+            slowThresholdMs: slowThreshold,
           },
         }
       }

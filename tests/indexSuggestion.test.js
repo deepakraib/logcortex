@@ -5,6 +5,7 @@ import { join } from 'node:path'
 import {
   buildIndexSuggestion,
   extractFieldsFromQueryPattern,
+  extractFieldsFromTruncated,
   extractIndexableFields,
   extractQueryFilter,
   generateCreateIndexCmd,
@@ -126,6 +127,26 @@ describe('indexSuggestion', () => {
     const cmd = generateCreateIndexCmd('shop.orders', [{ opType: 'getmore', cmd: { getMore: 1 } }], [])
     expect(cmd).not.toMatch(/createIndex\(\{ \/\*/)
     expect(cmd).toMatch(/No query filter fields found/)
+  })
+
+  it('recovers filter fields from a truncated find command string', () => {
+    const text = '{ find: "orders", filter: { customerId: 123, status: "active", region: "EU" }, sort: { createdAt: -1 }, $db: "shop" }'
+    expect(extractFieldsFromTruncated(text)).toEqual(['customerId', 'region', 'status'])
+  })
+
+  it('recovers filter fields from a partially cut-off truncated string', () => {
+    const text = '{ find: "orders", filter: { customerId: 123, status: "active", regio'
+    expect(extractFieldsFromTruncated(text)).toEqual(['customerId', 'status'])
+  })
+
+  it('recovers fields from a truncated aggregate $match', () => {
+    const text = '{ aggregate: "events", pipeline: [ { $match: { tenantId: 7, kind: "click" } }, { $group'
+    expect(extractFieldsFromTruncated(text)).toEqual(['kind', 'tenantId'])
+  })
+
+  it('extracts indexable fields from a command object carrying $truncated', () => {
+    const cmd = { $truncated: '{ find: "orders", filter: { accountId: 9, state: "open" }, sort: {', comment: 'app-x' }
+    expect(extractIndexableFields(cmd, 'command')).toEqual(['accountId', 'state'])
   })
 })
 

@@ -191,12 +191,97 @@ function collectFilterFields(obj, depth = 0, out = new Set()) {
 }
 
 /**
+ * Collect depth-1 key names from a (possibly partial) brace block in a
+ * MongoDB-shell-style string, starting at the index of the opening `{`.
+ */
+function collectTruncatedKeys(text, braceIdx, out) {
+  let depth = 0
+  let expectKey = false
+  let inStr = null
+
+  for (let i = braceIdx; i < text.length; i++) {
+    const ch = text[i]
+
+    if (inStr) {
+      if (ch === '\\') { i++; continue }
+      if (ch === inStr) inStr = null
+      continue
+    }
+
+    if (ch === '"' || ch === "'") {
+      if (depth === 1 && expectKey) {
+        const close = text.indexOf(ch, i + 1)
+        if (close === -1) return
+        const key = text.slice(i + 1, close)
+        if (key && key !== '_id' && !key.startsWith('$') && !COMMAND_META_KEYS.has(key)) out.add(key)
+        expectKey = false
+        i = close
+        continue
+      }
+      inStr = ch
+      continue
+    }
+
+    if (ch === '{') { depth++; if (depth === 1) expectKey = true; continue }
+    if (ch === '[') { depth++; continue }
+    if (ch === '}') { depth--; if (depth === 0) return; continue }
+    if (ch === ']') { depth--; continue }
+
+    if (depth === 1) {
+      if (ch === ',') { expectKey = true; continue }
+      if (expectKey && /[A-Za-z_]/.test(ch)) {
+        const m = text.slice(i).match(/^([A-Za-z_][\w.]*)\s*:/)
+        if (m) {
+          const key = m[1]
+          if (key !== '_id' && !COMMAND_META_KEYS.has(key)) out.add(key)
+          expectKey = false
+          i += m[1].length - 1
+          continue
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Recover filter field names from a truncated command string that MongoDB
+ * emits when a command document is too large to log in full ($truncated).
+ */
+export function extractFieldsFromTruncated(text) {
+  if (typeof text !== 'string' || !text) return []
+  const out = new Set()
+  const anchors = [/\bfilter\s*:\s*\{/g, /\$match\s*:\s*\{/g, /\bq\s*:\s*\{/g, /\bquery\s*:\s*\{/g]
+  for (const re of anchors) {
+    let m
+    while ((m = re.exec(text)) !== null) {
+      collectTruncatedKeys(text, m.index + m[0].length - 1, out)
+    }
+  }
+  return [...out].sort()
+}
+
+function findTruncatedString(c) {
+  if (!c || typeof c !== 'object') return null
+  if (typeof c.$truncated === 'string') return c.$truncated
+  if (typeof c.command?.$truncated === 'string') return c.command.$truncated
+  return null
+}
+
+/**
  * Return sorted field names suitable for a compound index spec.
  */
 export function extractIndexableFields(cmd, opType = '') {
   const filter = extractQueryFilter(cmd, opType)
-  if (!filter) return []
-  return [...collectFilterFields(filter)].sort()
+  if (filter) {
+    const fields = [...collectFilterFields(filter)].sort()
+    if (fields.length) return fields
+  }
+  const truncated = findTruncatedString(parseCmd(cmd))
+  if (truncated) {
+    const fields = extractFieldsFromTruncated(truncated)
+    if (fields.length) return fields
+  }
+  return filter ? [...collectFilterFields(filter)].sort() : []
 }
 
 function buildIndexSpec(fields) {

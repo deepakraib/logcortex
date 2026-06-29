@@ -112,42 +112,41 @@ export default function IndexesTab({ logData, mask }) {
               </div>
             )}
 
-            <div className="bg-black/40 rounded-lg p-3 border border-white/5">
-              <div className="flex items-center justify-between mb-2">
-                <div>
-                  <span className="text-[10px] text-white/30 uppercase tracking-wider">Suggested Index</span>
-                  {suggestion?.hasFields && (
-                    <span className="ml-2 text-[10px] text-white/20">({suggestion.fields.join(', ')})</span>
-                  )}
+            {suggestion?.hasFields ? (
+              <>
+                <div className="bg-black/40 rounded-lg p-3 border border-white/5">
+                  <div className="flex items-center justify-between mb-2">
+                    <div>
+                      <span className="text-[10px] text-white/30 uppercase tracking-wider">Suggested Index</span>
+                      <span className="ml-2 text-[10px] text-white/20">({suggestion.fields.join(', ')})</span>
+                    </div>
+                    {copyText && <CopyBtn text={copyText} />}
+                  </div>
+                  <pre className="font-mono text-xs text-green-300 whitespace-pre-wrap break-all">{suggestion.cmd}</pre>
                 </div>
-                {copyText && <CopyBtn text={copyText} />}
-              </div>
-              {suggestion?.hasFields ? (
-                <pre className="font-mono text-xs text-green-300 whitespace-pre-wrap break-all">{suggestion.cmd}</pre>
-              ) : (
-                <p className="text-xs text-white/50 leading-relaxed">
-                  No filter fields were found in the log for this COLLSCAN (common with getMore-only lines or full collection scans).
-                  Check the query pattern above or the <strong className="text-white/70">Statistics → Queries</strong> tab, then build an index on the fields your application filters by.
-                </p>
-              )}
-            </div>
 
-            <div className="mt-2 px-3 py-2 bg-amber-950/30 border border-amber-500/20 rounded-lg text-[11px] text-amber-200/80 leading-relaxed">
-              {INDEX_VERIFY_NOTE}
-            </div>
+                <div className="mt-2 px-3 py-2 bg-amber-950/30 border border-amber-500/20 rounded-lg text-[11px] text-amber-200/80 leading-relaxed">
+                  {INDEX_VERIFY_NOTE}
+                </div>
 
-            <details className="mt-2">
-              <summary className="text-[10px] text-white/30 cursor-pointer hover:text-white/50 select-none">
-                How to verify this index helps ▾
-              </summary>
-              <div className="mt-2 text-[11px] text-white/50 space-y-1 pl-2 border-l border-white/10">
-                <p>1. Create the index in a lower environment: run the command above in <code className="font-mono text-green-300/70">mongosh</code></p>
-                <p>2. Verify with: <code className="font-mono text-green-300/70">{`db.getSiblingDB("${ns.split('.')[0]}").getCollection("${ns.slice(ns.indexOf('.')+1)}").explain("executionStats").find({...})`}</code></p>
-                <p>3. Check that <code className="font-mono text-green-300/70">executionStats.executionStages.stage</code> (or <code className="font-mono text-green-300/70">winningPlan.stage</code>) is <code className="font-mono text-green-300/70">IXSCAN</code>, not COLLSCAN</p>
-                <p>4. Compare <code className="font-mono text-green-300/70">totalDocsExamined</code> before and after — it should drop sharply</p>
-                <p>5. Monitor slow-query logs after deployment</p>
-              </div>
-            </details>
+                <details className="mt-2">
+                  <summary className="text-[10px] text-white/30 cursor-pointer hover:text-white/50 select-none">
+                    How to verify this index helps ▾
+                  </summary>
+                  <div className="mt-2 text-[11px] text-white/50 space-y-1 pl-2 border-l border-white/10">
+                    <p>1. Create the index in a lower environment: run the command above in <code className="font-mono text-green-300/70">mongosh</code></p>
+                    <p>2. Verify with: <code className="font-mono text-green-300/70">{`db.getSiblingDB("${ns.split('.')[0]}").getCollection("${ns.slice(ns.indexOf('.')+1)}").explain("executionStats").find({...})`}</code></p>
+                    <p>3. Check that <code className="font-mono text-green-300/70">executionStats.executionStages.stage</code> (or <code className="font-mono text-green-300/70">winningPlan.stage</code>) is <code className="font-mono text-green-300/70">IXSCAN</code>, not COLLSCAN</p>
+                    <p>4. Compare <code className="font-mono text-green-300/70">totalDocsExamined</code> before and after — it should drop sharply</p>
+                    <p>5. Monitor slow-query logs after deployment</p>
+                  </div>
+                </details>
+              </>
+            ) : (
+              <p className="text-[11px] text-white/30 italic">
+                No index suggestion — the log did not include the query filter for this COLLSCAN (typical for getMore-only lines or full collection scans).
+              </p>
+            )}
           </div>
         )
       })}

@@ -2,7 +2,7 @@ import pako from 'pako'
 import { unzipSync } from 'fflate'
 import { p95 } from './queryUtils.js'
 import { parseTar, pickLogFile } from './tarParser.js'
-import { resolveCollscanCommand } from './indexSuggestion.js'
+import { resolveCollscanCommand, extractIndexableFields } from './indexSuggestion.js'
 
 /**
  * Extracts a normalized query shape from a MongoDB command.
@@ -895,7 +895,7 @@ export async function parseLogFile(file, onProgress, slowThreshold = 100) {
 
           if (plan && plan.includes('COLLSCAN') && ns) {
             const internal = shouldSkipIndexSuggestionNamespace(ns)
-            const resolved = resolveCollscanCommand(attr, cmd, ot)
+            const resolved = resolveCollscanCommand(attr, cmd, ot, getMoreMap)
             const example = {
               ts,
               cmd: resolved.cmd,
@@ -1219,6 +1219,40 @@ export async function parseLogFile(file, onProgress, slowThreshold = 100) {
             sum: v.durs.reduce((a, b) => a + b, 0),
           }))
           .sort((a, b) => b.sum - a.sum)
+
+        const patternsByNs = {}
+        for (const qp of qpList) {
+          if (!patternsByNs[qp.ns]) patternsByNs[qp.ns] = []
+          patternsByNs[qp.ns].push({ pattern: qp.pattern, count: qp.count, op: qp.op })
+        }
+
+        function enrichCollscanBucket(bucket) {
+          for (const [ns, data] of Object.entries(bucket)) {
+            data.queryPatterns = (patternsByNs[ns] || [])
+              .sort((a, b) => b.count - a.count)
+              .slice(0, 5)
+
+            for (const row of slowOps) {
+              if (row.ns !== ns || !row.plan?.includes('COLLSCAN') || data.examples.length >= 5) continue
+              const attr = row.raw?.attr || {}
+              const resolved = resolveCollscanCommand(attr, row.cmd, row.opType, getMoreMap)
+              if (!extractIndexableFields(resolved.cmd, resolved.opType).length) continue
+              const dup = data.examples.some(
+                (ex) => JSON.stringify(ex.cmd) === JSON.stringify(resolved.cmd),
+              )
+              if (dup) continue
+              data.examples.push({
+                ts: row.ts,
+                cmd: resolved.cmd,
+                opType: resolved.opType,
+                dur: row.dur,
+                plan: row.plan,
+              })
+            }
+          }
+        }
+        enrichCollscanBucket(nsCollscan)
+        enrichCollscanBucket(nsCollscanAll)
 
         const distinct = Object.entries(msgPatterns)
           .map(([msg, v]) => ({ msg, count: v.count, s: v.s, c: v.c }))

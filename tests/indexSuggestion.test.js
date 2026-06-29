@@ -3,6 +3,8 @@ import { mkdtempSync, writeFileSync, rmSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import {
+  buildIndexSuggestion,
+  extractFieldsFromQueryPattern,
   extractIndexableFields,
   extractQueryFilter,
   generateCreateIndexCmd,
@@ -81,6 +83,50 @@ describe('indexSuggestion', () => {
     }
     expect(extractIndexableFields(cmd, 'find')).toEqual(['email', 'username'])
   })
+
+  it('extracts fields from normalized query pattern strings', () => {
+    expect(extractFieldsFromQueryPattern('{ "status":1, "customer_id":1}')).toEqual(['customer_id', 'status'])
+    expect(extractFieldsFromQueryPattern('{ key: "region" }')).toEqual(['region'])
+    expect(extractFieldsFromQueryPattern('{}')).toEqual([])
+  })
+
+  it('falls back to query patterns when COLLSCAN examples have no filter', () => {
+    const suggestion = buildIndexSuggestion(
+      'shop.orders',
+      [{
+        opType: 'getmore',
+        cmd: { getMore: { $numberLong: '1' }, collection: 'orders' },
+      }],
+      [{ pattern: '{ "region":1, "status":1}', count: 42 }],
+    )
+    expect(suggestion.hasFields).toBe(true)
+    expect(suggestion.fields).toEqual(['region', 'status'])
+    expect(suggestion.source).toBe('pattern')
+    expect(suggestion.cmd).toBe(
+      'db.getSiblingDB("shop").getCollection("orders").createIndex({"region":1,"status":1})',
+    )
+  })
+
+  it('resolves getMore via cursor map when originatingCommand is on an earlier line', () => {
+    const getMoreMap = {
+      '9876543210': {
+        originatingCmd: { find: 'orders', filter: { order_id: 7 }, $db: 'shop' },
+      },
+    }
+    const resolved = resolveCollscanCommand(
+      { cursorId: '9876543210' },
+      { getMore: { $numberLong: '9876543210' }, collection: 'orders' },
+      'getmore',
+      getMoreMap,
+    )
+    expect(extractIndexableFields(resolved.cmd, resolved.opType)).toEqual(['order_id'])
+  })
+
+  it('does not emit invalid createIndex placeholder when fields are unknown', () => {
+    const cmd = generateCreateIndexCmd('shop.orders', [{ opType: 'getmore', cmd: { getMore: 1 } }], [])
+    expect(cmd).not.toMatch(/createIndex\(\{ \/\*/)
+    expect(cmd).toMatch(/No query filter fields found/)
+  })
 })
 
 describe('COLLSCAN examples in parsed logs', () => {
@@ -131,6 +177,49 @@ describe('COLLSCAN examples in parsed logs', () => {
         'db.getSiblingDB("shop").getCollection("orders").createIndex({"customer_id":1})',
       )
       expect(indexCmd).not.toMatch(/getMore|lsid|collection/)
+    } finally {
+      rmSync(dir, { recursive: true, force: true })
+    }
+  })
+
+  it('uses query patterns when getMore COLLSCAN has no originatingCommand', async () => {
+    const dir = mkdtempSync(join(tmpdir(), 'logcortex-'))
+    const file = join(dir, 'mongod.log')
+
+    const lines = [
+      JSON.stringify({
+        t: { $date: '2026-01-17T08:00:00.000Z' },
+        s: 'I', c: 'COMMAND', ctx: 'conn1', msg: 'Slow query',
+        attr: {
+          type: 'command', ns: 'app.items', durationMillis: 3200,
+          planSummary: 'COLLSCAN', keysExamined: 0, docsExamined: 50000,
+          command: { find: 'items', filter: { sku: 'ABC', active: true }, $db: 'app' },
+        },
+      }),
+      JSON.stringify({
+        t: { $date: '2026-01-17T08:00:05.000Z' },
+        s: 'I', c: 'COMMAND', ctx: 'conn1', msg: 'Slow query',
+        attr: {
+          type: 'getmore', ns: 'app.items', durationMillis: 5100,
+          planSummary: 'COLLSCAN', keysExamined: 0, docsExamined: 50000,
+          command: { getMore: { $numberLong: '999' }, collection: 'items' },
+        },
+      }),
+    ]
+
+    writeFileSync(file, lines.join('\n') + '\n')
+
+    try {
+      const { logData } = await loadParsedLog(file, { slowThreshold: 100 })
+      const suggestion = buildIndexSuggestion(
+        'app.items',
+        logData.indexWarnings['app.items'].examples,
+        logData.indexWarnings['app.items'].queryPatterns,
+      )
+      expect(suggestion.hasFields).toBe(true)
+      expect(suggestion.fields).toEqual(['active', 'sku'])
+      expect(suggestion.cmd).toContain('"sku":1')
+      expect(suggestion.cmd).toContain('"active":1')
     } finally {
       rmSync(dir, { recursive: true, force: true })
     }

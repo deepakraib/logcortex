@@ -96,13 +96,26 @@ export function inferOpTypeFromCommand(cmd) {
  * getMore lines store cursor metadata in `command`; the filter lives in
  * `originatingCommand` on the same log entry.
  */
-export function resolveCollscanCommand(attr = {}, cmd, opType = '') {
+export function resolveCollscanCommand(attr = {}, cmd, opType = '', getMoreMap = {}) {
   const ot = String(opType || '').toLowerCase()
-  if (ot === 'getmore' && attr.originatingCommand) {
-    return {
-      cmd: attr.originatingCommand,
-      opType: inferOpTypeFromCommand(attr.originatingCommand),
+  if (ot === 'getmore') {
+    if (attr.originatingCommand) {
+      return {
+        cmd: attr.originatingCommand,
+        opType: inferOpTypeFromCommand(attr.originatingCommand),
+      }
     }
+    const cursorId = String(
+      attr.cursorId ??
+      attr.command?.getMore?.$numberLong ??
+      attr.command?.getMore ??
+      '',
+    )
+    if (cursorId && getMoreMap[cursorId]?.originatingCmd) {
+      const oc = getMoreMap[cursorId].originatingCmd
+      return { cmd: oc, opType: inferOpTypeFromCommand(oc) }
+    }
+    return { cmd, opType: 'getmore' }
   }
   return { cmd, opType: ot || inferOpTypeFromCommand(cmd) }
 }
@@ -145,7 +158,11 @@ export function extractQueryFilter(cmd, opType = '') {
     query = c.filter ?? c.query ?? c.q ?? null
   }
 
-  if (query && typeof query === 'object' && !Array.isArray(query)) return query
+  if (query && typeof query === 'object' && !Array.isArray(query)) {
+    if (query.$query && typeof query.$query === 'object') query = query.$query
+    else if (query.query && typeof query.query === 'object' && !query.filter) query = query.query
+    return query
+  }
   return null
 }
 
@@ -189,26 +206,108 @@ function buildIndexSpec(fields) {
 }
 
 /**
- * Build a mongosh createIndex command from COLLSCAN examples.
+ * Extract indexable field names from a normalized query pattern string
+ * (as produced by parseLogFile extractQueryShape).
  */
-export function generateCreateIndexCmd(ns, examples = []) {
-  const dotIdx = ns.indexOf('.')
-  if (dotIdx === -1) return `// Could not parse namespace: ${ns}`
-  const db = ns.slice(0, dotIdx)
-  const coll = ns.slice(dotIdx + 1)
-  if (!coll) return `// Could not parse namespace: ${ns}`
+export function extractFieldsFromQueryPattern(patternStr = '') {
+  const text = String(patternStr || '').trim()
+  if (!text || text === '{}') return []
 
-  const fields = new Set()
+  const distinct = text.match(/^\{\s*key:\s*"([^"]+)"\s*\}$/)
+  if (distinct) return [distinct[1]]
+
+  try {
+    const obj = JSON.parse(text)
+    return [...collectFilterFields(obj)].sort()
+  } catch {
+    const fields = new Set()
+    for (const m of text.matchAll(/"(\$?\w+)":/g)) {
+      const key = m[1]
+      if (key !== '_id' && !key.startsWith('$') && !COMMAND_META_KEYS.has(key)) fields.add(key)
+    }
+    return [...fields].sort()
+  }
+}
+
+function collectFieldsFromExamples(examples, out = new Set()) {
   for (const ex of examples) {
     const cmd = ex?.resolvedCmd ?? ex?.cmd
     const opType = ex?.opType ?? inferOpTypeFromCommand(cmd)
-    for (const f of extractIndexableFields(cmd, opType)) fields.add(f)
+    for (const f of extractIndexableFields(cmd, opType)) out.add(f)
+  }
+  return out
+}
+
+function collectFieldsFromPatterns(queryPatterns, out = new Set()) {
+  let topPattern = null
+  for (const entry of queryPatterns) {
+    const pattern = typeof entry === 'string' ? entry : entry?.pattern
+    if (!pattern || pattern === '{}') continue
+    const fields = extractFieldsFromQueryPattern(pattern)
+    if (!fields.length) continue
+    if (!topPattern) topPattern = pattern
+    for (const f of fields) out.add(f)
+  }
+  return { fields: out, topPattern }
+}
+
+export const INDEX_VERIFY_NOTE =
+  'Test in a lower environment first. Run explain("executionStats") on your query and confirm winningPlan uses IXSCAN (not COLLSCAN) before deploying to production.'
+
+/**
+ * Build index suggestion metadata from COLLSCAN examples and optional query patterns.
+ */
+export function buildIndexSuggestion(ns, examples = [], queryPatterns = []) {
+  const dotIdx = ns.indexOf('.')
+  if (dotIdx === -1) {
+    return { cmd: null, hasFields: false, fields: [], queryPattern: null, source: 'none', db: '', coll: '' }
+  }
+  const db = ns.slice(0, dotIdx)
+  const coll = ns.slice(dotIdx + 1)
+  if (!coll) {
+    return { cmd: null, hasFields: false, fields: [], queryPattern: null, source: 'none', db, coll: '' }
+  }
+
+  const fields = collectFieldsFromExamples(examples)
+  let queryPattern = null
+  let source = fields.size ? 'command' : 'none'
+
+  if (!fields.size && queryPatterns.length) {
+    const fromPatterns = collectFieldsFromPatterns(queryPatterns, fields)
+    queryPattern = fromPatterns.topPattern
+    if (fields.size) source = 'pattern'
   }
 
   const sorted = [...fields].sort()
-  const fStr = sorted.length
-    ? JSON.stringify(buildIndexSpec(sorted))
-    : '{ /* add query filter fields from your application */ }'
+  if (!sorted.length) {
+    return {
+      cmd: null,
+      hasFields: false,
+      fields: [],
+      queryPattern: queryPatterns[0]?.pattern ?? queryPatterns[0] ?? null,
+      source: 'none',
+      db,
+      coll,
+    }
+  }
 
-  return `db.getSiblingDB("${db}").getCollection("${coll}").createIndex(${fStr})`
+  const spec = JSON.stringify(buildIndexSpec(sorted))
+  return {
+    cmd: `db.getSiblingDB("${db}").getCollection("${coll}").createIndex(${spec})`,
+    hasFields: true,
+    fields: sorted,
+    queryPattern: queryPattern || null,
+    source,
+    db,
+    coll,
+  }
+}
+
+/**
+ * Build a mongosh createIndex command from COLLSCAN examples.
+ */
+export function generateCreateIndexCmd(ns, examples = [], queryPatterns = []) {
+  const result = buildIndexSuggestion(ns, examples, queryPatterns)
+  if (result.cmd) return result.cmd
+  return `// No query filter fields found in log for ${ns}\n// Review query patterns in Statistics tab or add indexes from your application queries`
 }
